@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
-import RelatedSliderComponent from "../Components/RelatedSliderComponent";
+import RelatedSliderComponent from "../Components/RelatedSliderComponet/RelatedSliderComponent";
 import FooterLayout from "../Layout/FooterLayout";
 import HeaderLayout from "../Layout/HeaderLayout";
-import BrandCarouselComponent from "../Components/BrandCarouselComponent";
+import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 import BreadcrumbArea from "../Layout/BreadcrumbArea";
 
 const breadcrumbObj = {

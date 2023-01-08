@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import BrandCarouselComponent from "../Components/BrandCarouselComponent";
+import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 import BreadcrumbArea from "../Layout/BreadcrumbArea";
 import FooterLayout from "../Layout/FooterLayout";
 import HeaderLayout from "../Layout/HeaderLayout";

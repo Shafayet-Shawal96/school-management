@@ -20,9 +20,9 @@ function CoursePage() {
     <Fragment>
       <HeaderLayout />
       <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
-      <div class="course-area bg-img pt-130">
-        <div class="container">
-          <div class="section-title mb-75 course-mrg-small">
+      <div ClassName="course-area bg-img pt-130">
+        <div ClassName="container">
+          <div ClassName="section-title mb-75 course-mrg-small">
             <h2>
               {" "}
               <span>Undergraduate</span> Courses
@@ -33,19 +33,19 @@ function CoursePage() {
               veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip{" "}
             </p>
           </div>
-          <div class="course-slider-active-3">
-            <div class="single-course">
-              <div class="course-img">
+          <div ClassName="course-slider-active-3">
+            <div ClassName="single-course">
+              <div ClassName="course-img">
                 <a href="course-details.html">
                   <img
-                    class="animated"
+                    ClassName="animated"
                     src="assets/img/course/course-1.jpg"
                     alt=""
                   />
                 </a>
                 <span>Addmission Going On</span>
               </div>
-              <div class="course-content">
+              <div ClassName="course-content">
                 <h4>
                   <a href="course-details.html">Apparel Manufacturing</a>
                 </h4>
@@ -54,35 +54,35 @@ function CoursePage() {
                   incid.
                 </p>
               </div>
-              <div class="course-position-content">
-                <div class="credit-duration-wrap">
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-diamond"></i>
+              <div ClassName="course-position-content">
+                <div ClassName="credit-duration-wrap">
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-diamond"></i>
                     <span>Credits : 125</span>
                   </div>
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-clock-o"></i>
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-clock-o"></i>
                     <span>Duration : 4yrs</span>
                   </div>
                 </div>
-                <div class="course-btn">
-                  <a class="default-btn" href="/">
+                <div ClassName="course-btn">
+                  <a ClassName="default-btn" href="/">
                     APPLY NOW
                   </a>
                 </div>
               </div>
             </div>
-            <div class="single-course">
-              <div class="course-img">
+            <div ClassName="single-course">
+              <div ClassName="course-img">
                 <a href="course-details.html">
                   <img
-                    class="animated"
+                    ClassName="animated"
                     src="assets/img/course/course-2.jpg"
                     alt=""
                   />
                 </a>
               </div>
-              <div class="course-content">
+              <div ClassName="course-content">
                 <h4>
                   <a href="course-details.html">Grphic Design & Multimedia</a>
                 </h4>
@@ -91,35 +91,35 @@ function CoursePage() {
                   incid.
                 </p>
               </div>
-              <div class="course-position-content">
-                <div class="credit-duration-wrap">
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-diamond"></i>
+              <div ClassName="course-position-content">
+                <div ClassName="credit-duration-wrap">
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-diamond"></i>
                     <span>Credits : 125</span>
                   </div>
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-clock-o"></i>
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-clock-o"></i>
                     <span>Duration : 4yrs</span>
                   </div>
                 </div>
-                <div class="course-btn">
-                  <a class="default-btn" href="/">
+                <div ClassName="course-btn">
+                  <a ClassName="default-btn" href="/">
                     APPLY NOW
                   </a>
                 </div>
               </div>
             </div>
-            <div class="single-course">
-              <div class="course-img">
+            <div ClassName="single-course">
+              <div ClassName="course-img">
                 <a href="course-details.html">
                   <img
-                    class="animated"
+                    ClassName="animated"
                     src="assets/img/course/course-3.jpg"
                     alt=""
                   />
                 </a>
               </div>
-              <div class="course-content">
+              <div ClassName="course-content">
                 <h4>
                   <a href="course-details.html">Computer Engineering</a>
                 </h4>
@@ -128,36 +128,36 @@ function CoursePage() {
                   incid.
                 </p>
               </div>
-              <div class="course-position-content">
-                <div class="credit-duration-wrap">
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-diamond"></i>
+              <div ClassName="course-position-content">
+                <div ClassName="credit-duration-wrap">
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-diamond"></i>
                     <span>Credits : 125</span>
                   </div>
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-clock-o"></i>
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-clock-o"></i>
                     <span>Duration : 4yrs</span>
                   </div>
                 </div>
-                <div class="course-btn">
-                  <a class="default-btn" href="/">
+                <div ClassName="course-btn">
+                  <a ClassName="default-btn" href="/">
                     APPLY NOW
                   </a>
                 </div>
               </div>
             </div>
-            <div class="single-course">
-              <div class="course-img">
+            <div ClassName="single-course">
+              <div ClassName="course-img">
                 <a href="course-details.html">
                   <img
-                    class="animated"
+                    ClassName="animated"
                     src="assets/img/course/course-4.jpg"
                     alt=""
                   />
                 </a>
                 <span>Post Graduation Course</span>
               </div>
-              <div class="course-content">
+              <div ClassName="course-content">
                 <h4>
                   <a href="course-details.html">Fashion & Technology</a>
                 </h4>
@@ -166,35 +166,35 @@ function CoursePage() {
                   incid.
                 </p>
               </div>
-              <div class="course-position-content">
-                <div class="credit-duration-wrap">
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-diamond"></i>
+              <div ClassName="course-position-content">
+                <div ClassName="credit-duration-wrap">
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-diamond"></i>
                     <span>Credits : 125</span>
                   </div>
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-clock-o"></i>
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-clock-o"></i>
                     <span>Duration : 4yrs</span>
                   </div>
                 </div>
-                <div class="course-btn">
-                  <a class="default-btn" href="/">
+                <div ClassName="course-btn">
+                  <a ClassName="default-btn" href="/">
                     APPLY NOW
                   </a>
                 </div>
               </div>
             </div>
-            <div class="single-course">
-              <div class="course-img">
+            <div ClassName="single-course">
+              <div ClassName="course-img">
                 <a href="course-details.html">
                   <img
-                    class="animated"
+                    ClassName="animated"
                     src="assets/img/course/course-2.jpg"
                     alt=""
                   />
                 </a>
               </div>
-              <div class="course-content">
+              <div ClassName="course-content">
                 <h4>
                   <a href="course-details.html">Apparel Manufacturing</a>
                 </h4>
@@ -203,19 +203,19 @@ function CoursePage() {
                   incid.
                 </p>
               </div>
-              <div class="course-position-content">
-                <div class="credit-duration-wrap">
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-diamond"></i>
+              <div ClassName="course-position-content">
+                <div ClassName="credit-duration-wrap">
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-diamond"></i>
                     <span>Credits : 125</span>
                   </div>
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-clock-o"></i>
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-clock-o"></i>
                     <span>Duration : 4yrs</span>
                   </div>
                 </div>
-                <div class="course-btn">
-                  <a class="default-btn" href="/">
+                <div ClassName="course-btn">
+                  <a ClassName="default-btn" href="/">
                     APPLY NOW
                   </a>
                 </div>
@@ -224,9 +224,9 @@ function CoursePage() {
           </div>
         </div>
       </div>
-      <div class="course-area bg-img">
-        <div class="container">
-          <div class="section-title mb-75 course-mrg-small">
+      <div ClassName="course-area bg-img">
+        <div ClassName="container">
+          <div ClassName="section-title mb-75 course-mrg-small">
             <h2>
               {" "}
               Graduate <span>Courses</span>
@@ -237,19 +237,19 @@ function CoursePage() {
               veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip{" "}
             </p>
           </div>
-          <div class="course-slider-active-4">
-            <div class="single-course">
-              <div class="course-img">
+          <div ClassName="course-slider-active-4">
+            <div ClassName="single-course">
+              <div ClassName="course-img">
                 <a href="course-details.html">
                   <img
-                    class="animated"
+                    ClassName="animated"
                     src="assets/img/course/course-1.jpg"
                     alt=""
                   />
                 </a>
                 <span>Addmission Going On</span>
               </div>
-              <div class="course-content">
+              <div ClassName="course-content">
                 <h4>
                   <a href="course-details.html">Apparel Manufacturing</a>
                 </h4>
@@ -258,35 +258,35 @@ function CoursePage() {
                   incid.
                 </p>
               </div>
-              <div class="course-position-content">
-                <div class="credit-duration-wrap">
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-diamond"></i>
+              <div ClassName="course-position-content">
+                <div ClassName="credit-duration-wrap">
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-diamond"></i>
                     <span>Credits : 125</span>
                   </div>
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-clock-o"></i>
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-clock-o"></i>
                     <span>Duration : 4yrs</span>
                   </div>
                 </div>
-                <div class="course-btn">
-                  <a class="default-btn" href="/">
+                <div ClassName="course-btn">
+                  <a ClassName="default-btn" href="/">
                     APPLY NOW
                   </a>
                 </div>
               </div>
             </div>
-            <div class="single-course">
-              <div class="course-img">
+            <div ClassName="single-course">
+              <div ClassName="course-img">
                 <a href="course-details.html">
                   <img
-                    class="animated"
+                    ClassName="animated"
                     src="assets/img/course/course-2.jpg"
                     alt=""
                   />
                 </a>
               </div>
-              <div class="course-content">
+              <div ClassName="course-content">
                 <h4>
                   <a href="course-details.html">Grphic Design & Multimedia</a>
                 </h4>
@@ -295,35 +295,35 @@ function CoursePage() {
                   incid.
                 </p>
               </div>
-              <div class="course-position-content">
-                <div class="credit-duration-wrap">
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-diamond"></i>
+              <div ClassName="course-position-content">
+                <div ClassName="credit-duration-wrap">
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-diamond"></i>
                     <span>Credits : 125</span>
                   </div>
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-clock-o"></i>
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-clock-o"></i>
                     <span>Duration : 4yrs</span>
                   </div>
                 </div>
-                <div class="course-btn">
-                  <a class="default-btn" href="/">
+                <div ClassName="course-btn">
+                  <a ClassName="default-btn" href="/">
                     APPLY NOW
                   </a>
                 </div>
               </div>
             </div>
-            <div class="single-course">
-              <div class="course-img">
+            <div ClassName="single-course">
+              <div ClassName="course-img">
                 <a href="course-details.html">
                   <img
-                    class="animated"
+                    ClassName="animated"
                     src="assets/img/course/course-3.jpg"
                     alt=""
                   />
                 </a>
               </div>
-              <div class="course-content">
+              <div ClassName="course-content">
                 <h4>
                   <a href="course-details.html">Computer Engineering</a>
                 </h4>
@@ -332,36 +332,36 @@ function CoursePage() {
                   incid.
                 </p>
               </div>
-              <div class="course-position-content">
-                <div class="credit-duration-wrap">
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-diamond"></i>
+              <div ClassName="course-position-content">
+                <div ClassName="credit-duration-wrap">
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-diamond"></i>
                     <span>Credits : 125</span>
                   </div>
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-clock-o"></i>
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-clock-o"></i>
                     <span>Duration : 4yrs</span>
                   </div>
                 </div>
-                <div class="course-btn">
-                  <a class="default-btn" href="/">
+                <div ClassName="course-btn">
+                  <a ClassName="default-btn" href="/">
                     APPLY NOW
                   </a>
                 </div>
               </div>
             </div>
-            <div class="single-course">
-              <div class="course-img">
+            <div ClassName="single-course">
+              <div ClassName="course-img">
                 <a href="course-details.html">
                   <img
-                    class="animated"
+                    ClassName="animated"
                     src="assets/img/course/course-4.jpg"
                     alt=""
                   />
                 </a>
                 <span>Post Graduation Course</span>
               </div>
-              <div class="course-content">
+              <div ClassName="course-content">
                 <h4>
                   <a href="course-details.html">Fashion & Technology</a>
                 </h4>
@@ -370,35 +370,35 @@ function CoursePage() {
                   incid.
                 </p>
               </div>
-              <div class="course-position-content">
-                <div class="credit-duration-wrap">
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-diamond"></i>
+              <div ClassName="course-position-content">
+                <div ClassName="credit-duration-wrap">
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-diamond"></i>
                     <span>Credits : 125</span>
                   </div>
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-clock-o"></i>
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-clock-o"></i>
                     <span>Duration : 4yrs</span>
                   </div>
                 </div>
-                <div class="course-btn">
-                  <a class="default-btn" href="/">
+                <div ClassName="course-btn">
+                  <a ClassName="default-btn" href="/">
                     APPLY NOW
                   </a>
                 </div>
               </div>
             </div>
-            <div class="single-course">
-              <div class="course-img">
+            <div ClassName="single-course">
+              <div ClassName="course-img">
                 <a href="course-details.html">
                   <img
-                    class="animated"
+                    ClassName="animated"
                     src="assets/img/course/course-2.jpg"
                     alt=""
                   />
                 </a>
               </div>
-              <div class="course-content">
+              <div ClassName="course-content">
                 <h4>
                   <a href="course-details.html">Apparel Manufacturing</a>
                 </h4>
@@ -407,19 +407,19 @@ function CoursePage() {
                   incid.
                 </p>
               </div>
-              <div class="course-position-content">
-                <div class="credit-duration-wrap">
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-diamond"></i>
+              <div ClassName="course-position-content">
+                <div ClassName="credit-duration-wrap">
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-diamond"></i>
                     <span>Credits : 125</span>
                   </div>
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-clock-o"></i>
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-clock-o"></i>
                     <span>Duration : 4yrs</span>
                   </div>
                 </div>
-                <div class="course-btn">
-                  <a class="default-btn" href="/">
+                <div ClassName="course-btn">
+                  <a ClassName="default-btn" href="/">
                     APPLY NOW
                   </a>
                 </div>
@@ -428,9 +428,9 @@ function CoursePage() {
           </div>
         </div>
       </div>
-      <div class="course-area bg-img">
-        <div class="container">
-          <div class="section-title mb-75 course-mrg-small">
+      <div ClassName="course-area bg-img">
+        <div ClassName="container">
+          <div ClassName="section-title mb-75 course-mrg-small">
             <h2>
               {" "}
               <span>Diploma</span> Courses
@@ -441,19 +441,19 @@ function CoursePage() {
               veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip{" "}
             </p>
           </div>
-          <div class="course-slider-active-5">
-            <div class="single-course">
-              <div class="course-img">
+          <div ClassName="course-slider-active-5">
+            <div ClassName="single-course">
+              <div ClassName="course-img">
                 <a href="course-details.html">
                   <img
-                    class="animated"
+                    ClassName="animated"
                     src="assets/img/course/course-1.jpg"
                     alt=""
                   />
                 </a>
                 <span>Addmission Going On</span>
               </div>
-              <div class="course-content">
+              <div ClassName="course-content">
                 <h4>
                   <a href="course-details.html">Apparel Manufacturing</a>
                 </h4>
@@ -462,35 +462,35 @@ function CoursePage() {
                   incid.
                 </p>
               </div>
-              <div class="course-position-content">
-                <div class="credit-duration-wrap">
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-diamond"></i>
+              <div ClassName="course-position-content">
+                <div ClassName="credit-duration-wrap">
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-diamond"></i>
                     <span>Credits : 125</span>
                   </div>
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-clock-o"></i>
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-clock-o"></i>
                     <span>Duration : 4yrs</span>
                   </div>
                 </div>
-                <div class="course-btn">
-                  <a class="default-btn" href="/">
+                <div ClassName="course-btn">
+                  <a ClassName="default-btn" href="/">
                     APPLY NOW
                   </a>
                 </div>
               </div>
             </div>
-            <div class="single-course">
-              <div class="course-img">
+            <div ClassName="single-course">
+              <div ClassName="course-img">
                 <a href="course-details.html">
                   <img
-                    class="animated"
+                    ClassName="animated"
                     src="assets/img/course/course-2.jpg"
                     alt=""
                   />
                 </a>
               </div>
-              <div class="course-content">
+              <div ClassName="course-content">
                 <h4>
                   <a href="course-details.html">Grphic Design & Multimedia</a>
                 </h4>
@@ -499,35 +499,35 @@ function CoursePage() {
                   incid.
                 </p>
               </div>
-              <div class="course-position-content">
-                <div class="credit-duration-wrap">
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-diamond"></i>
+              <div ClassName="course-position-content">
+                <div ClassName="credit-duration-wrap">
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-diamond"></i>
                     <span>Credits : 125</span>
                   </div>
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-clock-o"></i>
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-clock-o"></i>
                     <span>Duration : 4yrs</span>
                   </div>
                 </div>
-                <div class="course-btn">
-                  <a class="default-btn" href="/">
+                <div ClassName="course-btn">
+                  <a ClassName="default-btn" href="/">
                     APPLY NOW
                   </a>
                 </div>
               </div>
             </div>
-            <div class="single-course">
-              <div class="course-img">
+            <div ClassName="single-course">
+              <div ClassName="course-img">
                 <a href="course-details.html">
                   <img
-                    class="animated"
+                    ClassName="animated"
                     src="assets/img/course/course-3.jpg"
                     alt=""
                   />
                 </a>
               </div>
-              <div class="course-content">
+              <div ClassName="course-content">
                 <h4>
                   <a href="course-details.html">Computer Engineering</a>
                 </h4>
@@ -536,36 +536,36 @@ function CoursePage() {
                   incid.
                 </p>
               </div>
-              <div class="course-position-content">
-                <div class="credit-duration-wrap">
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-diamond"></i>
+              <div ClassName="course-position-content">
+                <div ClassName="credit-duration-wrap">
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-diamond"></i>
                     <span>Credits : 125</span>
                   </div>
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-clock-o"></i>
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-clock-o"></i>
                     <span>Duration : 4yrs</span>
                   </div>
                 </div>
-                <div class="course-btn">
-                  <a class="default-btn" href="/">
+                <div ClassName="course-btn">
+                  <a ClassName="default-btn" href="/">
                     APPLY NOW
                   </a>
                 </div>
               </div>
             </div>
-            <div class="single-course">
-              <div class="course-img">
+            <div ClassName="single-course">
+              <div ClassName="course-img">
                 <a href="course-details.html">
                   <img
-                    class="animated"
+                    ClassName="animated"
                     src="assets/img/course/course-4.jpg"
                     alt=""
                   />
                 </a>
                 <span>Post Graduation Course</span>
               </div>
-              <div class="course-content">
+              <div ClassName="course-content">
                 <h4>
                   <a href="course-details.html">Fashion & Technology</a>
                 </h4>
@@ -574,35 +574,35 @@ function CoursePage() {
                   incid.
                 </p>
               </div>
-              <div class="course-position-content">
-                <div class="credit-duration-wrap">
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-diamond"></i>
+              <div ClassName="course-position-content">
+                <div ClassName="credit-duration-wrap">
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-diamond"></i>
                     <span>Credits : 125</span>
                   </div>
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-clock-o"></i>
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-clock-o"></i>
                     <span>Duration : 4yrs</span>
                   </div>
                 </div>
-                <div class="course-btn">
-                  <a class="default-btn" href="/">
+                <div ClassName="course-btn">
+                  <a ClassName="default-btn" href="/">
                     APPLY NOW
                   </a>
                 </div>
               </div>
             </div>
-            <div class="single-course">
-              <div class="course-img">
+            <div ClassName="single-course">
+              <div ClassName="course-img">
                 <a href="course-details.html">
                   <img
-                    class="animated"
+                    ClassName="animated"
                     src="assets/img/course/course-2.jpg"
                     alt=""
                   />
                 </a>
               </div>
-              <div class="course-content">
+              <div ClassName="course-content">
                 <h4>
                   <a href="course-details.html">Apparel Manufacturing</a>
                 </h4>
@@ -611,19 +611,19 @@ function CoursePage() {
                   incid.
                 </p>
               </div>
-              <div class="course-position-content">
-                <div class="credit-duration-wrap">
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-diamond"></i>
+              <div ClassName="course-position-content">
+                <div ClassName="credit-duration-wrap">
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-diamond"></i>
                     <span>Credits : 125</span>
                   </div>
-                  <div class="sin-credit-duration">
-                    <i class="fa fa-clock-o"></i>
+                  <div ClassName="sin-credit-duration">
+                    <i ClassName="fa fa-clock-o"></i>
                     <span>Duration : 4yrs</span>
                   </div>
                 </div>
-                <div class="course-btn">
-                  <a class="default-btn" href="/">
+                <div ClassName="course-btn">
+                  <a ClassName="default-btn" href="/">
                     APPLY NOW
                   </a>
                 </div>
