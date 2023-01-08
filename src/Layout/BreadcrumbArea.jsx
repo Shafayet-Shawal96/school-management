@@ -2,6 +2,7 @@ import React from "react";
 
 function BreadcrumbArea({ breadcrumbObj }) {
   const overlayClasses = `breadcrumb-top default-overlay bg-img ${breadcrumbObj.overlayClass} pt-100 pb-95`;
+  console.log(overlayClasses.overlayClass);
   return (
     <div className="breadcrumb-area">
       <div className={overlayClasses} style={breadcrumbObj.breadcrumbImage}>
