@@ -1,542 +1,41 @@
 import React, { Fragment } from "react";
+import BrandCarouselComponent from "../Components/BrandCarouselComponent";
+import BreadcrumbArea from "../Layout/BreadcrumbArea";
+import FooterLayout from "../Layout/FooterLayout";
+import HeaderLayout from "../Layout/HeaderLayout";
+
+const breadcrumbObj = {
+  title: "Course Grid",
+  subtitle: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore .`,
+  pageName: "Course Grid",
+  overlayClass: "breadcrumb-overly-2",
+  breadcrumbImage: {
+    backgroundImage: `url(./assets/img/bg/breadcrumb-bg-2.jpg)`,
+  },
+};
 
 function CourseDetailsPage() {
   return (
     <Fragment>
-      <header class="header-area">
-        <div
-          class="header-top bg-img"
-          //   style="background-image:url(assets/img/icon-img/header-shape.png);"
-        >
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 col-md-7 col-12 col-sm-8">
-                <div class="header-contact">
-                  <ul>
-                    <li>
-                      <i class="fa fa-phone"></i> +98 558 547 589
-                    </li>
-                    <li>
-                      <i class="fa fa-envelope-o"></i>
-                      <a href="/">education@email.com</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-5 col-12 col-sm-4">
-                <div class="login-register">
-                  <ul>
-                    <li>
-                      <a href="login-register.html">Login</a>
-                    </li>
-                    <li>
-                      <a href="login-register.html">Register</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="header-bottom sticky-bar clearfix">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-2 col-md-6 col-4">
-                <div class="logo">
-                  <a href="index.html">
-                    <img alt="" src="assets/img/logo/logo.png" />
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-6 col-8">
-                <div class="menu-cart-wrap">
-                  <div class="main-menu">
-                    <nav>
-                      <ul>
-                        <li>
-                          <a href="index.html"> HOME </a>
-                          <ul class="submenu">
-                            <li>
-                              <a href="index.html">home version 1</a>
-                            </li>
-                            <li>
-                              <a href="index-2.html">home version 2</a>
-                            </li>
-                            <li>
-                              <a href="index-3.html">home version 3</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="about-us.html"> ABOUT </a>
-                        </li>
-                        <li class="mega-menu-position top-hover">
-                          <a href="shop.html">
-                            {" "}
-                            SHOP <i class="fa fa-angle-down"></i>{" "}
-                          </a>
-                          <ul class="mega-menu">
-                            <li>
-                              <ul>
-                                <li class="mega-menu-title">
-                                  <a href="/">Categories 01</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">bag</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Pen</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Erasers</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Glue sticks</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Lunchbox </a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Pencil box </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <ul>
-                                <li class="mega-menu-title">
-                                  <a href="/">Categories 02</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">bag</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Pen</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Erasers</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Glue sticks</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Lunchbox </a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Pencil box </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <ul>
-                                <li class="mega-menu-title">
-                                  <a href="/">Categories 03</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">bag</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Pen</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Erasers</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Glue sticks</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Lunchbox </a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Pencil box </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <ul>
-                                <li class="mega-menu-title">
-                                  <a href="/">Categories 04</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">bag</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Pen</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Erasers</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Glue sticks</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Lunchbox </a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Pencil box </a>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="/">
-                            {" "}
-                            PAGES <i class="fa fa-angle-down"></i>{" "}
-                          </a>
-                          <ul class="submenu">
-                            <li>
-                              <a href="course.html">course page</a>
-                            </li>
-                            <li>
-                              <a href="event.html">event page</a>
-                            </li>
-                            <li>
-                              <a href="shop.html">shop page</a>
-                            </li>
-                            <li>
-                              <a href="course-details.html">course details</a>
-                            </li>
-                            <li>
-                              <a href="event-details.html">event details</a>
-                            </li>
-                            <li>
-                              <a href="single-product.html">single product</a>
-                            </li>
-                            <li>
-                              <a href="cart.html">cart page</a>
-                            </li>
-                            <li>
-                              <a href="checkout.html">checkout</a>
-                            </li>
-                            <li>
-                              <a href="wishlist.html">wishlist</a>
-                            </li>
-                            <li>
-                              <a href="login-register.html">login / register</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="course.html"> COURSES / PROGRAMMES</a>
-                        </li>
-                        <li>
-                          <a href="blog.html"> BLOG </a>
-                          <ul class="submenu">
-                            <li>
-                              <a href="blog.html">blog</a>
-                            </li>
-                            <li>
-                              <a href="blog-details.html">blog details</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="contact.html"> CONTACT </a>
-                        </li>
-                      </ul>
-                    </nav>
-                  </div>
-                  <div class="cart-search-wrap">
-                    <div class="cart-wrap">
-                      <button class="icon-cart">
-                        <i class="fa fa-cart-plus"></i>
-                        <span class="count-style">02</span>
-                      </button>
-                      <div class="shopping-cart-content">
-                        <ul>
-                          <li class="single-shopping-cart">
-                            <div class="shopping-cart-img">
-                              <a href="/">
-                                <img alt="" src="assets/img/cart/cart-1.png" />
-                              </a>
-                            </div>
-                            <div class="shopping-cart-title">
-                              <h4>
-                                <a href="/">Color Box </a>
-                              </h4>
-                              <h6>Qty: 02</h6>
-                              <span>$260.00</span>
-                            </div>
-                            <div class="shopping-cart-delete">
-                              <a href="/">
-                                <i class="fa fa-times-circle"></i>
-                              </a>
-                            </div>
-                          </li>
-                          <li class="single-shopping-cart">
-                            <div class="shopping-cart-img">
-                              <a href="/">
-                                <img alt="" src="assets/img/cart/cart-2.png" />
-                              </a>
-                            </div>
-                            <div class="shopping-cart-title">
-                              <h4>
-                                <a href="/">Color Box </a>
-                              </h4>
-                              <h6>Qty: 02</h6>
-                              <span>$260.00</span>
-                            </div>
-                            <div class="shopping-cart-delete">
-                              <a href="/">
-                                <i class="fa fa-times-circle"></i>
-                              </a>
-                            </div>
-                          </li>
-                        </ul>
-                        <div class="shopping-cart-total">
-                          <h4>
-                            Shipping : <span>$20.00</span>
-                          </h4>
-                          <h4>
-                            Total : <span class="shop-total">$260.00</span>
-                          </h4>
-                        </div>
-                        <div class="shopping-cart-btn">
-                          <a class="default-btn btn-hover" href="cart.html">
-                            view cart
-                          </a>
-                          <a class="default-btn btn-hover" href="checkout.html">
-                            checkout
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="header-search">
-                      <button class="search-toggle">
-                        <i class="fa fa-search"></i>
-                      </button>
-                      <div class="search-content">
-                        <form action="/">
-                          <input type="text" placeholder="Search" />
-                          <button>
-                            <i class="fa fa-search"></i>
-                          </button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mobile-menu-area">
-              <div class="mobile-menu">
-                <nav id="mobile-menu-active">
-                  <ul class="menu-overflow">
-                    <li>
-                      <a href="index.html">HOME</a>
-                      <ul>
-                        <li>
-                          <a href="index.html">home version 1</a>
-                        </li>
-                        <li>
-                          <a href="index-2.html">home version 2</a>
-                        </li>
-                        <li>
-                          <a href="index-3.html">home version 3</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="about-us.html">About</a>
-                    </li>
-                    <li>
-                      <a href="shop.html">Shop</a>
-                      <ul>
-                        <li>
-                          <a href="/">Categories 01</a>
-                          <ul>
-                            <li>
-                              <a href="shop.html">bag</a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Pen</a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Erasers</a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Glue sticks</a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Lunchbox </a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Pencil box </a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="/">Categories 02</a>
-                          <ul>
-                            <li>
-                              <a href="shop.html">bag</a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Pen</a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Erasers</a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Glue sticks</a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Lunchbox </a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Pencil box </a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="/">Categories 03</a>
-                          <ul>
-                            <li>
-                              <a href="shop.html">bag</a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Pen</a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Erasers</a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Glue sticks</a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Lunchbox </a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Pencil box </a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="/">Categories 04</a>
-                          <ul>
-                            <li>
-                              <a href="shop.html">bag</a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Pen</a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Erasers</a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Glue sticks</a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Lunchbox </a>
-                            </li>
-                            <li>
-                              <a href="shop.html">Pencil box </a>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="/">Pages</a>
-                      <ul>
-                        <li>
-                          <a href="course.html">course page</a>
-                        </li>
-                        <li>
-                          <a href="event.html">event page</a>
-                        </li>
-                        <li>
-                          <a href="shop.html">shop page</a>
-                        </li>
-                        <li>
-                          <a href="course-details.html">course details</a>
-                        </li>
-                        <li>
-                          <a href="event-details.html">event details</a>
-                        </li>
-                        <li>
-                          <a href="single-product.html">single product</a>
-                        </li>
-                        <li>
-                          <a href="cart.html">cart page</a>
-                        </li>
-                        <li>
-                          <a href="checkout.html">checkout</a>
-                        </li>
-                        <li>
-                          <a href="wishlist.html">wishlist</a>
-                        </li>
-                        <li>
-                          <a href="login-register.html">login / register</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="about-us.html">About us</a>
-                    </li>
-                    <li>
-                      <a href="blog.html">Blog</a>
-                      <ul>
-                        <li>
-                          <a href="blog.html">blog</a>
-                        </li>
-                        <li>
-                          <a href="blog-details.html">blog details</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div class="breadcrumb-area">
-        <div
-          class="breadcrumb-top default-overlay bg-img breadcrumb-overly-2 pt-100 pb-95"
-          //   style="background-image:url(assets/img/bg/breadcrumb-bg-2.jpg);"
-        >
-          <div class="container">
-            <h2>Course Grid</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore .
-            </p>
-          </div>
-        </div>
-        <div class="breadcrumb-bottom">
-          <div class="container">
-            <ul>
-              <li>
-                <a href="/">Home</a>{" "}
-                <span>
-                  <i class="fa fa-angle-double-right"></i>Course Grid
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="course-details-area pt-130">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-9 col-lg-8">
-              <div class="course-left-wrap mr-40">
-                <div class="apply-area">
+      <HeaderLayout />
+      <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
+      <div className="course-details-area pt-130">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-9 col-lg-8">
+              <div className="course-left-wrap mr-40">
+                <div className="apply-area">
                   <img src="assets/img/banner/course-details.jpg" alt="" />
-                  <div class="course-apply-btn">
-                    <a href="/" class="default-btn">
+                  <div className="course-apply-btn">
+                    <a href="/" className="default-btn">
                       APPLY NOW
                     </a>
                   </div>
                 </div>
-                <div class="course-tab-list nav pt-40 pb-25 mb-35">
+                <div className="course-tab-list nav pt-40 pb-25 mb-35">
                   <a
-                    class="active"
+                    className="active"
                     href="/course-details-1"
                     data-bs-toggle="tab"
                   >
@@ -549,9 +48,9 @@ function CourseDetailsPage() {
                     <h4> Reviews </h4>
                   </a>
                 </div>
-                <div class="tab-content jump">
-                  <div class="tab-pane active" id="course-details-1">
-                    <div class="over-view-content">
+                <div className="tab-content jump">
+                  <div className="tab-pane active" id="course-details-1">
+                    <div className="over-view-content">
                       <h4>COURSE DETAILS</h4>
                       <h5>Course Name : Grphic Design & Multimedia</h5>
                       <p>
@@ -568,23 +67,23 @@ function CourseDetailsPage() {
                         incidunt ut labore et dolore magnam aliquam quaerat
                         voluptatem.
                       </p>
-                      <div class="over-view-list">
-                        <div class="sin-over-view-list">
-                          <div class="course-list-icon">
-                            <i class="fa fa-check"></i> .
+                      <div className="over-view-list">
+                        <div className="sin-over-view-list">
+                          <div className="course-list-icon">
+                            <i className="fa fa-check"></i> .
                           </div>
-                          <div class="course-list-content">
+                          <div className="course-list-content">
                             <p>
                               Neque porro quisquam est, qui dolorem ipsum quia
                               dolor sit amet,
                             </p>
                           </div>
                         </div>
-                        <div class="sin-over-view-list">
-                          <div class="course-list-icon">
-                            <i class="fa fa-check"></i> .
+                        <div className="sin-over-view-list">
+                          <div className="course-list-icon">
+                            <i className="fa fa-check"></i> .
                           </div>
-                          <div class="course-list-content">
+                          <div className="course-list-content">
                             <p>
                               {" "}
                               Neque porro quisquam est, qui dolorem ipsum quia
@@ -592,11 +91,11 @@ function CourseDetailsPage() {
                             </p>
                           </div>
                         </div>
-                        <div class="sin-over-view-list">
-                          <div class="course-list-icon">
-                            <i class="fa fa-check"></i> .
+                        <div className="sin-over-view-list">
+                          <div className="course-list-icon">
+                            <i className="fa fa-check"></i> .
                           </div>
-                          <div class="course-list-content">
+                          <div className="course-list-content">
                             <p>
                               Es eos qui ratione voluptatem sequi nesciunt.
                               Neque porro quisquam est,{" "}
@@ -604,35 +103,35 @@ function CourseDetailsPage() {
                           </div>
                         </div>
                       </div>
-                      <div class="course-details-img">
+                      <div className="course-details-img">
                         <img
                           src="assets/img/banner/course-details-1.jpg"
                           alt=""
                         />
                       </div>
-                      <div class="course-summary-wrap">
-                        <div class="single-course-summary">
+                      <div className="course-summary-wrap">
+                        <div className="single-course-summary">
                           <h4>Total Students</h4>
                           <span>
-                            <i class="fa fa-user"></i> 50
+                            <i className="fa fa-user"></i> 50
                           </span>
                         </div>
-                        <div class="single-course-summary">
+                        <div className="single-course-summary">
                           <h4>Course Duration</h4>
                           <span>
-                            <i class="fa fa-clock-o"></i> 4yrs
+                            <i className="fa fa-clock-o"></i> 4yrs
                           </span>
                         </div>
-                        <div class="single-course-summary">
+                        <div className="single-course-summary">
                           <h4>Course Credits</h4>
                           <span>
-                            <i class="fa fa-diamond"></i> 125
+                            <i className="fa fa-diamond"></i> 125
                           </span>
                         </div>
-                        <div class="single-course-summary">
+                        <div className="single-course-summary">
                           <h4>Total Semester</h4>
                           <span>
-                            <i class="fa fa-book"></i> 12
+                            <i className="fa fa-book"></i> 12
                           </span>
                         </div>
                       </div>
@@ -652,8 +151,8 @@ function CourseDetailsPage() {
                       </p>
                     </div>
                   </div>
-                  <div class="tab-pane" id="course-details-2">
-                    <div class="over-view-content">
+                  <div className="tab-pane" id="course-details-2">
+                    <div className="over-view-content">
                       <h4>INSTRUCTOR</h4>
                       <h5>Head Of The Department : Ara’af Imtiaz</h5>
                       <p>
@@ -670,23 +169,23 @@ function CourseDetailsPage() {
                         incidunt ut labore et dolore magnam aliquam quaerat
                         voluptatem.
                       </p>
-                      <div class="over-view-list">
-                        <div class="sin-over-view-list">
-                          <div class="course-list-icon">
-                            <i class="fa fa-check"></i> .
+                      <div className="over-view-list">
+                        <div className="sin-over-view-list">
+                          <div className="course-list-icon">
+                            <i className="fa fa-check"></i> .
                           </div>
-                          <div class="course-list-content">
+                          <div className="course-list-content">
                             <p>
                               Neque porro quisquam est, qui dolorem ipsum quia
                               dolor sit amet,
                             </p>
                           </div>
                         </div>
-                        <div class="sin-over-view-list">
-                          <div class="course-list-icon">
-                            <i class="fa fa-check"></i> .
+                        <div className="sin-over-view-list">
+                          <div className="course-list-icon">
+                            <i className="fa fa-check"></i> .
                           </div>
-                          <div class="course-list-content">
+                          <div className="course-list-content">
                             <p>
                               {" "}
                               Neque porro quisquam est, qui dolorem ipsum quia
@@ -694,11 +193,11 @@ function CourseDetailsPage() {
                             </p>
                           </div>
                         </div>
-                        <div class="sin-over-view-list">
-                          <div class="course-list-icon">
-                            <i class="fa fa-check"></i> .
+                        <div className="sin-over-view-list">
+                          <div className="course-list-icon">
+                            <i className="fa fa-check"></i> .
                           </div>
-                          <div class="course-list-content">
+                          <div className="course-list-content">
                             <p>
                               Es eos qui ratione voluptatem sequi nesciunt.
                               Neque porro quisquam est,{" "}
@@ -706,35 +205,35 @@ function CourseDetailsPage() {
                           </div>
                         </div>
                       </div>
-                      <div class="course-details-img">
+                      <div className="course-details-img">
                         <img
                           src="assets/img/banner/course-details-1.jpg"
                           alt=""
                         />
                       </div>
-                      <div class="course-summary-wrap">
-                        <div class="single-course-summary">
+                      <div className="course-summary-wrap">
+                        <div className="single-course-summary">
                           <h4>Total Students</h4>
                           <span>
-                            <i class="fa fa-user"></i> 50
+                            <i className="fa fa-user"></i> 50
                           </span>
                         </div>
-                        <div class="single-course-summary">
+                        <div className="single-course-summary">
                           <h4>Course Duration</h4>
                           <span>
-                            <i class="fa fa-clock-o"></i> 4yrs
+                            <i className="fa fa-clock-o"></i> 4yrs
                           </span>
                         </div>
-                        <div class="single-course-summary">
+                        <div className="single-course-summary">
                           <h4>Course Credits</h4>
                           <span>
-                            <i class="fa fa-diamond"></i> 125
+                            <i className="fa fa-diamond"></i> 125
                           </span>
                         </div>
-                        <div class="single-course-summary">
+                        <div className="single-course-summary">
                           <h4>Total Semester</h4>
                           <span>
-                            <i class="fa fa-book"></i> 12
+                            <i className="fa fa-book"></i> 12
                           </span>
                         </div>
                       </div>
@@ -754,31 +253,31 @@ function CourseDetailsPage() {
                       </p>
                     </div>
                   </div>
-                  <div class="tab-pane" id="course-details-3">
-                    <div class="review-wrapper">
-                      <div class="single-review">
-                        <div class="review-img">
+                  <div className="tab-pane" id="course-details-3">
+                    <div className="review-wrapper">
+                      <div className="single-review">
+                        <div className="review-img">
                           <img src="assets/img/blog/recent-post-1.jpg" alt="" />
                         </div>
-                        <div class="review-content">
-                          <div class="review-top-wrap">
-                            <div class="review-left">
-                              <div class="review-name">
+                        <div className="review-content">
+                          <div className="review-top-wrap">
+                            <div className="review-left">
+                              <div className="review-name">
                                 <h4>White Lewis</h4>
                               </div>
-                              <div class="review-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                              <div className="review-rating">
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
                               </div>
                             </div>
-                            <div class="review-btn">
+                            <div className="review-btn">
                               <a href="/">Reply</a>
                             </div>
                           </div>
-                          <div class="review-bottom">
+                          <div className="review-bottom">
                             <p>
                               Vestibulum ante ipsum primis aucibus orci
                               luctustrices posuere cubilia Curae Suspendisse
@@ -790,29 +289,29 @@ function CourseDetailsPage() {
                           </div>
                         </div>
                       </div>
-                      <div class="single-review child-review">
-                        <div class="review-img">
+                      <div className="single-review child-review">
+                        <div className="review-img">
                           <img src="assets/img/blog/recent-post-2.jpg" alt="" />
                         </div>
-                        <div class="review-content">
-                          <div class="review-top-wrap">
-                            <div class="review-left">
-                              <div class="review-name">
+                        <div className="review-content">
+                          <div className="review-top-wrap">
+                            <div className="review-left">
+                              <div className="review-name">
                                 <h4>White Lewis</h4>
                               </div>
-                              <div class="review-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                              <div className="review-rating">
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
                               </div>
                             </div>
-                            <div class="review-btn">
+                            <div className="review-btn">
                               <a href="/">Reply</a>
                             </div>
                           </div>
-                          <div class="review-bottom">
+                          <div className="review-bottom">
                             <p>
                               Vestibulum ante ipsum primis aucibus orci
                               luctustrices posuere cubilia Curae Suspendisse
@@ -825,33 +324,33 @@ function CourseDetailsPage() {
                         </div>
                       </div>
                     </div>
-                    <div class="ratting-form-wrapper">
+                    <div className="ratting-form-wrapper">
                       <h3>Add a Review</h3>
-                      <div class="ratting-form">
+                      <div className="ratting-form">
                         <form>
-                          <div class="star-box">
+                          <div className="star-box">
                             <span>Your rating:</span>
-                            <div class="ratting-star">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
+                            <div className="ratting-star">
+                              <i className="fa fa-star"></i>
+                              <i className="fa fa-star"></i>
+                              <i className="fa fa-star"></i>
+                              <i className="fa fa-star"></i>
+                              <i className="fa fa-star"></i>
                             </div>
                           </div>
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="rating-form-style mb-20">
+                          <div className="row">
+                            <div className="col-md-6">
+                              <div className="rating-form-style mb-20">
                                 <input placeholder="Name" type="text" />
                               </div>
                             </div>
-                            <div class="col-md-6">
-                              <div class="rating-form-style mb-20">
+                            <div className="col-md-6">
+                              <div className="rating-form-style mb-20">
                                 <input placeholder="Email" type="email" />
                               </div>
                             </div>
-                            <div class="col-md-12">
-                              <div class="rating-form-style form-submit">
+                            <div className="col-md-12">
+                              <div className="rating-form-style form-submit">
                                 <textarea
                                   name="Your Review"
                                   placeholder="Message"
@@ -865,8 +364,8 @@ function CourseDetailsPage() {
                     </div>
                   </div>
                 </div>
-                <div class="related-course pt-70">
-                  <div class="related-title mb-45 mrg-bottom-small">
+                <div className="related-course pt-70">
+                  <div className="related-title mb-45 mrg-bottom-small">
                     <h3>Related Course</h3>
                     <p>
                       Hempor incididunt ut labore et dolore mm, itation ullamco
@@ -874,18 +373,18 @@ function CourseDetailsPage() {
                       nisi ut aliquip.{" "}
                     </p>
                   </div>
-                  <div class="related-slider-active">
-                    <div class="single-course">
-                      <div class="course-img">
+                  <div className="related-slider-active">
+                    <div className="single-course">
+                      <div className="course-img">
                         <a href="/">
                           <img
-                            class="animated"
+                            className="animated"
                             src="assets/img/course/related-course-1.jpg"
                             alt=""
                           />
                         </a>
                       </div>
-                      <div class="course-content">
+                      <div className="course-content">
                         <h4>
                           <a href="/">Apparel Manufacturing</a>
                         </h4>
@@ -894,35 +393,35 @@ function CourseDetailsPage() {
                           aliquiptempor incid.
                         </p>
                       </div>
-                      <div class="course-position-content">
-                        <div class="credit-duration-wrap">
-                          <div class="sin-credit-duration">
-                            <i class="fa fa-diamond"></i>
+                      <div className="course-position-content">
+                        <div className="credit-duration-wrap">
+                          <div className="sin-credit-duration">
+                            <i className="fa fa-diamond"></i>
                             <span>Credits : 125</span>
                           </div>
-                          <div class="sin-credit-duration">
-                            <i class="fa fa-clock-o"></i>
+                          <div className="sin-credit-duration">
+                            <i className="fa fa-clock-o"></i>
                             <span>Duration : 4yrs</span>
                           </div>
                         </div>
-                        <div class="course-btn">
-                          <a class="default-btn" href="/">
+                        <div className="course-btn">
+                          <a className="default-btn" href="/">
                             APPLY NOW
                           </a>
                         </div>
                       </div>
                     </div>
-                    <div class="single-course">
-                      <div class="course-img">
+                    <div className="single-course">
+                      <div className="course-img">
                         <a href="/">
                           <img
-                            class="animated"
+                            className="animated"
                             src="assets/img/course/related-course-2.jpg"
                             alt=""
                           />
                         </a>
                       </div>
-                      <div class="course-content">
+                      <div className="course-content">
                         <h4>
                           <a href="/">Grphic Design & Multimedia</a>
                         </h4>
@@ -931,35 +430,35 @@ function CourseDetailsPage() {
                           aliquiptempor incid.
                         </p>
                       </div>
-                      <div class="course-position-content">
-                        <div class="credit-duration-wrap">
-                          <div class="sin-credit-duration">
-                            <i class="fa fa-diamond"></i>
+                      <div className="course-position-content">
+                        <div className="credit-duration-wrap">
+                          <div className="sin-credit-duration">
+                            <i className="fa fa-diamond"></i>
                             <span>Credits : 125</span>
                           </div>
-                          <div class="sin-credit-duration">
-                            <i class="fa fa-clock-o"></i>
+                          <div className="sin-credit-duration">
+                            <i className="fa fa-clock-o"></i>
                             <span>Duration : 4yrs</span>
                           </div>
                         </div>
-                        <div class="course-btn">
-                          <a class="default-btn" href="/">
+                        <div className="course-btn">
+                          <a className="default-btn" href="/">
                             APPLY NOW
                           </a>
                         </div>
                       </div>
                     </div>
-                    <div class="single-course">
-                      <div class="course-img">
+                    <div className="single-course">
+                      <div className="course-img">
                         <a href="/">
                           <img
-                            class="animated"
+                            className="animated"
                             src="assets/img/course/related-course-3.jpg"
                             alt=""
                           />
                         </a>
                       </div>
-                      <div class="course-content">
+                      <div className="course-content">
                         <h4>
                           <a href="/">Fashion & Technology</a>
                         </h4>
@@ -968,35 +467,35 @@ function CourseDetailsPage() {
                           aliquiptempor incid.
                         </p>
                       </div>
-                      <div class="course-position-content">
-                        <div class="credit-duration-wrap">
-                          <div class="sin-credit-duration">
-                            <i class="fa fa-diamond"></i>
+                      <div className="course-position-content">
+                        <div className="credit-duration-wrap">
+                          <div className="sin-credit-duration">
+                            <i className="fa fa-diamond"></i>
                             <span>Credits : 125</span>
                           </div>
-                          <div class="sin-credit-duration">
-                            <i class="fa fa-clock-o"></i>
+                          <div className="sin-credit-duration">
+                            <i className="fa fa-clock-o"></i>
                             <span>Duration : 4yrs</span>
                           </div>
                         </div>
-                        <div class="course-btn">
-                          <a class="default-btn" href="/">
+                        <div className="course-btn">
+                          <a className="default-btn" href="/">
                             APPLY NOW
                           </a>
                         </div>
                       </div>
                     </div>
-                    <div class="single-course">
-                      <div class="course-img">
+                    <div className="single-course">
+                      <div className="course-img">
                         <a href="/">
                           <img
-                            class="animated"
+                            className="animated"
                             src="assets/img/course/related-course-2.jpg"
                             alt=""
                           />
                         </a>
                       </div>
-                      <div class="course-content">
+                      <div className="course-content">
                         <h4>
                           <a href="/">Fashion & Technology</a>
                         </h4>
@@ -1005,19 +504,19 @@ function CourseDetailsPage() {
                           aliquiptempor incid.
                         </p>
                       </div>
-                      <div class="course-position-content">
-                        <div class="credit-duration-wrap">
-                          <div class="sin-credit-duration">
-                            <i class="fa fa-diamond"></i>
+                      <div className="course-position-content">
+                        <div className="credit-duration-wrap">
+                          <div className="sin-credit-duration">
+                            <i className="fa fa-diamond"></i>
                             <span>Credits : 125</span>
                           </div>
-                          <div class="sin-credit-duration">
-                            <i class="fa fa-clock-o"></i>
+                          <div className="sin-credit-duration">
+                            <i className="fa fa-clock-o"></i>
                             <span>Duration : 4yrs</span>
                           </div>
                         </div>
-                        <div class="course-btn">
-                          <a class="default-btn" href="/">
+                        <div className="course-btn">
+                          <a className="default-btn" href="/">
                             APPLY NOW
                           </a>
                         </div>
@@ -1027,21 +526,21 @@ function CourseDetailsPage() {
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-4">
-              <div class="sidebar-style sidebar-res-mrg-none">
-                <div class="sidebar-search mb-40">
-                  <div class="sidebar-title mb-40">
+            <div className="col-xl-3 col-lg-4">
+              <div className="sidebar-style sidebar-res-mrg-none">
+                <div className="sidebar-search mb-40">
+                  <div className="sidebar-title mb-40">
                     <h4>Search</h4>
                   </div>
                   <form>
                     <input type="text" placeholder="Search" />
                     <button>
-                      <i class="fa fa-search"></i>
+                      <i className="fa fa-search"></i>
                     </button>
                   </form>
                 </div>
-                <div class="sidebar-about mb-40">
-                  <div class="sidebar-title mb-15">
+                <div className="sidebar-about mb-40">
+                  <div className="sidebar-title mb-15">
                     <h4>About Us</h4>
                   </div>
                   <p>
@@ -1051,43 +550,43 @@ function CourseDetailsPage() {
                   <a href="/">
                     <img src="assets/img/banner/banner-4.jpg" alt="" />
                   </a>
-                  <div class="sidebar-social">
+                  <div className="sidebar-social">
                     <ul>
                       <li>
-                        <a class="facebook" href="/">
-                          <i class="fa fa-facebook"></i>
+                        <a className="facebook" href="/">
+                          <i className="fa fa-facebook"></i>
                         </a>
                       </li>
                       <li>
-                        <a class="youtube" href="/">
-                          <i class="fa fa-youtube-play"></i>
+                        <a className="youtube" href="/">
+                          <i className="fa fa-youtube-play"></i>
                         </a>
                       </li>
                       <li>
-                        <a class="twitter" href="/">
-                          <i class="fa fa-twitter"></i>
+                        <a className="twitter" href="/">
+                          <i className="fa fa-twitter"></i>
                         </a>
                       </li>
                       <li>
-                        <a class="google" href="/">
-                          <i class="fa fa-google-plus"></i>
+                        <a className="google" href="/">
+                          <i className="fa fa-google-plus"></i>
                         </a>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div class="sidebar-recent-post mb-35">
-                  <div class="sidebar-title mb-40">
+                <div className="sidebar-recent-post mb-35">
+                  <div className="sidebar-title mb-40">
                     <h4>Recent Post</h4>
                   </div>
-                  <div class="recent-post-wrap">
-                    <div class="single-recent-post">
-                      <div class="recent-post-img">
+                  <div className="recent-post-wrap">
+                    <div className="single-recent-post">
+                      <div className="recent-post-img">
                         <a href="/">
                           <img src="assets/img/blog/recent-post-1.jpg" alt="" />
                         </a>
                       </div>
-                      <div class="recent-post-content">
+                      <div className="recent-post-content">
                         <h5>
                           <a href="/">Blog title will be here.</a>
                         </h5>
@@ -1095,13 +594,13 @@ function CourseDetailsPage() {
                         <p>Datat non proident qui offici.hafw adec qart.</p>
                       </div>
                     </div>
-                    <div class="single-recent-post">
-                      <div class="recent-post-img">
+                    <div className="single-recent-post">
+                      <div className="recent-post-img">
                         <a href="/">
                           <img src="assets/img/blog/recent-post-2.jpg" alt="" />
                         </a>
                       </div>
-                      <div class="recent-post-content">
+                      <div className="recent-post-content">
                         <h5>
                           <a href="/">Blog title will be here.</a>
                         </h5>
@@ -1111,11 +610,11 @@ function CourseDetailsPage() {
                     </div>
                   </div>
                 </div>
-                <div class="sidebar-category mb-40">
-                  <div class="sidebar-title mb-40">
+                <div className="sidebar-category mb-40">
+                  <div className="sidebar-title mb-40">
                     <h4>Course Category</h4>
                   </div>
-                  <div class="category-list">
+                  <div className="category-list">
                     <ul>
                       <li>
                         <a href="/">
@@ -1145,52 +644,52 @@ function CourseDetailsPage() {
                     </ul>
                   </div>
                 </div>
-                <div class="sidebar-recent-course-wrap mb-40">
-                  <div class="sidebar-title mb-40">
+                <div className="sidebar-recent-course-wrap mb-40">
+                  <div className="sidebar-title mb-40">
                     <h4>Recent Courses</h4>
                   </div>
-                  <div class="sidebar-recent-course">
-                    <div class="sin-sidebar-recent-course">
-                      <div class="sidebar-recent-course-img">
+                  <div className="sidebar-recent-course">
+                    <div className="sin-sidebar-recent-course">
+                      <div className="sidebar-recent-course-img">
                         <a href="/">
                           <img src="assets/img/blog/recent-post-1.jpg" alt="" />
                         </a>
                       </div>
-                      <div class="sidebar-recent-course-content">
+                      <div className="sidebar-recent-course-content">
                         <h4>
                           <a href="/">Course Title</a>
                         </h4>
                         <ul>
                           <li>Credits : 125</li>
-                          <li class="duration-color">Duration : 4yrs</li>
+                          <li className="duration-color">Duration : 4yrs</li>
                         </ul>
                         <p>Datat non proident qui offici.hafw adec qart.</p>
                       </div>
                     </div>
-                    <div class="sin-sidebar-recent-course">
-                      <div class="sidebar-recent-course-img">
+                    <div className="sin-sidebar-recent-course">
+                      <div className="sidebar-recent-course-img">
                         <a href="/">
                           <img src="assets/img/blog/recent-post-2.jpg" alt="" />
                         </a>
                       </div>
-                      <div class="sidebar-recent-course-content">
+                      <div className="sidebar-recent-course-content">
                         <h4>
                           <a href="/">Course Title</a>
                         </h4>
                         <ul>
                           <li>Credits : 125</li>
-                          <li class="duration-color">Duration : 4yrs</li>
+                          <li className="duration-color">Duration : 4yrs</li>
                         </ul>
                         <p>Datat non proident qui offici.hafw adec qart.</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="sidebar-tag-wrap">
-                  <div class="sidebar-title mb-40">
+                <div className="sidebar-tag-wrap">
+                  <div className="sidebar-title mb-40">
                     <h4>Tag</h4>
                   </div>
-                  <div class="sidebar-tag">
+                  <div className="sidebar-tag">
                     <ul>
                       <li>
                         <a href="/">Loremsite</a>
@@ -1218,273 +717,8 @@ function CourseDetailsPage() {
           </div>
         </div>
       </div>
-      <div class="brand-logo-area pt-45 pb-130">
-        <div class="container">
-          <div class="brand-logo-active owl-carousel">
-            <div class="single-brand-logo">
-              <a href="/">
-                <img src="assets/img/brand-logo/1.png" alt="" />
-              </a>
-            </div>
-            <div class="single-brand-logo">
-              <a href="/">
-                <img src="assets/img/brand-logo/2.png" alt="" />
-              </a>
-            </div>
-            <div class="single-brand-logo">
-              <a href="/">
-                <img src="assets/img/brand-logo/3.png" alt="" />
-              </a>
-            </div>
-            <div class="single-brand-logo">
-              <a href="/">
-                <img src="assets/img/brand-logo/4.png" alt="" />
-              </a>
-            </div>
-            <div class="single-brand-logo">
-              <a href="/">
-                <img src="assets/img/brand-logo/5.png" alt="" />
-              </a>
-            </div>
-            <div class="single-brand-logo">
-              <a href="/">
-                <img src="assets/img/brand-logo/6.png" alt="" />
-              </a>
-            </div>
-            <div class="single-brand-logo">
-              <a href="/">
-                <img src="assets/img/brand-logo/2.png" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="footer-area">
-        <div
-          class="footer-top bg-img default-overlay pt-130 pb-80"
-          //   style="background-image:url(assets/img/bg/bg-4.jpg);"
-        >
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="footer-widget mb-40">
-                  <div class="footer-title">
-                    <h4>ABOUT US</h4>
-                  </div>
-                  <div class="footer-about">
-                    <p>
-                      Ugiat nulla pariatur. Edeserunt mollit anim id est
-                      laborum. Sed ut perspiciatis unde omnis iste natu
-                    </p>
-                    <div class="f-contact-info">
-                      <div class="single-f-contact-info">
-                        <i class="fa fa-home"></i>
-                        <span>Uttara, Dhaka, Bangladesh</span>
-                      </div>
-                      <div class="single-f-contact-info">
-                        <i class="fa fa-envelope-o"></i>
-                        <span>
-                          <a href="/">education@email.com</a>
-                        </span>
-                      </div>
-                      <div class="single-f-contact-info">
-                        <i class="fa fa-phone"></i>
-                        <span> +98 558 547 589</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-6">
-                <div class="footer-widget mb-40">
-                  <div class="footer-title">
-                    <h4>QUICK LINK</h4>
-                  </div>
-                  <div class="footer-list">
-                    <ul>
-                      <li>
-                        <a href="index.html">Home</a>
-                      </li>
-                      <li>
-                        <a href="about-us.html">About Us</a>
-                      </li>
-                      <li>
-                        <a href="course.html">Courses</a>
-                      </li>
-                      <li>
-                        <a href="/">Admission</a>
-                      </li>
-                      <li>
-                        <a href="/">Terms & Conditions</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-6">
-                <div class="footer-widget negative-mrg-30 mb-40">
-                  <div class="footer-title">
-                    <h4>COURSES</h4>
-                  </div>
-                  <div class="footer-list">
-                    <ul>
-                      <li>
-                        <a href="/">Under Graduate Programmes </a>
-                      </li>
-                      <li>
-                        <a href="/">Graduate Programmes </a>
-                      </li>
-                      <li>
-                        <a href="/">Diploma Courses</a>
-                      </li>
-                      <li>
-                        <a href="/">Others Programmes</a>
-                      </li>
-                      <li>
-                        <a href="/">Short Courses</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="footer-widget mb-40">
-                  <div class="footer-title">
-                    <h4>GALLERY</h4>
-                  </div>
-                  <div class="footer-gallery">
-                    <ul>
-                      <li>
-                        <a href="/">
-                          <img src="assets/img/gallery/gallery-1.png" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/">
-                          <img src="assets/img/gallery/gallery-2.png" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/">
-                          <img src="assets/img/gallery/gallery-3.png" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/">
-                          <img src="assets/img/gallery/gallery-4.png" alt="" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="footer-widget mb-40">
-                  <div class="footer-title">
-                    <h4>News Latter</h4>
-                  </div>
-                  <div class="subscribe-style">
-                    <p>
-                      Dugiat nulla pariatur. Edeserunt mollit anim id est
-                      laborum. Sed ut perspiciatis unde
-                    </p>
-                    <div id="mc_embed_signup" class="subscribe-form">
-                      <form
-                        id="mc-embedded-subscribe-form"
-                        class="validate"
-                        novalidate=""
-                        target="_blank"
-                        name="mc-embedded-subscribe-form"
-                        method="post"
-                        action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef"
-                      >
-                        <div id="mc_embed_signup_scroll" class="mc-form">
-                          <input
-                            class="email"
-                            type="email"
-                            required=""
-                            placeholder="Your E-mail Address"
-                            name="EMAIL"
-                            value=""
-                          />
-                          <div class="mc-news" aria-hidden="true">
-                            <input
-                              type="text"
-                              value=""
-                              tabindex="-1"
-                              name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef"
-                            />
-                          </div>
-                          <div class="clear">
-                            <input
-                              id="mc-embedded-subscribe"
-                              class="button"
-                              type="submit"
-                              name="subscribe"
-                              value="SUBMIT"
-                            />
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom pt-15 pb-15">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-4 col-md-12">
-                <div class="copyright">
-                  <p>
-                    Copyright ©<a href="/">GLAXDU</a>. All Right Reserved.
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-8 col-md-12">
-                <div class="footer-menu-social">
-                  <div class="footer-menu">
-                    <ul>
-                      <li>
-                        <a href="/">Privecy & Policy</a>
-                      </li>
-                      <li>
-                        <a href="/">Terms & Conditions of Use</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="footer-social">
-                    <ul>
-                      <li>
-                        <a class="facebook" href="/">
-                          <i class="fa fa-facebook"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="youtube" href="/">
-                          <i class="fa fa-youtube-play"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="twitter" href="/">
-                          <i class="fa fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="google-plus" href="/">
-                          <i class="fa fa-google-plus"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <BrandCarouselComponent />
+      <FooterLayout />
     </Fragment>
   );
 }

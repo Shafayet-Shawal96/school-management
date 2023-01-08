@@ -1,7 +1,7 @@
-import BlogDetailPage from "./Pages/BlogDetailPage";
+import CoursePage from "./Pages/CoursePage";
 
 function App() {
-  return <div>Hello World</div>;
+  return <CoursePage />;
 }
 
 export default App;

@@ -1,42 +1,25 @@
 import React, { Fragment } from "react";
 import BrandCarouselComponent from "../Components/BrandCarouselComponent";
+import BreadcrumbArea from "../Layout/BreadcrumbArea";
 import FooterLayout from "../Layout/FooterLayout";
 import HeaderLayout from "../Layout/HeaderLayout";
 
-const breadcrumbImage = {
-  backgroundImage: `url(assets/img/bg/breadcrumb-bg-4.jpg)`,
+const breadcrumbObj = {
+  title: "Cart",
+  subtitle: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore .`,
+  pageName: "Cart",
+  overlayClass: "breadcrumb-overly-4",
+  breadcrumbImage: {
+    backgroundImage: `url(assets/img/bg/breadcrumb-bg-4.jpg)`,
+  },
 };
 
 function CartPage() {
   return (
     <Fragment>
       <HeaderLayout />
-      <div className="breadcrumb-area">
-        <div
-          className="breadcrumb-top default-overlay bg-img breadcrumb-overly-4 pt-100 pb-95"
-          style={breadcrumbImage}
-        >
-          <div className="container">
-            <h2>Cart</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore .
-            </p>
-          </div>
-        </div>
-        <div className="breadcrumb-bottom">
-          <div className="container">
-            <ul>
-              <li>
-                <a href="/">Home</a>{" "}
-                <span>
-                  <i className="fa fa-angle-double-right"></i>Cart
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
       <div className="cart-main-area pt-130 pb-130">
         <div className="container">
           <h3 className="cart-page-title">Your cart items</h3>

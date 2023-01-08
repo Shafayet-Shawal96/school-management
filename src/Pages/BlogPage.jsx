@@ -1,42 +1,25 @@
 import React, { Fragment } from "react";
 import BrandCarouselComponent from "../Components/BrandCarouselComponent";
+import BreadcrumbArea from "../Layout/BreadcrumbArea";
 import FooterLayout from "../Layout/FooterLayout";
 import HeaderLayout from "../Layout/HeaderLayout";
 
-const breadcrumbImage = {
-  backgroundImage: `url(./assets/img/bg/breadcrumb-bg-5.jpg)`,
+const breadcrumbObj = {
+  title: "Blog Grid",
+  subtitle: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore .`,
+  pageName: "Blog Grid",
+  overlayClass: "breadcrumb-overly-3",
+  breadcrumbImage: {
+    backgroundImage: `url(./assets/img/bg/breadcrumb-bg-5.jpg)`,
+  },
 };
 
 function BlogPage() {
   return (
     <Fragment>
       <HeaderLayout />
-      <div className="breadcrumb-area">
-        <div
-          className="breadcrumb-top default-overlay bg-img breadcrumb-overly-3 pt-100 pb-95"
-          style={breadcrumbImage}
-        >
-          <div className="container">
-            <h2>Blog Grid</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore .
-            </p>
-          </div>
-        </div>
-        <div className="breadcrumb-bottom">
-          <div className="container">
-            <ul>
-              <li>
-                <a href="#">Home</a>{" "}
-                <span>
-                  <i className="fa fa-angle-double-right"></i>Blog Grid
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
       <div className="event-area pt-130 pb-130">
         <div className="container">
           <div className="row">
@@ -64,12 +47,12 @@ function BlogPage() {
                           <div className="blog-meta">
                             <ul>
                               <li>
-                                <a href="#">
+                                <a href="/">
                                   <i className="fa fa-user"></i>Apparel
                                 </a>
                               </li>
                               <li>
-                                <a href="#">
+                                <a href="/">
                                   <i className="fa fa-comments-o"></i> 10
                                 </a>
                               </li>
@@ -77,7 +60,7 @@ function BlogPage() {
                           </div>
                         </div>
                         <div className="blog-date">
-                          <a href="#">
+                          <a href="/">
                             <i className="fa fa-calendar-o"></i> June, 24th 2017
                           </a>
                         </div>
@@ -105,12 +88,12 @@ function BlogPage() {
                           <div className="blog-meta">
                             <ul>
                               <li>
-                                <a href="#">
+                                <a href="/">
                                   <i className="fa fa-user"></i> Adrin Azra
                                 </a>
                               </li>
                               <li>
-                                <a href="#">
+                                <a href="/">
                                   <i className="fa fa-comments-o"></i> 10
                                 </a>
                               </li>
@@ -118,7 +101,7 @@ function BlogPage() {
                           </div>
                         </div>
                         <div className="blog-date">
-                          <a href="#">
+                          <a href="/">
                             <i className="fa fa-calendar-o"></i> June, 24th 2017
                           </a>
                         </div>
@@ -146,12 +129,12 @@ function BlogPage() {
                           <div className="blog-meta">
                             <ul>
                               <li>
-                                <a href="#">
+                                <a href="/">
                                   <i className="fa fa-user"></i> Adrin Azra
                                 </a>
                               </li>
                               <li>
-                                <a href="#">
+                                <a href="/">
                                   <i className="fa fa-comments-o"></i> 10
                                 </a>
                               </li>
@@ -159,7 +142,7 @@ function BlogPage() {
                           </div>
                         </div>
                         <div className="blog-date">
-                          <a href="#">
+                          <a href="/">
                             <i className="fa fa-calendar-o"></i> June, 24th 2017
                           </a>
                         </div>
@@ -187,12 +170,12 @@ function BlogPage() {
                           <div className="blog-meta">
                             <ul>
                               <li>
-                                <a href="#">
+                                <a href="/">
                                   <i className="fa fa-user"></i> Adrin Azra
                                 </a>
                               </li>
                               <li>
-                                <a href="#">
+                                <a href="/">
                                   <i className="fa fa-comments-o"></i> 10
                                 </a>
                               </li>
@@ -200,7 +183,7 @@ function BlogPage() {
                           </div>
                         </div>
                         <div className="blog-date">
-                          <a href="#">
+                          <a href="/">
                             <i className="fa fa-calendar-o"></i> June, 24th 2017
                           </a>
                         </div>
@@ -226,12 +209,12 @@ function BlogPage() {
                           <div className="blog-meta">
                             <ul>
                               <li>
-                                <a href="#">
+                                <a href="/">
                                   <i className="fa fa-user"></i> Adrin Azra
                                 </a>
                               </li>
                               <li>
-                                <a href="#">
+                                <a href="/">
                                   <i className="fa fa-comments-o"></i> 10
                                 </a>
                               </li>
@@ -239,7 +222,7 @@ function BlogPage() {
                           </div>
                         </div>
                         <div className="blog-date">
-                          <a href="#">
+                          <a href="/">
                             <i className="fa fa-calendar-o"></i> June, 24th 2017
                           </a>
                         </div>
@@ -267,12 +250,12 @@ function BlogPage() {
                           <div className="blog-meta">
                             <ul>
                               <li>
-                                <a href="#">
+                                <a href="/">
                                   <i className="fa fa-user"></i> Adrin Azra
                                 </a>
                               </li>
                               <li>
-                                <a href="#">
+                                <a href="/">
                                   <i className="fa fa-comments-o"></i> 10
                                 </a>
                               </li>
@@ -280,7 +263,7 @@ function BlogPage() {
                           </div>
                         </div>
                         <div className="blog-date">
-                          <a href="#">
+                          <a href="/">
                             <i className="fa fa-calendar-o"></i> June, 24th 2017
                           </a>
                         </div>
@@ -308,12 +291,12 @@ function BlogPage() {
                           <div className="blog-meta">
                             <ul>
                               <li>
-                                <a href="#">
+                                <a href="/">
                                   <i className="fa fa-user"></i> Adrin Azra
                                 </a>
                               </li>
                               <li>
-                                <a href="#">
+                                <a href="/">
                                   <i className="fa fa-comments-o"></i> 10
                                 </a>
                               </li>
@@ -321,7 +304,7 @@ function BlogPage() {
                           </div>
                         </div>
                         <div className="blog-date">
-                          <a href="#">
+                          <a href="/">
                             <i className="fa fa-calendar-o"></i> June, 24th 2017
                           </a>
                         </div>
@@ -349,12 +332,12 @@ function BlogPage() {
                           <div className="blog-meta">
                             <ul>
                               <li>
-                                <a href="#">
+                                <a href="/">
                                   <i className="fa fa-user"></i> Adrin Azra
                                 </a>
                               </li>
                               <li>
-                                <a href="#">
+                                <a href="/">
                                   <i className="fa fa-comments-o"></i> 10
                                 </a>
                               </li>
@@ -362,7 +345,7 @@ function BlogPage() {
                           </div>
                         </div>
                         <div className="blog-date">
-                          <a href="#">
+                          <a href="/">
                             <i className="fa fa-calendar-o"></i> June, 24th 2017
                           </a>
                         </div>
@@ -380,7 +363,7 @@ function BlogPage() {
                         <span>Graphic</span>
                         <div className="blog-content">
                           <h4>
-                            <a href="#">In publishing and graphic.</a>
+                            <a href="/">In publishing and graphic.</a>
                           </h4>
                           <p>
                             doloremque laudan tium, totam ersps uns iste natus
@@ -388,12 +371,12 @@ function BlogPage() {
                           <div className="blog-meta">
                             <ul>
                               <li>
-                                <a href="#">
+                                <a href="/">
                                   <i className="fa fa-user"></i> Adrin Azra
                                 </a>
                               </li>
                               <li>
-                                <a href="#">
+                                <a href="/">
                                   <i className="fa fa-comments-o"></i> 10
                                 </a>
                               </li>
@@ -412,20 +395,20 @@ function BlogPage() {
                 <div className="pro-pagination-style text-center mt-25">
                   <ul>
                     <li>
-                      <a className="prev" href="#">
+                      <a className="prev" href="/">
                         <i className="fa fa-angle-double-left"></i>
                       </a>
                     </li>
                     <li>
-                      <a className="active" href="#">
+                      <a className="active" href="/">
                         1
                       </a>
                     </li>
                     <li>
-                      <a href="#">2</a>
+                      <a href="/">2</a>
                     </li>
                     <li>
-                      <a className="next" href="#">
+                      <a className="next" href="/">
                         <i className="fa fa-angle-double-right"></i>
                       </a>
                     </li>
@@ -454,28 +437,28 @@ function BlogPage() {
                     quia voluptas sit aspernatur aut odit aut fugit, sed quia
                     consequuntur magni dolors eos qui ratione voluptatem sad.
                   </p>
-                  <a href="#">
+                  <a href="/">
                     <img src="assets/img/banner/banner-4.jpg" alt="" />
                   </a>
                   <div className="sidebar-social">
                     <ul>
                       <li>
-                        <a className="facebook" href="#">
+                        <a className="facebook" href="/">
                           <i className="fa fa-facebook"></i>
                         </a>
                       </li>
                       <li>
-                        <a className="youtube" href="#">
+                        <a className="youtube" href="/">
                           <i className="fa fa-youtube-play"></i>
                         </a>
                       </li>
                       <li>
-                        <a className="twitter" href="#">
+                        <a className="twitter" href="/">
                           <i className="fa fa-twitter"></i>
                         </a>
                       </li>
                       <li>
-                        <a className="google" href="#">
+                        <a className="google" href="/">
                           <i className="fa fa-google-plus"></i>
                         </a>
                       </li>
@@ -489,13 +472,13 @@ function BlogPage() {
                   <div className="recent-post-wrap">
                     <div className="single-recent-post">
                       <div className="recent-post-img">
-                        <a href="#">
+                        <a href="/">
                           <img src="assets/img/blog/recent-post-1.jpg" alt="" />
                         </a>
                       </div>
                       <div className="recent-post-content">
                         <h5>
-                          <a href="#">Blog title will be here.</a>
+                          <a href="/">Blog title will be here.</a>
                         </h5>
                         <span>Blog Category</span>
                         <p>Datat non proident qui offici.hafw adec qart.</p>
@@ -503,13 +486,13 @@ function BlogPage() {
                     </div>
                     <div className="single-recent-post">
                       <div className="recent-post-img">
-                        <a href="#">
+                        <a href="/">
                           <img src="assets/img/blog/recent-post-2.jpg" alt="" />
                         </a>
                       </div>
                       <div className="recent-post-content">
                         <h5>
-                          <a href="#">Blog title will be here.</a>
+                          <a href="/">Blog title will be here.</a>
                         </h5>
                         <span>Blog Category</span>
                         <p>Datat non proident qui offici.hafw adec qart.</p>
@@ -524,27 +507,27 @@ function BlogPage() {
                   <div className="category-list">
                     <ul>
                       <li>
-                        <a href="#">
+                        <a href="/">
                           MBA <span>04</span>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="/">
                           Graduate <span>08</span>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="/">
                           Under Graduate <span>04</span>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="/">
                           BBA <span>06</span>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="/">
                           Engineering <span>04</span>
                         </a>
                       </li>
@@ -558,13 +541,13 @@ function BlogPage() {
                   <div className="sidebar-recent-course">
                     <div className="sin-sidebar-recent-course">
                       <div className="sidebar-recent-course-img">
-                        <a href="#">
+                        <a href="/">
                           <img src="assets/img/blog/recent-post-1.jpg" alt="" />
                         </a>
                       </div>
                       <div className="sidebar-recent-course-content">
                         <h4>
-                          <a href="#">Course Title</a>
+                          <a href="/">Course Title</a>
                         </h4>
                         <ul>
                           <li>Credits : 125</li>
@@ -575,13 +558,13 @@ function BlogPage() {
                     </div>
                     <div className="sin-sidebar-recent-course">
                       <div className="sidebar-recent-course-img">
-                        <a href="#">
+                        <a href="/">
                           <img src="assets/img/blog/recent-post-2.jpg" alt="" />
                         </a>
                       </div>
                       <div className="sidebar-recent-course-content">
                         <h4>
-                          <a href="#">Course Title</a>
+                          <a href="/">Course Title</a>
                         </h4>
                         <ul>
                           <li>Credits : 125</li>
@@ -599,22 +582,22 @@ function BlogPage() {
                   <div className="sidebar-tag">
                     <ul>
                       <li>
-                        <a href="#">Loremsite</a>
+                        <a href="/">Loremsite</a>
                       </li>
                       <li>
-                        <a href="#">Loreipsum</a>
+                        <a href="/">Loreipsum</a>
                       </li>
                       <li>
-                        <a href="#">Dolar</a>
+                        <a href="/">Dolar</a>
                       </li>
                       <li>
-                        <a href="#">Site ament dollar</a>
+                        <a href="/">Site ament dollar</a>
                       </li>
                       <li>
-                        <a href="#">Loremsite</a>
+                        <a href="/">Loremsite</a>
                       </li>
                       <li>
-                        <a href="#">Dummy Text</a>
+                        <a href="/">Dummy Text</a>
                       </li>
                     </ul>
                   </div>

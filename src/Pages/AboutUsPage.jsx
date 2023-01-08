@@ -1,12 +1,10 @@
 import React, { Fragment } from "react";
 import BrandCarouselComponent from "../Components/BrandCarouselComponent";
 import TestimonialSliderComponent from "../Components/TestimonialSliderComponent";
+import BreadcrumbArea from "../Layout/BreadcrumbArea";
 import FooterLayout from "../Layout/FooterLayout";
 import HeaderLayout from "../Layout/HeaderLayout";
 
-const breadcrumbImage = {
-  backgroundImage: `url(./assets/img/bg/breadcrumb-bg.jpg)`,
-};
 const chooseAreaImage = {
   backgroundImage: `url(./assets/img/bg/bg-8.jpg)`,
 };
@@ -17,36 +15,22 @@ const funFactAreaImage = {
   backgroundImage: `url(./assets/img/bg/bg-6.jpg)`,
 };
 
+const breadcrumbObj = {
+  title: "About Us",
+  subtitle: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore .`,
+  pageName: "About Page",
+  overlayClass: "",
+  breadcrumbImage: {
+    backgroundImage: `url(./assets/img/bg/breadcrumb-bg.jpg)`,
+  },
+};
+
 function AboutUsPage() {
   return (
     <Fragment>
       <HeaderLayout />
-      <div className="breadcrumb-area">
-        <div
-          className="breadcrumb-top default-overlay bg-img pt-100 pb-95"
-          style={breadcrumbImage}
-        >
-          <div className="container">
-            <h2>About Us</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore .
-            </p>
-          </div>
-        </div>
-        <div className="breadcrumb-bottom">
-          <div className="container">
-            <ul>
-              <li>
-                <a href="/">Home</a>{" "}
-                <span>
-                  <i className="fa fa-angle-double-right"></i> About Page
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
       <div className="choose-area bg-img pt-90" style={chooseAreaImage}>
         <div className="container">
           <div className="row">
