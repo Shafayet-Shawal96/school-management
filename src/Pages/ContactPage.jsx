@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
-import BrandCarouselComponent from "../Components/BrandCarouselComponent";
+import ContactForm from "../Components/ContactPageComponents/ContactForm";
+import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 import BreadcrumbArea from "../Layout/BreadcrumbArea";
 import FooterLayout from "../Layout/FooterLayout";
 import HeaderLayout from "../Layout/HeaderLayout";
@@ -16,7 +17,7 @@ const breadcrumbObj = {
 };
 
 const contactAreaImage = {
-  backgroundImage: `url(./assets/img/bg/breadcrumb-bg-6.jpg)`,
+  backgroundImage: `url(./assets/img/bg/contact-info.jpg)`,
 };
 
 function ContactPage() {
@@ -50,19 +51,7 @@ function ContactPage() {
                     tempor indunt ut labore et dolore magna aliqua.
                   </p>
                 </div>
-                <form
-                  id="contact-form"
-                  action="assets/php/mail.php"
-                  method="post"
-                >
-                  <input name="name" placeholder="Name*" type="text" />
-                  <input name="email" placeholder="Email*" type="email" />
-                  <input name="subject" placeholder="Subject*" type="text" />
-                  <textarea name="message" placeholder="Message"></textarea>
-                  <button className="submit btn-style" type="submit">
-                    SEND MESSAGE
-                  </button>
-                </form>
+                <ContactForm />
                 <p className="form-messege"></p>
               </div>
             </div>
