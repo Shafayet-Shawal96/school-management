@@ -3,41 +3,24 @@ import RelatedSliderComponent from "../Components/RelatedSliderComponent";
 import FooterLayout from "../Layout/FooterLayout";
 import HeaderLayout from "../Layout/HeaderLayout";
 import BrandCarouselComponent from "../Components/BrandCarouselComponent";
+import BreadcrumbArea from "../Layout/BreadcrumbArea";
 
-const breadcrumbImage = {
-  backgroundImage: `url(./assets/img/bg/breadcrumb-bg-5.jpg)`,
+const breadcrumbObj = {
+  title: "Blog Details",
+  subtitle: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore .`,
+  pageName: "Blog Details",
+  overlayClass: "breadcrumb-overly-3",
+  breadcrumbImage: {
+    backgroundImage: `url(./assets/img/bg/breadcrumb-bg-5.jpg)`,
+  },
 };
 
 function BlogDetailPage() {
   return (
     <Fragment>
       <HeaderLayout />
-      <div className="breadcrumb-area">
-        <div
-          className="breadcrumb-top default-overlay bg-img breadcrumb-overly-3 pt-100 pb-95"
-          style={breadcrumbImage}
-        >
-          <div className="container">
-            <h2>Blog Details</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore .
-            </p>
-          </div>
-        </div>
-        <div className="breadcrumb-bottom">
-          <div className="container">
-            <ul>
-              <li>
-                <a href="/">Home</a>{" "}
-                <span>
-                  <i className="fa fa-angle-double-right"></i>Blog Details
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
       <div className="event-area pt-130 pb-130">
         <div className="container">
           <div className="row">
