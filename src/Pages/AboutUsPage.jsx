@@ -1,4 +1,6 @@
 import React, { Fragment } from "react";
+import BrandCarouselComponent from "../Components/BrandCarouselComponent";
+import TestimonialSliderComponent from "../Components/TestimonialSliderComponent";
 import FooterLayout from "../Layout/FooterLayout";
 import HeaderLayout from "../Layout/HeaderLayout";
 
@@ -13,9 +15,6 @@ const videoAreaImage = {
 };
 const funFactAreaImage = {
   backgroundImage: `url(./assets/img/bg/bg-6.jpg)`,
-};
-const testiContentImage = {
-  backgroundImage: `url(./assets/img/bg/testi.png)`,
 };
 
 function AboutUsPage() {
@@ -436,210 +435,13 @@ function AboutUsPage() {
               veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip{" "}
             </p>
           </div>
-          <div className="testimonial-slider-wrap mt-45">
-            <div className="testimonial-text-slider">
-              <div className="testi-content-wrap">
-                <div className="testi-big-img">
-                  <img alt="" src="assets/img/testimonial/testi-b1.jpg" />
-                </div>
-                <div className="row g-0">
-                  <div className="ms-auto col-lg-6 col-md-6">
-                    <div
-                      className="testi-content bg-img default-overlay"
-                      style={testiContentImage}
-                    >
-                      <div className="quote-style quote-left">
-                        <i className="fa fa-quote-left"></i>
-                      </div>
-                      <p>
-                        Lorem ipsum dolor sit amet, conse ctetur adipi sicing
-                        elit, sed do eiusm od tempor incidi dunt ut labore et
-                        dolore magna aliqua. Ut enim fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
-                        Sed ut perspiciatis unde omnis iste natus error sit{" "}
-                      </p>
-                      <div className="testi-info">
-                        <h5>AYESHA HOQUE</h5>
-                        <span>Students Of AMMT Department</span>
-                      </div>
-                      <div className="quote-style quote-right">
-                        <i className="fa fa-quote-right"></i>
-                      </div>
-                      <div className="testi-arrow">
-                        <img alt="" src="assets/img/icon-img/testi-icon.png" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="testi-content-wrap">
-                <div className="testi-big-img">
-                  <img alt="" src="assets/img/testimonial/testi-b3.jpg" />
-                </div>
-                <div className="row g-0">
-                  <div className="ms-auto col-lg-6 col-md-6">
-                    <div
-                      className="testi-content bg-img default-overlay"
-                      //   style="background-image:url(assets/img/bg/testi.png);"
-                    >
-                      <div className="quote-style quote-left">
-                        <i className="fa fa-quote-left"></i>
-                      </div>
-                      <p>
-                        Lorem ipsum dolor sit amet, conse ctetur adipi sicing
-                        elit, sed do eiusm od tempor incidi dunt ut labore et
-                        dolore magna aliqua. Ut enim fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
-                        Sed ut perspiciatis unde omnis
-                      </p>
-                      <div className="testi-info">
-                        <h5>Tayeb Rayed</h5>
-                        <span>Students Of AMMT Department</span>
-                      </div>
-                      <div className="quote-style quote-right">
-                        <i className="fa fa-quote-right"></i>
-                      </div>
-                      <div className="testi-arrow">
-                        <img alt="" src="assets/img/icon-img/testi-icon.png" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="testi-content-wrap">
-                <div className="testi-big-img">
-                  <img alt="" src="assets/img/testimonial/testi-b2.jpg" />
-                </div>
-                <div className="row g-0">
-                  <div className="ms-auto col-lg-6 col-md-6">
-                    <div
-                      className="testi-content bg-img default-overlay"
-                      //   style="background-image:url(assets/img/bg/testi.png);"
-                    >
-                      <div className="quote-style quote-left">
-                        <i className="fa fa-quote-left"></i>
-                      </div>
-                      <p>
-                        Lorem ipsum dolor sit amet, conse ctetur adipi sicing
-                        elit, sed do eiusm od tempor incidi dunt ut labore et
-                        dolore magna aliqua. Ut enim fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui. Sed ut perspiciatis unde omnis iste natus
-                        error sit{" "}
-                      </p>
-                      <div className="testi-info">
-                        <h5>Robiul siddikee</h5>
-                        <span>Students Of AMMT Department</span>
-                      </div>
-                      <div className="quote-style quote-right">
-                        <i className="fa fa-quote-right"></i>
-                      </div>
-                      <div className="testi-arrow">
-                        <img alt="" src="assets/img/icon-img/testi-icon.png" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="testi-content-wrap">
-                <div className="testi-big-img">
-                  <img alt="" src="assets/img/testimonial/testi-b2.jpg" />
-                </div>
-                <div className="row g-0">
-                  <div className="ms-auto col-lg-6 col-md-6">
-                    <div
-                      className="testi-content bg-img default-overlay"
-                      //   style="background-image:url(assets/img/bg/testi.png);"
-                    >
-                      <div className="quote-style quote-left">
-                        <i className="fa fa-quote-left"></i>
-                      </div>
-                      <p>
-                        Lorem ipsum dolor sit amet, conse ctetur adipi sicing
-                        elit, sed do eiusm od tempor incidi dunt ut labore et
-                        dolore magna aliqua. Ut enim fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
-                        Sed ut perspiciatis unde omnis iste natus error sit{" "}
-                      </p>
-                      <div className="testi-info">
-                        <h5>Modhu Dada</h5>
-                        <span>Students Of AMMT Department</span>
-                      </div>
-                      <div className="quote-style quote-right">
-                        <i className="fa fa-quote-right"></i>
-                      </div>
-                      <div className="testi-arrow">
-                        <img alt="" src="assets/img/icon-img/testi-icon.png" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="testimonial-image-slider">
-              <div className="sin-testi-image">
-                <img src="assets/img/testimonial/testi-s2.jpg" alt="" />
-              </div>
-              <div className="sin-testi-image">
-                <img src="assets/img/testimonial/testi-s1.jpg" alt="" />
-              </div>
-              <div className="sin-testi-image">
-                <img src="assets/img/testimonial/testi-s3.jpg" alt="" />
-              </div>
-              <div className="sin-testi-image">
-                <img src="assets/img/testimonial/testi-s3.jpg" alt="" />
-              </div>
-            </div>
-          </div>
+          <TestimonialSliderComponent />
           <div className="testimonial-text-img">
             <img alt="" src="assets/img/icon-img/testi-text.png" />
           </div>
         </div>
       </div>
-      <div className="brand-logo-area pb-130">
-        <div className="container">
-          <div className="brand-logo-active owl-carousel">
-            <div className="single-brand-logo">
-              <a href="/">
-                <img src="assets/img/brand-logo/1.png" alt="" />
-              </a>
-            </div>
-            <div className="single-brand-logo">
-              <a href="/">
-                <img src="assets/img/brand-logo/2.png" alt="" />
-              </a>
-            </div>
-            <div className="single-brand-logo">
-              <a href="/">
-                <img src="assets/img/brand-logo/3.png" alt="" />
-              </a>
-            </div>
-            <div className="single-brand-logo">
-              <a href="/">
-                <img src="assets/img/brand-logo/4.png" alt="" />
-              </a>
-            </div>
-            <div className="single-brand-logo">
-              <a href="/">
-                <img src="assets/img/brand-logo/5.png" alt="" />
-              </a>
-            </div>
-            <div className="single-brand-logo">
-              <a href="/">
-                <img src="assets/img/brand-logo/6.png" alt="" />
-              </a>
-            </div>
-            <div className="single-brand-logo">
-              <a href="/">
-                <img src="assets/img/brand-logo/2.png" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <BrandCarouselComponent />
       <FooterLayout />
     </Fragment>
   );
