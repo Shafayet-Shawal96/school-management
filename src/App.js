@@ -22,26 +22,7 @@ import EventPage from "./Pages/EventPage";
 function App() {
   return (
     <div>
-      {/* <HeaderLayout /> */}
-      <Routes>
-        <Route path="/about" element={<AboutUsPage />} />
-        <Route path="/shop" element={<ShopPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/cart" element={<CartPage />} />
-        <Route path="/checkout" element={<CheckoutPage />} />
-        <Route path="/course-details" element={<CourseDetailsPage />} />
-        <Route path="/course" element={<CoursePage />} />
-        {/* <Route path="/event-details" element={<EventDetailsPage />} /> */}
-        <Route path="/event" element={<EventPage />} />
-        <Route path="/index-three" element={<IndexPageThree />} />
-        <Route path="/index-two" element={<IndexPageTwo />} />
-        <Route path="/Login-register" element={<LoginRegisterPage />} />
-        <Route path="/single-product" element={<SingleProductPage />} />
-        <Route path="/wishlist" element={<WishlistPage />} />
-        <Route path="/" element={<IndexPage />} />
-      </Routes>
-      {/* <FooterLayout /> */}
+      <EvantDeatilsPage />
     </div>
   );
 }

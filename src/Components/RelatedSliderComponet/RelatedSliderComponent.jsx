@@ -2,8 +2,8 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import PrevArrowComponent from "./PrevArrowComponent";
-import NextArrowComponent from "./NextArrowComponent";
+import PrevArrowComponent from "../GlobalComponents/PrevArrowComponent";
+import NextArrowComponent from "../GlobalComponents/NextArrowComponent";
 
 function RelatedSliderComponent() {
   const settings = {

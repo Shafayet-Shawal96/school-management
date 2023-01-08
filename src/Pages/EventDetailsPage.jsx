@@ -15,7 +15,7 @@ const breadcrumbObj = {
   },
 };
 
-function EvantDeatilsPage() {
+function EventDetailsPage() {
   return (
     <Fragment>
       <HeaderLayout />
@@ -347,4 +347,4 @@ function EvantDeatilsPage() {
   );
 }
 
-export default EvantDeatilsPage;
+export default EventDetailsPage;

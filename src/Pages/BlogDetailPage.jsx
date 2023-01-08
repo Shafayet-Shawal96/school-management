@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
-import RelatedSliderComponent from "../Components/RelatedSliderComponet/RelatedSliderComponent";
 import FooterLayout from "../Layout/FooterLayout";
 import HeaderLayout from "../Layout/HeaderLayout";
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 import BreadcrumbArea from "../Layout/BreadcrumbArea";
+import RelatedCourse from "../Components/AboutUsPageComponents/RelatedCourse";
 
 const breadcrumbObj = {
   title: "Blog Details",
@@ -180,17 +180,7 @@ function BlogDetailPage() {
                     </p>
                   </div>
                 </div>
-                <div className="related-course pt-70">
-                  <div className="related-title mb-45">
-                    <h3>Related Blog</h3>
-                    <p>
-                      Hempor incididunt ut labore et dolore mm, itation ullamco
-                      laboris <br />
-                      nisi ut aliquip.{" "}
-                    </p>
-                  </div>
-                  <RelatedSliderComponent />
-                </div>
+                <RelatedCourse />
                 <div className="blog-comment">
                   <div className="blog-comment-btn mb-80 commrnt-toggle">
                     <a href="/">VIEW COMMENT</a>
