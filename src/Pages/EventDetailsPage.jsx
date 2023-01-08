@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import EventGallarySlide from "../Components/EventDetailsPageComponents/EventGallarySlide";
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 import BreadcrumbArea from "../Layout/BreadcrumbArea";
 import FooterLayout from "../Layout/FooterLayout";
@@ -13,6 +14,10 @@ const breadcrumbObj = {
   breadcrumbImage: {
     backgroundImage: `url(./assets/img/bg/breadcrumb-bg-2.jpg)`,
   },
+};
+
+const seatBookImage = {
+  backgroundImage: `url(./assets/img/event/seat-book.jpg)`,
 };
 
 function EventDetailsPage() {
@@ -101,15 +106,12 @@ function EventDetailsPage() {
                     voluptatem.
                   </p>
                   <div className="event-gallery text-center mt-40">
-                    <div className="event-gallery-active nav-style-3 owl-carousel">
-                      <img src="assets/img/event/event-gallery-1.jpg" alt="" />
-                      <img src="assets/img/event/event-gallery-2.jpg" alt="" />
-                    </div>
+                    <EventGallarySlide />
                     <h4>View Our Event Gallery</h4>
                   </div>
                   <div
                     className="seat-book-wrap bg-img mt-80"
-                    //   style="background-image: url(assets/img/event/seat-book.jpg)"
+                    style={seatBookImage}
                   >
                     <div className="seat-book-title text-center">
                       <h3>Book Your Seat Now</h3>
