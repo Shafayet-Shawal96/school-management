@@ -1,4 +1,6 @@
 import { Route, Routes } from "react-router";
+import FooterLayout from "./Layout/FooterLayout";
+import HeaderLayout from "./Layout/HeaderLayout";
 import AboutUsPage from "./Pages/AboutUsPage";
 import BlogDetailPage from "./Pages/BlogDetailPage";
 import BlogPage from "./Pages/BlogPage";
@@ -20,25 +22,30 @@ import WishlistPage from "./Pages/WishlistPage";
 function App() {
   return (
     <div>
-      <Routes>
-        <Route path="about" element={<AboutUsPage />} />
-        <Route path="blog-detail" element={<BlogDetailPage />} />
-        <Route path="blog" element={<BlogPage />} />
-        <Route path="cart" element={<CartPage />} />
-        <Route path="checkout" element={<CheckoutPage />} />
-        <Route path="contact" element={<ContactPage />} />
-        <Route path="course-detail" element={<CourseDetailsPage />} />
-        <Route path="course" element={<CoursePage />} />
-        <Route path="about" element={<EventDetailsPage />} />
-        <Route path="event" element={<EventPage />} />
-        <Route path="index" element={<IndexPage />} />
-        <Route path="index-three" element={<IndexPageThree />} />
-        <Route path="index-two" element={<IndexPageTwo />} />
-        <Route path="login-register" element={<LoginRegisterPage />} />
-        <Route path="shop" element={<ShopPage />} />
-        <Route path="single-product" element={<SingleProductPage />} />
-        <Route path="wishlist" element={<WishlistPage />} />
-      </Routes>
+      <HeaderLayout />
+      <main>
+        <Routes>
+          <Route path="/about" element={<AboutUsPage />} />
+          <Route path="/blog-detail" element={<BlogDetailPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/course-details" element={<CourseDetailsPage />} />
+          <Route path="/course" element={<CoursePage />} />
+          <Route path="/event-details" element={<EventDetailsPage />} />
+          <Route path="/event" element={<EventPage />} />
+
+          <Route path="/index-three" element={<IndexPageThree />} />
+          <Route path="/index-two" element={<IndexPageTwo />} />
+          <Route path="/login-register" element={<LoginRegisterPage />} />
+          <Route path="/shop" element={<ShopPage />} />
+          <Route path="/single-product" element={<SingleProductPage />} />
+          <Route path="/wishlist" element={<WishlistPage />} />
+          <Route path="/" element={<IndexPage />} />
+        </Routes>
+      </main>
+      <FooterLayout />
     </div>
   );
 }

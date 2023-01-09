@@ -1,4 +1,6 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
+import AboutUsPage from "../Pages/AboutUsPage";
 const headerImage = {
   backgroundImage: `url(./assets/img/icon-img/header-shape.png)`,
 };
@@ -26,10 +28,10 @@ function HeaderLayout() {
               <div className="login-register">
                 <ul>
                   <li>
-                    <a href="login-register.html">Login</a>
+                    <Link to="/login-register">Login</Link>
                   </li>
                   <li>
-                    <a href="login-register.html">Register</a>
+                    <Link to="/login-register">Register</Link>
                   </li>
                 </ul>
               </div>
@@ -42,9 +44,9 @@ function HeaderLayout() {
           <div className="row">
             <div className="col-lg-2 col-md-6 col-4">
               <div className="logo">
-                <a href="index.html">
+                <Link to="/">
                   <img alt="" src="assets/img/logo/logo.png" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-10 col-md-6 col-8">
@@ -53,27 +55,28 @@ function HeaderLayout() {
                   <nav>
                     <ul>
                       <li>
-                        <a href="index.html"> HOME </a>
+                        <Link to="/">Home</Link>
+
                         <ul className="submenu">
                           <li>
-                            <a href="index.html">home version 1</a>
+                            <Link to="/">home version 1</Link>
                           </li>
                           <li>
-                            <a href="index-2.html">home version 2</a>
+                            <Link to="/index-two">home version 2</Link>
                           </li>
                           <li>
-                            <a href="index-3.html">home version 3</a>
+                            <Link to="/index-three">home version 3</Link>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href="about-us.html"> ABOUT </a>
+                        <Link to="/about">ABOUT</Link>
                       </li>
                       <li className="mega-menu-position top-hover">
-                        <a href="shop.html">
-                          {" "}
-                          SHOP <i className="fa fa-angle-down"></i>{" "}
-                        </a>
+                        <Link to="/shop">
+                          SHOP <i className="fa fa-angle-down"></i>
+                        </Link>
+
                         <ul className="mega-menu">
                           <li>
                             <ul>
@@ -178,59 +181,60 @@ function HeaderLayout() {
                         </ul>
                       </li>
                       <li>
-                        <a href="/">
-                          {" "}
-                          PAGES <i className="fa fa-angle-down"></i>{" "}
-                        </a>
+                        <Link to="#">
+                          PAGES <i className="fa fa-angle-down"></i>
+                        </Link>
+
                         <ul className="submenu">
                           <li>
-                            <a href="course.html">course page</a>
+                            <Link to="/course">course page</Link>
                           </li>
                           <li>
-                            <a href="event.html">event page</a>
+                            <Link to="/event">event page</Link>
                           </li>
                           <li>
-                            <a href="shop.html">shop page</a>
+                            <Link to="/shop">shop page</Link>
                           </li>
                           <li>
-                            <a href="course-details.html">course details</a>
+                            <Link to="/course-details">course details</Link>
                           </li>
                           <li>
-                            <a href="event-details.html">event details</a>
+                            <Link to="/event-details">event details</Link>
                           </li>
                           <li>
-                            <a href="single-product.html">single product</a>
+                            <Link to="/single-product">single product</Link>
                           </li>
                           <li>
-                            <a href="cart.html">cart page</a>
+                            <Link to="/cart">cart page</Link>
                           </li>
                           <li>
-                            <a href="checkout.html">checkout</a>
+                            <Link to="/checkout">checkout</Link>
                           </li>
                           <li>
-                            <a href="wishlist.html">wishlist</a>
+                            <Link to="/wishlist">wishlist</Link>
                           </li>
                           <li>
-                            <a href="login-register.html">login / register</a>
+                            <Link to="/course">course page</Link>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href="course.html"> COURSES / PROGRAMMES</a>
+                        <Link to="/course">COURSES / PROGRAMMES</Link>
                       </li>
                       <li>
-                        <a href="blog.html"> BLOG </a>
+                        <Link to="/blog">BLOG</Link>
+
                         <ul className="submenu">
                           <li>
-                            <a href="blog.html">blog</a>
+                            <Link to="/blog">BLOG</Link>
                           </li>
                           <li>
-                            <a href="blog-details.html">blog details</a>
+                            <Link to="/blog-detail">blog details</Link>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href="contact.html"> CONTACT </a>
+                        <Link to="/contact">CONTACT</Link>
                       </li>
                     </ul>
                   </nav>
