@@ -42,7 +42,7 @@ function HeaderLayout() {
                   </li>
                   <li>
                     <i className="fa fa-envelope-o"></i>
-                    <NavLink></NavLink>
+
                     <Link to="#">education@email.com</Link>
                   </li>
                 </ul>
