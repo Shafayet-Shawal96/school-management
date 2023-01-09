@@ -20,11 +20,9 @@ const breadcrumbObj = {
 function LoginRegisterPage() {
   return (
     <Fragment>
-      <HeaderLayout />
       <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
       <LoginRegisterArea />
       <BrandCarouselComponent />
-      <FooterLayout />
     </Fragment>
   );
 }

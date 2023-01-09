@@ -23,7 +23,6 @@ const breadcrumbObj = {
 function SingleProductPage() {
   return (
     <Fragment>
-      <HeaderLayout />
       <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
       <SingleProductArea />
       <DescriptiveReviewArea />
