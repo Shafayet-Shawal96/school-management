@@ -6,7 +6,6 @@ import HeaderLayout from "../Layout/HeaderLayout";
 function IndexPageTwo() {
   return (
     <Fragment>
-      <HeaderLayout />
       <div className="slider-area">
         <div className="slider-active owl-carousel">
           <div
@@ -1260,7 +1259,6 @@ function IndexPageTwo() {
         </div>
       </div>
       <BrandCarouselComponent />
-      <FooterLayout />
     </Fragment>
   );
 }
