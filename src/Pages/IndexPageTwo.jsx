@@ -1,11 +1,14 @@
 import React, { Fragment } from "react";
+
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
-import AdmissionArea from "../Components/IndexPageTwoComponents/AdmissionArea";
+
+import FunFact from "../Layout/GlobalLayout/FunFact";
+
+import AboutUs from "../Components/IndexPageTwoComponents/AboutUs";
 import ChooseUs from "../Components/IndexPageTwoComponents/ChooseUs";
 import SliderArea from "../Components/IndexPageTwoComponents/SliderArea";
-import AboutUs from "../Components/IndexPageTwoComponents/AboutUs";
+import AdmissionArea from "../Components/IndexPageTwoComponents/AdmissionArea";
 import BlogEventArea from "../Components/IndexPageTwoComponents/BlogEventArea";
-import FunFact from "../Components/AboutUsPageComponents/FunFact";
 
 function IndexPageTwo() {
   return (

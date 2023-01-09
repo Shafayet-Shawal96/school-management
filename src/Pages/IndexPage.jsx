@@ -1,13 +1,14 @@
 import React, { Fragment } from "react";
+
 import AboutUs from "../Components/IndexPageComponents/AboutUs";
-import AchievemetArea from "../Components/IndexPageComponents/AchievemetArea";
-import BlogArea from "../Components/IndexPageComponents/BlogArea";
 import ChooseUs from "../Components/IndexPageComponents/ChooseUs";
-import CourseArea from "../Components/IndexPageComponents/CourseArea";
+import BlogArea from "../Components/IndexPageComponents/BlogArea";
 import EventArea from "../Components/IndexPageComponents/EventArea";
-import RegisterArea from "../Components/IndexPageComponents/RegisterArea";
 import SliderArea from "../Components/IndexPageComponents/SliderArea";
+import CourseArea from "../Components/IndexPageComponents/CourseArea";
 import TeacherArea from "../Components/IndexPageComponents/TeacherArea";
+import RegisterArea from "../Components/IndexPageComponents/RegisterArea";
+import AchievemetArea from "../Components/IndexPageComponents/AchievemetArea";
 
 function IndexPage() {
   return (

@@ -1,7 +1,10 @@
 import React, { Fragment } from "react";
-import AllCourseArea from "../Components/CoursePageComponents/AllCourseArea";
+
+import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
+
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
-import BreadcrumbArea from "../Layout/BreadcrumbArea";
+
+import AllCourseArea from "../Components/CoursePageComponents/AllCourseArea";
 
 const breadcrumbObj = {
   title: "Course Grid",

@@ -1,6 +1,9 @@
 import React, { Fragment } from "react";
+
+import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
+
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
-import BreadcrumbArea from "../Layout/BreadcrumbArea";
+
 import CartMainArea from "../Components/CartPageComponents/CartMainArea";
 
 const breadcrumbObj = {

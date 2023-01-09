@@ -1,8 +1,11 @@
 import React, { Fragment } from "react";
+
+import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
+
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
-import EventArea from "../Components/ShopPageComponents/EventArea";
+
 import Modal from "../Components/ShopPageComponents/Modal";
-import BreadcrumbArea from "../Layout/BreadcrumbArea";
+import EventArea from "../Components/ShopPageComponents/EventArea";
 
 const breadcrumbObj = {
   title: "Shop Grid",

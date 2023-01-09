@@ -1,7 +1,10 @@
 import React, { Fragment } from "react";
-import EventDetailArea from "../Components/EventDetailsPageComponents/EventDetailArea";
+
+import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
+
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
-import BreadcrumbArea from "../Layout/BreadcrumbArea";
+
+import EventDetailArea from "../Components/EventDetailsPageComponents/EventDetailArea";
 
 const breadcrumbObj = {
   title: "Event Details",

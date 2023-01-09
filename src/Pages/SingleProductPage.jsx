@@ -1,10 +1,13 @@
 import React, { Fragment } from "react";
+
+import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
+
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
-import DescriptiveReviewArea from "../Components/SingleProductPageComponents/DescriptiveReviewArea";
+
 import Modal from "../Components/SingleProductPageComponents/Modal";
 import RelatedCourse from "../Components/SingleProductPageComponents/RelatedCourse";
 import SingleProductArea from "../Components/SingleProductPageComponents/SingleProductArea";
-import BreadcrumbArea from "../Layout/BreadcrumbArea";
+import DescriptiveReviewArea from "../Components/SingleProductPageComponents/DescriptiveReviewArea";
 
 const breadcrumbObj = {
   title: "Product Details",

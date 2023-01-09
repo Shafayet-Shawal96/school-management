@@ -1,7 +1,10 @@
 import React, { Fragment } from "react";
+
+import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
+
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
+
 import LoginRegisterArea from "../Components/LoginRegisterPage/LoginRegisterArea";
-import BreadcrumbArea from "../Layout/BreadcrumbArea";
 
 const breadcrumbObj = {
   title: "Login/Register",

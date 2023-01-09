@@ -1,11 +1,14 @@
 import React, { Fragment } from "react";
-import AchivementArea from "../Components/AboutUsPageComponents/AchivementArea";
-import FunFact from "../Components/AboutUsPageComponents/FunFact";
-import TeacherArea from "../Components/AboutUsPageComponents/TeacherArea";
+
+import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
+
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
-import BreadcrumbArea from "../Layout/BreadcrumbArea";
-import ChooseArea from "../Components/AboutUsPageComponents/ChooseArea";
-import VideoArea from "../Components/AboutUsPageComponents/VideoArea";
+
+import FunFact from "../Layout/GlobalLayout/FunFact";
+import VideoArea from "../Layout/AboutUsPageLayout/VideoArea";
+import ChooseArea from "../Layout/AboutUsPageLayout/ChooseArea";
+import TeacherArea from "../Layout/AboutUsPageLayout/TeacherArea";
+import AchivementArea from "../Layout/AboutUsPageLayout/AchivementArea";
 
 const breadcrumbObj = {
   title: "About Us",

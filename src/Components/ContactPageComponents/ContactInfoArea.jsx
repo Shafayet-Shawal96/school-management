@@ -7,7 +7,7 @@ const contactAreaImage = {
 function ContactInfoArea() {
   return (
     <div
-      className="contact-info-area bg-img pt-180 pb-140 default-overlay"
+      className="contact-info-area bg-img pt-180 pb-140 default-overlay mb-100"
       style={contactAreaImage}
     >
       <div className="container">

@@ -5,16 +5,16 @@ import Slider from "react-slick";
 
 function NextArrowComponent({ onClick }) {
   return (
-    <span class="product-dec-icon product-dec-next" onClick={onClick}>
-      <i class="fa fa-angle-right"></i>
+    <span className="product-dec-icon product-dec-next" onClick={onClick}>
+      <i className="fa fa-angle-right"></i>
     </span>
   );
 }
 
 function PrevArrowComponent({ onClick }) {
   return (
-    <span class="product-dec-icon product-dec-prev " onClick={onClick}>
-      <i class="fa fa-angle-left"></i>
+    <span className="product-dec-icon product-dec-prev " onClick={onClick}>
+      <i className="fa fa-angle-left"></i>
     </span>
   );
 }

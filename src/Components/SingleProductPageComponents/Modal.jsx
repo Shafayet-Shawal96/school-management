@@ -2,7 +2,7 @@ import React from "react";
 
 function Modal() {
   return (
-    <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+    <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog">
       <div className="modal-dialog" role="document">
         <div className="modal-content">
           <div className="modal-header">
@@ -117,7 +117,7 @@ function Modal() {
                         className="cart-plus-minus-box"
                         type="text"
                         name="qtybutton"
-                        value="2"
+                        defaultValue={2}
                       />
                     </div>
                     <div className="pro-details-cart">

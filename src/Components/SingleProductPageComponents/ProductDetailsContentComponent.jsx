@@ -64,7 +64,7 @@ function ProductDetailsContentComponent() {
             className="cart-plus-minus-box"
             type="text"
             name="qtybutton"
-            value="2"
+            defaultValue={2}
           />
         </div>
         <div className="pro-details-cart">

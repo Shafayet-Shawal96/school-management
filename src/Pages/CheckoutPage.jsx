@@ -1,7 +1,9 @@
 import React, { Fragment } from "react";
-import CheckoutArea from "../Components/CheckoutPageComponents/CheckoutArea";
+import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
+
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
-import BreadcrumbArea from "../Layout/BreadcrumbArea";
+
+import CheckoutArea from "../Components/CheckoutPageComponents/CheckoutArea";
 
 const breadcrumbObj = {
   title: "Checkout",
