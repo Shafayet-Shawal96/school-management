@@ -1,5 +1,5 @@
 import React from "react";
-import RelatedCourse from "./RelatedCourse";
+import RelatedCourse from "../../Components/CourseDetailsPageComponents/RelatedCourse";
 
 function CourseDetailArea() {
   return (

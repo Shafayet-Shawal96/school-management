@@ -1,5 +1,5 @@
 import React from "react";
-import BillingInfo from "./BillingInfo";
+import BillingInfo from "../../Components/CheckoutPageComponents/BillingInfo";
 
 function CheckoutArea() {
   return (

@@ -4,7 +4,7 @@ import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
 
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 
-import LoginRegisterArea from "../Components/LoginRegisterPage/LoginRegisterArea";
+import LoginRegisterArea from "../Layout/LoginRegisterPageLayout/LoginRegisterArea";
 
 const breadcrumbObj = {
   title: "Login/Register",

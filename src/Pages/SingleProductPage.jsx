@@ -4,10 +4,10 @@ import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
 
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 
-import Modal from "../Components/SingleProductPageComponents/Modal";
-import RelatedCourse from "../Components/SingleProductPageComponents/RelatedCourse";
-import SingleProductArea from "../Components/SingleProductPageComponents/SingleProductArea";
-import DescriptiveReviewArea from "../Components/SingleProductPageComponents/DescriptiveReviewArea";
+import Modal from "../Layout/SinglePageLayout/Modal";
+import RelatedCourse from "../Layout/SinglePageLayout/RelatedCourse";
+import SingleProductArea from "../Layout/SinglePageLayout/SingleProductArea";
+import DescriptiveReviewArea from "../Layout/SinglePageLayout/DescriptiveReviewArea";
 
 const breadcrumbObj = {
   title: "Product Details",

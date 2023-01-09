@@ -1,5 +1,5 @@
 import React from "react";
-import TestimonialSliderComponent from "../GlobalComponents/TestimonialSliderComponent";
+import TestimonialSliderComponent from "../../Components/GlobalComponents/TestimonialSliderComponent";
 
 function AchievemetArea() {
   return (

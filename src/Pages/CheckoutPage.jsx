@@ -3,7 +3,7 @@ import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
 
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 
-import CheckoutArea from "../Components/CheckoutPageComponents/CheckoutArea";
+import CheckoutArea from "../Layout/CheckoutPageLayout/CheckoutArea";
 
 const breadcrumbObj = {
   title: "Checkout",

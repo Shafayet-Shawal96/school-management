@@ -1,5 +1,5 @@
 import React from "react";
-import CourseOwlSlider from "./CourseOwlSlider";
+import CourseOwlSlider from "../../Components/IndexPageComponents/CourseOwlSlider";
 
 const courseArea = {
   backgroundImage: `url(./assets/img/bg/bg-1.jpg)`,

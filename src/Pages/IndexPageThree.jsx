@@ -2,13 +2,13 @@ import React, { Fragment } from "react";
 
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 
-import Modal from "../Components/IndexPageThreeComponents/Modal";
-import SliderArea from "../Components/IndexPageThreeComponents/SliderArea";
-import BannerArea from "../Components/IndexPageThreeComponents/BannerArea";
-import ProductArea from "../Components/IndexPageThreeComponents/ProductArea";
-import BestSaleArea from "../Components/IndexPageThreeComponents/BestSaleArea";
-import DiscountArea from "../Components/IndexPageThreeComponents/DiscountArea";
-import PopularProductArea from "../Components/IndexPageThreeComponents/PopularProductArea";
+import Modal from "../Layout/IndexPageThreeLayout/Modal";
+import SliderArea from "../Layout/IndexPageThreeLayout/SliderArea";
+import BannerArea from "../Layout/IndexPageThreeLayout/BannerArea";
+import ProductArea from "../Layout/IndexPageThreeLayout/ProductArea";
+import BestSaleArea from "../Layout/IndexPageThreeLayout/BestSaleArea";
+import DiscountArea from "../Layout/IndexPageThreeLayout/DiscountArea";
+import PopularProductArea from "../Layout/IndexPageThreeLayout/PopularProductArea";
 
 function IndexPageThree() {
   return (

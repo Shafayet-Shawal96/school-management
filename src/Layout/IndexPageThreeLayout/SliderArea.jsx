@@ -1,10 +1,10 @@
 import React from "react";
-import OwlSlider from "./OwlSlider";
+import SliderOwl from "../../Components/IndexPageThreeComponents/SliderOwl";
 
 function SliderArea() {
   return (
     <div className="slider-area">
-      <OwlSlider />
+      <SliderOwl />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import ProductaActiveSlickSlider from "./ProductaActiveSlickSlider";
+import ProductaActiveSlickSlider from "../../Components/SingleProductPageComponents/ProductaActiveSlickSlider";
 
 function RelatedCourse() {
   return (

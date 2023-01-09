@@ -4,7 +4,7 @@ import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
 
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 
-import CartMainArea from "../Components/WishlistPageComponents/CartMainArea";
+import CartMainArea from "../Layout/WishlistPageLayout/CartMainArea";
 
 const breadcrumbObj = {
   title: "Wishlist",

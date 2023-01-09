@@ -1,6 +1,6 @@
 import React from "react";
-import BlogSlickSlider from "./BlogSlickSlider";
-import EventSlickSlider from "./EventSlickSlider";
+import BlogSlickSlider from "../../Components/IndexPageTwoComponents/BlogSlickSlider";
+import EventSlickSlider from "../../Components/IndexPageTwoComponents/EventSlickSlider";
 
 function BlogEventArea() {
   return (
