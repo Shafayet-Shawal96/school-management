@@ -1,5 +1,5 @@
 import React from "react";
-import CartForm from "./CartForm";
+import CartForm from "../../Components/CartPageComponents/CartForm";
 
 function CartMainArea() {
   return (

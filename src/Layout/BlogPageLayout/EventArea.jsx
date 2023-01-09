@@ -1,5 +1,6 @@
 import React from "react";
-import BlogListRow from "./BlogListRow";
+
+import BlogListRow from "../../Components/BlogPageComponents/BlogListRow";
 
 function EventArea() {
   return (

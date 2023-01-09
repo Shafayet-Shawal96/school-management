@@ -4,7 +4,7 @@ import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
 
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 
-import EventArea from "../Components/BlogPageComponents/EventArea";
+import EventArea from "../Layout/BlogPageLayout/EventArea";
 
 const breadcrumbObj = {
   title: "Blog Grid",

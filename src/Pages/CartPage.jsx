@@ -4,7 +4,7 @@ import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
 
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 
-import CartMainArea from "../Components/CartPageComponents/CartMainArea";
+import CartMainArea from "../Layout/CartPageLayout/CartMainArea";
 
 const breadcrumbObj = {
   title: "Cart",

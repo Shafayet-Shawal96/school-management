@@ -1,5 +1,5 @@
 import React from "react";
-import RelatedCourse from "../AboutUsPageComponents/RelatedCourse";
+import RelatedCourse from "../../Components/AboutUsPageComponents/RelatedCourse";
 
 function EventArea() {
   return (
