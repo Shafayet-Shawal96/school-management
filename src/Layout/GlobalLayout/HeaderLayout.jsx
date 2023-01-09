@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const headerImage = {
   backgroundImage: `url(./assets/img/icon-img/header-shape.png)`,
 };
@@ -29,6 +29,7 @@ function HeaderLayout() {
                   </li>
                   <li>
                     <i className="fa fa-envelope-o"></i>
+                    <NavLink></NavLink>
                     <Link to="#">education@email.com</Link>
                   </li>
                 </ul>
@@ -49,7 +50,7 @@ function HeaderLayout() {
           </div>
         </div>
       </div>
-      <div className="header-bottom sticky-bar clearfix">
+      <div className="header-bottom  sticky-bar clearfix">
         <div className="container">
           <div className="row">
             <div className="col-lg-2 col-md-6 col-4">
