@@ -6,7 +6,6 @@ import HeaderLayout from "../Layout/HeaderLayout";
 function IndexPageThree() {
   return (
     <Fragment>
-      <HeaderLayout />
       <div className="slider-area ">
         <div className="slider-active-2 owl-carousel nav-style-2">
           <div
@@ -1724,7 +1723,6 @@ function IndexPageThree() {
         </div>
       </div>
       <BrandCarouselComponent />
-      <FooterLayout />
 
       {/* <!-- Modal --> */}
       <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog">

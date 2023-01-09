@@ -23,7 +23,6 @@ const contactAreaImage = {
 function ContactPage() {
   return (
     <Fragment>
-      <HeaderLayout />
       <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
       <div className="contact-area pt-130 pb-130">
         <div className="container">
@@ -109,7 +108,6 @@ function ContactPage() {
         </div>
       </div>
       <BrandCarouselComponent />
-      <FooterLayout />
     </Fragment>
   );
 }

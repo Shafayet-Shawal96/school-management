@@ -35,7 +35,6 @@ function App() {
           <Route path="/course" element={<CoursePage />} />
           <Route path="/event-details" element={<EventDetailsPage />} />
           <Route path="/event" element={<EventPage />} />
-
           <Route path="/index-three" element={<IndexPageThree />} />
           <Route path="/index-two" element={<IndexPageTwo />} />
           <Route path="/login-register" element={<LoginRegisterPage />} />
