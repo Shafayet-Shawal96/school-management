@@ -4,7 +4,7 @@ import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
 
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 
-import EventDetailArea from "../Components/EventDetailsPageComponents/EventDetailArea";
+import EventDetailArea from "../Layout/EventDetailsPageLayout/EventDetailArea";
 
 const breadcrumbObj = {
   title: "Event Details",

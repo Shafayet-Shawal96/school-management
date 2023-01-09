@@ -4,8 +4,8 @@ import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
 
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 
-import Modal from "../Components/ShopPageComponents/Modal";
-import EventArea from "../Components/ShopPageComponents/EventArea";
+import Modal from "../Layout/ShopPageLayout/Modal";
+import EventArea from "../Layout/ShopPageLayout/EventArea";
 
 const breadcrumbObj = {
   title: "Shop Grid",

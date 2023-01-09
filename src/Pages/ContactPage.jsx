@@ -4,8 +4,8 @@ import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
 
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 
-import ContactArea from "../Components/ContactPageComponents/ContactArea";
-import ContactInfoArea from "../Components/ContactPageComponents/ContactInfoArea";
+import ContactArea from "../Layout/ContactPageLayout/ContactArea";
+import ContactInfoArea from "../Layout/ContactPageLayout/ContactInfoArea";
 
 const breadcrumbObj = {
   title: "Contact Us",

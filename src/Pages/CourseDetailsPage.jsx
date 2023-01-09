@@ -3,7 +3,7 @@ import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
 
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 
-import CourseDetailArea from "../Components/CourseDetailsPageComponents/CourseDetailArea";
+import CourseDetailArea from "../Layout/CourseDetailsPageLayout/CourseDetailArea";
 
 const breadcrumbObj = {
   title: "Course Grid",

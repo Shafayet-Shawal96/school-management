@@ -1,5 +1,5 @@
 import React from "react";
-import EventOwlSlider from "./EventOwlSlider";
+import EventOwlSlider from "../../Components/IndexPageComponents/EventOwlSlider";
 
 const eventAreaImage = {
   backgroundImage: `url(./assets/img/bg/bg-3.jpg)`,

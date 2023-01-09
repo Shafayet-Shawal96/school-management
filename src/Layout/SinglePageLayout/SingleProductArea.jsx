@@ -1,6 +1,6 @@
 import React from "react";
-import ProductDetailsComponent from "./ProductDetailsComponent";
-import ProductDetailsContentComponent from "./ProductDetailsContentComponent";
+import ProductDetailsComponent from "../../Components/SingleProductPageComponents/ProductDetailsComponent";
+import ProductDetailsContentComponent from "../../Components/SingleProductPageComponents/ProductDetailsContentComponent";
 
 function SingleProductArea() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import ProductSlick from "./ProductSlick";
+import ProductSlick from "../../Components/IndexPageThreeComponents/ProductSlick";
 
 function ProductArea() {
   return (

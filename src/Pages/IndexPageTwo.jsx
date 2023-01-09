@@ -4,11 +4,11 @@ import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarousel
 
 import FunFact from "../Layout/GlobalLayout/FunFact";
 
-import AboutUs from "../Components/IndexPageTwoComponents/AboutUs";
-import ChooseUs from "../Components/IndexPageTwoComponents/ChooseUs";
-import SliderArea from "../Components/IndexPageTwoComponents/SliderArea";
-import AdmissionArea from "../Components/IndexPageTwoComponents/AdmissionArea";
-import BlogEventArea from "../Components/IndexPageTwoComponents/BlogEventArea";
+import AboutUs from "../Layout/IndexPageTwoLayout/AboutUs";
+import ChooseUs from "../Layout/IndexPageTwoLayout/ChooseUs";
+import SliderArea from "../Layout/IndexPageTwoLayout/SliderArea";
+import AdmissionArea from "../Layout/IndexPageTwoLayout/AdmissionArea";
+import BlogEventArea from "../Layout/IndexPageTwoLayout/BlogEventArea";
 
 function IndexPageTwo() {
   return (

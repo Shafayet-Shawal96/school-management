@@ -1,5 +1,5 @@
 import React from "react";
-import EventGallarySlide from "./EventGallarySlide";
+import EventGallarySlide from "../../Components/EventDetailsPageComponents/EventGallarySlide";
 
 const seatBookImage = {
   backgroundImage: `url(./assets/img/event/seat-book.jpg)`,

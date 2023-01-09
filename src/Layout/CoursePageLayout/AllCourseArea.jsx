@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import CourseSlider from "./CourseSlider";
+import CourseSlider from "../../Components/CoursePageComponents/CourseSlider";
 
 function AllCourseArea() {
   return (

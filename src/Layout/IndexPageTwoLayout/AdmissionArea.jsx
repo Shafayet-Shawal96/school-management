@@ -1,5 +1,5 @@
 import React from "react";
-import TableContent from "./TableContent";
+import TableContent from "../../Components/IndexPageTwoComponents/TableContent";
 
 function AdmissionArea() {
   return (

@@ -4,7 +4,7 @@ import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
 
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 
-import AllCourseArea from "../Components/CoursePageComponents/AllCourseArea";
+import AllCourseArea from "../Layout/CoursePageLayout/AllCourseArea";
 
 const breadcrumbObj = {
   title: "Course Grid",
