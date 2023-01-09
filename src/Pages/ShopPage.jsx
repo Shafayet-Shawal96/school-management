@@ -17,6 +17,7 @@ const breadcrumbObj = {
 function ShopPage() {
   return (
     <Fragment>
+      <HeaderLayout />
       <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
       <div className="event-area pt-130 pb-130">
         <div className="container">
@@ -1075,6 +1076,7 @@ function ShopPage() {
         </div>
       </div>
       <BrandCarouselComponent />
+      <FooterLayout />
 
       {/* <!-- Modal --> */}
       <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog">

@@ -17,6 +17,7 @@ const breadcrumbObj = {
 function SingleProductPage() {
   return (
     <Fragment>
+      <HeaderLayout />
       <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
       <div className="single-product-area pt-130 pb-130">
         <div className="container">
@@ -731,7 +732,7 @@ function SingleProductPage() {
           </div>
         </div>
       </div>
-
+      <FooterLayout />
       {/* <!-- Modal --> */}
       <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog">
         <div className="modal-dialog" role="document">
