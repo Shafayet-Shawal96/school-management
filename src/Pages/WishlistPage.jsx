@@ -2,8 +2,6 @@ import React, { Fragment } from "react";
 import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 import CartMainArea from "../Components/WishlistPageComponents/CartMainArea";
 import BreadcrumbArea from "../Layout/BreadcrumbArea";
-import FooterLayout from "../Layout/FooterLayout";
-import HeaderLayout from "../Layout/HeaderLayout";
 
 const breadcrumbObj = {
   title: "Wishlist",

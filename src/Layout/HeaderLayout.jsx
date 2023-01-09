@@ -1,6 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import AboutUsPage from "../Pages/AboutUsPage";
+import { Link } from "react-router-dom";
 const headerImage = {
   backgroundImage: `url(./assets/img/icon-img/header-shape.png)`,
 };

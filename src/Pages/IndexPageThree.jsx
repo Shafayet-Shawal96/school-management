@@ -7,8 +7,6 @@ import Modal from "../Components/IndexPageThreeComponents/Modal";
 import PopularProductArea from "../Components/IndexPageThreeComponents/PopularProductArea";
 import ProductArea from "../Components/IndexPageThreeComponents/ProductArea";
 import SliderArea from "../Components/IndexPageThreeComponents/SliderArea";
-import FooterLayout from "../Layout/FooterLayout";
-import HeaderLayout from "../Layout/HeaderLayout";
 
 function IndexPageThree() {
   return (
