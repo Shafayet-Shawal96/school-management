@@ -1,5 +1,6 @@
 import React from "react";
 import EventGallarySlide from "../../Components/EventDetailsPageComponents/EventGallarySlide";
+import Map from "../../Components/GoogleMap/Map";
 
 const seatBookImage = {
   backgroundImage: `url(./assets/img/event/seat-book.jpg)`,
@@ -128,7 +129,9 @@ function EventDetailArea() {
                   </div>
                 </div>
                 <div className="location-area mt-80">
-                  <div id="location"></div>
+                  <div id="location">
+                    <Map />
+                  </div>
                 </div>
               </div>
             </div>
