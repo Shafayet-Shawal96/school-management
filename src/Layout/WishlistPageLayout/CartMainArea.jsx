@@ -39,7 +39,7 @@ function CartMainArea() {
                             className="cart-plus-minus-box"
                             type="text"
                             name="qtybutton"
-                            value="2"
+                            defaultValue="2"
                           />
                         </div>
                       </td>
@@ -66,7 +66,7 @@ function CartMainArea() {
                             className="cart-plus-minus-box"
                             type="text"
                             name="qtybutton"
-                            value="2"
+                            defaultValue="2"
                           />
                         </div>
                       </td>
@@ -93,7 +93,7 @@ function CartMainArea() {
                             className="cart-plus-minus-box"
                             type="text"
                             name="qtybutton"
-                            value="2"
+                            defaultValue="2"
                           />
                         </div>
                       </td>
