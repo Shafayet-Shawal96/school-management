@@ -1,20 +1,33 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 const headerImage = {
   backgroundImage: `url(./assets/img/icon-img/header-shape.png)`,
 };
 
+// const win = window;
+// win.addEventListener("scroll", function () {
+//   const header = document.querySelector(".sticky-bar");
+//   const scroll = win.scrollY;
+//   if (scroll < 200) {
+//     header.classList.remove("stick");
+//   } else {
+//     header.classList.add("stick");
+//   }
+// });
+
 function HeaderLayout() {
-  const win = window;
-  win.addEventListener("scroll", function () {
-    const header = document.querySelector(".sticky-bar");
-    const scroll = win.scrollY;
-    if (scroll < 200) {
-      header.classList.remove("stick");
-    } else {
-      header.classList.add("stick");
-    }
-  });
+  const [sticky, setSticky] = useState(false);
+
+  useEffect(() => {
+    const checkWindow = () => {
+      if (window.scrollY > 200) {
+        setSticky(true);
+      }
+    };
+    window.addEventListener("scroll", checkWindow);
+    return () => window.removeEventListener("scroll", checkWindow);
+  }, []);
 
   return (
     <header className="header-area">
@@ -50,7 +63,13 @@ function HeaderLayout() {
           </div>
         </div>
       </div>
-      <div className="header-bottom  sticky-bar clearfix">
+      <div
+        className={
+          sticky
+            ? "header-bottom sticky-bar stick clearfix"
+            : "header-bottom sticky-bar clearfix"
+        }
+      >
         <div className="container">
           <div className="row">
             <div className="col-lg-2 col-md-6 col-4">
