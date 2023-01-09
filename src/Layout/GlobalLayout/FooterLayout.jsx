@@ -139,7 +139,7 @@ function FooterLayout() {
                     <form
                       id="mc-embedded-subscribe-form"
                       className="validate"
-                      novalidate=""
+                      noValidate=""
                       target="_blank"
                       name="mc-embedded-subscribe-form"
                       method="post"
@@ -152,13 +152,11 @@ function FooterLayout() {
                           required=""
                           placeholder="Your E-mail Address"
                           name="EMAIL"
-                          value=""
                         />
                         <div className="mc-news" aria-hidden="true">
                           <input
                             type="text"
-                            value=""
-                            tabindex="-1"
+                            tabIndex="-1"
                             name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef"
                           />
                         </div>
@@ -168,7 +166,7 @@ function FooterLayout() {
                             className="button"
                             type="submit"
                             name="subscribe"
-                            value="SUBMIT"
+                            defaultValue={"SUBMIT"}
                           />
                         </div>
                       </div>

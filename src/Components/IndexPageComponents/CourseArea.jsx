@@ -1,13 +1,18 @@
 import React from "react";
-import TestimonialSliderComponent from "../GlobalComponents/TestimonialSliderComponent";
+import CourseOwlSlider from "./CourseOwlSlider";
 
-function AchivementArea() {
+const courseArea = {
+  backgroundImage: `url(./assets/img/bg/bg-1.jpg)`,
+};
+
+function CourseArea() {
   return (
-    <div className="achievement-area pt-130 pb-115">
+    <div className="course-area bg-img pt-130 pb-10" style={courseArea}>
       <div className="container">
         <div className="section-title mb-75">
           <h2>
-            What <span>People Say</span>
+            {" "}
+            <span>Our</span> Courses
           </h2>
           <p>
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim{" "}
@@ -15,13 +20,10 @@ function AchivementArea() {
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip{" "}
           </p>
         </div>
-        <TestimonialSliderComponent />
-        <div className="testimonial-text-img">
-          <img alt="" src="assets/img/icon-img/testi-text.png" />
-        </div>
+        <CourseOwlSlider />
       </div>
     </div>
   );
 }
 
-export default AchivementArea;
+export default CourseArea;

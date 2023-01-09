@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router";
-import FooterLayout from "./Layout/FooterLayout";
-import HeaderLayout from "./Layout/HeaderLayout";
+import FooterLayout from "./Layout/GlobalLayout/FooterLayout";
+import HeaderLayout from "./Layout/GlobalLayout/HeaderLayout";
 import AboutUsPage from "./Pages/AboutUsPage";
 import BlogDetailPage from "./Pages/BlogDetailPage";
 import BlogPage from "./Pages/BlogPage";

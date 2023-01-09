@@ -65,7 +65,7 @@ function TestimonialSliderComponent() {
     ],
   };
   return (
-    <div className="testimonial-slider-wrap  mt-45">
+    <div className="testimonial-slider-wrap mt-45">
       <Slider
         {...settingsText}
         className="testimonial-text-slider"

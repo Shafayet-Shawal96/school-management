@@ -1,11 +1,21 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import AboutUsPage from "../Pages/AboutUsPage";
+import { Link } from "react-router-dom";
 const headerImage = {
   backgroundImage: `url(./assets/img/icon-img/header-shape.png)`,
 };
 
 function HeaderLayout() {
+  const win = window;
+  win.addEventListener("scroll", function () {
+    const header = document.querySelector(".sticky-bar");
+    const scroll = win.scrollY;
+    if (scroll < 200) {
+      header.classList.remove("stick");
+    } else {
+      header.classList.add("stick");
+    }
+  });
+
   return (
     <header className="header-area">
       <div className="header-top bg-img" style={headerImage}>
@@ -19,7 +29,7 @@ function HeaderLayout() {
                   </li>
                   <li>
                     <i className="fa fa-envelope-o"></i>
-                    <a href="/">education@email.com</a>
+                    <Link to="#">education@email.com</Link>
                   </li>
                 </ul>
               </div>
