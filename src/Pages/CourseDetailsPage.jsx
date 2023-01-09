@@ -19,7 +19,6 @@ const breadcrumbObj = {
 function CourseDetailsPage() {
   return (
     <Fragment>
-      <HeaderLayout />
       <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
       <div className="course-details-area pt-130">
         <div className="container">
@@ -560,7 +559,6 @@ function CourseDetailsPage() {
         </div>
       </div>
       <BrandCarouselComponent />
-      <FooterLayout />
     </Fragment>
   );
 }

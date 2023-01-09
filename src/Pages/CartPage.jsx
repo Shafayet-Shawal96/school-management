@@ -19,7 +19,6 @@ const breadcrumbObj = {
 function CartPage() {
   return (
     <Fragment>
-      <HeaderLayout />
       <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
       <div className="cart-main-area pt-130 pb-130">
         <div className="container">
@@ -120,7 +119,6 @@ function CartPage() {
         </div>
       </div>
       <BrandCarouselComponent />
-      <FooterLayout />
     </Fragment>
   );
 }

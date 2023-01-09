@@ -19,11 +19,9 @@ const breadcrumbObj = {
 function EventPage() {
   return (
     <Fragment>
-      <HeaderLayout />
       <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
       <EventArea />
       <BrandCarouselComponent />
-      <FooterLayout />
     </Fragment>
   );
 }

@@ -19,7 +19,6 @@ const breadcrumbObj = {
 function CheckoutPage() {
   return (
     <Fragment>
-      <HeaderLayout />
       <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
       <div className="checkout-area pt-130 pb-130">
         <div className="container">
@@ -156,7 +155,6 @@ function CheckoutPage() {
         </div>
       </div>
       <BrandCarouselComponent />
-      <FooterLayout />
     </Fragment>
   );
 }

@@ -18,7 +18,6 @@ const breadcrumbObj = {
 function LoginRegisterPage() {
   return (
     <Fragment>
-      <HeaderLayout />
       <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
       <div className="login-register-area pt-130 pb-130">
         <div className="container">
@@ -97,7 +96,6 @@ function LoginRegisterPage() {
         </div>
       </div>
       <BrandCarouselComponent />
-      <FooterLayout />
     </Fragment>
   );
 }

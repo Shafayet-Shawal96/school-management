@@ -23,7 +23,6 @@ const seatBookImage = {
 function EventDetailsPage() {
   return (
     <Fragment>
-      <HeaderLayout />
       <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
       <div className="event-details-area pt-130">
         <div className="container">
@@ -344,7 +343,6 @@ function EventDetailsPage() {
         </div>
       </div>
       <BrandCarouselComponent />
-      <FooterLayout />
     </Fragment>
   );
 }
