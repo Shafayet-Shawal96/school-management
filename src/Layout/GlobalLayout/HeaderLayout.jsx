@@ -1,21 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import HeaderSearchComponents from "../../Components/HeaderLayoutComponents/HeaderSearchComponents";
 import MobileMenu from "../../Components/HeaderLayoutComponents/MobileMenu";
 
 const headerImage = {
   backgroundImage: `url(./assets/img/icon-img/header-shape.png)`,
 };
-
-// const win = window;
-// win.addEventListener("scroll", function () {
-//   const header = document.querySelector(".sticky-bar");
-//   const scroll = win.scrollY;
-//   if (scroll < 200) {
-//     header.classList.remove("stick");
-//   } else {
-//     header.classList.add("stick");
-//   }
-// });
 
 function HeaderLayout() {
   const [sticky, setSticky] = useState(false);
@@ -344,19 +334,7 @@ function HeaderLayout() {
                       </div>
                     </div>
                   </div>
-                  <div className="header-search">
-                    <button className="search-toggle">
-                      <i className="fa fa-search"></i>
-                    </button>
-                    <div className="search-content">
-                      <form action="/">
-                        <input type="text" placeholder="Search" />
-                        <button>
-                          <i className="fa fa-search"></i>
-                        </button>
-                      </form>
-                    </div>
-                  </div>
+                  <HeaderSearchComponents />
                 </div>
               </div>
             </div>
