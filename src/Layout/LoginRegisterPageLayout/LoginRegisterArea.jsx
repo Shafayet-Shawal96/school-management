@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 function LoginRegisterArea() {
+  const [login, setLogin] = useState(true);
+
   return (
     <div className="login-register-area pt-130 pb-130">
       <div className="container">
@@ -8,15 +10,21 @@ function LoginRegisterArea() {
           <div className="col-lg-7 col-md-12 ms-auto me-auto">
             <div className="login-register-wrapper">
               <div className="login-register-tab-list nav">
-                <a className="active" data-bs-toggle="tab" href="/lg1">
+                <a
+                  className={login ? "active" : ""}
+                  onClick={() => setLogin(true)}
+                >
                   <h4> login </h4>
                 </a>
-                <a data-bs-toggle="tab" href="/lg2">
+                <a
+                  className={login ? "" : "active"}
+                  onClick={() => setLogin(false)}
+                >
                   <h4> register </h4>
                 </a>
               </div>
               <div className="tab-content">
-                <div id="lg1" className="tab-pane active">
+                <div id="lg1" className={`tab-pane ${login ? "active" : ""}`}>
                   <div className="login-form-container">
                     <div className="login-register-form">
                       <form action="/" method="post">
@@ -44,7 +52,7 @@ function LoginRegisterArea() {
                     </div>
                   </div>
                 </div>
-                <div id="lg2" className="tab-pane">
+                <div id="lg2" className={`tab-pane ${login ? "" : "active"}`}>
                   <div className="login-form-container">
                     <div className="login-register-form">
                       <form action="/" method="post">
