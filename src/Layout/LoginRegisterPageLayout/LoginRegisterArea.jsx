@@ -11,12 +11,14 @@ function LoginRegisterArea() {
             <div className="login-register-wrapper">
               <div className="login-register-tab-list nav">
                 <a
+                  href="/"
                   className={login ? "active" : ""}
                   onClick={() => setLogin(true)}
                 >
                   <h4> login </h4>
                 </a>
                 <a
+                  href="/"
                   className={login ? "" : "active"}
                   onClick={() => setLogin(false)}
                 >

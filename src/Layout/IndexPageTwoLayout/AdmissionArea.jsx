@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import TableContent from "../../Components/IndexPageTwoComponents/TableContent";
 
 function AdmissionArea() {
+  const [tabStatus, setTabStatus] = useState(1);
+
+  const updateTabStatus = (e) => {
+    e.preventDefault();
+    const id = Number(e.target.parentElement.id);
+    if (id) {
+      setTabStatus(id);
+    } else {
+      setTabStatus(1);
+    }
+  };
+
   return (
     <div className="admission-area pt-125 pb-130 bg-img-position">
       <div className="container">
@@ -19,20 +31,40 @@ function AdmissionArea() {
           </div>
         </div>
         <div className="admission-tab-list nav pt-80 pb-60">
-          <a className="active" href="/course-categorie-1" data-bs-toggle="tab">
+          <a
+            href="/"
+            id={1}
+            className={tabStatus === 1 ? "active" : ""}
+            onClick={updateTabStatus}
+          >
             <h4>all </h4>
           </a>
-          <a href="/course-categorie-2" data-bs-toggle="tab">
+          <a
+            href="/"
+            id={2}
+            className={tabStatus === 2 ? "active" : ""}
+            onClick={updateTabStatus}
+          >
             <h4> Undergraduate Courses </h4>
           </a>
-          <a href="/course-categorie-3" data-bs-toggle="tab">
+          <a
+            href="/"
+            id={3}
+            className={tabStatus === 3 ? "active" : ""}
+            onClick={updateTabStatus}
+          >
             <h4>Graduate Courses </h4>
           </a>
-          <a href="/course-categorie-4" data-bs-toggle="tab">
+          <a
+            href="/"
+            id={4}
+            className={tabStatus === 4 ? "active" : ""}
+            onClick={updateTabStatus}
+          >
             <h4>Diploma Courses </h4>
           </a>
         </div>
-        <TableContent />
+        <TableContent tabStatus={tabStatus} />
       </div>
     </div>
   );
