@@ -2,7 +2,6 @@ import React from "react";
 import CourseSliderOwl from "./CourseSliderOwl";
 
 function TableContent({ tabStatus }) {
-  console.log(tabStatus);
   return (
     <div className="tab-content jump">
       <div className={`tab-pane ${tabStatus === 1 ? "active" : ""}`}>

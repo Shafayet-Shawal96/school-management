@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import MobileMenu from "../../Components/HeaderLayoutComponents/MobileMenu";
 
 const headerImage = {
@@ -19,6 +19,7 @@ const headerImage = {
 
 function HeaderLayout() {
   const [sticky, setSticky] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const checkWindow = () => {
@@ -31,6 +32,10 @@ function HeaderLayout() {
     window.addEventListener("scroll", checkWindow);
     return () => window.removeEventListener("scroll", checkWindow);
   }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <header className="header-area">
@@ -76,7 +81,7 @@ function HeaderLayout() {
           <div className="row">
             <div className="col-lg-2 col-md-6 col-4">
               <div className="logo">
-                <Link to="/">
+                <Link to="#">
                   <img alt="" src="assets/img/logo/logo.png" />
                 </Link>
               </div>
