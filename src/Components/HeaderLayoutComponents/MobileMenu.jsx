@@ -1,18 +1,20 @@
 import React, { useState } from "react";
-
-function Button() {
-  return (
-    <>
-      <span></span>
-      <span></span>
-      <span></span>
-    </>
-  );
-}
+import cssClass from "./MobileMenu.module.css";
 
 function MobileMenu() {
   const [menu, setMenu] = useState(false);
   const [subMenu, setSubMenu] = useState(false);
+
+  function Button() {
+    if (menu) return <div>X</div>;
+    return (
+      <>
+        <span></span>
+        <span></span>
+        <span></span>
+      </>
+    );
+  }
 
   const updateMenu = (e) => {
     e.preventDefault();
@@ -35,7 +37,7 @@ function MobileMenu() {
         <div className="mean-bar">
           <a
             href="#nav"
-            className={`meanmenu-reveal ${menu ? "meanclose" : ""}`}
+            className={`meanmenu-reveal ${menu ? "meanclose" : ""} `}
             style={
               menu
                 ? { textAlign: "center", textIndent: "0px", fontSize: "18px" }
@@ -43,7 +45,7 @@ function MobileMenu() {
             }
             onClick={updateMenu}
           >
-            {menu ? "X" : <Button />}
+            <Button />
           </a>
           <nav className="mean-nav">
             <ul

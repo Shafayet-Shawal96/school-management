@@ -1,32 +1,74 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import cssClass from "./HeaderSearchComponents.module.css";
 
 const twoClass = `${cssClass.input_full} ${cssClass.transition_delay}`;
 
+// const useOutsideClick = (callback) => {
+//   const ref = useRef();
+
+// useEffect(() => {
+//   const handleClick = (event) => {
+//     callback();
+//   };
+
+//   document.addEventListener("click", handleClick);
+
+//   return () => {
+//     document.removeEventListener("click", handleClick);
+//   };
+// }, []);
+
+//   return ref;
+// };
+
 function HeaderSearchComponents() {
-  const [isHover, setIsHover] = useState(false);
+  const [clickAnimation, setClickAnimation] = useState(false);
+  const [inputField, setInputField] = useState("");
 
-  const handleMouseEnter = () => {
-    setIsHover(true);
+  const inputOnChange = (e) => {
+    setInputField(e.target.value);
   };
 
-  const handleMouseLeave = () => {
-    setIsHover(false);
+  const addAnimation = (e) => {
+    setClickAnimation(true);
   };
+
+  useEffect(() => {
+    const otherClickEvent = (e) => {
+      const searchElements = [].slice.call(
+        document
+          .querySelector(`div[class*="${cssClass.header_search}"]`)
+          .getElementsByTagName("*"),
+        0
+      );
+
+      if (!Object.values(searchElements).includes(e.target)) {
+        setClickAnimation(false);
+        setInputField("");
+      }
+    };
+
+    document.addEventListener("click", otherClickEvent);
+
+    return () => {
+      document.removeEventListener("click", otherClickEvent);
+    };
+  }, []);
 
   return (
     <div
       className={`${cssClass.header_search} ${
-        isHover ? cssClass.header_full : cssClass.transition_delay
+        clickAnimation ? cssClass.header_full : cssClass.transition_delay
       }`}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      onClick={addAnimation}
     >
       <div className={cssClass.flex_container}>
         <input
-          className={`${cssClass.input} ${isHover ? twoClass : ""}`}
+          className={`${cssClass.input} ${clickAnimation ? twoClass : ""}`}
           type="text"
+          value={inputField}
           placeholder="Search"
+          onChange={inputOnChange}
         />
         <button className={cssClass.icon_button}>
           <i className="fa fa-search"></i>
