@@ -1,25 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import cssClass from "./HeaderSearchComponents.module.css";
 
 const twoClass = `${cssClass.input_full} ${cssClass.transition_delay}`;
-
-// const useOutsideClick = (callback) => {
-//   const ref = useRef();
-
-// useEffect(() => {
-//   const handleClick = (event) => {
-//     callback();
-//   };
-
-//   document.addEventListener("click", handleClick);
-
-//   return () => {
-//     document.removeEventListener("click", handleClick);
-//   };
-// }, []);
-
-//   return ref;
-// };
 
 function HeaderSearchComponents() {
   const [clickAnimation, setClickAnimation] = useState(false);

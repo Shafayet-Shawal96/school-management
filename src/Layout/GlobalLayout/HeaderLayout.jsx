@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import HeaderSearchComponents from "../../Components/HeaderLayoutComponents/HeaderSearchComponents";
-import MobileMenu from "../../Components/HeaderLayoutComponents/MobileMenu";
+// import MobileMenu from "../../Components/HeaderLayoutComponents/MobileMenu";
+import MobileMenuButton from "../../Components/HeaderLayoutComponents/MobileMenuButton";
 
 const headerImage = {
   backgroundImage: `url(./assets/img/icon-img/header-shape.png)`,
@@ -335,11 +336,12 @@ function HeaderLayout() {
                     </div>
                   </div>
                   <HeaderSearchComponents />
+                  <MobileMenuButton />
                 </div>
               </div>
             </div>
           </div>
-          <MobileMenu />
+          {/* <MobileMenu /> */}
         </div>
       </div>
     </header>
