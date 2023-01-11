@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const contactAreaImage = {
   backgroundImage: `url(./assets/img/bg/contact-info.jpg)`,
@@ -50,7 +51,7 @@ function ContactInfoArea() {
                   <i className="fa fa-calendar-o"></i>
                 </span>
               </div>
-              <a href="/">education@email.com</a>
+              <Link to="/">education@email.com</Link>
             </div>
           </div>
         </div>

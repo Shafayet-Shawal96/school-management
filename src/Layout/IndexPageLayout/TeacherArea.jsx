@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function TeacherArea() {
   return (
@@ -32,24 +33,24 @@ function TeacherArea() {
                   <div className="teacher-social">
                     <ul>
                       <li>
-                        <a className="facebook" href="/">
+                        <Link className="facebook" to="#">
                           <i className="fa fa-facebook"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="youtube-play" href="/">
+                        <Link className="youtube-play" to="#">
                           <i className="fa fa-youtube-play"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="twitter" href="/">
+                        <Link className="twitter" to="#">
                           <i className="fa fa-twitter"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="google-plus" href="/">
+                        <Link className="google-plus" to="#">
                           <i className="fa fa-google-plus"></i>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -74,24 +75,24 @@ function TeacherArea() {
                   <div className="teacher-social">
                     <ul>
                       <li>
-                        <a className="facebook" href="/">
+                        <Link className="facebook" to="#">
                           <i className="fa fa-facebook"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="youtube-play" href="/">
+                        <Link className="youtube-play" to="#">
                           <i className="fa fa-youtube-play"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="twitter" href="/">
+                        <Link className="twitter" to="#">
                           <i className="fa fa-twitter"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="google-plus" href="/">
+                        <Link className="google-plus" to="#">
                           <i className="fa fa-google-plus"></i>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -116,24 +117,24 @@ function TeacherArea() {
                   <div className="teacher-social">
                     <ul>
                       <li>
-                        <a className="facebook" href="/">
+                        <Link className="facebook" to="#">
                           <i className="fa fa-facebook"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="youtube-play" href="/">
+                        <Link className="youtube-play" to="#">
                           <i className="fa fa-youtube-play"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="twitter" href="/">
+                        <Link className="twitter" to="#">
                           <i className="fa fa-twitter"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="google-plus" href="/">
+                        <Link className="google-plus" to="#">
                           <i className="fa fa-google-plus"></i>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -158,24 +159,24 @@ function TeacherArea() {
                   <div className="teacher-social">
                     <ul>
                       <li>
-                        <a className="facebook" href="/">
+                        <Link className="facebook" to="#">
                           <i className="fa fa-facebook"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="youtube-play" href="/">
+                        <Link className="youtube-play" to="#">
                           <i className="fa fa-youtube-play"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="twitter" href="/">
+                        <Link className="twitter" to="#">
                           <i className="fa fa-twitter"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="google-plus" href="/">
+                        <Link className="google-plus" to="#">
                           <i className="fa fa-google-plus"></i>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -200,24 +201,24 @@ function TeacherArea() {
                   <div className="teacher-social">
                     <ul>
                       <li>
-                        <a className="facebook" href="/">
+                        <Link className="facebook" to="#">
                           <i className="fa fa-facebook"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="youtube-play" href="/">
+                        <Link className="youtube-play" to="#">
                           <i className="fa fa-youtube-play"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="twitter" href="/">
+                        <Link className="twitter" to="#">
                           <i className="fa fa-twitter"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="google-plus" href="/">
+                        <Link className="google-plus" to="#">
                           <i className="fa fa-google-plus"></i>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>

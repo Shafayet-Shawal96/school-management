@@ -2,6 +2,7 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import { Link } from "react-router-dom";
 
 const slider1Image = {
   backgroundImage: `url(./assets/img/slider/slider-1.jpg)`,
@@ -49,18 +50,18 @@ function SliderAreaOwl() {
                   Ut enim ad minim veniam, quis nostrud exercitation{" "}
                 </p>
                 <div className="slider-btn">
-                  <a
+                  <Link
                     className="animated default-btn btn-green-color"
-                    href="about-us.html"
+                    to="about-us.html"
                   >
                     ABOUT US
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="animated default-btn btn-white-color"
-                    href="contact.html"
+                    to="contact.html"
                   >
                     CONTACT US
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -89,18 +90,18 @@ function SliderAreaOwl() {
                   Ut enim ad minim veniam, quis nostrud exercitation{" "}
                 </p>
                 <div className="slider-btn">
-                  <a
+                  <Link
                     className="animated default-btn btn-green-color"
-                    href="about-us.html"
+                    to="about-us.html"
                   >
                     ABOUT US
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="animated default-btn btn-white-color"
-                    href="contact.html"
+                    to="contact.html"
                   >
                     CONTACT US
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const discountAreaImage = {
   backgroundImage: `url(assets/img/bg/bg-7.jpg)`,
@@ -31,9 +32,9 @@ function DiscountArea() {
                 Stock <span>Limited</span>
               </h2>
               <div className="discount-btn">
-                <a className="default-btn" href="/">
+                <Link className="default-btn" href="/">
                   ADD TO CART
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import TableContent from "../../Components/IndexPageTwoComponents/TableContent";
 
 function AdmissionArea() {
@@ -25,44 +26,44 @@ function AdmissionArea() {
             ad minim veniam, quis nostrud exercitation{" "}
           </p>
           <div className="apply-btn">
-            <a className="default-btn" href="/">
+            <Link className="default-btn" to="#">
               APPLY NOW
-            </a>
+            </Link>
           </div>
         </div>
         <div className="admission-tab-list nav pt-80 pb-60">
-          <a
-            href="/"
+          <Link
+            to="#"
             id={1}
             className={tabStatus === 1 ? "active" : ""}
             onClick={updateTabStatus}
           >
             <h4>all </h4>
-          </a>
-          <a
-            href="/"
+          </Link>
+          <Link
+            to="#"
             id={2}
             className={tabStatus === 2 ? "active" : ""}
             onClick={updateTabStatus}
           >
             <h4> Undergraduate Courses </h4>
-          </a>
-          <a
-            href="/"
+          </Link>
+          <Link
+            to="#"
             id={3}
             className={tabStatus === 3 ? "active" : ""}
             onClick={updateTabStatus}
           >
             <h4>Graduate Courses </h4>
-          </a>
-          <a
-            href="/"
+          </Link>
+          <Link
+            to="#"
             id={4}
             className={tabStatus === 4 ? "active" : ""}
             onClick={updateTabStatus}
           >
             <h4>Diploma Courses </h4>
-          </a>
+          </Link>
         </div>
         <TableContent tabStatus={tabStatus} />
       </div>

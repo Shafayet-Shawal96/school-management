@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import RelatedCourse from "../../Components/CourseDetailsPageComponents/RelatedCourse";
 
 function CourseDetailArea() {
@@ -11,25 +12,25 @@ function CourseDetailArea() {
               <div className="apply-area">
                 <img src="assets/img/banner/course-details.jpg" alt="" />
                 <div className="course-apply-btn">
-                  <a href="/" className="default-btn">
+                  <Link to="#" className="default-btn">
                     APPLY NOW
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="course-tab-list nav pt-40 pb-25 mb-35">
-                <a
+                <Link
                   className="active"
-                  href="/course-details-1"
+                  to="/course-details-1"
                   data-bs-toggle="tab"
                 >
                   <h4>Over View </h4>
-                </a>
-                <a href="/course-details-2" data-bs-toggle="tab">
+                </Link>
+                <Link to="/course-details-2" data-bs-toggle="tab">
                   <h4>Instructor </h4>
-                </a>
-                <a href="/course-details-3" data-bs-toggle="tab">
+                </Link>
+                <Link to="/course-details-3" data-bs-toggle="tab">
                   <h4> Reviews </h4>
-                </a>
+                </Link>
               </div>
               <div className="tab-content jump">
                 <div className="tab-pane active" id="course-details-1">
@@ -253,7 +254,7 @@ function CourseDetailArea() {
                             </div>
                           </div>
                           <div className="review-btn">
-                            <a href="/">Reply</a>
+                            <Link to="#">Reply</Link>
                           </div>
                         </div>
                         <div className="review-bottom">
@@ -287,7 +288,7 @@ function CourseDetailArea() {
                             </div>
                           </div>
                           <div className="review-btn">
-                            <a href="/">Reply</a>
+                            <Link to="#">Reply</Link>
                           </div>
                         </div>
                         <div className="review-bottom">
@@ -367,30 +368,30 @@ function CourseDetailArea() {
                   quia voluptas sit aspernatur aut odit aut fugit, sed quia
                   consequuntur magni dolors eos qui ratione voluptatem sad.
                 </p>
-                <a href="/">
+                <Link to="#">
                   <img src="assets/img/banner/banner-4.jpg" alt="" />
-                </a>
+                </Link>
                 <div className="sidebar-social">
                   <ul>
                     <li>
-                      <a className="facebook" href="/">
+                      <Link className="facebook" to="#">
                         <i className="fa fa-facebook"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="youtube" href="/">
+                      <Link className="youtube" to="#">
                         <i className="fa fa-youtube-play"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="twitter" href="/">
+                      <Link className="twitter" to="#">
                         <i className="fa fa-twitter"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="google" href="/">
+                      <Link className="google" to="#">
                         <i className="fa fa-google-plus"></i>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -402,13 +403,13 @@ function CourseDetailArea() {
                 <div className="recent-post-wrap">
                   <div className="single-recent-post">
                     <div className="recent-post-img">
-                      <a href="/">
+                      <Link to="#">
                         <img src="assets/img/blog/recent-post-1.jpg" alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="recent-post-content">
                       <h5>
-                        <a href="/">Blog title will be here.</a>
+                        <Link to="#">Blog title will be here.</Link>
                       </h5>
                       <span>Blog Category</span>
                       <p>Datat non proident qui offici.hafw adec qart.</p>
@@ -416,13 +417,13 @@ function CourseDetailArea() {
                   </div>
                   <div className="single-recent-post">
                     <div className="recent-post-img">
-                      <a href="/">
+                      <Link to="#">
                         <img src="assets/img/blog/recent-post-2.jpg" alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="recent-post-content">
                       <h5>
-                        <a href="/">Blog title will be here.</a>
+                        <Link to="#">Blog title will be here.</Link>
                       </h5>
                       <span>Blog Category</span>
                       <p>Datat non proident qui offici.hafw adec qart.</p>
@@ -437,29 +438,29 @@ function CourseDetailArea() {
                 <div className="category-list">
                   <ul>
                     <li>
-                      <a href="/">
+                      <Link to="#">
                         MBA <span>04</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/">
+                      <Link to="#">
                         Graduate <span>08</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/">
+                      <Link to="#">
                         Under Graduate <span>04</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/">
+                      <Link to="#">
                         BBA <span>06</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/">
+                      <Link to="#">
                         Engineering <span>04</span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -471,13 +472,13 @@ function CourseDetailArea() {
                 <div className="sidebar-recent-course">
                   <div className="sin-sidebar-recent-course">
                     <div className="sidebar-recent-course-img">
-                      <a href="/">
+                      <Link to="#">
                         <img src="assets/img/blog/recent-post-1.jpg" alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="sidebar-recent-course-content">
                       <h4>
-                        <a href="/">Course Title</a>
+                        <Link to="#">Course Title</Link>
                       </h4>
                       <ul>
                         <li>Credits : 125</li>
@@ -488,13 +489,13 @@ function CourseDetailArea() {
                   </div>
                   <div className="sin-sidebar-recent-course">
                     <div className="sidebar-recent-course-img">
-                      <a href="/">
+                      <Link to="#">
                         <img src="assets/img/blog/recent-post-2.jpg" alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="sidebar-recent-course-content">
                       <h4>
-                        <a href="/">Course Title</a>
+                        <Link to="#">Course Title</Link>
                       </h4>
                       <ul>
                         <li>Credits : 125</li>
@@ -512,22 +513,22 @@ function CourseDetailArea() {
                 <div className="sidebar-tag">
                   <ul>
                     <li>
-                      <a href="/">Loremsite</a>
+                      <Link to="#">Loremsite</Link>
                     </li>
                     <li>
-                      <a href="/">Loreipsum</a>
+                      <Link to="#">Loreipsum</Link>
                     </li>
                     <li>
-                      <a href="/">Dolar</a>
+                      <Link to="#">Dolar</Link>
                     </li>
                     <li>
-                      <a href="/">Site ament dollar</a>
+                      <Link to="#">Site ament dollar</Link>
                     </li>
                     <li>
-                      <a href="/">Loremsite</a>
+                      <Link to="#">Loremsite</Link>
                     </li>
                     <li>
-                      <a href="/">Dummy Text</a>
+                      <Link to="#">Dummy Text</Link>
                     </li>
                   </ul>
                 </div>

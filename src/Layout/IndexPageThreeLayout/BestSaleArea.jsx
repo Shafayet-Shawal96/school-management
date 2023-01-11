@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function BestSaleArea() {
   return (
@@ -18,36 +19,36 @@ function BestSaleArea() {
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="product-wrap mb-30">
               <div className="product-img">
-                <a href="single-product.html">
+                <Link to="single-product.html">
                   <img src="assets/img/product/pro-1.jpg" alt="" />
-                </a>
+                </Link>
                 <span>Sale</span>
                 <div className="product-action">
                   <ul>
                     <li>
-                      <a title="Add To Cart" href="/">
+                      <Link title="Add To Cart" to="#">
                         <i className="fa fa-cart-arrow-down"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a title="Compare" href="/">
+                      <Link title="Compare" to="#">
                         <i className="fa fa-random"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a title="Wishlist" href="/">
+                      <Link title="Wishlist" to="#">
                         <i className="fa fa-heart-o"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         title="Quick View"
                         data-bs-toggle="modal"
                         data-bs-target="/exampleModal"
-                        href="/"
+                        to="#"
                       >
                         <i className="fa fa-eye"></i>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -56,7 +57,7 @@ function BestSaleArea() {
                 <div className="pro-title-rating-wrap">
                   <div className="product-title">
                     <h3>
-                      <a href="single-product.html">Marker Pen</a>
+                      <Link to="single-product.html">Marker Pen</Link>
                     </h3>
                   </div>
                   <div className="product-rating">
@@ -77,35 +78,35 @@ function BestSaleArea() {
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="product-wrap mb-30">
               <div className="product-img">
-                <a href="single-product.html">
+                <Link to="single-product.html">
                   <img src="assets/img/product/pro-9.jpg" alt="" />
-                </a>
+                </Link>
                 <div className="product-action">
                   <ul>
                     <li>
-                      <a title="Add To Cart" href="/">
+                      <Link title="Add To Cart" to="#">
                         <i className="fa fa-cart-arrow-down"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a title="Compare" href="/">
+                      <Link title="Compare" to="#">
                         <i className="fa fa-random"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a title="Wishlist" href="/">
+                      <Link title="Wishlist" to="#">
                         <i className="fa fa-heart-o"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         title="Quick View"
                         data-bs-toggle="modal"
                         data-bs-target="/exampleModal"
-                        href="/"
+                        to="#"
                       >
                         <i className="fa fa-eye"></i>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -114,7 +115,7 @@ function BestSaleArea() {
                 <div className="pro-title-rating-wrap">
                   <div className="product-title">
                     <h3>
-                      <a href="single-product.html">History Book</a>
+                      <Link to="single-product.html">History Book</Link>
                     </h3>
                   </div>
                   <div className="product-rating">
@@ -135,36 +136,36 @@ function BestSaleArea() {
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="product-wrap mb-30">
               <div className="product-img">
-                <a href="single-product.html">
+                <Link to="single-product.html">
                   <img src="assets/img/product/pro-10.jpg" alt="" />
-                </a>
+                </Link>
                 <span>Sale</span>
                 <div className="product-action">
                   <ul>
                     <li>
-                      <a title="Add To Cart" href="/">
+                      <Link title="Add To Cart" to="#">
                         <i className="fa fa-cart-arrow-down"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a title="Compare" href="/">
+                      <Link title="Compare" to="#">
                         <i className="fa fa-random"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a title="Wishlist" href="/">
+                      <Link title="Wishlist" to="#">
                         <i className="fa fa-heart-o"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         title="Quick View"
                         data-bs-toggle="modal"
                         data-bs-target="/exampleModal"
-                        href="/"
+                        to="#"
                       >
                         <i className="fa fa-eye"></i>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -173,7 +174,7 @@ function BestSaleArea() {
                 <div className="pro-title-rating-wrap">
                   <div className="product-title">
                     <h3>
-                      <a href="single-product.html">Softball Gloves</a>
+                      <Link to="single-product.html">Softball Gloves</Link>
                     </h3>
                   </div>
                   <div className="product-rating">
@@ -194,35 +195,35 @@ function BestSaleArea() {
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="product-wrap mb-30">
               <div className="product-img">
-                <a href="single-product.html">
+                <Link to="single-product.html">
                   <img src="assets/img/product/pro-11.jpg" alt="" />
-                </a>
+                </Link>
                 <div className="product-action">
                   <ul>
                     <li>
-                      <a title="Add To Cart" href="/">
+                      <Link title="Add To Cart" to="#">
                         <i className="fa fa-cart-arrow-down"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a title="Compare" href="/">
+                      <Link title="Compare" to="#">
                         <i className="fa fa-random"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a title="Wishlist" href="/">
+                      <Link title="Wishlist" to="#">
                         <i className="fa fa-heart-o"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         title="Quick View"
                         data-bs-toggle="modal"
                         data-bs-target="/exampleModal"
-                        href="/"
+                        to="#"
                       >
                         <i className="fa fa-eye"></i>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -231,7 +232,7 @@ function BestSaleArea() {
                 <div className="pro-title-rating-wrap">
                   <div className="product-title">
                     <h3>
-                      <a href="single-product.html">Skating Shoes</a>
+                      <Link to="single-product.html">Skating Shoes</Link>
                     </h3>
                   </div>
                   <div className="product-rating">

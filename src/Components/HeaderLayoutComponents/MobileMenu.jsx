@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Button() {
   return (
@@ -33,8 +34,8 @@ function MobileMenu() {
     <div className="mobile-menu-area">
       <div className="mobile-menu mean-container">
         <div className="mean-bar">
-          <a
-            href="#nav"
+          <Link
+            to="#nav"
             className={`meanmenu-reveal ${menu ? "meanclose" : ""}`}
             style={
               menu
@@ -44,138 +45,138 @@ function MobileMenu() {
             onClick={updateMenu}
           >
             {menu ? "X" : <Button />}
-          </a>
+          </Link>
           <nav className="mean-nav">
             <ul
               className="menu-overflow"
               style={{ display: menu ? "block" : "none" }}
             >
               <li>
-                <a href="index.html">Home</a>
+                <Link to="index.html">Home</Link>
                 <ul style={{ display: subMenu === 1 ? "block" : "none" }}>
                   <li>
-                    <a href="index.html">home version 1</a>
+                    <Link to="index.html">home version 1</Link>
                   </li>
                   <li>
-                    <a href="index.html">home version 2</a>
+                    <Link to="index.html">home version 2</Link>
                   </li>
                   <li>
-                    <a href="index.html">home version 3</a>
+                    <Link to="index.html">home version 3</Link>
                   </li>
                 </ul>
-                <a
+                <Link
                   className={`mean-expand ${
                     subMenu === 1 ? "mean-clicked" : ""
                   }`}
                   id={1}
-                  href="/"
+                  to="#"
                   style={{ fontSize: "18px" }}
                   onClick={updateSubMenu}
                 >
                   {subMenu === 1 ? "-" : "+"}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="shop.html">About</a>
+                <Link to="shop.html">About</Link>
               </li>
               <li>
-                <a href="index.html">Shop</a>
+                <Link to="index.html">Shop</Link>
                 <ul style={{ display: subMenu === 2 ? "block" : "none" }}>
                   <li>
-                    <a href="index.html">Category 1</a>
+                    <Link to="index.html">Category 1</Link>
                   </li>
                   <li>
-                    <a href="index.html">Category 2</a>
+                    <Link to="index.html">Category 2</Link>
                   </li>
                   <li>
-                    <a href="index.html">Category 3</a>
+                    <Link to="index.html">Category 3</Link>
                   </li>
                   <li>
-                    <a href="index.html">Category 4</a>
+                    <Link to="index.html">Category 4</Link>
                   </li>
                 </ul>
-                <a
+                <Link
                   className={`mean-expand ${
                     subMenu === 2 ? "mean-clicked" : ""
                   }`}
                   id={2}
-                  href="/"
+                  to="#"
                   style={{ fontSize: "18px" }}
                   onClick={updateSubMenu}
                 >
                   {subMenu === 2 ? "-" : "+"}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="index.html">Pages</a>
+                <Link to="index.html">Pages</Link>
                 <ul style={{ display: subMenu === 3 ? "block" : "none" }}>
                   <li>
-                    <a href="index.html">Course Page</a>
+                    <Link to="index.html">Course Page</Link>
                   </li>
                   <li>
-                    <a href="index.html">Event Page</a>
+                    <Link to="index.html">Event Page</Link>
                   </li>
                   <li>
-                    <a href="index.html">Shop Page</a>
+                    <Link to="index.html">Shop Page</Link>
                   </li>
                   <li>
-                    <a href="index.html">Course Details</a>
+                    <Link to="index.html">Course Details</Link>
                   </li>
                   <li>
-                    <a href="index.html">Event Details</a>
+                    <Link to="index.html">Event Details</Link>
                   </li>
                   <li>
-                    <a href="index.html">Single Product</a>
+                    <Link to="index.html">Single Product</Link>
                   </li>
                   <li>
-                    <a href="index.html">Cart Page</a>
+                    <Link to="index.html">Cart Page</Link>
                   </li>
                   <li>
-                    <a href="index.html">Checkout</a>
+                    <Link to="index.html">Checkout</Link>
                   </li>
                   <li>
-                    <a href="index.html">Wishlist</a>
+                    <Link to="index.html">Wishlist</Link>
                   </li>
                   <li>
-                    <a href="index.html">Login / Register</a>
+                    <Link to="index.html">Login / Register</Link>
                   </li>
                 </ul>
-                <a
+                <Link
                   className={`mean-expand ${
                     subMenu === 3 ? "mean-clicked" : ""
                   }`}
                   id={3}
-                  href="/"
+                  to="#"
                   style={{ fontSize: "18px" }}
                   onClick={updateSubMenu}
                 >
                   {subMenu === 3 ? "-" : "+"}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="index.html">Blog</a>
+                <Link to="index.html">Blog</Link>
                 <ul style={{ display: subMenu === 4 ? "block" : "none" }}>
                   <li>
-                    <a href="index.html">Blog</a>
+                    <Link to="index.html">Blog</Link>
                   </li>
                   <li>
-                    <a href="index.html">Blog Details</a>
+                    <Link to="index.html">Blog Details</Link>
                   </li>
                 </ul>
-                <a
+                <Link
                   className={`mean-expand ${
                     subMenu === 4 ? "mean-clicked" : ""
                   }`}
                   id={4}
-                  href="/"
+                  to="#"
                   style={{ fontSize: "18px" }}
                   onClick={updateSubMenu}
                 >
                   {subMenu === 4 ? "-" : "+"}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="shop.html">Contact</a>
+                <Link to="shop.html">Contact</Link>
               </li>
             </ul>
           </nav>
@@ -184,170 +185,170 @@ function MobileMenu() {
         <nav id="mobile-menu-active" style={{ display: "none" }}>
           <ul className="menu-overflow">
             <li>
-              <a href="index.html">HOME</a>
+              <Link to="index.html">HOME</Link>
               <ul>
                 <li>
-                  <a href="index.html">home version 1</a>
+                  <Link to="index.html">home version 1</Link>
                 </li>
                 <li>
-                  <a href="index-2.html">home version 2</a>
+                  <Link to="index-2.html">home version 2</Link>
                 </li>
                 <li>
-                  <a href="index-3.html">home version 3</a>
+                  <Link to="index-3.html">home version 3</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="about-us.html">About</a>
+              <Link to="about-us.html">About</Link>
             </li>
             <li>
-              <a href="shop.html">Shop</a>
+              <Link to="shop.html">Shop</Link>
               <ul>
                 <li>
-                  <a href="/">Categories 01</a>
+                  <Link to="#">Categories 01</Link>
                   <ul>
                     <li>
-                      <a href="shop.html">bag</a>
+                      <Link to="shop.html">bag</Link>
                     </li>
                     <li>
-                      <a href="shop.html">Pen</a>
+                      <Link to="shop.html">Pen</Link>
                     </li>
                     <li>
-                      <a href="shop.html">Erasers</a>
+                      <Link to="shop.html">Erasers</Link>
                     </li>
                     <li>
-                      <a href="shop.html">Glue sticks</a>
+                      <Link to="shop.html">Glue sticks</Link>
                     </li>
                     <li>
-                      <a href="shop.html">Lunchbox </a>
+                      <Link to="shop.html">Lunchbox </Link>
                     </li>
                     <li>
-                      <a href="shop.html">Pencil box </a>
+                      <Link to="shop.html">Pencil box </Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="/">Categories 02</a>
+                  <Link to="#">Categories 02</Link>
                   <ul>
                     <li>
-                      <a href="shop.html">bag</a>
+                      <Link to="shop.html">bag</Link>
                     </li>
                     <li>
-                      <a href="shop.html">Pen</a>
+                      <Link to="shop.html">Pen</Link>
                     </li>
                     <li>
-                      <a href="shop.html">Erasers</a>
+                      <Link to="shop.html">Erasers</Link>
                     </li>
                     <li>
-                      <a href="shop.html">Glue sticks</a>
+                      <Link to="shop.html">Glue sticks</Link>
                     </li>
                     <li>
-                      <a href="shop.html">Lunchbox </a>
+                      <Link to="shop.html">Lunchbox </Link>
                     </li>
                     <li>
-                      <a href="shop.html">Pencil box </a>
+                      <Link to="shop.html">Pencil box </Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="/">Categories 03</a>
+                  <Link to="#">Categories 03</Link>
                   <ul>
                     <li>
-                      <a href="shop.html">bag</a>
+                      <Link to="shop.html">bag</Link>
                     </li>
                     <li>
-                      <a href="shop.html">Pen</a>
+                      <Link to="shop.html">Pen</Link>
                     </li>
                     <li>
-                      <a href="shop.html">Erasers</a>
+                      <Link to="shop.html">Erasers</Link>
                     </li>
                     <li>
-                      <a href="shop.html">Glue sticks</a>
+                      <Link to="shop.html">Glue sticks</Link>
                     </li>
                     <li>
-                      <a href="shop.html">Lunchbox </a>
+                      <Link to="shop.html">Lunchbox </Link>
                     </li>
                     <li>
-                      <a href="shop.html">Pencil box </a>
+                      <Link to="shop.html">Pencil box </Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="/">Categories 04</a>
+                  <Link to="#">Categories 04</Link>
                   <ul>
                     <li>
-                      <a href="shop.html">bag</a>
+                      <Link to="shop.html">bag</Link>
                     </li>
                     <li>
-                      <a href="shop.html">Pen</a>
+                      <Link to="shop.html">Pen</Link>
                     </li>
                     <li>
-                      <a href="shop.html">Erasers</a>
+                      <Link to="shop.html">Erasers</Link>
                     </li>
                     <li>
-                      <a href="shop.html">Glue sticks</a>
+                      <Link to="shop.html">Glue sticks</Link>
                     </li>
                     <li>
-                      <a href="shop.html">Lunchbox </a>
+                      <Link to="shop.html">Lunchbox </Link>
                     </li>
                     <li>
-                      <a href="shop.html">Pencil box </a>
+                      <Link to="shop.html">Pencil box </Link>
                     </li>
                   </ul>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="/">Pages</a>
+              <Link to="#">Pages</Link>
               <ul>
                 <li>
-                  <a href="course.html">course page</a>
+                  <Link to="course.html">course page</Link>
                 </li>
                 <li>
-                  <a href="event.html">event page</a>
+                  <Link to="event.html">event page</Link>
                 </li>
                 <li>
-                  <a href="shop.html">shop page</a>
+                  <Link to="shop.html">shop page</Link>
                 </li>
                 <li>
-                  <a href="course-details.html">course details</a>
+                  <Link to="course-details.html">course details</Link>
                 </li>
                 <li>
-                  <a href="event-details.html">event details</a>
+                  <Link to="event-details.html">event details</Link>
                 </li>
                 <li>
-                  <a href="single-product.html">single product</a>
+                  <Link to="single-product.html">single product</Link>
                 </li>
                 <li>
-                  <a href="cart.html">cart page</a>
+                  <Link to="cart.html">cart page</Link>
                 </li>
                 <li>
-                  <a href="checkout.html">checkout</a>
+                  <Link to="checkout.html">checkout</Link>
                 </li>
                 <li>
-                  <a href="wishlist.html">wishlist</a>
+                  <Link to="wishlist.html">wishlist</Link>
                 </li>
                 <li>
-                  <a href="login-register.html">login / register</a>
+                  <Link to="login-register.html">login / register</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="about-us.html">About us</a>
+              <Link to="about-us.html">About us</Link>
             </li>
             <li>
-              <a href="blog.html">Blog</a>
+              <Link to="blog.html">Blog</Link>
               <ul>
                 <li>
-                  <a href="blog.html">blog</a>
+                  <Link to="blog.html">blog</Link>
                 </li>
                 <li>
-                  <a href="blog-details.html">blog details</a>
+                  <Link to="blog-details.html">blog details</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="contact.html">Contact</a>
+              <Link to="contact.html">Contact</Link>
             </li>
           </ul>
         </nav>

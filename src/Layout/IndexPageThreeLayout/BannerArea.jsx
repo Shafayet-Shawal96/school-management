@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function BannerArea() {
   return (
@@ -8,9 +9,9 @@ function BannerArea() {
           <div className="col-lg-4 col-md-4">
             <div className="single-banner mb-30">
               <div className="banner-img">
-                <a href="/">
+                <Link to="#">
                   <img src="assets/img/banner/book-1.png" alt="" />
-                </a>
+                </Link>
               </div>
               <div className="banner-content">
                 <h5>Adventure</h5>
@@ -19,9 +20,9 @@ function BannerArea() {
                   <img src="assets/img/icon-img/banner-shape.png" alt="" />
                 </div>
                 <div className="banner-btn">
-                  <a className="default-btn" href="/">
+                  <Link className="default-btn" to="#">
                     ADD TO CART
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -29,9 +30,9 @@ function BannerArea() {
           <div className="col-lg-4 col-md-4">
             <div className="single-banner second-banner mb-30">
               <div className="banner-img">
-                <a href="/">
+                <Link to="#">
                   <img src="assets/img/banner/book-2.png" alt="" />
-                </a>
+                </Link>
               </div>
               <div className="banner-content">
                 <h5>Adventure</h5>
@@ -40,9 +41,9 @@ function BannerArea() {
                   <img src="assets/img/icon-img/banner-shape.png" alt="" />
                 </div>
                 <div className="banner-btn">
-                  <a className="default-btn" href="/">
+                  <Link className="default-btn" to="#">
                     ADD TO CART
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -50,9 +51,9 @@ function BannerArea() {
           <div className="col-lg-4 col-md-4">
             <div className="single-banner mb-30">
               <div className="banner-img">
-                <a href="/">
+                <Link to="#">
                   <img src="assets/img/banner/book-3.png" alt="" />
-                </a>
+                </Link>
               </div>
               <div className="banner-content">
                 <h5>Adventure</h5>
@@ -61,9 +62,9 @@ function BannerArea() {
                   <img src="assets/img/icon-img/banner-shape.png" alt="" />
                 </div>
                 <div className="banner-btn">
-                  <a className="default-btn" href="/">
+                  <Link className="default-btn" to="#">
                     ADD TO CART
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

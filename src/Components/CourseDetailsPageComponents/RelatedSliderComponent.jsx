@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import PrevArrowComponent from "../GlobalComponents/PrevArrowComponent";
 import NextArrowComponent from "../GlobalComponents/NextArrowComponent";
+import { Link } from "react-router-dom";
 
 function RelatedSliderComponent() {
   const settings = {
@@ -43,17 +44,17 @@ function RelatedSliderComponent() {
     <Slider {...settings} className="related-slider-active">
       <div className="single-course">
         <div className="course-img">
-          <a href="/">
+          <Link to="/">
             <img
               className="animated"
               src="assets/img/course/related-course-1.jpg"
               alt=""
             />
-          </a>
+          </Link>
         </div>
         <div className="course-content">
           <h4>
-            <a href="/">Apparel Manufacturing</a>
+            <Link to="/">Apparel Manufacturing</Link>
           </h4>
           <p>
             magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.
@@ -71,25 +72,25 @@ function RelatedSliderComponent() {
             </div>
           </div>
           <div className="course-btn">
-            <a className="default-btn" href="/">
+            <Link className="default-btn" to="/">
               APPLY NOW
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className="single-course">
         <div className="course-img">
-          <a href="/">
+          <Link to="/">
             <img
               className="animated"
               src="assets/img/course/related-course-2.jpg"
               alt=""
             />
-          </a>
+          </Link>
         </div>
         <div className="course-content">
           <h4>
-            <a href="/">Grphic Design & Multimedia</a>
+            <Link to="/">Grphic Design & Multimedia</Link>
           </h4>
           <p>
             magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.
@@ -107,25 +108,25 @@ function RelatedSliderComponent() {
             </div>
           </div>
           <div className="course-btn">
-            <a className="default-btn" href="/">
+            <Link className="default-btn" to="/">
               APPLY NOW
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className="single-course">
         <div className="course-img">
-          <a href="/">
+          <Link to="/">
             <img
               className="animated"
               src="assets/img/course/related-course-3.jpg"
               alt=""
             />
-          </a>
+          </Link>
         </div>
         <div className="course-content">
           <h4>
-            <a href="/">Fashion & Technology</a>
+            <Link to="/">Fashion & Technology</Link>
           </h4>
           <p>
             magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.
@@ -143,25 +144,25 @@ function RelatedSliderComponent() {
             </div>
           </div>
           <div className="course-btn">
-            <a className="default-btn" href="/">
+            <Link className="default-btn" to="/">
               APPLY NOW
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className="single-course">
         <div className="course-img">
-          <a href="/">
+          <Link to="/">
             <img
               className="animated"
               src="assets/img/course/related-course-2.jpg"
               alt=""
             />
-          </a>
+          </Link>
         </div>
         <div className="course-content">
           <h4>
-            <a href="/">Fashion & Technology</a>
+            <Link to="/">Fashion & Technology</Link>
           </h4>
           <p>
             magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.
@@ -179,9 +180,9 @@ function RelatedSliderComponent() {
             </div>
           </div>
           <div className="course-btn">
-            <a className="default-btn" href="/">
+            <Link className="default-btn" to="/">
               APPLY NOW
-            </a>
+            </Link>
           </div>
         </div>
       </div>

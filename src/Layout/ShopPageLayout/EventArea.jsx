@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 function EventArea() {
   return (
@@ -9,12 +10,12 @@ function EventArea() {
             <div className="shop-top-bar">
               <div className="shop-tab-wrap">
                 <div className="shop-tab nav">
-                  <a className="active" href="/shop-1" data-bs-toggle="tab">
+                  <Link className="active" to="/shop-1" data-bs-toggle="tab">
                     <i className="fa fa-table"></i>
-                  </a>
-                  <a href="/shop-2" data-bs-toggle="tab">
+                  </Link>
+                  <Link to="/shop-2" data-bs-toggle="tab">
                     <i className="fa fa-list-ul"></i>
-                  </a>
+                  </Link>
                 </div>
                 <p>Showing 1–12 of 20 result</p>
               </div>
@@ -34,36 +35,36 @@ function EventArea() {
                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="product-wrap mb-30">
                         <div className="product-img">
-                          <a href="single-product.html">
+                          <Link to="single-product.html">
                             <img src="assets/img/product/pro-1.jpg" alt="" />
-                          </a>
+                          </Link>
                           <span>Sale</span>
                           <div className="product-action">
                             <ul>
                               <li>
-                                <a title="Add To Cart" href="/">
+                                <Link title="Add To Cart" to="#">
                                   <i className="fa fa-cart-arrow-down"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Compare" href="/">
+                                <Link title="Compare" to="#">
                                   <i className="fa fa-random"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Wishlist" href="/">
+                                <Link title="Wishlist" to="#">
                                   <i className="fa fa-heart-o"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   title="Quick View"
                                   data-bs-toggle="modal"
                                   data-bs-target="/exampleModal"
-                                  href="/"
+                                  to="#"
                                 >
                                   <i className="fa fa-eye"></i>
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -72,7 +73,7 @@ function EventArea() {
                           <div className="pro-title-rating-wrap">
                             <div className="product-title">
                               <h3>
-                                <a href="single-product.html">Marker Pen</a>
+                                <Link to="single-product.html">Marker Pen</Link>
                               </h3>
                             </div>
                             <div className="product-rating">
@@ -93,35 +94,35 @@ function EventArea() {
                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="product-wrap mb-30">
                         <div className="product-img">
-                          <a href="single-product.html">
+                          <Link to="single-product.html">
                             <img src="assets/img/product/pro-2.jpg" alt="" />
-                          </a>
+                          </Link>
                           <div className="product-action">
                             <ul>
                               <li>
-                                <a title="Add To Cart" href="/">
+                                <Link title="Add To Cart" to="#">
                                   <i className="fa fa-cart-arrow-down"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Compare" href="/">
+                                <Link title="Compare" to="#">
                                   <i className="fa fa-random"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Wishlist" href="/">
+                                <Link title="Wishlist" to="#">
                                   <i className="fa fa-heart-o"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   title="Quick View"
                                   data-bs-toggle="modal"
                                   data-bs-target="/exampleModal"
-                                  href="/"
+                                  to="#"
                                 >
                                   <i className="fa fa-eye"></i>
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -130,7 +131,9 @@ function EventArea() {
                           <div className="pro-title-rating-wrap">
                             <div className="product-title">
                               <h3>
-                                <a href="single-product.html">Color Pencil</a>
+                                <Link to="single-product.html">
+                                  Color Pencil
+                                </Link>
                               </h3>
                             </div>
                             <div className="product-rating">
@@ -151,36 +154,36 @@ function EventArea() {
                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="product-wrap mb-30">
                         <div className="product-img">
-                          <a href="single-product.html">
+                          <Link to="single-product.html">
                             <img src="assets/img/product/pro-3.jpg" alt="" />
-                          </a>
+                          </Link>
                           <span>New</span>
                           <div className="product-action">
                             <ul>
                               <li>
-                                <a title="Add To Cart" href="/">
+                                <Link title="Add To Cart" to="#">
                                   <i className="fa fa-cart-arrow-down"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Compare" href="/">
+                                <Link title="Compare" to="#">
                                   <i className="fa fa-random"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Wishlist" href="/">
+                                <Link title="Wishlist" to="#">
                                   <i className="fa fa-heart-o"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   title="Quick View"
                                   data-bs-toggle="modal"
                                   data-bs-target="/exampleModal"
-                                  href="/"
+                                  to="#"
                                 >
                                   <i className="fa fa-eye"></i>
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -189,7 +192,7 @@ function EventArea() {
                           <div className="pro-title-rating-wrap">
                             <div className="product-title">
                               <h3>
-                                <a href="single-product.html">Color Box</a>
+                                <Link to="single-product.html">Color Box</Link>
                               </h3>
                             </div>
                             <div className="product-rating">
@@ -210,35 +213,35 @@ function EventArea() {
                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="product-wrap mb-30">
                         <div className="product-img">
-                          <a href="single-product.html">
+                          <Link to="single-product.html">
                             <img src="assets/img/product/pro-4.jpg" alt="" />
-                          </a>
+                          </Link>
                           <div className="product-action">
                             <ul>
                               <li>
-                                <a title="Add To Cart" href="/">
+                                <Link title="Add To Cart" to="#">
                                   <i className="fa fa-cart-arrow-down"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Compare" href="/">
+                                <Link title="Compare" to="#">
                                   <i className="fa fa-random"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Wishlist" href="/">
+                                <Link title="Wishlist" to="#">
                                   <i className="fa fa-heart-o"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   title="Quick View"
                                   data-bs-toggle="modal"
                                   data-bs-target="/exampleModal"
-                                  href="/"
+                                  to="#"
                                 >
                                   <i className="fa fa-eye"></i>
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -247,7 +250,7 @@ function EventArea() {
                           <div className="pro-title-rating-wrap">
                             <div className="product-title">
                               <h3>
-                                <a href="single-product.html">Toy mobile</a>
+                                <Link to="single-product.html">Toy mobile</Link>
                               </h3>
                             </div>
                             <div className="product-rating">
@@ -268,35 +271,35 @@ function EventArea() {
                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="product-wrap mb-30">
                         <div className="product-img">
-                          <a href="single-product.html">
+                          <Link to="single-product.html">
                             <img src="assets/img/product/pro-5.jpg" alt="" />
-                          </a>
+                          </Link>
                           <div className="product-action">
                             <ul>
                               <li>
-                                <a title="Add To Cart" href="/">
+                                <Link title="Add To Cart" to="#">
                                   <i className="fa fa-cart-arrow-down"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Compare" href="/">
+                                <Link title="Compare" to="#">
                                   <i className="fa fa-random"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Wishlist" href="/">
+                                <Link title="Wishlist" to="#">
                                   <i className="fa fa-heart-o"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   title="Quick View"
                                   data-bs-toggle="modal"
                                   data-bs-target="/exampleModal"
-                                  href="/"
+                                  to="#"
                                 >
                                   <i className="fa fa-eye"></i>
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -305,7 +308,9 @@ function EventArea() {
                           <div className="pro-title-rating-wrap">
                             <div className="product-title">
                               <h3>
-                                <a href="single-product.html">Awesome vase</a>
+                                <Link to="single-product.html">
+                                  Awesome vase
+                                </Link>
                               </h3>
                             </div>
                             <div className="product-rating">
@@ -326,36 +331,36 @@ function EventArea() {
                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="product-wrap mb-30">
                         <div className="product-img">
-                          <a href="single-product.html">
+                          <Link to="single-product.html">
                             <img src="assets/img/product/pro-6.jpg" alt="" />
-                          </a>
+                          </Link>
                           <span>Sale</span>
                           <div className="product-action">
                             <ul>
                               <li>
-                                <a title="Add To Cart" href="/">
+                                <Link title="Add To Cart" to="#">
                                   <i className="fa fa-cart-arrow-down"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Compare" href="/">
+                                <Link title="Compare" to="#">
                                   <i className="fa fa-random"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Wishlist" href="/">
+                                <Link title="Wishlist" to="#">
                                   <i className="fa fa-heart-o"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   title="Quick View"
                                   data-bs-toggle="modal"
                                   data-bs-target="/exampleModal"
-                                  href="/"
+                                  to="#"
                                 >
                                   <i className="fa fa-eye"></i>
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -364,7 +369,9 @@ function EventArea() {
                           <div className="pro-title-rating-wrap">
                             <div className="product-title">
                               <h3>
-                                <a href="single-product.html">Ceramic vase</a>
+                                <Link to="single-product.html">
+                                  Ceramic vase
+                                </Link>
                               </h3>
                             </div>
                             <div className="product-rating">
@@ -385,35 +392,35 @@ function EventArea() {
                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="product-wrap mb-30">
                         <div className="product-img">
-                          <a href="single-product.html">
+                          <Link to="single-product.html">
                             <img src="assets/img/product/pro-7.jpg" alt="" />
-                          </a>
+                          </Link>
                           <div className="product-action">
                             <ul>
                               <li>
-                                <a title="Add To Cart" href="/">
+                                <Link title="Add To Cart" to="#">
                                   <i className="fa fa-cart-arrow-down"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Compare" href="/">
+                                <Link title="Compare" to="#">
                                   <i className="fa fa-random"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Wishlist" href="/">
+                                <Link title="Wishlist" to="#">
                                   <i className="fa fa-heart-o"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   title="Quick View"
                                   data-bs-toggle="modal"
                                   data-bs-target="/exampleModal"
-                                  href="/"
+                                  to="#"
                                 >
                                   <i className="fa fa-eye"></i>
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -422,7 +429,9 @@ function EventArea() {
                           <div className="pro-title-rating-wrap">
                             <div className="product-title">
                               <h3>
-                                <a href="single-product.html">Smart Watch</a>
+                                <Link to="single-product.html">
+                                  Smart Watch
+                                </Link>
                               </h3>
                             </div>
                             <div className="product-rating">
@@ -443,35 +452,35 @@ function EventArea() {
                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="product-wrap mb-30">
                         <div className="product-img">
-                          <a href="single-product.html">
+                          <Link to="single-product.html">
                             <img src="assets/img/product/pro-8.jpg" alt="" />
-                          </a>
+                          </Link>
                           <div className="product-action">
                             <ul>
                               <li>
-                                <a title="Add To Cart" href="/">
+                                <Link title="Add To Cart" to="#">
                                   <i className="fa fa-cart-arrow-down"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Compare" href="/">
+                                <Link title="Compare" to="#">
                                   <i className="fa fa-random"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Wishlist" href="/">
+                                <Link title="Wishlist" to="#">
                                   <i className="fa fa-heart-o"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   title="Quick View"
                                   data-bs-toggle="modal"
                                   data-bs-target="/exampleModal"
-                                  href="/"
+                                  to="#"
                                 >
                                   <i className="fa fa-eye"></i>
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -480,7 +489,9 @@ function EventArea() {
                           <div className="pro-title-rating-wrap">
                             <div className="product-title">
                               <h3>
-                                <a href="single-product.html">History Book</a>
+                                <Link to="single-product.html">
+                                  History Book
+                                </Link>
                               </h3>
                             </div>
                             <div className="product-rating">
@@ -501,36 +512,36 @@ function EventArea() {
                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="product-wrap mb-30">
                         <div className="product-img">
-                          <a href="single-product.html">
+                          <Link to="single-product.html">
                             <img src="assets/img/product/pro-1.jpg" alt="" />
-                          </a>
+                          </Link>
                           <span>Sale</span>
                           <div className="product-action">
                             <ul>
                               <li>
-                                <a title="Add To Cart" href="/">
+                                <Link title="Add To Cart" to="#">
                                   <i className="fa fa-cart-arrow-down"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Compare" href="/">
+                                <Link title="Compare" to="#">
                                   <i className="fa fa-random"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Wishlist" href="/">
+                                <Link title="Wishlist" to="#">
                                   <i className="fa fa-heart-o"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   title="Quick View"
                                   data-bs-toggle="modal"
                                   data-bs-target="/exampleModal"
-                                  href="/"
+                                  to="#"
                                 >
                                   <i className="fa fa-eye"></i>
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -539,7 +550,7 @@ function EventArea() {
                           <div className="pro-title-rating-wrap">
                             <div className="product-title">
                               <h3>
-                                <a href="single-product.html">Color Box</a>
+                                <Link to="single-product.html">Color Box</Link>
                               </h3>
                             </div>
                             <div className="product-rating">
@@ -560,35 +571,35 @@ function EventArea() {
                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="product-wrap mb-30">
                         <div className="product-img">
-                          <a href="single-product.html">
+                          <Link to="single-product.html">
                             <img src="assets/img/product/pro-12.jpg" alt="" />
-                          </a>
+                          </Link>
                           <div className="product-action">
                             <ul>
                               <li>
-                                <a title="Add To Cart" href="/">
+                                <Link title="Add To Cart" to="#">
                                   <i className="fa fa-cart-arrow-down"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Compare" href="/">
+                                <Link title="Compare" to="#">
                                   <i className="fa fa-random"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Wishlist" href="/">
+                                <Link title="Wishlist" to="#">
                                   <i className="fa fa-heart-o"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   title="Quick View"
                                   data-bs-toggle="modal"
                                   data-bs-target="/exampleModal"
-                                  href="/"
+                                  to="#"
                                 >
                                   <i className="fa fa-eye"></i>
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -597,7 +608,7 @@ function EventArea() {
                           <div className="pro-title-rating-wrap">
                             <div className="product-title">
                               <h3>
-                                <a href="single-product.html">Marker Pen</a>
+                                <Link to="single-product.html">Marker Pen</Link>
                               </h3>
                             </div>
                             <div className="product-rating">
@@ -618,36 +629,36 @@ function EventArea() {
                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="product-wrap mb-30">
                         <div className="product-img">
-                          <a href="single-product.html">
+                          <Link to="single-product.html">
                             <img src="assets/img/product/pro-10.jpg" alt="" />
-                          </a>
+                          </Link>
                           <span>New</span>
                           <div className="product-action">
                             <ul>
                               <li>
-                                <a title="Add To Cart" href="/">
+                                <Link title="Add To Cart" to="#">
                                   <i className="fa fa-cart-arrow-down"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Compare" href="/">
+                                <Link title="Compare" to="#">
                                   <i className="fa fa-random"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Wishlist" href="/">
+                                <Link title="Wishlist" to="#">
                                   <i className="fa fa-heart-o"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   title="Quick View"
                                   data-bs-toggle="modal"
                                   data-bs-target="/exampleModal"
-                                  href="/"
+                                  to="#"
                                 >
                                   <i className="fa fa-eye"></i>
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -656,9 +667,9 @@ function EventArea() {
                           <div className="pro-title-rating-wrap">
                             <div className="product-title">
                               <h3>
-                                <a href="single-product.html">
+                                <Link to="single-product.html">
                                   Softball Gloves
-                                </a>
+                                </Link>
                               </h3>
                             </div>
                             <div className="product-rating">
@@ -679,35 +690,35 @@ function EventArea() {
                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="product-wrap mb-30">
                         <div className="product-img">
-                          <a href="single-product.html">
+                          <Link to="single-product.html">
                             <img src="assets/img/product/pro-11.jpg" alt="" />
-                          </a>
+                          </Link>
                           <div className="product-action">
                             <ul>
                               <li>
-                                <a title="Add To Cart" href="/">
+                                <Link title="Add To Cart" to="#">
                                   <i className="fa fa-cart-arrow-down"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Compare" href="/">
+                                <Link title="Compare" to="#">
                                   <i className="fa fa-random"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a title="Wishlist" href="/">
+                                <Link title="Wishlist" to="#">
                                   <i className="fa fa-heart-o"></i>
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   title="Quick View"
                                   data-bs-toggle="modal"
                                   data-bs-target="/exampleModal"
-                                  href="/"
+                                  to="#"
                                 >
                                   <i className="fa fa-eye"></i>
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -716,7 +727,7 @@ function EventArea() {
                           <div className="pro-title-rating-wrap">
                             <div className="product-title">
                               <h3>
-                                <a href="single-product.html">Color Box</a>
+                                <Link to="single-product.html">Color Box</Link>
                               </h3>
                             </div>
                             <div className="product-rating">
@@ -739,13 +750,13 @@ function EventArea() {
                 <div id="shop-2" className="tab-pane">
                   <div className="shop-list-wrap mb-30">
                     <div className="shop-list-img">
-                      <a href="single-product.html">
+                      <Link to="single-product.html">
                         <img src="assets/img/product/pro-3.jpg" alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="shop-list-content">
                       <h4>
-                        <a href="single-product.html">Color Box</a>
+                        <Link to="single-product.html">Color Box</Link>
                       </h4>
                       <span>$500</span>
                       <div className="review-rating">
@@ -767,29 +778,29 @@ function EventArea() {
                       <div className="product-action-list">
                         <ul>
                           <li>
-                            <a title="Add To Cart" href="/">
+                            <Link title="Add To Cart" to="#">
                               <i className="fa fa-cart-arrow-down"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a title="Compare" href="/">
+                            <Link title="Compare" to="#">
                               <i className="fa fa-random"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a title="Wishlist" href="/">
+                            <Link title="Wishlist" to="#">
                               <i className="fa fa-heart-o"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
+                            <Link
                               title="Quick View"
                               data-bs-toggle="modal"
                               data-bs-target="/exampleModal"
-                              href="/"
+                              to="#"
                             >
                               <i className="fa fa-eye"></i>
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -797,13 +808,13 @@ function EventArea() {
                   </div>
                   <div className="shop-list-wrap mb-30">
                     <div className="shop-list-img">
-                      <a href="single-product.html">
+                      <Link to="single-product.html">
                         <img src="assets/img/product/pro-2.jpg" alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="shop-list-content">
                       <h4>
-                        <a href="single-product.html">Color Box</a>
+                        <Link to="single-product.html">Color Box</Link>
                       </h4>
                       <span>$500</span>
                       <div className="review-rating">
@@ -825,29 +836,29 @@ function EventArea() {
                       <div className="product-action-list">
                         <ul>
                           <li>
-                            <a title="Add To Cart" href="/">
+                            <Link title="Add To Cart" to="#">
                               <i className="fa fa-cart-arrow-down"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a title="Compare" href="/">
+                            <Link title="Compare" to="#">
                               <i className="fa fa-random"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a title="Wishlist" href="/">
+                            <Link title="Wishlist" to="#">
                               <i className="fa fa-heart-o"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
+                            <Link
                               title="Quick View"
                               data-bs-toggle="modal"
                               data-bs-target="/exampleModal"
-                              href="/"
+                              to="#"
                             >
                               <i className="fa fa-eye"></i>
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -855,13 +866,13 @@ function EventArea() {
                   </div>
                   <div className="shop-list-wrap mb-30">
                     <div className="shop-list-img">
-                      <a href="single-product.html">
+                      <Link to="single-product.html">
                         <img src="assets/img/product/pro-5.jpg" alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="shop-list-content">
                       <h4>
-                        <a href="single-product.html">Color Box</a>
+                        <Link to="single-product.html">Color Box</Link>
                       </h4>
                       <span>$500</span>
                       <div className="review-rating">
@@ -883,29 +894,29 @@ function EventArea() {
                       <div className="product-action-list">
                         <ul>
                           <li>
-                            <a title="Add To Cart" href="/">
+                            <Link title="Add To Cart" to="#">
                               <i className="fa fa-cart-arrow-down"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a title="Compare" href="/">
+                            <Link title="Compare" to="#">
                               <i className="fa fa-random"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a title="Wishlist" href="/">
+                            <Link title="Wishlist" to="#">
                               <i className="fa fa-heart-o"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
+                            <Link
                               title="Quick View"
                               data-bs-toggle="modal"
                               data-bs-target="/exampleModal"
-                              href="/"
+                              to="#"
                             >
                               <i className="fa fa-eye"></i>
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -913,13 +924,13 @@ function EventArea() {
                   </div>
                   <div className="shop-list-wrap mb-30">
                     <div className="shop-list-img">
-                      <a href="single-product.html">
+                      <Link to="single-product.html">
                         <img src="assets/img/product/pro-6.jpg" alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="shop-list-content">
                       <h4>
-                        <a href="single-product.html">Color Box</a>
+                        <Link to="single-product.html">Color Box</Link>
                       </h4>
                       <span>$500</span>
                       <div className="review-rating">
@@ -941,29 +952,29 @@ function EventArea() {
                       <div className="product-action-list">
                         <ul>
                           <li>
-                            <a title="Add To Cart" href="/">
+                            <Link title="Add To Cart" to="#">
                               <i className="fa fa-cart-arrow-down"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a title="Compare" href="/">
+                            <Link title="Compare" to="#">
                               <i className="fa fa-random"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a title="Wishlist" href="/">
+                            <Link title="Wishlist" to="#">
                               <i className="fa fa-heart-o"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
+                            <Link
                               title="Quick View"
                               data-bs-toggle="modal"
                               data-bs-target="/exampleModal"
-                              href="/"
+                              to="#"
                             >
                               <i className="fa fa-eye"></i>
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -971,13 +982,13 @@ function EventArea() {
                   </div>
                   <div className="shop-list-wrap mb-30">
                     <div className="shop-list-img">
-                      <a href="single-product.html">
+                      <Link to="single-product.html">
                         <img src="assets/img/product/pro-10.jpg" alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="shop-list-content">
                       <h4>
-                        <a href="single-product.html">Color Box</a>
+                        <Link to="single-product.html">Color Box</Link>
                       </h4>
                       <span>$500</span>
                       <div className="review-rating">
@@ -999,29 +1010,29 @@ function EventArea() {
                       <div className="product-action-list">
                         <ul>
                           <li>
-                            <a title="Add To Cart" href="/">
+                            <Link title="Add To Cart" to="#">
                               <i className="fa fa-cart-arrow-down"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a title="Compare" href="/">
+                            <Link title="Compare" to="#">
                               <i className="fa fa-random"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a title="Wishlist" href="/">
+                            <Link title="Wishlist" to="#">
                               <i className="fa fa-heart-o"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
+                            <Link
                               title="Quick View"
                               data-bs-toggle="modal"
                               data-bs-target="/exampleModal"
-                              href="/"
+                              to="#"
                             >
                               <i className="fa fa-eye"></i>
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -1035,22 +1046,22 @@ function EventArea() {
         <div className="pro-pagination-style text-center mt-30">
           <ul>
             <li>
-              <a className="prev" href="/">
+              <Link className="prev" to="#">
                 <i className="fa fa-angle-double-left"></i>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="active" href="/">
+              <Link className="active" to="#">
                 1
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/">2</a>
+              <Link to="#">2</Link>
             </li>
             <li>
-              <a className="next" href="/">
+              <Link className="next" to="#">
                 <i className="fa fa-angle-double-right"></i>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -1059,4 +1070,4 @@ function EventArea() {
   );
 }
 
-export default EventArea
+export default EventArea;

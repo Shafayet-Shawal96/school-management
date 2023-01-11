@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function DescriptiveReviewArea() {
   return (
@@ -6,15 +7,15 @@ function DescriptiveReviewArea() {
       <div className="container">
         <div className="description-review-wrapper">
           <div className="description-review-topbar nav">
-            <a className="active" data-bs-toggle="tab" href="/des-details1">
+            <Link className="active" data-bs-toggle="tab" to="/des-details1">
               Description
-            </a>
-            <a data-bs-toggle="tab" href="/des-details2">
+            </Link>
+            <Link data-bs-toggle="tab" to="/des-details2">
               Additional information
-            </a>
-            <a data-bs-toggle="tab" href="/des-details3">
+            </Link>
+            <Link data-bs-toggle="tab" to="/des-details3">
               Reviews
-            </a>
+            </Link>
           </div>
           <div className="tab-content description-review-bottom">
             <div id="des-details1" className="tab-pane active">
@@ -82,7 +83,7 @@ function DescriptiveReviewArea() {
                             </div>
                           </div>
                           <div className="review-left">
-                            <a href="/">Reply</a>
+                            <Link to="#">Reply</Link>
                           </div>
                         </div>
                         <div className="review-bottom">
@@ -116,7 +117,7 @@ function DescriptiveReviewArea() {
                             </div>
                           </div>
                           <div className="review-left">
-                            <a href="/">Reply</a>
+                            <Link to="#">Reply</Link>
                           </div>
                         </div>
                         <div className="review-bottom">
@@ -135,7 +136,7 @@ function DescriptiveReviewArea() {
                   <div className="ratting-form-wrapper pl-50 ratting-nagative-mrg">
                     <h3>Add a Review</h3>
                     <div className="ratting-form">
-                      <form action="/">
+                      <form action="#">
                         <div className="star-box">
                           <span>Your rating:</span>
                           <div className="ratting-star">

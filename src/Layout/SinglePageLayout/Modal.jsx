@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Modal() {
   return (
@@ -39,18 +40,18 @@ function Modal() {
                     className="thumb-menu owl-carousel nav nav-style"
                     role="tablist"
                   >
-                    <a className="active" data-bs-toggle="tab" href="/pro-1">
+                    <Link className="active" data-bs-toggle="tab" to="/pro-1">
                       <img src="assets/img/product/quickview-s1.jpg" alt="" />
-                    </a>
-                    <a data-bs-toggle="tab" href="/pro-2">
+                    </Link>
+                    <Link data-bs-toggle="tab" to="/pro-2">
                       <img src="assets/img/product/quickview-s2.jpg" alt="" />
-                    </a>
-                    <a data-bs-toggle="tab" href="/pro-3">
+                    </Link>
+                    <Link data-bs-toggle="tab" to="/pro-3">
                       <img src="assets/img/product/quickview-s3.jpg" alt="" />
-                    </a>
-                    <a data-bs-toggle="tab" href="/pro-4">
+                    </Link>
+                    <Link data-bs-toggle="tab" to="/pro-4">
                       <img src="assets/img/product/quickview-s2.jpg" alt="" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -93,19 +94,19 @@ function Modal() {
                       <div className="pro-details-size2-content">
                         <ul>
                           <li>
-                            <a href="/">s</a>
+                            <Link to="#">s</Link>
                           </li>
                           <li>
-                            <a href="/">m</a>
+                            <Link to="#">m</Link>
                           </li>
                           <li>
-                            <a href="/">l</a>
+                            <Link to="#">l</Link>
                           </li>
                           <li>
-                            <a href="/">xl</a>
+                            <Link to="#">xl</Link>
                           </li>
                           <li>
-                            <a href="/">xxl</a>
+                            <Link to="#">xxl</Link>
                           </li>
                         </ul>
                       </div>
@@ -121,14 +122,14 @@ function Modal() {
                       />
                     </div>
                     <div className="pro-details-cart">
-                      <a className="default-btn btn-hover" href="/">
+                      <Link className="default-btn btn-hover" to="#">
                         Add To Cart
-                      </a>
+                      </Link>
                     </div>
                     <div className="pro-details-wishlist">
-                      <a className=" btn-hover" href="/">
+                      <Link className=" btn-hover" to="#">
                         <i className="fa fa-heart-o"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <span>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const footerImage = {
   backgroundImage: `url(./assets/img/bg/bg-4.jpg)`,
@@ -31,7 +32,7 @@ function FooterLayout() {
                     <div className="single-f-contact-info">
                       <i className="fa fa-envelope-o"></i>
                       <span>
-                        <a href="/">education@email.com</a>
+                        <Link to="#">education@email.com</Link>
                       </span>
                     </div>
                     <div className="single-f-contact-info">
@@ -50,19 +51,19 @@ function FooterLayout() {
                 <div className="footer-list">
                   <ul>
                     <li>
-                      <a href="index.html">Home</a>
+                      <Link to="#">Home</Link>
                     </li>
                     <li>
-                      <a href="about-us.html">About Us</a>
+                      <Link to="/about">About Us</Link>
                     </li>
                     <li>
-                      <a href="course.html">Courses</a>
+                      <Link to="/course">Courses</Link>
                     </li>
                     <li>
-                      <a href="/">Admission</a>
+                      <Link to="#">Admission</Link>
                     </li>
                     <li>
-                      <a href="/">Terms & Conditions</a>
+                      <Link to="#">Terms & Conditions</Link>
                     </li>
                   </ul>
                 </div>
@@ -76,19 +77,19 @@ function FooterLayout() {
                 <div className="footer-list">
                   <ul>
                     <li>
-                      <a href="/">Under Graduate Programmes </a>
+                      <Link to="#">Under Graduate Programmes </Link>
                     </li>
                     <li>
-                      <a href="/">Graduate Programmes </a>
+                      <Link to="#">Graduate Programmes </Link>
                     </li>
                     <li>
-                      <a href="/">Diploma Courses</a>
+                      <Link to="#">Diploma Courses</Link>
                     </li>
                     <li>
-                      <a href="/">Others Programmes</a>
+                      <Link to="#">Others Programmes</Link>
                     </li>
                     <li>
-                      <a href="/">Short Courses</a>
+                      <Link to="#">Short Courses</Link>
                     </li>
                   </ul>
                 </div>
@@ -102,24 +103,24 @@ function FooterLayout() {
                 <div className="footer-gallery">
                   <ul>
                     <li>
-                      <a href="/">
+                      <Link to="#">
                         <img src="assets/img/gallery/gallery-1.png" alt="" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/">
+                      <Link to="#">
                         <img src="assets/img/gallery/gallery-2.png" alt="" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/">
+                      <Link to="#">
                         <img src="assets/img/gallery/gallery-3.png" alt="" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/">
+                      <Link to="#">
                         <img src="assets/img/gallery/gallery-4.png" alt="" />
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -184,7 +185,7 @@ function FooterLayout() {
             <div className="col-lg-4 col-md-12">
               <div className="copyright">
                 <p>
-                  Copyright ©<a href="/">GLAXDU</a>. All Right Reserved.
+                  Copyright ©<Link to="#">GLAXDU</Link>. All Right Reserved.
                 </p>
               </div>
             </div>
@@ -193,34 +194,34 @@ function FooterLayout() {
                 <div className="footer-menu">
                   <ul>
                     <li>
-                      <a href="/">Privecy & Policy</a>
+                      <Link to="#">Privecy & Policy</Link>
                     </li>
                     <li>
-                      <a href="/">Terms & Conditions of Use</a>
+                      <Link to="#">Terms & Conditions of Use</Link>
                     </li>
                   </ul>
                 </div>
                 <div className="footer-social">
                   <ul>
                     <li>
-                      <a className="facebook" href="/">
+                      <Link className="facebook" to="#">
                         <i className="fa fa-facebook"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="youtube" href="/">
+                      <Link className="youtube" to="#">
                         <i className="fa fa-youtube-play"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="twitter" href="/">
+                      <Link className="twitter" to="#">
                         <i className="fa fa-twitter"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="google-plus" href="/">
+                      <Link className="google-plus" to="#">
                         <i className="fa fa-google-plus"></i>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

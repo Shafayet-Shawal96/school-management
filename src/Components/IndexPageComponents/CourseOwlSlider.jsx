@@ -2,6 +2,7 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import { Link } from "react-router-dom";
 
 function CourseOwlSlider() {
   return (
@@ -37,18 +38,18 @@ function CourseOwlSlider() {
     >
       <div className="single-course">
         <div className="course-img">
-          <a href="course-details.html">
+          <Link to="course-details.html">
             <img
               className="animated"
               src="assets/img/course/course-1.jpg"
               alt=""
             />
-          </a>
+          </Link>
           <span>Addmission Going On</span>
         </div>
         <div className="course-content">
           <h4>
-            <a href="course-details.html">Apparel Manufacturing</a>
+            <Link to="course-details.html">Apparel Manufacturing</Link>
           </h4>
           <p>
             magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.
@@ -66,25 +67,25 @@ function CourseOwlSlider() {
             </div>
           </div>
           <div className="course-btn">
-            <a className="default-btn" href="/">
+            <Link className="default-btn" to="#">
               APPLY NOW
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className="single-course">
         <div className="course-img">
-          <a href="course-details.html">
+          <Link to="course-details.html">
             <img
               className="animated"
               src="assets/img/course/course-2.jpg"
               alt=""
             />
-          </a>
+          </Link>
         </div>
         <div className="course-content">
           <h4>
-            <a href="course-details.html">Grphic Design & Multimedia</a>
+            <Link to="course-details.html">Grphic Design & Multimedia</Link>
           </h4>
           <p>
             magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.
@@ -102,25 +103,25 @@ function CourseOwlSlider() {
             </div>
           </div>
           <div className="course-btn">
-            <a className="default-btn" href="/">
+            <Link className="default-btn" to="#">
               APPLY NOW
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className="single-course">
         <div className="course-img">
-          <a href="course-details.html">
+          <Link to="course-details.html">
             <img
               className="animated"
               src="assets/img/course/course-3.jpg"
               alt=""
             />
-          </a>
+          </Link>
         </div>
         <div className="course-content">
           <h4>
-            <a href="course-details.html">Computer Engineering</a>
+            <Link to="course-details.html">Computer Engineering</Link>
           </h4>
           <p>
             magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.
@@ -138,26 +139,26 @@ function CourseOwlSlider() {
             </div>
           </div>
           <div className="course-btn">
-            <a className="default-btn" href="/">
+            <Link className="default-btn" to="#">
               APPLY NOW
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className="single-course">
         <div className="course-img">
-          <a href="course-details.html">
+          <Link to="course-details.html">
             <img
               className="animated"
               src="assets/img/course/course-4.jpg"
               alt=""
             />
-          </a>
+          </Link>
           <span>Post Graduation Course</span>
         </div>
         <div className="course-content">
           <h4>
-            <a href="course-details.html">Fashion & Technology</a>
+            <Link to="course-details.html">Fashion & Technology</Link>
           </h4>
           <p>
             magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.
@@ -175,25 +176,25 @@ function CourseOwlSlider() {
             </div>
           </div>
           <div className="course-btn">
-            <a className="default-btn" href="/">
+            <Link className="default-btn" to="#">
               APPLY NOW
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className="single-course">
         <div className="course-img">
-          <a href="course-details.html">
+          <Link to="course-details.html">
             <img
               className="animated"
               src="assets/img/course/course-2.jpg"
               alt=""
             />
-          </a>
+          </Link>
         </div>
         <div className="course-content">
           <h4>
-            <a href="course-details.html">Apparel Manufacturing</a>
+            <Link to="course-details.html">Apparel Manufacturing</Link>
           </h4>
           <p>
             magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.
@@ -211,9 +212,9 @@ function CourseOwlSlider() {
             </div>
           </div>
           <div className="course-btn">
-            <a className="default-btn" href="/">
+            <Link className="default-btn" to="#">
               APPLY NOW
-            </a>
+            </Link>
           </div>
         </div>
       </div>

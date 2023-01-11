@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function AboutUs() {
   return (
@@ -18,12 +19,12 @@ function AboutUs() {
           <div className="col-lg-7 col-md-12">
             <div className="about-img about-img-2 default-overlay mr-70">
               <img src="assets/img/banner/banner-2.jpg" alt="" />
-              <a
+              <Link
                 className="video-btn video-popup"
-                href="https://www.youtube.com/watch?v=sv5hK4crIRc"
+                to="https://www.youtube.com/watch?v=sv5hK4crIRc"
               >
                 <img src="assets/img/icon-img/video.png" alt="" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-5 col-md-12">
@@ -39,9 +40,9 @@ function AboutUs() {
                 <img src="assets/img/icon-img/signature.png" alt="" />
               </div>
               <div className="about-btn mt-45">
-                <a className="default-btn" href="about-us.html">
+                <Link className="default-btn" to="about-us.html">
                   ABOUT US
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import PrevArrowComponent from "../GlobalComponents/PrevArrowComponent";
 import NextArrowComponent from "../GlobalComponents/NextArrowComponent";
+import { Link } from "react-router-dom";
 
 function BlogSlickSlider() {
   const settings = {
@@ -25,106 +26,106 @@ function BlogSlickSlider() {
     <Slider {...settings} className="blog-active">
       <div className="single-blog">
         <div className="blog-img">
-          <a href="blog-details.html">
+          <Link to="blog-details.html">
             <img src="assets/img/blog/blog-1.jpg" alt="" />
-          </a>
+          </Link>
         </div>
         <div className="blog-content-wrap">
           <span>Education</span>
           <div className="blog-content">
             <h4>
-              <a href="blog-details.html">Testing is a great thing.</a>
+              <Link to="blog-details.html">Testing is a great thing.</Link>
             </h4>
             <p>doloremque laudan tium, totam ersps uns iste natus</p>
             <div className="blog-meta">
               <ul>
                 <li>
-                  <a href="/">
+                  <Link to="#">
                     <i className="fa fa-user"></i> Adrin Azra
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/">
+                  <Link to="#">
                     <i className="fa fa-comments-o"></i> 22
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
           <div className="blog-date">
-            <a href="/">
+            <Link to="#">
               <i className="fa fa-calendar-o"></i> Jun, 24th 2018
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className="single-blog">
         <div className="blog-img">
-          <a href="blog-details.html">
+          <Link to="blog-details.html">
             <img src="assets/img/blog/blog-2.jpg" alt="" />
-          </a>
+          </Link>
         </div>
         <div className="blog-content-wrap">
           <span>Education</span>
           <div className="blog-content">
             <h4>
-              <a href="blog-details.html">Learn English in ease.</a>
+              <Link to="blog-details.html">Learn English in ease.</Link>
             </h4>
             <p>doloremque laudan tium, totam ersps uns iste natus</p>
             <div className="blog-meta">
               <ul>
                 <li>
-                  <a href="/">
+                  <Link to="#">
                     <i className="fa fa-user"></i> Tayeb Jon
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/">
+                  <Link to="#">
                     <i className="fa fa-comments-o"></i> 12
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
           <div className="blog-date">
-            <a href="/">
+            <Link to="#">
               <i className="fa fa-calendar-o"></i> Feb, 10th 2017
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className="single-blog">
         <div className="blog-img">
-          <a href="blog-details.html">
+          <Link to="blog-details.html">
             <img src="assets/img/blog/blog-3.jpg" alt="" />
-          </a>
+          </Link>
         </div>
         <div className="blog-content-wrap">
           <span>Education</span>
           <div className="blog-content">
             <h4>
-              <a href="blog-details.html">In publishing and graphic.</a>
+              <Link to="blog-details.html">In publishing and graphic.</Link>
             </h4>
             <p>doloremque laudan tium, totam ersps uns iste natus</p>
             <div className="blog-meta">
               <ul>
                 <li>
-                  <a href="/">
+                  <Link to="#">
                     <i className="fa fa-user"></i> Md Tamim
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/">
+                  <Link to="#">
                     <i className="fa fa-comments-o"></i> 20
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
           <div className="blog-date">
-            <a href="/">
+            <Link to="#">
               <i className="fa fa-calendar-o"></i> Oct, 26th 2017
-            </a>
+            </Link>
           </div>
         </div>
       </div>
