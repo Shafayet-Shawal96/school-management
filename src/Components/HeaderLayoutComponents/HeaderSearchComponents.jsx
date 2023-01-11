@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import cssClass from "./HeaderSearchComponents.module.css";
 
+const twoClass = `${cssClass.input_full} ${cssClass.transition_delay}`;
+
 function HeaderSearchComponents() {
   const [isHover, setIsHover] = useState(false);
 
@@ -11,17 +13,18 @@ function HeaderSearchComponents() {
   const handleMouseLeave = () => {
     setIsHover(false);
   };
+
   return (
     <div
       className={`${cssClass.header_search} ${
-        isHover ? cssClass.header_full : ""
+        isHover ? cssClass.header_full : cssClass.transition_delay
       }`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <div className={cssClass.flex_container}>
         <input
-          className={`${cssClass.input} ${isHover ? cssClass.full : ""}`}
+          className={`${cssClass.input} ${isHover ? twoClass : ""}`}
           type="text"
           placeholder="Search"
         />

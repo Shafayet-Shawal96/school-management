@@ -4,12 +4,15 @@
   padding: 0;
   float: right;
   width: 0;
-  transition: width 0.5s ease-in-out;
-  transition-delay: 1s;
-  /* background-color: green; */
+  transition: width 1s ease-in-out;
+  /* transition-delay: 1s; */
 }
 
-.full {
+.transition_delay {
+  transition-delay: 1s;
+}
+
+.input_full {
   padding-left: 3px;
   width: 160px;
 }
@@ -30,7 +33,6 @@
   height: 42px;
   border: 2px solid #eceff8;
   background-color: #eceff8;
-  /* background-color: blue; */
 }
 
 .header_search {
@@ -38,11 +40,12 @@
   margin-left: 20px;
   width: 42px;
   transition: width 1s ease-in-out;
-  /* background-color: yellow; */
+  /* transition-delay: 1s; */
 }
 
 .header_full {
   width: 205px;
+  /* transition-delay: 1s; */
 }
 
 .icon_button {
@@ -52,7 +55,6 @@
   height: 42px;
   border: none;
   background-color: #eceff8;
-  /* background-color: white; */
 }
 
 .icon_button:hover {
