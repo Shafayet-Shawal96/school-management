@@ -32,6 +32,7 @@ function HeaderLayout() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    setMenu(false);
   }, [location]);
 
   return (
@@ -249,7 +250,7 @@ function HeaderLayout() {
                             <Link to="/wishlist">wishlist</Link>
                           </li>
                           <li>
-                            <Link to="/course">course page</Link>
+                            <Link to="/login-register">Login / Register</Link>
                           </li>
                         </ul>
                       </li>
@@ -348,7 +349,7 @@ function HeaderLayout() {
               </div>
             </div>
           </div>
-          <MobileMenu menu={menu} />
+          <MobileMenu menu={menu} updateMenu={updateMenu} />
         </div>
       </div>
     </header>

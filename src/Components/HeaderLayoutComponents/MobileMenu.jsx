@@ -19,7 +19,6 @@ function MobileMenu({ menu }) {
 
   const updateSubMenu = (e) => {
     e.preventDefault();
-    console.log(e.target.id);
     const id = Number(e.target.id);
     if (subMenu === id) {
       setSubMenu(false);
@@ -38,17 +37,17 @@ function MobileMenu({ menu }) {
         <ul className={cssClass.menu_items}>
           <li className={cssClass.menu_item}>
             <div className={cssClass.manu_item_header}>
-              <a href="index.html">HOME</a>
-              <a
+              <Link to="/">HOME</Link>
+              <Link
                 id={1}
-                href="/"
+                to="#"
                 onClick={updateSubMenu}
                 className={`${cssClass.arrow} ${
                   subMenu === 1 ? cssClass.arrow_rotate : ""
                 }`}
               >
                 {arrow}
-              </a>
+              </Link>
             </div>
             <ul
               className={`${cssClass.menu_subitems} ${
@@ -56,39 +55,39 @@ function MobileMenu({ menu }) {
               }`}
             >
               <li>
-                <a href="index.html">home version 1</a>
+                <Link to="/">home version 1</Link>
               </li>
               <li>
-                <a href="index.html">home version 2</a>
+                <Link to="/index-two">home version 2</Link>
               </li>
               <li>
-                <a href="index.html">home version 3</a>
+                <Link to="/index-three">home version 3</Link>
               </li>
             </ul>
           </li>
           <li className={cssClass.menu_item}>
             <div className={cssClass.manu_item_header}>
-              <a href="index.html">ABOUT</a>
+              <Link to="/about">ABOUT</Link>
             </div>
           </li>
           <li className={cssClass.menu_item}>
             <div className={cssClass.manu_item_header}>
-              <a href="index.html">SHOP</a>
+              <Link to="/shop">SHOP</Link>
             </div>
           </li>
           <li className={cssClass.menu_item}>
             <div className={cssClass.manu_item_header}>
-              <a href="index.html">PAGES</a>
-              <a
+              <Link to="#">PAGES</Link>
+              <Link
                 id={2}
-                href="/"
+                to="#"
                 onClick={updateSubMenu}
                 className={`${cssClass.arrow} ${
                   subMenu === 2 ? cssClass.arrow_rotate : ""
                 }`}
               >
                 {arrow}
-              </a>
+              </Link>
             </div>
             <ul
               className={`${cssClass.menu_subitems} ${
@@ -96,55 +95,55 @@ function MobileMenu({ menu }) {
               }`}
             >
               <li>
-                <a href="index.html">Course Page</a>
+                <Link to="/course">Course Page</Link>
               </li>
               <li>
-                <a href="index.html">Event Page</a>
+                <Link to="/event">Event Page</Link>
               </li>
               <li>
-                <a href="index.html">Shop Page</a>
+                <Link to="/shop">Shop Page</Link>
               </li>
               <li>
-                <a href="index.html">Course Details</a>
+                <Link to="/course-details">Course Details</Link>
               </li>
               <li>
-                <a href="index.html">Event Details</a>
+                <Link to="/event-details">Event Details</Link>
               </li>
               <li>
-                <a href="index.html">Single Product</a>
+                <Link to="/single-product">Single Product</Link>
               </li>
               <li>
-                <a href="index.html">Cart Page</a>
+                <Link to="/cart">Cart Page</Link>
               </li>
               <li>
-                <a href="index.html">Checkout</a>
+                <Link to="/checkout">Checkout</Link>
               </li>
               <li>
-                <a href="index.html">Wishlist</a>
+                <Link to="/wishlist">Wishlist</Link>
               </li>
               <li>
-                <a href="index.html">Login / Register</a>
+                <Link to="/login-register">Login / Register</Link>
               </li>
             </ul>
           </li>
           <li className={cssClass.menu_item}>
             <div className={cssClass.manu_item_header}>
-              <a href="index.html">COURSES / PROGRAMMES</a>
+              <Link to="/course">COURSES / PROGRAMMES</Link>
             </div>
           </li>
           <li className={cssClass.menu_item}>
             <div className={cssClass.manu_item_header}>
-              <a href="index.html">BLOG</a>
-              <a
+              <Link to="/blog">BLOG</Link>
+              <Link
                 id={3}
-                href="/"
+                to="/"
                 onClick={updateSubMenu}
                 className={`${cssClass.arrow} ${
                   subMenu === 3 ? cssClass.arrow_rotate : ""
                 }`}
               >
                 {arrow}
-              </a>
+              </Link>
             </div>
             <ul
               className={`${cssClass.menu_subitems} ${
@@ -152,16 +151,16 @@ function MobileMenu({ menu }) {
               }`}
             >
               <li>
-                <a href="index.html">Blog</a>
+                <Link to="/blog">Blog</Link>
               </li>
               <li>
-                <a href="index.html">Blog Detail</a>
+                <Link to="/blog-detail">Blog Detail</Link>
               </li>
             </ul>
           </li>
           <li className={cssClass.menu_item}>
             <div className={cssClass.manu_item_header}>
-              <a href="index.html">CONTACT</a>
+              <Link to="/contact">CONTACT</Link>
             </div>
           </li>
         </ul>
