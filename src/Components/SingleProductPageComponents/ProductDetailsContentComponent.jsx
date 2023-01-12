@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function ProductDetailsContentComponent() {
   return (
@@ -40,19 +41,19 @@ function ProductDetailsContentComponent() {
           <div className="pro-details-size2-content">
             <ul>
               <li>
-                <a href="/">s</a>
+                <Link to="#">s</Link>
               </li>
               <li>
-                <a href="/">m</a>
+                <Link to="#">m</Link>
               </li>
               <li>
-                <a href="/">l</a>
+                <Link to="#">l</Link>
               </li>
               <li>
-                <a href="/">xl</a>
+                <Link to="#">xl</Link>
               </li>
               <li>
-                <a href="/">xxl</a>
+                <Link to="#">xxl</Link>
               </li>
             </ul>
           </div>
@@ -68,14 +69,14 @@ function ProductDetailsContentComponent() {
           />
         </div>
         <div className="pro-details-cart">
-          <a className="default-btn btn-hover" href="/">
+          <Link className="default-btn btn-hover" to="#">
             Add To Cart
-          </a>
+          </Link>
         </div>
         <div className="pro-details-wishlist">
-          <a className=" btn-hover" href="/">
+          <Link className=" btn-hover" to="#">
             <i className="fa fa-heart-o"></i>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="pro-details-info-wrap">
@@ -89,10 +90,10 @@ function ProductDetailsContentComponent() {
           <ul>
             <li className="pro-details-info-title">Categories</li>
             <li>
-              <a href="/">Women,</a>
+              <Link to="#">Women,</Link>
             </li>
             <li>
-              <a href="/">Dress</a>
+              <Link to="#">Dress</Link>
             </li>
           </ul>
         </div>
@@ -100,10 +101,10 @@ function ProductDetailsContentComponent() {
           <ul>
             <li className="pro-details-info-title">Tags</li>
             <li>
-              <a href="/">Clothing,</a>
+              <Link to="#">Clothing,</Link>
             </li>
             <li>
-              <a href="/">Summer</a>
+              <Link to="#">Summer</Link>
             </li>
           </ul>
         </div>
@@ -111,24 +112,24 @@ function ProductDetailsContentComponent() {
       <div className="pro-details-social">
         <ul>
           <li>
-            <a className="facebook" href="/">
+            <Link className="facebook" to="#">
               <i className="fa fa-facebook"></i>
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="youtube" href="/">
+            <Link className="youtube" to="#">
               <i className="fa fa-youtube-play"></i>
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="twitter" href="/">
+            <Link className="twitter" to="#">
               <i className="fa fa-twitter"></i>
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="google" href="/">
+            <Link className="google" to="#">
               <i className="fa fa-google-plus"></i>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

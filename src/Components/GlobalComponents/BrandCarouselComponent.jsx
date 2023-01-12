@@ -2,6 +2,7 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import { Link } from "react-router-dom";
 
 function BrandCarouselComponent() {
   return (
@@ -37,39 +38,39 @@ function BrandCarouselComponent() {
           }}
         >
           <div className="single-brand-logo">
-            <a href="/">
+            <Link to="#">
               <img src="assets/img/brand-logo/1.png" alt="" />
-            </a>
+            </Link>
           </div>
           <div className="single-brand-logo">
-            <a href="/">
+            <Link to="#">
               <img src="assets/img/brand-logo/2.png" alt="" />
-            </a>
+            </Link>
           </div>
           <div className="single-brand-logo">
-            <a href="/">
+            <Link to="#">
               <img src="assets/img/brand-logo/3.png" alt="" />
-            </a>
+            </Link>
           </div>
           <div className="single-brand-logo">
-            <a href="/">
+            <Link to="#">
               <img src="assets/img/brand-logo/4.png" alt="" />
-            </a>
+            </Link>
           </div>
           <div className="single-brand-logo">
-            <a href="/">
+            <Link to="#">
               <img src="assets/img/brand-logo/5.png" alt="" />
-            </a>
+            </Link>
           </div>
           <div className="single-brand-logo">
-            <a href="/">
+            <Link to="#">
               <img src="assets/img/brand-logo/6.png" alt="" />
-            </a>
+            </Link>
           </div>
           <div className="single-brand-logo">
-            <a href="/">
+            <Link to="#">
               <img src="assets/img/brand-logo/2.png" alt="" />
-            </a>
+            </Link>
           </div>
         </OwlCarousel>
       </div>

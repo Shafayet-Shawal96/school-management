@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function EventArea() {
   return (
@@ -8,9 +9,9 @@ function EventArea() {
           <div className="col-lg-4 col-md-6">
             <div className="single-event mb-55 event-gray-bg">
               <div className="event-img">
-                <a href="event-details.html">
+                <Link to="event-details.html">
                   <img src="assets/img/event/event-5.jpg" alt="" />
-                </a>
+                </Link>
                 <div className="event-date-wrap">
                   <span className="event-date">1st</span>
                   <span>Dec</span>
@@ -18,9 +19,9 @@ function EventArea() {
               </div>
               <div className="event-content">
                 <h3>
-                  <a href="event-details.html">
+                  <Link to="event-details.html">
                     Global Conference on Business.
-                  </a>
+                  </Link>
                 </h3>
                 <p>
                   Pvolupttem accusantium doloremque laudantium, totam
@@ -42,9 +43,9 @@ function EventArea() {
           <div className="col-lg-4 col-md-6">
             <div className="single-event mb-55 event-gray-bg">
               <div className="event-img">
-                <a href="event-details.html">
+                <Link to="event-details.html">
                   <img src="assets/img/event/event-6.jpg" alt="" />
-                </a>
+                </Link>
                 <div className="event-date-wrap">
                   <span className="event-date">2nd</span>
                   <span>Dec</span>
@@ -52,7 +53,7 @@ function EventArea() {
               </div>
               <div className="event-content">
                 <h3>
-                  <a href="event-details.html">Academic Conference Maui.</a>
+                  <Link to="event-details.html">Academic Conference Maui.</Link>
                 </h3>
                 <p>
                   Pvolupttem accusantium doloremque laudantium, totam
@@ -74,9 +75,9 @@ function EventArea() {
           <div className="col-lg-4 col-md-6">
             <div className="single-event mb-55 event-gray-bg">
               <div className="event-img">
-                <a href="event-details.html">
+                <Link to="event-details.html">
                   <img src="assets/img/event/event-7.jpg" alt="" />
-                </a>
+                </Link>
                 <div className="event-date-wrap">
                   <span className="event-date">3rd</span>
                   <span>Dec</span>
@@ -84,7 +85,9 @@ function EventArea() {
               </div>
               <div className="event-content">
                 <h3>
-                  <a href="event-details.html">Social Sciences & Education.</a>
+                  <Link to="event-details.html">
+                    Social Sciences & Education.
+                  </Link>
                 </h3>
                 <p>
                   Pvolupttem accusantium doloremque laudantium, totam
@@ -106,9 +109,9 @@ function EventArea() {
           <div className="col-lg-4 col-md-6">
             <div className="single-event mb-55 event-gray-bg">
               <div className="event-img">
-                <a href="event-details.html">
+                <Link to="event-details.html">
                   <img src="assets/img/event/event-8.jpg" alt="" />
-                </a>
+                </Link>
                 <div className="event-date-wrap">
                   <span className="event-date">3rd</span>
                   <span>Dec</span>
@@ -116,9 +119,9 @@ function EventArea() {
               </div>
               <div className="event-content">
                 <h3>
-                  <a href="event-details.html">
+                  <Link to="event-details.html">
                     Aempor incididunt ut labore ejam.
-                  </a>
+                  </Link>
                 </h3>
                 <p>
                   Pvolupttem accusantium doloremque laudantium, totam
@@ -140,9 +143,9 @@ function EventArea() {
           <div className="col-lg-4 col-md-6">
             <div className="single-event mb-55 event-gray-bg">
               <div className="event-img">
-                <a href="event-details.html">
+                <Link to="event-details.html">
                   <img src="assets/img/event/event-9.jpg" alt="" />
-                </a>
+                </Link>
                 <div className="event-date-wrap">
                   <span className="event-date">1st</span>
                   <span>Dec</span>
@@ -150,9 +153,9 @@ function EventArea() {
               </div>
               <div className="event-content">
                 <h3>
-                  <a href="event-details.html">
+                  <Link to="event-details.html">
                     Arts Humanities Social Sciences
-                  </a>
+                  </Link>
                 </h3>
                 <p>
                   Pvolupttem accusantium doloremque laudantium, totam
@@ -174,9 +177,9 @@ function EventArea() {
           <div className="col-lg-4 col-md-6">
             <div className="single-event mb-55 event-gray-bg">
               <div className="event-img">
-                <a href="event-details.html">
+                <Link to="event-details.html">
                   <img src="assets/img/event/event-10.jpg" alt="" />
-                </a>
+                </Link>
                 <div className="event-date-wrap">
                   <span className="event-date">2nd</span>
                   <span>Dec</span>
@@ -184,9 +187,9 @@ function EventArea() {
               </div>
               <div className="event-content">
                 <h3>
-                  <a href="event-details.html">
+                  <Link to="event-details.html">
                     International Schools Services.
-                  </a>
+                  </Link>
                 </h3>
                 <p>
                   Pvolupttem accusantium doloremque laudantium, totam
@@ -209,22 +212,22 @@ function EventArea() {
         <div className="pro-pagination-style text-center mt-25">
           <ul>
             <li>
-              <a className="prev" href="/">
+              <Link className="prev" to="#">
                 <i className="fa fa-angle-double-left"></i>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="active" href="/">
+              <Link className="active" to="#">
                 1
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/">2</a>
+              <Link to="#">2</Link>
             </li>
             <li>
-              <a className="next" href="/">
+              <Link className="next" to="#">
                 <i className="fa fa-angle-double-right"></i>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

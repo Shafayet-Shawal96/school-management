@@ -47,6 +47,7 @@ function HeaderLayout() {
                   </li>
                   <li>
                     <i className="fa fa-envelope-o"></i>
+
                     <Link to="#">education@email.com</Link>
                   </li>
                 </ul>

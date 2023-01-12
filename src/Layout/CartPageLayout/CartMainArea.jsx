@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CartForm from "../../Components/CartPageComponents/CartForm";
 
 function CartMainArea() {
@@ -93,7 +94,7 @@ function CartMainArea() {
                   <h4 className="grand-totall-title">
                     Grand Total <span>$260.00</span>
                   </h4>
-                  <a href="/">Proceed to Checkout</a>
+                  <Link to="/">Proceed to Checkout</Link>
                 </div>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import BillingInfo from "../../Components/CheckoutPageComponents/BillingInfo";
 
 function CheckoutArea() {
@@ -55,13 +56,13 @@ function CheckoutArea() {
                       <div className="panel payment-accordion">
                         <div className="panel-heading" id="method-one">
                           <h4 className="panel-title">
-                            <a
+                            <Link
                               data-toggle="collapse"
                               data-parent="/accordion"
-                              href="/method1"
+                              to="/method1"
                             >
                               Direct bank transfer
-                            </a>
+                            </Link>
                           </h4>
                         </div>
                         <div
@@ -79,14 +80,14 @@ function CheckoutArea() {
                       <div className="panel payment-accordion">
                         <div className="panel-heading" id="method-two">
                           <h4 className="panel-title">
-                            <a
+                            <Link
                               className="collapsed"
                               data-toggle="collapse"
                               data-parent="/accordion"
-                              href="/method2"
+                              to="/method2"
                             >
                               Check payments
-                            </a>
+                            </Link>
                           </h4>
                         </div>
                         <div id="method2" className="panel-collapse collapse">
@@ -101,14 +102,14 @@ function CheckoutArea() {
                       <div className="panel payment-accordion">
                         <div className="panel-heading" id="method-three">
                           <h4 className="panel-title">
-                            <a
+                            <Link
                               className="collapsed"
                               data-toggle="collapse"
                               data-parent="/accordion"
-                              href="/method3"
+                              to="/method3"
                             >
                               Cash on delivery
-                            </a>
+                            </Link>
                           </h4>
                         </div>
                         <div id="method3" className="panel-collapse collapse">
@@ -125,9 +126,9 @@ function CheckoutArea() {
                 </div>
               </div>
               <div className="Place-order mt-25">
-                <a className="btn-hover" href="/">
+                <Link className="btn-hover" to="/">
                   Place Order
-                </a>
+                </Link>
               </div>
             </div>
           </div>

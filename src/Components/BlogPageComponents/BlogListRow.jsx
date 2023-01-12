@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function BlogListRow() {
   return (
@@ -8,36 +9,38 @@ function BlogListRow() {
           <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
             <div className="single-blog mb-30">
               <div className="blog-img">
-                <a href="blog-details.html">
+                <Link to="blog-details.html">
                   <img src="assets/img/blog/blog-5.jpg" alt="" />
-                </a>
+                </Link>
               </div>
               <div className="blog-content-wrap">
                 <span>Education</span>
                 <div className="blog-content">
                   <h4>
-                    <a href="blog-details.html">Testing is a great thing.</a>
+                    <Link to="blog-details.html">
+                      Testing is a great thing.
+                    </Link>
                   </h4>
                   <p>doloremque laudan tium, totam ersps uns iste natus</p>
                   <div className="blog-meta">
                     <ul>
                       <li>
-                        <a href="/">
+                        <Link to="#">
                           <i className="fa fa-user"></i>Apparel
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="#">
                           <i className="fa fa-comments-o"></i> 10
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="blog-date">
-                  <a href="/">
+                  <Link to="#">
                     <i className="fa fa-calendar-o"></i> June, 24th 2017
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -45,36 +48,38 @@ function BlogListRow() {
           <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
             <div className="single-blog mb-30">
               <div className="blog-img">
-                <a href="blog-details.html">
+                <Link to="blog-details.html">
                   <img src="assets/img/blog/blog-6.jpg" alt="" />
-                </a>
+                </Link>
               </div>
               <div className="blog-content-wrap">
                 <span>BBA</span>
                 <div className="blog-content">
                   <h4>
-                    <a href="blog-details.html">A variation of the ordinary.</a>
+                    <Link to="blog-details.html">
+                      A variation of the ordinary.
+                    </Link>
                   </h4>
                   <p>doloremque laudan tium, totam ersps uns iste natus</p>
                   <div className="blog-meta">
                     <ul>
                       <li>
-                        <a href="/">
+                        <Link to="#">
                           <i className="fa fa-user"></i> Adrin Azra
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="#">
                           <i className="fa fa-comments-o"></i> 10
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="blog-date">
-                  <a href="/">
+                  <Link to="#">
                     <i className="fa fa-calendar-o"></i> June, 24th 2017
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -82,36 +87,38 @@ function BlogListRow() {
           <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
             <div className="single-blog mb-30">
               <div className="blog-img">
-                <a href="blog-details.html">
+                <Link to="blog-details.html">
                   <img src="assets/img/blog/blog-7.jpg" alt="" />
-                </a>
+                </Link>
               </div>
               <div className="blog-content-wrap">
                 <span>Fashion</span>
                 <div className="blog-content">
                   <h4>
-                    <a href="blog-details.html">In publishing and graphic.</a>
+                    <Link to="blog-details.html">
+                      In publishing and graphic.
+                    </Link>
                   </h4>
                   <p>doloremque laudan tium, totam ersps uns iste natus</p>
                   <div className="blog-meta">
                     <ul>
                       <li>
-                        <a href="/">
+                        <Link to="#">
                           <i className="fa fa-user"></i> Adrin Azra
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="#">
                           <i className="fa fa-comments-o"></i> 10
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="blog-date">
-                  <a href="/">
+                  <Link to="#">
                     <i className="fa fa-calendar-o"></i> June, 24th 2017
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -119,36 +126,36 @@ function BlogListRow() {
           <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
             <div className="single-blog mb-30">
               <div className="blog-img">
-                <a href="blog-details.html">
+                <Link to="blog-details.html">
                   <img src="assets/img/blog/blog-8.jpg" alt="" />
-                </a>
+                </Link>
               </div>
               <div className="blog-content-wrap">
                 <span>PhotoGraphy</span>
                 <div className="blog-content">
                   <h4>
-                    <a href="blog-details.html">Learn English in ease.</a>
+                    <Link to="blog-details.html">Learn English in ease.</Link>
                   </h4>
                   <p>doloremque laudan tium, totam ersps uns iste natus</p>
                   <div className="blog-meta">
                     <ul>
                       <li>
-                        <a href="/">
+                        <Link to="#">
                           <i className="fa fa-user"></i> Adrin Azra
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="#">
                           <i className="fa fa-comments-o"></i> 10
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="blog-date">
-                  <a href="/">
+                  <Link to="#">
                     <i className="fa fa-calendar-o"></i> June, 24th 2017
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -156,36 +163,36 @@ function BlogListRow() {
           <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
             <div className="single-blog mb-30">
               <div className="blog-img">
-                <a href="blog-details.html">
+                <Link to="blog-details.html">
                   <img src="assets/img/blog/blog-9.jpg" alt="" />
-                </a>
+                </Link>
               </div>
               <div className="blog-content-wrap">
                 <span>MBA</span>
                 <div className="blog-content">
                   <h4>
-                    <a href="blog-details.html">We Denounce Righteou</a>
+                    <Link to="blog-details.html">We Denounce Righteou</Link>
                   </h4>
                   <p>doloremque laudan tium, totam ersps uns iste natus</p>
                   <div className="blog-meta">
                     <ul>
                       <li>
-                        <a href="/">
+                        <Link to="#">
                           <i className="fa fa-user"></i> Adrin Azra
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="#">
                           <i className="fa fa-comments-o"></i> 10
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="blog-date">
-                  <a href="/">
+                  <Link to="#">
                     <i className="fa fa-calendar-o"></i> June, 24th 2017
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -193,36 +200,36 @@ function BlogListRow() {
           <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
             <div className="single-blog mb-30">
               <div className="blog-img">
-                <a href="blog-details.html">
+                <Link to="blog-details.html">
                   <img src="assets/img/blog/blog-10.jpg" alt="" />
-                </a>
+                </Link>
               </div>
               <div className="blog-content-wrap">
                 <span>Fashion</span>
                 <div className="blog-content">
                   <h4>
-                    <a href="blog-details.html">It is a long established</a>
+                    <Link to="blog-details.html">It is a long established</Link>
                   </h4>
                   <p>doloremque laudan tium, totam ersps uns iste natus</p>
                   <div className="blog-meta">
                     <ul>
                       <li>
-                        <a href="/">
+                        <Link to="#">
                           <i className="fa fa-user"></i> Adrin Azra
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="#">
                           <i className="fa fa-comments-o"></i> 10
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="blog-date">
-                  <a href="/">
+                  <Link to="#">
                     <i className="fa fa-calendar-o"></i> June, 24th 2017
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -230,36 +237,38 @@ function BlogListRow() {
           <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
             <div className="single-blog mb-30">
               <div className="blog-img">
-                <a href="blog-details.html">
+                <Link to="blog-details.html">
                   <img src="assets/img/blog/blog-11.jpg" alt="" />
-                </a>
+                </Link>
               </div>
               <div className="blog-content-wrap">
                 <span>Apparel</span>
                 <div className="blog-content">
                   <h4>
-                    <a href="blog-details.html">Testing is a great thing.</a>
+                    <Link to="blog-details.html">
+                      Testing is a great thing.
+                    </Link>
                   </h4>
                   <p>doloremque laudan tium, totam ersps uns iste natus</p>
                   <div className="blog-meta">
                     <ul>
                       <li>
-                        <a href="/">
+                        <Link to="#">
                           <i className="fa fa-user"></i> Adrin Azra
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="#">
                           <i className="fa fa-comments-o"></i> 10
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="blog-date">
-                  <a href="/">
+                  <Link to="#">
                     <i className="fa fa-calendar-o"></i> June, 24th 2017
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -267,36 +276,38 @@ function BlogListRow() {
           <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
             <div className="single-blog mb-30">
               <div className="blog-img">
-                <a href="blog-details.html">
+                <Link to="blog-details.html">
                   <img src="assets/img/blog/blog-12.jpg" alt="" />
-                </a>
+                </Link>
               </div>
               <div className="blog-content-wrap">
                 <span>Music</span>
                 <div className="blog-content">
                   <h4>
-                    <a href="blog-details.html">A variation of the ordinary.</a>
+                    <Link to="blog-details.html">
+                      A variation of the ordinary.
+                    </Link>
                   </h4>
                   <p>doloremque laudan tium, totam ersps uns iste natus</p>
                   <div className="blog-meta">
                     <ul>
                       <li>
-                        <a href="/">
+                        <Link to="#">
                           <i className="fa fa-user"></i> Adrin Azra
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="#">
                           <i className="fa fa-comments-o"></i> 10
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="blog-date">
-                  <a href="/">
+                  <Link to="#">
                     <i className="fa fa-calendar-o"></i> June, 24th 2017
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -304,36 +315,36 @@ function BlogListRow() {
           <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
             <div className="single-blog mb-30">
               <div className="blog-img">
-                <a href="blog-details.html">
+                <Link to="blog-details.html">
                   <img src="assets/img/blog/blog-13.jpg" alt="" />
-                </a>
+                </Link>
               </div>
               <div className="blog-content-wrap">
                 <span>Graphic</span>
                 <div className="blog-content">
                   <h4>
-                    <a href="/">In publishing and graphic.</a>
+                    <Link to="#">In publishing and graphic.</Link>
                   </h4>
                   <p>doloremque laudan tium, totam ersps uns iste natus</p>
                   <div className="blog-meta">
                     <ul>
                       <li>
-                        <a href="/">
+                        <Link to="#">
                           <i className="fa fa-user"></i> Adrin Azra
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="#">
                           <i className="fa fa-comments-o"></i> 10
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="blog-date">
-                  <a href="blog-details.html">
+                  <Link to="blog-details.html">
                     <i className="fa fa-calendar-o"></i> June, 24th 2017
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -342,22 +353,22 @@ function BlogListRow() {
         <div className="pro-pagination-style text-center mt-25">
           <ul>
             <li>
-              <a className="prev" href="/">
+              <Link className="prev" to="#">
                 <i className="fa fa-angle-double-left"></i>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="active" href="/">
+              <Link className="active" to="#">
                 1
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/">2</a>
+              <Link to="#">2</Link>
             </li>
             <li>
-              <a className="next" href="/">
+              <Link className="next" to="#">
                 <i className="fa fa-angle-double-right"></i>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

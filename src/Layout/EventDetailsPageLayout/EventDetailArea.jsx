@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import EventGallarySlide from "../../Components/EventDetailsPageComponents/EventGallarySlide";
 import Map from "../../Components/GoogleMap/Map";
 
@@ -35,31 +36,31 @@ function EventDetailArea() {
                     <div className="description-social">
                       <ul>
                         <li>
-                          <a className="facebook" href="/">
+                          <Link className="facebook" to="#">
                             <i className="fa fa-facebook"></i>
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="instagram" href="/">
+                          <Link className="instagram" to="#">
                             <i className="fa fa-instagram"></i>
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="twitter" href="/">
+                          <Link className="twitter" to="#">
                             <i className="fa fa-twitter"></i>
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="google" href="/">
+                          <Link className="google" to="#">
                             <i className="fa fa-google-plus"></i>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
                     <div className="description-btn">
-                      <a href="/">
+                      <Link to="#">
                         <i className="fa fa-share-alt"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -157,30 +158,30 @@ function EventDetailArea() {
                   quia voluptas sit aspernatur aut odit aut fugit, sed quia
                   consequuntur magni dolors eos qui ratione voluptatem sad.
                 </p>
-                <a href="/">
+                <Link to="#">
                   <img src="assets/img/banner/banner-4.jpg" alt="" />
-                </a>
+                </Link>
                 <div className="sidebar-social">
                   <ul>
                     <li>
-                      <a className="facebook" href="/">
+                      <Link className="facebook" to="#">
                         <i className="fa fa-facebook"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="youtube" href="/">
+                      <Link className="youtube" to="#">
                         <i className="fa fa-youtube-play"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="twitter" href="/">
+                      <Link className="twitter" to="#">
                         <i className="fa fa-twitter"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="google" href="/">
+                      <Link className="google" to="#">
                         <i className="fa fa-google-plus"></i>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -192,13 +193,13 @@ function EventDetailArea() {
                 <div className="recent-post-wrap">
                   <div className="single-recent-post">
                     <div className="recent-post-img">
-                      <a href="/">
+                      <Link to="#">
                         <img src="assets/img/blog/recent-post-1.jpg" alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="recent-post-content">
                       <h5>
-                        <a href="/">Blog title will be here.</a>
+                        <Link to="#">Blog title will be here.</Link>
                       </h5>
                       <span>Blog Category</span>
                       <p>Datat non proident qui offici.hafw adec qart.</p>
@@ -206,13 +207,13 @@ function EventDetailArea() {
                   </div>
                   <div className="single-recent-post">
                     <div className="recent-post-img">
-                      <a href="/">
+                      <Link to="#">
                         <img src="assets/img/blog/recent-post-2.jpg" alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="recent-post-content">
                       <h5>
-                        <a href="/">Blog title will be here.</a>
+                        <Link to="#">Blog title will be here.</Link>
                       </h5>
                       <span>Blog Category</span>
                       <p>Datat non proident qui offici.hafw adec qart.</p>
@@ -227,29 +228,29 @@ function EventDetailArea() {
                 <div className="category-list">
                   <ul>
                     <li>
-                      <a href="/">
+                      <Link to="#">
                         MBA <span>04</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/">
+                      <Link to="#">
                         Graduate <span>08</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/">
+                      <Link to="#">
                         Under Graduate <span>04</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/">
+                      <Link to="#">
                         BBA <span>06</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/">
+                      <Link to="#">
                         Engineering <span>04</span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -261,13 +262,13 @@ function EventDetailArea() {
                 <div className="sidebar-recent-course">
                   <div className="sin-sidebar-recent-course">
                     <div className="sidebar-recent-course-img">
-                      <a href="/">
+                      <Link to="#">
                         <img src="assets/img/blog/recent-post-1.jpg" alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="sidebar-recent-course-content">
                       <h4>
-                        <a href="/">Course Title</a>
+                        <Link to="#">Course Title</Link>
                       </h4>
                       <ul>
                         <li>Credits : 125</li>
@@ -278,13 +279,13 @@ function EventDetailArea() {
                   </div>
                   <div className="sin-sidebar-recent-course">
                     <div className="sidebar-recent-course-img">
-                      <a href="/">
+                      <Link to="#">
                         <img src="assets/img/blog/recent-post-2.jpg" alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="sidebar-recent-course-content">
                       <h4>
-                        <a href="/">Course Title</a>
+                        <Link to="#">Course Title</Link>
                       </h4>
                       <ul>
                         <li>Credits : 125</li>
@@ -302,22 +303,22 @@ function EventDetailArea() {
                 <div className="sidebar-tag">
                   <ul>
                     <li>
-                      <a href="/">Loremsite</a>
+                      <Link to="#">Loremsite</Link>
                     </li>
                     <li>
-                      <a href="/">Loreipsum</a>
+                      <Link to="#">Loreipsum</Link>
                     </li>
                     <li>
-                      <a href="/">Dolar</a>
+                      <Link to="#">Dolar</Link>
                     </li>
                     <li>
-                      <a href="/">Site ament dollar</a>
+                      <Link to="#">Site ament dollar</Link>
                     </li>
                     <li>
-                      <a href="/">Loremsite</a>
+                      <Link to="#">Loremsite</Link>
                     </li>
                     <li>
-                      <a href="/">Dummy Text</a>
+                      <Link to="#">Dummy Text</Link>
                     </li>
                   </ul>
                 </div>

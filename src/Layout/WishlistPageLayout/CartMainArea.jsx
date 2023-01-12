@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function CartMainArea() {
   return (
@@ -7,7 +8,7 @@ function CartMainArea() {
         <h3 className="cart-page-title">Your cart items</h3>
         <div className="row">
           <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-            <form action="/">
+            <form action="#">
               <div className="table-content table-responsive cart-table-content">
                 <table>
                   <thead>
@@ -23,12 +24,12 @@ function CartMainArea() {
                   <tbody>
                     <tr>
                       <td className="product-thumbnail">
-                        <a href="/">
+                        <Link to="#">
                           <img src="assets/img/cart/cart-1.png" alt="" />
-                        </a>
+                        </Link>
                       </td>
                       <td className="product-name">
-                        <a href="/">Color Box</a>
+                        <Link to="#">Color Box</Link>
                       </td>
                       <td className="product-price-cart">
                         <span className="amount">$260.00</span>
@@ -45,17 +46,17 @@ function CartMainArea() {
                       </td>
                       <td className="product-subtotal">$110.00</td>
                       <td className="product-wishlist-cart">
-                        <a href="/">add to cart</a>
+                        <Link to="#">add to cart</Link>
                       </td>
                     </tr>
                     <tr>
                       <td className="product-thumbnail">
-                        <a href="/">
+                        <Link to="#">
                           <img src="assets/img/cart/cart-2.png" alt="" />
-                        </a>
+                        </Link>
                       </td>
                       <td className="product-name">
-                        <a href="/">Color Box</a>
+                        <Link to="#">Color Box</Link>
                       </td>
                       <td className="product-price-cart">
                         <span className="amount">$150.00</span>
@@ -72,17 +73,17 @@ function CartMainArea() {
                       </td>
                       <td className="product-subtotal">$150.00</td>
                       <td className="product-wishlist-cart">
-                        <a href="/">add to cart</a>
+                        <Link to="#">add to cart</Link>
                       </td>
                     </tr>
                     <tr>
                       <td className="product-thumbnail">
-                        <a href="/">
+                        <Link to="#">
                           <img src="assets/img/cart/cart-1.png" alt="" />
-                        </a>
+                        </Link>
                       </td>
                       <td className="product-name">
-                        <a href="/">Color Box </a>
+                        <Link to="#">Color Box </Link>
                       </td>
                       <td className="product-price-cart">
                         <span className="amount">$170.00</span>
@@ -99,7 +100,7 @@ function CartMainArea() {
                       </td>
                       <td className="product-subtotal">$170.00</td>
                       <td className="product-wishlist-cart">
-                        <a href="/">add to cart</a>
+                        <Link to="#">add to cart</Link>
                       </td>
                     </tr>
                   </tbody>

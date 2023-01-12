@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import PrevArrowComponent from "../GlobalComponents/PrevArrowComponent";
 import NextArrowComponent from "../GlobalComponents/NextArrowComponent";
+import { Link } from "react-router-dom";
 
 function ProductSlick() {
   const settings = {
@@ -43,36 +44,36 @@ function ProductSlick() {
     <Slider {...settings} className="producta-active">
       <div className="product-wrap">
         <div className="product-img">
-          <a href="single-product.html">
+          <Link to="single-product.html">
             <img src="assets/img/product/pro-1.jpg" alt="" />
-          </a>
+          </Link>
           <span>Sale</span>
           <div className="product-action">
             <ul>
               <li>
-                <a title="Add To Cart" href="/">
+                <Link title="Add To Cart" to="#">
                   <i className="fa fa-cart-arrow-down"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Compare" href="/">
+                <Link title="Compare" to="#">
                   <i className="fa fa-random"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Wishlist" href="/">
+                <Link title="Wishlist" to="#">
                   <i className="fa fa-heart-o"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   title="Quick View"
                   data-bs-toggle="modal"
                   data-bs-target="/exampleModal"
-                  href="/"
+                  to="#"
                 >
                   <i className="fa fa-eye"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -81,7 +82,7 @@ function ProductSlick() {
           <div className="pro-title-rating-wrap">
             <div className="product-title">
               <h3>
-                <a href="single-product.html">Marker Pen</a>
+                <Link to="single-product.html">Marker Pen</Link>
               </h3>
             </div>
             <div className="product-rating">
@@ -100,35 +101,35 @@ function ProductSlick() {
       </div>
       <div className="product-wrap">
         <div className="product-img">
-          <a href="single-product.html">
+          <Link to="single-product.html">
             <img src="assets/img/product/pro-2.jpg" alt="" />
-          </a>
+          </Link>
           <div className="product-action">
             <ul>
               <li>
-                <a title="Add To Cart" href="/">
+                <Link title="Add To Cart" to="#">
                   <i className="fa fa-cart-arrow-down"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Compare" href="/">
+                <Link title="Compare" to="#">
                   <i className="fa fa-random"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Wishlist" href="/">
+                <Link title="Wishlist" to="#">
                   <i className="fa fa-heart-o"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   title="Quick View"
                   data-bs-toggle="modal"
                   data-bs-target="/exampleModal"
-                  href="/"
+                  to="#"
                 >
                   <i className="fa fa-eye"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -137,7 +138,7 @@ function ProductSlick() {
           <div className="pro-title-rating-wrap">
             <div className="product-title">
               <h3>
-                <a href="single-product.html">Color Pencil</a>
+                <Link to="single-product.html">Color Pencil</Link>
               </h3>
             </div>
             <div className="product-rating">
@@ -156,36 +157,36 @@ function ProductSlick() {
       </div>
       <div className="product-wrap">
         <div className="product-img">
-          <a href="single-product.html">
+          <Link to="single-product.html">
             <img src="assets/img/product/pro-3.jpg" alt="" />
-          </a>
+          </Link>
           <span>Sale</span>
           <div className="product-action">
             <ul>
               <li>
-                <a title="Add To Cart" href="/">
+                <Link title="Add To Cart" to="#">
                   <i className="fa fa-cart-arrow-down"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Compare" href="/">
+                <Link title="Compare" to="#">
                   <i className="fa fa-random"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Wishlist" href="/">
+                <Link title="Wishlist" to="#">
                   <i className="fa fa-heart-o"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   title="Quick View"
                   data-bs-toggle="modal"
                   data-bs-target="/exampleModal"
-                  href="/"
+                  to="#"
                 >
                   <i className="fa fa-eye"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -194,7 +195,7 @@ function ProductSlick() {
           <div className="pro-title-rating-wrap">
             <div className="product-title">
               <h3>
-                <a href="single-product.html">Color Box</a>
+                <Link to="single-product.html">Color Box</Link>
               </h3>
             </div>
             <div className="product-rating">
@@ -213,35 +214,35 @@ function ProductSlick() {
       </div>
       <div className="product-wrap">
         <div className="product-img">
-          <a href="single-product.html">
+          <Link to="single-product.html">
             <img src="assets/img/product/pro-4.jpg" alt="" />
-          </a>
+          </Link>
           <div className="product-action">
             <ul>
               <li>
-                <a title="Add To Cart" href="/">
+                <Link title="Add To Cart" to="#">
                   <i className="fa fa-cart-arrow-down"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Compare" href="/">
+                <Link title="Compare" to="#">
                   <i className="fa fa-random"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Wishlist" href="/">
+                <Link title="Wishlist" to="#">
                   <i className="fa fa-heart-o"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   title="Quick View"
                   data-bs-toggle="modal"
                   data-bs-target="/exampleModal"
-                  href="/"
+                  to="#"
                 >
                   <i className="fa fa-eye"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -250,7 +251,7 @@ function ProductSlick() {
           <div className="pro-title-rating-wrap">
             <div className="product-title">
               <h3>
-                <a href="single-product.html">Toy mobile</a>
+                <Link to="single-product.html">Toy mobile</Link>
               </h3>
             </div>
             <div className="product-rating">
@@ -269,36 +270,36 @@ function ProductSlick() {
       </div>
       <div className="product-wrap">
         <div className="product-img">
-          <a href="single-product.html">
+          <Link to="single-product.html">
             <img src="assets/img/product/pro-2.jpg" alt="" />
-          </a>
+          </Link>
           <span>Sale</span>
           <div className="product-action">
             <ul>
               <li>
-                <a title="Add To Cart" href="/">
+                <Link title="Add To Cart" to="#">
                   <i className="fa fa-cart-arrow-down"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Compare" href="/">
+                <Link title="Compare" to="#">
                   <i className="fa fa-random"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Wishlist" href="/">
+                <Link title="Wishlist" to="#">
                   <i className="fa fa-heart-o"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   title="Quick View"
                   data-bs-toggle="modal"
                   data-bs-target="/exampleModal"
-                  href="/"
+                  to="#"
                 >
                   <i className="fa fa-eye"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -307,7 +308,7 @@ function ProductSlick() {
           <div className="pro-title-rating-wrap">
             <div className="product-title">
               <h3>
-                <a href="single-product.html">Color Pencil</a>
+                <Link to="single-product.html">Color Pencil</Link>
               </h3>
             </div>
             <div className="product-rating">

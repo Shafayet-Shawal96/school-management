@@ -1,7 +1,18 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function LoginRegisterArea() {
   const [login, setLogin] = useState(true);
+
+  const updateLogin = (e) => {
+    e.preventDefault();
+    const id = Number(e.target.id);
+    if (id === 1) {
+      setLogin(true);
+    } else {
+      setLogin(false);
+    }
+  };
 
   return (
     <div className="login-register-area pt-130 pb-130">
@@ -10,20 +21,22 @@ function LoginRegisterArea() {
           <div className="col-lg-7 col-md-12 ms-auto me-auto">
             <div className="login-register-wrapper">
               <div className="login-register-tab-list nav">
-                <a
+                <Link
+                  id={1}
                   href="/"
                   className={login ? "active" : ""}
-                  onClick={() => setLogin(true)}
+                  onClick={updateLogin}
                 >
-                  <h4> login </h4>
-                </a>
-                <a
+                  <h4 id={1}> login </h4>
+                </Link>
+                <Link
+                  id={2}
                   href="/"
                   className={login ? "" : "active"}
-                  onClick={() => setLogin(false)}
+                  onClick={updateLogin}
                 >
-                  <h4> register </h4>
-                </a>
+                  <h4 id={2}> register </h4>
+                </Link>
               </div>
               <div className="tab-content">
                 <div id="lg1" className={`tab-pane ${login ? "active" : ""}`}>
@@ -44,7 +57,7 @@ function LoginRegisterArea() {
                           <div className="login-toggle-btn">
                             <input type="checkbox" />
                             <label>Remember me</label>
-                            <a href="/">Forgot Password?</a>
+                            <Link to="#">Forgot Password?</Link>
                           </div>
                           <button className="default-btn" type="submit">
                             <span>Login</span>

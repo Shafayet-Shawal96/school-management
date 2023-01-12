@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function BreadcrumbArea({ breadcrumbObj }) {
   const overlayClasses = `breadcrumb-top default-overlay bg-img ${breadcrumbObj.overlayClass} pt-100 pb-95`;
@@ -14,9 +15,10 @@ function BreadcrumbArea({ breadcrumbObj }) {
         <div className="container">
           <ul>
             <li>
-              <a href="/">Home</a>{" "}
+              <Link to="/">Home</Link>
+
               <span>
-                <i className="fa fa-angle-double-right"></i>{" "}
+                <i className="fa fa-angle-double-right"></i>
                 {breadcrumbObj.pageName}
               </span>
             </li>

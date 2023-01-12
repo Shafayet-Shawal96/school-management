@@ -2,6 +2,7 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 function NextArrowComponent({ onClick }) {
   return (
@@ -56,42 +57,42 @@ function ProductDecSlickSlider() {
       className="mt-15 product-dec-slider dec-slider-overlay"
       id="gallery"
     >
-      <a
-        href="/"
+      <Link
+        to="#"
         className="active"
         data-image="assets/img/product-details/product-detalis-l2.jpg"
         data-zoom-image="assets/img/product-details/single-product-bl2.jpg"
       >
         <img src="assets/img/product-details/product-detalis-s1.jpg" alt="" />
-      </a>{" "}
-      <a
-        href="/"
+      </Link>
+      <Link
+        to="#"
         data-image="assets/img/product-details/product-detalis-l3.jpg"
         data-zoom-image="assets/img/product-details/single-product-bl3.jpg"
       >
         <img src="assets/img/product-details/product-detalis-s2.jpg" alt="" />
-      </a>
-      <a
-        href="/"
+      </Link>
+      <Link
+        to="#"
         data-image="assets/img/product-details/single-product-l4.jpg"
         data-zoom-image="assets/img/product-details/single-product-bl1.jpg"
       >
         <img src="assets/img/product-details/product-detalis-s3.jpg" alt="" />
-      </a>
-      <a
-        href="/"
+      </Link>
+      <Link
+        to="#"
         data-image="assets/img/product-details/product-detalis-l2.jpg"
         data-zoom-image="assets/img/product-details/single-product-bl2.jpg"
       >
         <img src="assets/img/product-details/product-detalis-s1.jpg" alt="" />
-      </a>
-      <a
-        href="/"
+      </Link>
+      <Link
+        to="#"
         data-image="assets/img/product-details/product-detalis-l3.jpg"
         data-zoom-image="assets/img/product-details/single-product-bl3.jpg"
       >
         <img src="assets/img/product-details/product-detalis-s2.jpg" alt="" />
-      </a>
+      </Link>
     </Slider>
   );
 }
