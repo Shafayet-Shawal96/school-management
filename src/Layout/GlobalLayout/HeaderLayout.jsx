@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import HeaderSearchComponents from "../../Components/HeaderLayoutComponents/HeaderSearchComponents";
-// import MobileMenu from "../../Components/HeaderLayoutComponents/MobileMenu";
+import MobileMenu from "../../Components/HeaderLayoutComponents/MobileMenu";
 import MobileMenuButton from "../../Components/HeaderLayoutComponents/MobileMenuButton";
 
 const headerImage = {
@@ -10,6 +10,12 @@ const headerImage = {
 
 function HeaderLayout() {
   const [sticky, setSticky] = useState(false);
+  const [menu, setMenu] = useState(false);
+
+  const updateMenu = () => {
+    setMenu(!menu);
+  };
+
   const location = useLocation();
 
   useEffect(() => {
@@ -336,12 +342,12 @@ function HeaderLayout() {
                     </div>
                   </div>
                   <HeaderSearchComponents />
-                  <MobileMenuButton />
+                  <MobileMenuButton menu={menu} updateMenu={updateMenu} />
                 </div>
               </div>
             </div>
           </div>
-          {/* <MobileMenu /> */}
+          <MobileMenu menu={menu} />
         </div>
       </div>
     </header>

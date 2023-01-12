@@ -21,7 +21,7 @@ import WishlistPage from "./Pages/WishlistPage";
 
 function App() {
   return (
-    <div>
+    <div id="body">
       <HeaderLayout />
       <main>
         <Routes>

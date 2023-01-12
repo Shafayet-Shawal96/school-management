@@ -1,13 +1,7 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import cssClass from "./NewMobileMenu.module.css";
 
-function MobileMenuButton() {
-  const [menu, setMenu] = useState(false);
-  const updateMenu = () => {
-    console.log("clicked");
-    setMenu(!menu);
-  };
-
+function MobileMenuButton({ menu, updateMenu }) {
   return (
     <Fragment>
       <div className={cssClass.mobile_menu_btn} onClick={updateMenu}>

@@ -48,6 +48,23 @@
     max-width: 1200px;
   }
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll_disable {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 991px) {
+  .scroll_disable {
+    max-height: 100%;
+    overflow: auto;
+  }
+}
+
 .row {
   margin-right: calc(var(--bs-gutter-x) * -0.6);
   margin-left: calc(var(--bs-gutter-x) * -0.6);

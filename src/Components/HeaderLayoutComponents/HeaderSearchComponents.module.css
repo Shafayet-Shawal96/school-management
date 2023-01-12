@@ -30,9 +30,9 @@
   overflow: hidden;
   border-radius: 25px;
   height: 42px;
-  background-color: #eceff8;
+  background-color: #ebebeb;
   position: absolute;
-  top: -9px;
+  top: -21px;
   left: 0;
   right: 0;
 }
@@ -40,9 +40,14 @@
 .header_search {
   margin-top: 0;
   margin-left: 20px;
+  margin-right: 14px;
   width: 42px;
   transition: width 1s ease-in-out;
   position: relative;
+}
+
+.header_search input {
+  background-color: #ebebeb;
 }
 
 .header_full {
