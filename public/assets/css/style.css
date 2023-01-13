@@ -1833,7 +1833,7 @@ textarea:focus {
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* @media only screen and (min-width: 768px) and (max-width: 991px) {
   .menu-cart-wrap {
     margin-right: 38px;
   }
@@ -1842,7 +1842,7 @@ textarea:focus {
   .menu-cart-wrap {
     margin-right: 38px;
   }
-}
+} */
 
 .main-menu nav ul li {
   display: inline-block;
@@ -2281,11 +2281,17 @@ textarea:focus {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-bottom {
     padding-top: 20px;
+    padding-bottom: 20px;
+    transition: box-shadow 0s;
+    transition-delay: 1s;
   }
 }
 @media only screen and (max-width: 767px) {
   .header-bottom {
+    padding-bottom: 20px;
     padding-top: 20px;
+    transition: box-shadow 0s;
+    transition-delay: 0s;
   }
 }
 
@@ -9725,4 +9731,10 @@ h3.cart-page-title {
   button:hover {
   background-color: #333;
   color: #fff;
+}
+
+.header-area {
+  position: relative;
+  background-color: #fff;
+  z-index: 11;
 }

@@ -1,0 +1,24 @@
+.mobile_menu {
+  position: relative;
+  z-index: 10;
+}
+
+.mobile_menu_container {
+  position: absolute;
+  top: calc(0px - 100vh + 116.67px);
+  left: 0;
+  right: 0;
+  height: calc(100vh - 116.67px);
+  backdrop-filter: blur(7px);
+  background: rgba(255, 255, 255, 0.9);
+  transition: top 0.5s ease-in-out;
+}
+
+.mobile_menu_open {
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.3);
+  transition-delay: 0s;
+}
+
+.mobile_menu_container_open {
+  top: 0;
+}

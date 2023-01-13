@@ -1,21 +1,24 @@
 import React, { useEffect, useState } from "react";
 import cssClass from "./MobileMenu.module.css";
 import { Link } from "react-router-dom";
+import headerLayoutCss from "../../Layout/GlobalLayout/HeaderLayout.module.css";
 
 const arrow = ">";
 
-function MobileMenu({ menu }) {
+function MobileMenu({ menu, mainHeader }) {
   const [subMenu, setSubMenu] = useState(menu);
 
   useEffect(() => {
     setSubMenu(false);
     const body_element = document.querySelector("#body");
     if (menu) {
+      mainHeader.current.classList.add(headerLayoutCss.mobile_menu_open);
       body_element.classList.add("scroll_disable");
     } else {
+      mainHeader.current.classList.remove(headerLayoutCss.mobile_menu_open);
       body_element.classList.remove("scroll_disable");
     }
-  }, [menu]);
+  }, [menu, mainHeader]);
 
   const updateSubMenu = (e) => {
     e.preventDefault();
