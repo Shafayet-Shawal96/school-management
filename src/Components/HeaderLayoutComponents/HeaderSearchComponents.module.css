@@ -16,6 +16,12 @@
   width: 164px;
 }
 
+@media only screen and (max-width: 767px) {
+  .input_full {
+    width: 90px;
+  }
+}
+
 .input::placeholder {
   margin-left: 2px;
 }
@@ -54,6 +60,11 @@
   width: 205px;
 }
 
+@media only screen and (max-width: 767px) {
+  .header_full {
+    width: 130px;
+  }
+}
 .icon_button {
   border-radius: 50%;
   padding: 0;
