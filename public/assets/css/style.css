@@ -2291,7 +2291,7 @@ textarea:focus {
     padding-bottom: 20px;
     padding-top: 20px;
     transition: box-shadow 0s;
-    transition-delay: 0s;
+    transition-delay: 1s;
   }
 }
 

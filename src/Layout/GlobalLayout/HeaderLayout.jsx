@@ -1,4 +1,10 @@
-import React, { useState, useEffect, useRef, Fragment } from "react";
+import React, {
+  useState,
+  useEffect,
+  useRef,
+  Fragment,
+  useCallback,
+} from "react";
 import { Link, useLocation } from "react-router-dom";
 import HeaderSearchComponents from "../../Components/HeaderLayoutComponents/HeaderSearchComponents";
 import MobileMenu from "../../Components/HeaderLayoutComponents/MobileMenu";
@@ -14,9 +20,9 @@ function HeaderLayout() {
   const [menu, setMenu] = useState(false);
   const mainHeader = useRef(null);
 
-  const updateMenu = () => {
-    setMenu(!menu);
-  };
+  const updateMenu = useCallback(() => {
+    setMenu((prevmenu) => !prevmenu);
+  }, []);
 
   const location = useLocation();
 
@@ -359,8 +365,8 @@ function HeaderLayout() {
       <div className={cssClass.mobile_menu}>
         <div
           className={`${cssClass.mobile_menu_container} ${
-            menu ? cssClass.mobile_menu_container_open : ""
-          }`}
+            menu ? cssClass.transition_open : cssClass.transition_close
+          } ${menu ? cssClass.mobile_menu_container_open : ""}`}
         >
           <div className="container">
             <MobileMenu

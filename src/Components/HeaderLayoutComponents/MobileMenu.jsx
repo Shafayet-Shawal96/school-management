@@ -3,13 +3,17 @@ import cssClass from "./MobileMenu.module.css";
 import { Link } from "react-router-dom";
 import headerLayoutCss from "../../Layout/GlobalLayout/HeaderLayout.module.css";
 
-const arrow = ">";
-
 function MobileMenu({ menu, mainHeader }) {
   const [subMenu, setSubMenu] = useState(menu);
+  const [bump, setBump] = useState(false);
 
   useEffect(() => {
     setSubMenu(false);
+    setBump(true);
+
+    const timer = setTimeout(() => {
+      setBump(false);
+    }, 1000);
     const body_element = document.querySelector("#body");
     if (menu) {
       mainHeader.current.classList.add(headerLayoutCss.mobile_menu_open);
@@ -18,7 +22,22 @@ function MobileMenu({ menu, mainHeader }) {
       mainHeader.current.classList.remove(headerLayoutCss.mobile_menu_open);
       body_element.classList.remove("scroll_disable");
     }
+    return () => {
+      clearTimeout(timer);
+    };
   }, [menu, mainHeader]);
+
+  // useEffect(() => {
+  //   setBump(true);
+
+  //   const timer = setTimeout(() => {
+  //     setBump(false);
+  //   }, 1000);
+
+  //   return () => {
+  //     clearTimeout(timer);
+  //   };
+  // }, [menu]);
 
   const updateSubMenu = (e) => {
     e.preventDefault();
@@ -36,7 +55,7 @@ function MobileMenu({ menu, mainHeader }) {
         menu ? cssClass.mobile_menu_area_show : ""
       }`}
     >
-      <nav className={cssClass.nav}>
+      <nav className={`${cssClass.nav} ${bump ? cssClass.nav_animate : ""}`}>
         <ul className={cssClass.menu_items}>
           <li className={cssClass.menu_item}>
             <div className={cssClass.manu_item_header}>
@@ -49,9 +68,10 @@ function MobileMenu({ menu, mainHeader }) {
                   subMenu === 1 ? cssClass.arrow_rotate : ""
                 }`}
               >
-                {arrow}
+                <i id={1} className="zmdi zmdi-chevron-up"></i>
               </Link>
             </div>
+            {/* <div className={cssClass.separator}></div> */}
             <ul
               className={`${cssClass.menu_subitems} ${
                 subMenu === 1 ? cssClass.menu_subitems_show_home : ""
@@ -67,6 +87,7 @@ function MobileMenu({ menu, mainHeader }) {
                 <Link to="/index-three">home version 3</Link>
               </li>
             </ul>
+            {/* {subMenu === 1 && <div className={cssClass.separator}></div>} */}
           </li>
           <li className={cssClass.menu_item}>
             <div className={cssClass.manu_item_header}>
@@ -89,7 +110,7 @@ function MobileMenu({ menu, mainHeader }) {
                   subMenu === 2 ? cssClass.arrow_rotate : ""
                 }`}
               >
-                {arrow}
+                <i id={2} className="zmdi zmdi-chevron-up"></i>
               </Link>
             </div>
             <ul
@@ -145,7 +166,7 @@ function MobileMenu({ menu, mainHeader }) {
                   subMenu === 3 ? cssClass.arrow_rotate : ""
                 }`}
               >
-                {arrow}
+                <i id={3} className="zmdi zmdi-chevron-up"></i>
               </Link>
             </div>
             <ul

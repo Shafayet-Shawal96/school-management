@@ -25,4 +25,4 @@ function MobileMenuButton({ menu, updateMenu }) {
   );
 }
 
-export default MobileMenuButton;
+export default React.memo(MobileMenuButton);

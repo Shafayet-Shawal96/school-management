@@ -60,4 +60,4 @@ function HeaderSearchComponents() {
   );
 }
 
-export default HeaderSearchComponents;
+export default React.memo(HeaderSearchComponents);
