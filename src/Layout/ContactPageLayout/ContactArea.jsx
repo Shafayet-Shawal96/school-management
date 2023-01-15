@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "../../Components/CheckoutPageComponents/BillingInfo";
+import ContactForm from "../../Components/ContactPageComponents/BillingInfo";
 import Map from "../../Components/GoogleMap/Map";
 
 function ContactArea() {

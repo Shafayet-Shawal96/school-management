@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import RelatedCourse from "../../Components/AboutUsPageComponents/RelatedCourse";
+import RelatedCourse from "../../Components/BlogDetailsPageComponents/RelatedCourse";
 
 function EventArea() {
   return (
