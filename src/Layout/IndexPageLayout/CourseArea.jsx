@@ -1,13 +1,9 @@
 import React from "react";
 import CourseOwlSlider from "../../Components/IndexPageComponents/CourseOwlSlider";
 
-const courseArea = {
-  backgroundImage: `url(./assets/img/bg/bg-1.jpg)`,
-};
-
 function CourseArea() {
   return (
-    <div className="course-area bg-img pt-130 pb-10" style={courseArea}>
+    <div className="course-area pt-130 pb-10">
       <div className="container">
         <div className="section-title mb-75">
           <h2>

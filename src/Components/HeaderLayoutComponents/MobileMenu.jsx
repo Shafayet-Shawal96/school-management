@@ -27,18 +27,6 @@ function MobileMenu({ menu, mainHeader }) {
     };
   }, [menu, mainHeader]);
 
-  // useEffect(() => {
-  //   setBump(true);
-
-  //   const timer = setTimeout(() => {
-  //     setBump(false);
-  //   }, 1000);
-
-  //   return () => {
-  //     clearTimeout(timer);
-  //   };
-  // }, [menu]);
-
   const updateSubMenu = (e) => {
     e.preventDefault();
     const id = Number(e.target.id);
