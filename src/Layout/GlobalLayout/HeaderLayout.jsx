@@ -102,183 +102,20 @@ function HeaderLayout() {
                       <ul>
                         <li>
                           <Link to="/">Home</Link>
-
-                          <ul className="submenu">
-                            <li>
-                              <Link to="/">home version 1</Link>
-                            </li>
-                            <li>
-                              <Link to="/index-two">home version 2</Link>
-                            </li>
-                            <li>
-                              <Link to="/index-three">home version 3</Link>
-                            </li>
-                          </ul>
                         </li>
                         <li>
-                          <Link to="/about">ABOUT</Link>
-                        </li>
-                        <li className="mega-menu-position top-hover">
-                          <Link to="/shop">
-                            SHOP <i className="fa fa-angle-down"></i>
-                          </Link>
-
-                          <ul className="mega-menu">
-                            <li>
-                              <ul>
-                                <li className="mega-menu-title">
-                                  <a href="/">Categories 01</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">bag</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Pen</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Erasers</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Glue sticks</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Lunchbox </a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Pencil box </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <ul>
-                                <li className="mega-menu-title">
-                                  <a href="/">Categories 02</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">bag</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Pen</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Erasers</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Glue sticks</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Lunchbox </a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Pencil box </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <ul>
-                                <li className="mega-menu-title">
-                                  <a href="/">Categories 03</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">bag</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Pen</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Erasers</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Glue sticks</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Lunchbox </a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Pencil box </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <ul>
-                                <li className="mega-menu-title">
-                                  <a href="/">Categories 04</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">bag</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Pen</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Erasers</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Glue sticks</a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Lunchbox </a>
-                                </li>
-                                <li>
-                                  <a href="shop.html">Pencil box </a>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
+                          <Link to="/blog">NOTICE BOARD</Link>
                         </li>
                         <li>
-                          <Link to="#">
-                            PAGES <i className="fa fa-angle-down"></i>
-                          </Link>
-
-                          <ul className="submenu">
-                            <li>
-                              <Link to="/course">course page</Link>
-                            </li>
-                            <li>
-                              <Link to="/event">event page</Link>
-                            </li>
-                            <li>
-                              <Link to="/shop">shop page</Link>
-                            </li>
-                            <li>
-                              <Link to="/course-details">course details</Link>
-                            </li>
-                            <li>
-                              <Link to="/event-details">event details</Link>
-                            </li>
-                            <li>
-                              <Link to="/single-product">single product</Link>
-                            </li>
-                            <li>
-                              <Link to="/cart">cart page</Link>
-                            </li>
-                            <li>
-                              <Link to="/checkout">checkout</Link>
-                            </li>
-                            <li>
-                              <Link to="/wishlist">wishlist</Link>
-                            </li>
-                            <li>
-                              <Link to="/login-register">Login / Register</Link>
-                            </li>
-                          </ul>
+                          <Link to="/event">event page</Link>
                         </li>
                         <li>
-                          <Link to="/course">COURSES / PROGRAMMES</Link>
+                          <Link to="/event-details">event details</Link>
                         </li>
                         <li>
-                          <Link to="/blog">BLOG</Link>
-
-                          <ul className="submenu">
-                            <li>
-                              <Link to="/blog">BLOG</Link>
-                            </li>
-                            <li>
-                              <Link to="/blog-detail">blog details</Link>
-                            </li>
-                          </ul>
+                          <Link to="/course">PROGRAMMES</Link>
                         </li>
+
                         <li>
                           <Link to="/contact">CONTACT</Link>
                         </li>
@@ -286,73 +123,6 @@ function HeaderLayout() {
                     </nav>
                   </div>
                   <div className="cart-search-wrap">
-                    <div className="cart-wrap">
-                      <button className="icon-cart">
-                        <i className="fa fa-cart-plus"></i>
-                        <span className="count-style">02</span>
-                      </button>
-                      <div className="shopping-cart-content">
-                        <ul>
-                          <li className="single-shopping-cart">
-                            <div className="shopping-cart-img">
-                              <a href="/">
-                                <img alt="" src="assets/img/cart/cart-1.png" />
-                              </a>
-                            </div>
-                            <div className="shopping-cart-title">
-                              <h4>
-                                <a href="/">Color Box </a>
-                              </h4>
-                              <h6>Qty: 02</h6>
-                              <span>$260.00</span>
-                            </div>
-                            <div className="shopping-cart-delete">
-                              <a href="/">
-                                <i className="fa fa-times-circle"></i>
-                              </a>
-                            </div>
-                          </li>
-                          <li className="single-shopping-cart">
-                            <div className="shopping-cart-img">
-                              <a href="/">
-                                <img alt="" src="assets/img/cart/cart-2.png" />
-                              </a>
-                            </div>
-                            <div className="shopping-cart-title">
-                              <h4>
-                                <a href="/">Color Box </a>
-                              </h4>
-                              <h6>Qty: 02</h6>
-                              <span>$260.00</span>
-                            </div>
-                            <div className="shopping-cart-delete">
-                              <a href="/">
-                                <i className="fa fa-times-circle"></i>
-                              </a>
-                            </div>
-                          </li>
-                        </ul>
-                        <div className="shopping-cart-total">
-                          <h4>
-                            Shipping : <span>$20.00</span>
-                          </h4>
-                          <h4>
-                            Total : <span className="shop-total">$260.00</span>
-                          </h4>
-                        </div>
-                        <div className="shopping-cart-btn">
-                          <a className="default-btn btn-hover" href="cart.html">
-                            view cart
-                          </a>
-                          <a
-                            className="default-btn btn-hover"
-                            href="checkout.html"
-                          >
-                            checkout
-                          </a>
-                        </div>
-                      </div>
-                    </div>
                     <HeaderSearchComponents />
                     <MobileMenuButton menu={menu} updateMenu={updateMenu} />
                   </div>
