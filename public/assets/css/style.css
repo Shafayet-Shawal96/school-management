@@ -2106,6 +2106,7 @@ textarea:focus {
   position: relative;
   font-size: 16px;
   color: #333;
+  /* visibility: hidden; */
 }
 .cart-wrap button span.count-style {
   position: absolute;
@@ -7901,8 +7902,15 @@ textarea:focus {
   margin: 0 12.5px;
 }
 
-.related-slider-active.related-blog-slide .slick-list {
+.related-slider-active .related-blog-slide .slick-list {
   padding-bottom: 0px;
+}
+
+.slick-list .slick-track {
+  display: flex;
+  gap: 5px;
+  translatex: -2px;
+  translate: -15px;
 }
 
 .blog-comment .blog-comment-btn a {

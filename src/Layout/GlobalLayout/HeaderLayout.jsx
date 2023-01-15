@@ -102,20 +102,183 @@ function HeaderLayout() {
                       <ul>
                         <li>
                           <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                          <Link to="/blog">NOTICE BOARD</Link>
-                        </li>
-                        <li>
-                          <Link to="/event">event page</Link>
-                        </li>
-                        <li>
-                          <Link to="/event-details">event details</Link>
-                        </li>
-                        <li>
-                          <Link to="/course">PROGRAMMES</Link>
-                        </li>
 
+                          <ul className="submenu">
+                            <li>
+                              <Link to="/">home version 1</Link>
+                            </li>
+                            <li>
+                              <Link to="/index-two">home version 2</Link>
+                            </li>
+                            <li>
+                              <Link to="/index-three">home version 3</Link>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <Link to="/about">ABOUT</Link>
+                        </li>
+                        <li className="mega-menu-position top-hover">
+                          <Link to="/shop">
+                            SHOP <i className="fa fa-angle-down"></i>
+                          </Link>
+
+                          <ul className="mega-menu">
+                            <li>
+                              <ul>
+                                <li className="mega-menu-title">
+                                  <a href="/">Categories 01</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">bag</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Pen</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Erasers</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Glue sticks</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Lunchbox </a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Pencil box </a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <ul>
+                                <li className="mega-menu-title">
+                                  <a href="/">Categories 02</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">bag</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Pen</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Erasers</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Glue sticks</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Lunchbox </a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Pencil box </a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <ul>
+                                <li className="mega-menu-title">
+                                  <a href="/">Categories 03</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">bag</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Pen</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Erasers</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Glue sticks</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Lunchbox </a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Pencil box </a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <ul>
+                                <li className="mega-menu-title">
+                                  <a href="/">Categories 04</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">bag</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Pen</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Erasers</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Glue sticks</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Lunchbox </a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Pencil box </a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <Link to="#">
+                            PAGES <i className="fa fa-angle-down"></i>
+                          </Link>
+
+                          <ul className="submenu">
+                            <li>
+                              <Link to="/course">course page</Link>
+                            </li>
+                            <li>
+                              <Link to="/event">event page</Link>
+                            </li>
+                            <li>
+                              <Link to="/shop">shop page</Link>
+                            </li>
+                            <li>
+                              <Link to="/course-details">course details</Link>
+                            </li>
+                            <li>
+                              <Link to="/event-details">event details</Link>
+                            </li>
+                            <li>
+                              <Link to="/single-product">single product</Link>
+                            </li>
+                            <li>
+                              <Link to="/cart">cart page</Link>
+                            </li>
+                            <li>
+                              <Link to="/checkout">checkout</Link>
+                            </li>
+                            <li>
+                              <Link to="/wishlist">wishlist</Link>
+                            </li>
+                            <li>
+                              <Link to="/login-register">Login / Register</Link>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <Link to="/course">COURSES / PROGRAMMES</Link>
+                        </li>
+                        <li>
+                          <Link to="/blog">BLOG</Link>
+
+                          <ul className="submenu">
+                            <li>
+                              <Link to="/blog">BLOG</Link>
+                            </li>
+                            <li>
+                              <Link to="/blog-detail">blog details</Link>
+                            </li>
+                          </ul>
+                        </li>
                         <li>
                           <Link to="/contact">CONTACT</Link>
                         </li>
