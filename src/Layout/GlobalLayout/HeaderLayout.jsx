@@ -110,9 +110,6 @@ function HeaderLayout() {
                           <Link to="/event">event page</Link>
                         </li>
                         <li>
-                          <Link to="/event-details">event details</Link>
-                        </li>
-                        <li>
                           <Link to="/course">PROGRAMMES</Link>
                         </li>
 
