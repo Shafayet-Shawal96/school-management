@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import AboutUs from "../Layout/IndexPageLayout/AboutUs";
 import ChooseUs from "../Layout/IndexPageLayout/ChooseUs";
-import BlogArea from "../Layout/IndexPageLayout/BlogArea";
+import NewsFeedArea from "../Layout/IndexPageLayout/NewsFeedArea";
 import EventArea from "../Layout/IndexPageLayout/EventArea";
 import SliderArea from "../Layout/IndexPageLayout/SliderArea";
 import CourseArea from "../Layout/IndexPageLayout/CourseArea";
@@ -16,12 +16,12 @@ function IndexPage() {
       <SliderArea />
       <ChooseUs />
       <AboutUs />
-      <CourseArea />
+      <NewsFeedArea />
       <AchievemetArea />
+      <EventArea />
+      <CourseArea />
       <RegisterArea />
       <TeacherArea />
-      <EventArea />
-      <BlogArea />
     </Fragment>
   );
 }

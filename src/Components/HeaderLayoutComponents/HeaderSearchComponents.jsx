@@ -44,7 +44,11 @@ function HeaderSearchComponents() {
       }`}
       onClick={addAnimation}
     >
-      <div className={cssClass.flex_container}>
+      <div
+        className={`${cssClass.flex_container} ${
+          clickAnimation ? cssClass.flex_container_color : ""
+        }`}
+      >
         <input
           className={`${cssClass.input} ${clickAnimation ? twoClass : ""}`}
           type="text"
@@ -52,7 +56,11 @@ function HeaderSearchComponents() {
           placeholder="Search"
           onChange={inputOnChange}
         />
-        <button className={cssClass.icon_button}>
+        <button
+          className={`${cssClass.icon_button} ${
+            clickAnimation ? cssClass.icon_button_white : ""
+          }`}
+        >
           <i className="fa fa-search"></i>
         </button>
       </div>

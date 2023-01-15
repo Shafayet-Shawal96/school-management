@@ -36,11 +36,15 @@
   overflow: hidden;
   border-radius: 25px;
   height: 42px;
-  background-color: #ebebeb;
   position: absolute;
   top: -21px;
   left: 0;
   right: 0;
+  background-color: transparent;
+}
+
+.flex_container_color {
+  background-color: #ebebeb;
 }
 
 .header_search {
@@ -53,7 +57,7 @@
 }
 
 .header_search input {
-  background-color: #ebebeb;
+  background-color: transparent;
 }
 
 .header_full {
@@ -71,17 +75,21 @@
   width: 42px;
   height: 42px;
   border: none;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.3);
   transition-property: width, height, margin-right;
   transition-delay: 0.9s;
+}
+
+.icon_button_white {
+  background-color: white;
 }
 
 .icon_button:hover {
   background-color: white;
 }
 
-.header_full .icon_button {
+/* .header_full .icon_button {
   width: 38px;
   height: 38px;
   transition-delay: 0s;
-}
+} */

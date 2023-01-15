@@ -1,9 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function BlogArea() {
+const newsFeedAreaImage = {
+  backgroundImage: `url(./assets/img/bg/bg-3.jpg)`,
+};
+
+function NewsFeedArea() {
   return (
-    <div className="blog-area pt-130 pb-100">
+    <div
+      className="blog-area pt-130 pb-100 bg-img default-overlay pt-130 pb-130"
+      style={newsFeedAreaImage}
+    >
       <div className="container">
         <div className="section-title mb-75">
           <h2>
@@ -176,4 +183,4 @@ function BlogArea() {
   );
 }
 
-export default BlogArea;
+export default NewsFeedArea;

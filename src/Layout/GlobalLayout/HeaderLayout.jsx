@@ -102,18 +102,6 @@ function HeaderLayout() {
                       <ul>
                         <li>
                           <Link to="/">Home</Link>
-
-                          <ul className="submenu">
-                            <li>
-                              <Link to="/">home version 1</Link>
-                            </li>
-                            <li>
-                              <Link to="/index-two">home version 2</Link>
-                            </li>
-                            <li>
-                              <Link to="/index-three">home version 3</Link>
-                            </li>
-                          </ul>
                         </li>
                         <li>
                           <Link to="/about">ABOUT</Link>
