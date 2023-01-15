@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import cssClass from "./HeaderSearchComponents.module.css";
 
-const twoClass = `${cssClass.input_full} ${cssClass.transition_delay}`;
+const inputTwoClass = `${cssClass.input_full} ${cssClass.transition_delay}`;
+const headerSearchTwoClass = `${cssClass.header_search_close} ${cssClass.transition_delay}`;
 
 function HeaderSearchComponents() {
   const [clickAnimation, setClickAnimation] = useState(false);
@@ -40,7 +41,7 @@ function HeaderSearchComponents() {
   return (
     <div
       className={`${cssClass.header_search} ${
-        clickAnimation ? cssClass.header_full : cssClass.transition_delay
+        clickAnimation ? cssClass.header_full : headerSearchTwoClass
       }`}
       onClick={addAnimation}
     >
@@ -50,7 +51,7 @@ function HeaderSearchComponents() {
         }`}
       >
         <input
-          className={`${cssClass.input} ${clickAnimation ? twoClass : ""}`}
+          className={`${cssClass.input} ${clickAnimation ? inputTwoClass : ""}`}
           type="text"
           value={inputField}
           placeholder="Search"

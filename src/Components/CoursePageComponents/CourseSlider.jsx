@@ -21,7 +21,7 @@ function CourseSlider() {
         },
       },
       {
-        breakpoint: 991,
+        breakpoint: 991.5,
         settings: {
           slidesToShow: 2,
         },

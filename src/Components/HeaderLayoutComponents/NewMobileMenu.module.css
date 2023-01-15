@@ -58,7 +58,7 @@
   transform: translate(0, -5px) rotate(-135deg);
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 991.5px) {
   .mobile_menu_btn {
     display: none;
   }

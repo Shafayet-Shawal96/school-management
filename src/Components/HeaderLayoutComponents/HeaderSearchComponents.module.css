@@ -13,12 +13,28 @@
 
 .input_full {
   padding-left: 3px;
-  width: 164px;
+  width: 165px;
 }
 
-@media only screen and (max-width: 767px) {
+.header_full {
+  width: 205px;
+}
+
+@media only screen and (max-width: 767.5px) {
+  .header_full {
+    width: 180px;
+  }
   .input_full {
-    width: 90px;
+    width: 140px;
+  }
+}
+
+@media only screen and (min-width: 991.5px) and (max-width: 1199.5px) {
+  .header_full {
+    width: 148px;
+  }
+  .input_full {
+    width: 108px;
   }
 }
 
@@ -49,26 +65,25 @@
 
 .header_search {
   margin-top: 0;
-  margin-left: 20px;
-  margin-right: 14px;
-  width: 42px;
+  margin-left: 15px;
   transition: width 1s ease-in-out;
   position: relative;
+}
+
+@media only screen and (max-width: 991.5px) {
+  .header_search {
+    margin-right: 15px;
+  }
+}
+
+.header_search_close {
+  width: 42px;
 }
 
 .header_search input {
   background-color: transparent;
 }
 
-.header_full {
-  width: 205px;
-}
-
-@media only screen and (max-width: 767px) {
-  .header_full {
-    width: 130px;
-  }
-}
 .icon_button {
   border-radius: 50%;
   padding: 0;
