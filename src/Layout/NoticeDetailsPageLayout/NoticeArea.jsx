@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import RelatedCourse from "../../Components/BlogDetailsPageComponents/RelatedCourse";
+import RelatedNews from "../../Components/NoticeDetailsPageComponents/RelatedNews";
 
-function EventArea() {
+function NoticeArea({ noticeDetails, authorDetails, allEvents }) {
   return (
     <div className="event-area pt-130 pb-130">
       <div className="container">
@@ -10,66 +10,24 @@ function EventArea() {
           <div className="col-xl-9 col-lg-8">
             <div className="blog-details-wrap mr-40">
               <div className="blog-details-top">
-                <img src="assets/img/blog/blog-details.jpg" alt="" />
+                <img src={noticeDetails.eventImage} alt="" />
                 <div className="blog-details-content-wrap">
                   <div className="b-details-meta-wrap">
                     <div className="b-details-meta">
                       <ul>
                         <li>
-                          <i className="fa fa-calendar-o"></i> June, 24th 2016
+                          <i className="fa fa-calendar-o"></i>
+                          {noticeDetails.publishDate}
                         </li>
                         <li>
-                          <i className="fa fa-user"></i> Adrin Azra
-                        </li>
-                        <li>
-                          <i className="fa fa-comments-o"></i> 10
+                          <i className="fa fa-user"></i> {authorDetails.name}
                         </li>
                       </ul>
                     </div>
-                    <span>Education</span>
+                    <span>{noticeDetails.category}</span>
                   </div>
-                  <h3>Aempor incididt ut bore dolore magna aliqua.</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum. Sed ut perspiciatis
-                    unde omnis iste natus error sit voluptatem magni dolores eos
-                    qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                    est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                    adipisci velit, sed quia non numquam eius modi tempora
-                    incidunt ut labore et dolore magnam aliquam quaerat
-                    voluptatem.
-                  </p>
-                  <blockquote>
-                    <i className="quote-top fa fa-quote-left"></i>
-                    Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit,
-                    sed do eiusm od tempor incidi dunt ut labore et dolore magna
-                    aliqua. Ut enim fugiat nulla pariaatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum. Sed
-                    ut perspiciatis unde omnis iste natus error sit
-                    <i className="quote-bottom fa fa-quote-right"></i>
-                  </blockquote>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum. Sed ut perspiciatis
-                    unde omnis iste natus error sit voluptatem magni dolores eos
-                    qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                    est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                    adipisci velit, sed quia non numquam eius modi tempora
-                    incidunt ut labore et dolore magnam aliquam quaerat
-                    voluptatem.
-                  </p>
+                  <h3>{noticeDetails.title}</h3>
+                  <p>{noticeDetails.text}</p>
                   <div className="blog-share-tags">
                     <div className="blog-share">
                       <div className="blog-btn">
@@ -102,30 +60,17 @@ function EventArea() {
                         </ul>
                       </div>
                     </div>
-                    <div className="blog-tag">
-                      <ul>
-                        <li>
-                          <Link to="#">Loremsite</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Loreipsum</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Dolar</Link>
-                        </li>
-                      </ul>
-                    </div>
                   </div>
                 </div>
               </div>
-              <div className="blog-author mt-80">
+              <div className="blog-author">
                 <div className="author-img">
-                  <img src="assets/img/blog/author.jpg" alt="" />
+                  <img src={authorDetails.image} alt="" />
                 </div>
                 <div className="author-content">
                   <div className="author-content-top">
                     <div className="blog-designation">
-                      <h5>AYESHA HOQUE</h5>
+                      <h5>{authorDetails.name}</h5>
                       <span>Author</span>
                     </div>
                     <div className="author-social">
@@ -153,88 +98,13 @@ function EventArea() {
                       </ul>
                     </div>
                   </div>
-                  <p>
-                    Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit,
-                    sed do eiusm od tempor incidi dunt ut labore et dolore magna
-                    aliqua. Ut enim fugiat nulla pariaatat non proident, sunt in
-                    culpa qui officia deserunt m ut perspiciatis und.
-                  </p>
+                  <p>{authorDetails.info}</p>
                 </div>
               </div>
-              <RelatedCourse />
-              <div className="blog-comment">
-                <div className="blog-comment-btn mb-80 commrnt-toggle">
-                  <Link to="#">VIEW COMMENT</Link>
-                </div>
-                <div className="blog-comment-content-wrap">
-                  <h4>COMMENT</h4>
-                  <div className="single-blog-comment">
-                    <div className="blog-comment-img">
-                      <img src="assets/img/blog/blog-comment.jpg" alt="" />
-                    </div>
-                    <div className="blog-comment-content">
-                      <h5>AYESHA HOQUE</h5>
-                      <p>
-                        Lorem ipsum dolor sit amet, conse ctetur adipi sicing
-                        elit, sed do eiusm od tempor incidi dunt ut
-                        laboperspiciatis und.
-                      </p>
-                      <Link to="#">Reply</Link>
-                    </div>
-                  </div>
-                  <div className="single-blog-comment child-comment">
-                    <div className="blog-comment-img">
-                      <img src="assets/img/blog/blog-comment-2.jpg" alt="" />
-                    </div>
-                    <div className="blog-comment-content">
-                      <h5>AYESHA HOQUE</h5>
-                      <p>
-                        Lorem ipsum dolor sit amet, conse ctetur adipi sicing
-                        elit, sed do eiusm od tempor incidi dunt ut
-                        laboperspiciatis und.
-                      </p>
-                      <Link to="#">Reply</Link>
-                    </div>
-                  </div>
-                  <div className="single-blog-comment">
-                    <div className="blog-comment-img">
-                      <img src="assets/img/blog/blog-comment-3.jpg" alt="" />
-                    </div>
-                    <div className="blog-comment-content">
-                      <h5>AYESHA HOQUE</h5>
-                      <p>
-                        Lorem ipsum dolor sit amet, conse ctetur adipi sicing
-                        elit, sed do eiusm od tempor incidi dunt ut
-                        laboperspiciatis und.
-                      </p>
-                      <Link to="#">Reply</Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="leave-comment-area">
-                <h3>Leave A Comment</h3>
-                <form>
-                  <div className="row">
-                    <div className="col-lg-6">
-                      <div className="leave-form">
-                        <input placeholder="Name" type="text" />
-                      </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="leave-form">
-                        <input placeholder="Email" type="email" />
-                      </div>
-                    </div>
-                    <div className="col-lg-12">
-                      <div className="leave-form leave-btn">
-                        <textarea placeholder="Message"></textarea>
-                        <input type="submit" value="POST YOUR COMMENT" />
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
+              <RelatedNews
+                authorDetails={authorDetails}
+                allEvents={allEvents}
+              />
             </div>
           </div>
           <div className="col-xl-3 col-lg-4">
@@ -431,4 +301,4 @@ function EventArea() {
   );
 }
 
-export default EventArea;
+export default NoticeArea;

@@ -5,7 +5,43 @@ import Slider from "react-slick";
 import PrevArrowComponent from "../GlobalComponents/PrevArrowComponent";
 import NextArrowComponent from "../GlobalComponents/NextArrowComponent";
 
-function RelatedSliderComponent() {
+function SingleEvent({ eventObj, authorDetails }) {
+  return (
+    <div className="single-blog">
+      <div className="blog-img">
+        <a href="/">
+          <img src={eventObj.eventImage} alt="" />
+        </a>
+      </div>
+      <div className="blog-content-wrap">
+        <span>{eventObj.category}</span>
+        <div className="blog-content">
+          <h4>
+            <a href="/">{eventObj.title}</a>
+          </h4>
+          <p>{`${eventObj.text.slice(0, 50)} ...`}</p>
+          <div className="blog-meta">
+            <ul>
+              <li>
+                <a href="/">
+                  <i className="fa fa-user"></i>
+                  {authorDetails.name}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="blog-date">
+          <a href="/">
+            <i className="fa fa-calendar-o"></i> {eventObj.publishDate}
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function RelatedSliderComponent({ allEvents, authorDetails }) {
   const settings = {
     infinite: true,
     slidesToShow: 3,
@@ -14,7 +50,7 @@ function RelatedSliderComponent() {
     nextArrow: <NextArrowComponent />,
     responsive: [
       {
-        breakpoint: 1199,
+        breakpoint: 1200.5,
         settings: {
           slidesToShow: 2,
         },
@@ -26,13 +62,13 @@ function RelatedSliderComponent() {
         },
       },
       {
-        breakpoint: 767,
+        breakpoint: 767.5,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 420,
+        breakpoint: 420.5,
         settings: {
           slidesToShow: 1,
         },
@@ -44,146 +80,13 @@ function RelatedSliderComponent() {
       {...settings}
       className="related-slider-active related-blog-slide pb-80"
     >
-      <div className="single-blog" style={{ marginRight: "20px" }}>
-        <div className="blog-img">
-          <a href="/">
-            <img src="assets/img/blog/blog-15.jpg" alt="" />
-          </a>
-        </div>
-        <div className="blog-content-wrap">
-          <span>Education</span>
-          <div className="blog-content">
-            <h4>
-              <a href="/">Testing is a great thing.</a>
-            </h4>
-            <p>doloremque laudan tium, totam ersps uns iste natus</p>
-            <div className="blog-meta">
-              <ul>
-                <li>
-                  <a href="/">
-                    <i className="fa fa-user"></i>Apparel
-                  </a>
-                </li>
-                <li>
-                  <a href="/">
-                    <i className="fa fa-comments-o"></i> 10
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="blog-date">
-            <a href="/">
-              <i className="fa fa-calendar-o"></i> June, 24th 2017
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="single-blog" style={{ marginRight: "20px" }}>
-        <div className="blog-img">
-          <a href="/">
-            <img src="assets/img/blog/blog-16.jpg" alt="" />
-          </a>
-        </div>
-        <div className="blog-content-wrap">
-          <span>Alumini</span>
-          <div className="blog-content">
-            <h4>
-              <a href="/">A variation of the ordinary.</a>
-            </h4>
-            <p>doloremque laudan tium, totam ersps uns iste natus</p>
-            <div className="blog-meta">
-              <ul>
-                <li>
-                  <a href="/">
-                    <i className="fa fa-user"></i> Adrin Azra
-                  </a>
-                </li>
-                <li>
-                  <a href="/">
-                    <i className="fa fa-comments-o"></i> 10
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="blog-date">
-            <a href="/">
-              <i className="fa fa-calendar-o"></i> June, 24th 2017
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="single-blog" style={{ marginRight: "20px" }}>
-        <div className="blog-img">
-          <a href="/">
-            <img src="assets/img/blog/blog-14.jpg" alt="" />
-          </a>
-        </div>
-        <div className="blog-content-wrap">
-          <span>Convocation</span>
-          <div className="blog-content">
-            <h4>
-              <a href="/">In publishing and graphic.</a>
-            </h4>
-            <p>doloremque laudan tium, totam ersps uns iste natus</p>
-            <div className="blog-meta">
-              <ul>
-                <li>
-                  <a href="/">
-                    <i className="fa fa-user"></i> Adrin Azra
-                  </a>
-                </li>
-                <li>
-                  <a href="/">
-                    <i className="fa fa-comments-o"></i> 10
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="blog-date">
-            <a href="/">
-              <i className="fa fa-calendar-o"></i> June, 24th 2017
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="single-blog" style={{ marginRight: "20px" }}>
-        <div className="blog-img">
-          <a href="/">
-            <img src="assets/img/blog/blog-15.jpg" alt="" />
-          </a>
-        </div>
-        <div className="blog-content-wrap">
-          <span>BBA</span>
-          <div className="blog-content">
-            <h4>
-              <a href="/">Learn English in ease.</a>
-            </h4>
-            <p>doloremque laudan tium, totam ersps uns iste natus</p>
-            <div className="blog-meta">
-              <ul>
-                <li>
-                  <a href="/">
-                    <i className="fa fa-user"></i> Adrin Azra
-                  </a>
-                </li>
-                <li>
-                  <a href="/">
-                    <i className="fa fa-comments-o"></i> 10
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="blog-date">
-            <a href="/">
-              <i className="fa fa-calendar-o"></i> June, 24th 2017
-            </a>
-          </div>
-        </div>
-      </div>
+      {allEvents.map((eventObj) => (
+        <SingleEvent
+          key={eventObj.id}
+          eventObj={eventObj}
+          authorDetails={authorDetails}
+        />
+      ))}
     </Slider>
   );
 }
