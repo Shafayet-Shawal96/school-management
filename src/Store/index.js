@@ -5,7 +5,8 @@ import NoticeDetailsReducer from "./NoticeDetailsPageSlice";
 
 export const store = configureStore({
   reducer: {
-    loginStatus: loginReducer,
+    auth: authSliceReducer,
+    loginPage: loginPageReducer,
     noticeDetails: NoticeDetailsReducer,
   },
 });
