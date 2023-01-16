@@ -44,7 +44,7 @@ function HeaderLayout() {
     setMenu(false);
   }, [location]);
   const isAuth = useSelector((state) => state.auth.isAuth);
-  console.log("is auth:", isAuth);
+
   return (
     <Fragment>
       <header className="header-area">

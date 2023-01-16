@@ -1,8 +1,8 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setLoginDeatils } from "../Store/LoginPageSlice";
 
 import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
-
-import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
 
 import LoginRegisterArea from "../Layout/LoginRegisterPageLayout/LoginRegisterArea";
 
@@ -18,11 +18,21 @@ const breadcrumbObj = {
 };
 
 function LoginRegisterPage() {
+  const loginObject = useSelector((state) => state.loginPage.loginObject);
+  console.log(loginObject);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(setLoginDeatils());
+  }, [dispatch]);
+
   return (
     <Fragment>
-      <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
+      <BreadcrumbArea
+        breadcrumbObj={
+          loginObject.length !== 0 ? loginObject[0] : breadcrumbObj
+        }
+      />
       <LoginRegisterArea />
-      <BrandCarouselComponent />
     </Fragment>
   );
 }
