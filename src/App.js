@@ -7,7 +7,7 @@ import CoursePage from "./Pages/CoursePage";
 import EventDetailsPage from "./Pages/EventDetailsPage";
 import EventPage from "./Pages/EventPage";
 import IndexPage from "./Pages/IndexPage";
-import BlogDetailPage from "./Pages/BlogDetailPage";
+import NoticeDetailsPage from "./Pages/NoticeDetailsPage";
 import CourseDetails from "./Pages/CourseDetailsPage";
 import LoginRegisterPage from "./Pages/LoginRegisterPage";
 
@@ -23,7 +23,7 @@ function App() {
           <Route path="/event-details" element={<EventDetailsPage />} />
           <Route path="/event" element={<EventPage />} />
           <Route path="/course-details" element={<CourseDetails />} />
-          <Route path="/blog-details" element={<BlogDetailPage />} />
+          <Route path="/notice-details" element={<NoticeDetailsPage />} />
           <Route path="/login-register" element={<LoginRegisterPage />} />
           <Route path="/" element={<IndexPage />} />
         </Routes>
