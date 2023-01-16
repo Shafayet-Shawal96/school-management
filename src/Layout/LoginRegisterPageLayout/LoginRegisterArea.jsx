@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { loginFn } from "../../Store/LoginSlice";
 
 function LoginRegisterArea() {
   const [login, setLogin] = useState(true);
@@ -12,6 +14,11 @@ function LoginRegisterArea() {
     } else {
       setLogin(false);
     }
+  };
+  const dispatch = useDispatch();
+  const handleLogin = (e) => {
+    e.preventDefault();
+    dispatch(loginFn());
   };
 
   return (
@@ -59,7 +66,11 @@ function LoginRegisterArea() {
                             <label>Remember me</label>
                             <Link to="#">Forgot Password?</Link>
                           </div>
-                          <button className="default-btn" type="submit">
+                          <button
+                            onClick={handleLogin}
+                            className="default-btn"
+                            type="submit"
+                          >
                             <span>Login</span>
                           </button>
                         </div>

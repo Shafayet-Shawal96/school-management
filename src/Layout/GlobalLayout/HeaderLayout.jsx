@@ -5,6 +5,7 @@ import React, {
   Fragment,
   useCallback,
 } from "react";
+import { useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
 import HeaderSearchComponents from "../../Components/HeaderLayoutComponents/HeaderSearchComponents";
 import MobileMenu from "../../Components/HeaderLayoutComponents/MobileMenu";
@@ -42,7 +43,8 @@ function HeaderLayout() {
     window.scrollTo(0, 0);
     setMenu(false);
   }, [location]);
-
+  const isAuth = useSelector((state) => state.auth.isAuth);
+  console.log("is auth:", isAuth);
   return (
     <Fragment>
       <header className="header-area">
@@ -67,11 +69,15 @@ function HeaderLayout() {
                 <div className="login-register">
                   <ul>
                     <li>
-                      <Link to="/login-register">Login</Link>
+                      {isAuth ? (
+                        <Link to="/dashboard">Dashboard</Link>
+                      ) : (
+                        <Link to="/login-register">Login</Link>
+                      )}
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to="/login-register">Register</Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

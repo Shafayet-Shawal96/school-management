@@ -1,23 +1,31 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  isAuthenticated: false,
+  isAuth: false,
+  //   user: {},
+  //   error: null,
 };
 
-const loginSlice = createSlice({
-  name: "login",
+const authSlice = createSlice({
+  name: "auth",
   initialState,
   reducers: {
-    loginFn: (state) => {
-      state.isAuthenticated = true;
+    loginFn: (state, action) => {
+      //   const { email, password } = action.payload;
+      //   if (email === state.user.email && password === state.user.password) {
+      //     state.isAuth = true;
+      //   } else {
+      //     state.error = "Invalid Credentials";
+      //   }
+      state.isAuth = true;
     },
     logoutFn: (state) => {
-      state.isAuthenticated = false;
+      //   state.isAuth = false;
+      //   state.user = {};
+      state.isAuth = false;
     },
   },
 });
 
-// Action creators are generated for each case reducer function
-export const { loginFn, logoutFn } = loginSlice.actions;
-
-export default loginSlice.reducer;
+export const { signup, loginFn, logoutFn } = authSlice.actions;
+export default authSlice.reducer;
