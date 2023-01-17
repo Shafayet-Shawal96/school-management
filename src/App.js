@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router";
 import FooterLayout from "./Layout/GlobalLayout/FooterLayout";
 import HeaderLayout from "./Layout/GlobalLayout/HeaderLayout";
-import BlogPage from "./Pages/BlogPage";
+import NoticesPage from "./Pages/NoticesPage";
 import ContactPage from "./Pages/ContactPage";
 import CoursePage from "./Pages/CoursePage";
 import EventDetailsPage from "./Pages/EventDetailsPage";
@@ -17,15 +17,15 @@ function App() {
       <HeaderLayout />
       <main>
         <Routes>
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/course" element={<CoursePage />} />
-          <Route path="/event-details" element={<EventDetailsPage />} />
-          <Route path="/event" element={<EventPage />} />
-          <Route path="/course-details" element={<CourseDetails />} />
-          <Route path="/notice-details" element={<NoticeDetailsPage />} />
-          <Route path="/login-register" element={<LoginRegisterPage />} />
           <Route path="/" element={<IndexPage />} />
+          <Route path="/login-register" element={<LoginRegisterPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/events" element={<EventPage />} exact />
+          <Route path="/events/:eventId" element={<EventDetailsPage />} />
+          <Route path="/course" element={<CoursePage />} exact />
+          <Route path="/course-details" element={<CourseDetails />} />
+          <Route path="/notices" element={<NoticesPage />} exact />
+          <Route path="/notices/:noticeId" element={<NoticeDetailsPage />} />
         </Routes>
       </main>
       <FooterLayout />

@@ -2,8 +2,6 @@ import React, { Fragment } from "react";
 
 import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
 
-import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
-
 import EventArea from "../Layout/EventPageLayout/EventArea";
 
 const breadcrumbObj = {
@@ -22,7 +20,6 @@ function EventPage() {
     <Fragment>
       <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
       <EventArea />
-      <BrandCarouselComponent />
     </Fragment>
   );
 }

@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import BlogListRow from "../../Components/BlogPageComponents/BlogListRow";
+import NoticesListRow from "../../Components/NoticesPageComponents/NoticesListRow";
 
 function EventArea() {
   return (
     <div className="event-area pt-130 pb-130">
       <div className="container">
         <div className="row">
-          <BlogListRow />
+          <NoticesListRow />
           <div className="col-xl-3 col-lg-4">
             <div className="sidebar-style">
               <div className="sidebar-search mb-40">

@@ -110,10 +110,10 @@ function HeaderLayout() {
                           <Link to="/">Home</Link>
                         </li>
                         <li>
-                          <Link to="/blog">NOTICE BOARD</Link>
+                          <Link to="/notices">NOTICE BOARD</Link>
                         </li>
                         <li>
-                          <Link to="/event">event page</Link>
+                          <Link to="/events">event page</Link>
                         </li>
                         <li>
                           <Link to="/course">PROGRAMMES</Link>

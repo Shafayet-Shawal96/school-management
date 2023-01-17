@@ -3,7 +3,7 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
-function EventGallarySlide() {
+function EventGallarySlide({ sliderImages }) {
   return (
     <OwlCarousel
       className="event-gallery-active nav-style-3 owl-carousel"
@@ -38,8 +38,9 @@ function EventGallarySlide() {
         },
       }}
     >
-      <img src="assets/img/event/event-gallery-1.jpg" alt="" />
-      <img src="assets/img/event/event-gallery-2.jpg" alt="" />
+      {sliderImages.map((item) => (
+        <img key={item.id} src={`.${item.img}`} alt="" />
+      ))}
     </OwlCarousel>
   );
 }

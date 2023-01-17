@@ -13,7 +13,7 @@ const breadcrumbObj = {
   pageName: "Event Details",
   overlayClass: "breadcrumb-overly-2",
   breadcrumbImage: {
-    backgroundImage: `url(./assets/img/bg/breadcrumb-bg-2.jpg)`,
+    backgroundImage: `url(../assets/img/bg/breadcrumb-bg-2.jpg)`,
   },
 };
 
@@ -22,7 +22,6 @@ function EventDetailsPage() {
     <Fragment>
       <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
       <EventDetailArea />
-      <BrandCarouselComponent />
     </Fragment>
   );
 }

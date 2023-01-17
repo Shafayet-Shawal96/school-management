@@ -1,8 +1,103 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import RelatedNews from "../../Components/NoticeDetailsPageComponents/RelatedNews";
+import { Link, useParams } from "react-router-dom";
+import RelatedNotices from "../../Components/NoticeDetailsPageComponents/RelatedNotices";
 
-function NoticeArea({ noticeDetails, authorDetails, allEvents }) {
+const authorDetails = {
+  id: 1,
+  name: "Shawal",
+  image: "./assets/img/blog/author.jpg",
+  info: "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt utlabordolore magna aliqua. Ut enim fugiat nulpariaatatnoproident, sunt in culpa qui officia deserunt m utperspiciatiund.",
+};
+
+const notices = [
+  {
+    id: 1,
+    noticeImage: "./assets/img/blog/blog-15.jpg",
+    bgImage: "./assets/img/blog/blog-details.jpg",
+    publishDate: "June, 24th 2016",
+    category: "Education",
+    title: "Testing is a great thing.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehendervoluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat cupidatat non proident, suculpa qui officia deserunt mollit anim id est laborumut perspiciatis unde omnis iste natus errovoluptatem magni dolores eos qui ratione voluptatem sequi nescNeque porro quisquam est, qui dolorem ipsum quia doloamet, consectetur, adipisci velit, sed quia non numquammodi tempora incidunt ut labore et dolore maliquam quaerat voluptatem.",
+  },
+  {
+    id: 2,
+    noticeImage: "./assets/img/blog/blog-16.jpg",
+    bgImage: "./assets/img/blog/blog-details.jpg",
+    publishDate: "July, 24th 2017",
+    category: "Alumini",
+    title: "A variation of the ordinary.",
+    text: "doloremque laudan tium, totam ersps uns iste natus labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehendervoluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat cupidatat non proident, suculpa qui officia deserunt mollit anim id est laborumut perspiciatis unde omnis iste natus errovoluptatem magni dolores eos qui ratione voluptatem sequi nescNeque porro quisquam est, qui dolorem ipsum quia doloamet, consectetur, adipisci velit, sed quia non numquammodi tempora incidunt ut labore et dolore maliquam quaerat voluptatem.",
+  },
+  {
+    id: 3,
+    noticeImage: "./assets/img/blog/blog-14.jpg",
+    bgImage: "./assets/img/blog/blog-details.jpg",
+    publishDate: "Feb, 27th 2017",
+    category: "Convocation",
+    title: "In publishing and graphic.",
+    text: "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehendervoluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat cupidatat non proident, suculpa qui officia deserunt mollit anim id est laborumut perspiciatis unde omnis iste natus errovoluptatem magni dolores eos qui ratione voluptatem sequi nescNeque porro quisquam est, qui dolorem ipsum quia doloamet, consectetur, adipisci velit, sed quia non numquammodi tempora incidunt ut labore et dolore maliquam quaerat voluptatem.",
+  },
+  {
+    id: 4,
+    noticeImage: "./assets/img/blog/blog-15.jpg",
+    bgImage: "./assets/img/blog/blog-details.jpg",
+    publishDate: "Jan, 29th 2017",
+    category: "BBA",
+    title: "Learn English in ease.",
+    text: " ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehendervoluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat cupidatat non proident, suculpa qui officia deserunt mollit anim id est laborumut perspiciatis unde omnis iste natus errovoluptatem magni dolores eos qui ratione voluptatem sequi nescNeque porro quisquam est, qui dolorem ipsum quia doloamet, consectetur, adipisci velit, sed quia non numquammodi tempora incidunt ut labore et dolore maliquam quaerat voluptatem.",
+  },
+  {
+    id: 5,
+    noticeImage: "./assets/img/blog/blog-15.jpg",
+    bgImage: "./assets/img/blog/blog-details.jpg",
+    publishDate: "June, 24th 2016",
+    category: "Education",
+    title: "Testing is a great thing.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehendervoluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat cupidatat non proident, suculpa qui officia deserunt mollit anim id est laborumut perspiciatis unde omnis iste natus errovoluptatem magni dolores eos qui ratione voluptatem sequi nescNeque porro quisquam est, qui dolorem ipsum quia doloamet, consectetur, adipisci velit, sed quia non numquammodi tempora incidunt ut labore et dolore maliquam quaerat voluptatem.",
+  },
+  {
+    id: 6,
+    noticeImage: "./assets/img/blog/blog-16.jpg",
+    bgImage: "./assets/img/blog/blog-details.jpg",
+    publishDate: "July, 24th 2017",
+    category: "Alumini",
+    title: "A variation of the ordinary.",
+    text: "doloremque laudan tium, totam ersps uns iste natus labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehendervoluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat cupidatat non proident, suculpa qui officia deserunt mollit anim id est laborumut perspiciatis unde omnis iste natus errovoluptatem magni dolores eos qui ratione voluptatem sequi nescNeque porro quisquam est, qui dolorem ipsum quia doloamet, consectetur, adipisci velit, sed quia non numquammodi tempora incidunt ut labore et dolore maliquam quaerat voluptatem.",
+  },
+  {
+    id: 7,
+    noticeImage: "./assets/img/blog/blog-14.jpg",
+    bgImage: "./assets/img/blog/blog-details.jpg",
+    publishDate: "Feb, 27th 2017",
+    category: "Convocation",
+    title: "In publishing and graphic.",
+    text: "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehendervoluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat cupidatat non proident, suculpa qui officia deserunt mollit anim id est laborumut perspiciatis unde omnis iste natus errovoluptatem magni dolores eos qui ratione voluptatem sequi nescNeque porro quisquam est, qui dolorem ipsum quia doloamet, consectetur, adipisci velit, sed quia non numquammodi tempora incidunt ut labore et dolore maliquam quaerat voluptatem.",
+  },
+  {
+    id: 8,
+    noticeImage: "./assets/img/blog/blog-15.jpg",
+    bgImage: "./assets/img/blog/blog-details.jpg",
+    publishDate: "Jan, 29th 2017",
+    category: "BBA",
+    title: "Learn English in ease.",
+    text: " ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehendervoluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat cupidatat non proident, suculpa qui officia deserunt mollit anim id est laborumut perspiciatis unde omnis iste natus errovoluptatem magni dolores eos qui ratione voluptatem sequi nescNeque porro quisquam est, qui dolorem ipsum quia doloamet, consectetur, adipisci velit, sed quia non numquammodi tempora incidunt ut labore et dolore maliquam quaerat voluptatem.",
+  },
+  {
+    id: 9,
+    noticeImage: "./assets/img/blog/blog-15.jpg",
+    bgImage: "./assets/img/blog/blog-details.jpg",
+    publishDate: "June, 24th 2016",
+    category: "Education",
+    title: "Testing is a great thing.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehendervoluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat cupidatat non proident, suculpa qui officia deserunt mollit anim id est laborumut perspiciatis unde omnis iste natus errovoluptatem magni dolores eos qui ratione voluptatem sequi nescNeque porro quisquam est, qui dolorem ipsum quia doloamet, consectetur, adipisci velit, sed quia non numquammodi tempora incidunt ut labore et dolore maliquam quaerat voluptatem.",
+  },
+];
+
+function NoticeArea() {
+  const params = useParams();
+  const notice = notices.find(
+    (notice) => notice.id === Number(params.noticeId)
+  );
   return (
     <div className="event-area pt-130 pb-130">
       <div className="container">
@@ -10,62 +105,29 @@ function NoticeArea({ noticeDetails, authorDetails, allEvents }) {
           <div className="col-xl-9 col-lg-8">
             <div className="blog-details-wrap mr-40">
               <div className="blog-details-top">
-                <img src={noticeDetails.eventImage} alt="" />
+                <img src={`.${notice.bgImage}`} alt="" />
                 <div className="blog-details-content-wrap">
                   <div className="b-details-meta-wrap">
                     <div className="b-details-meta">
                       <ul>
                         <li>
                           <i className="fa fa-calendar-o"></i>
-                          {noticeDetails.publishDate}
+                          {notice.publishDate}
                         </li>
                         <li>
                           <i className="fa fa-user"></i> {authorDetails.name}
                         </li>
                       </ul>
                     </div>
-                    <span>{noticeDetails.category}</span>
+                    <span>{notice.category}</span>
                   </div>
-                  <h3>{noticeDetails.title}</h3>
-                  <p>{noticeDetails.text}</p>
-                  <div className="blog-share-tags">
-                    <div className="blog-share">
-                      <div className="blog-btn">
-                        <Link to="#">
-                          <i className="fa fa-share-alt"></i>
-                        </Link>
-                      </div>
-                      <div className="blog-social">
-                        <ul>
-                          <li>
-                            <Link className="facebook" to="#">
-                              <i className="fa fa-facebook"></i>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className="instagram" to="#">
-                              <i className="fa fa-instagram"></i>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className="twitter" to="#">
-                              <i className="fa fa-twitter"></i>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className="google" to="#">
-                              <i className="fa fa-google-plus"></i>
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                  <h3>{notice.title}</h3>
+                  <p>{notice.text}</p>
                 </div>
               </div>
               <div className="blog-author">
                 <div className="author-img">
-                  <img src={authorDetails.image} alt="" />
+                  <img src={`.${authorDetails.image}`} alt="" />
                 </div>
                 <div className="author-content">
                   <div className="author-content-top">
@@ -101,10 +163,7 @@ function NoticeArea({ noticeDetails, authorDetails, allEvents }) {
                   <p>{authorDetails.info}</p>
                 </div>
               </div>
-              <RelatedNews
-                authorDetails={authorDetails}
-                allEvents={allEvents}
-              />
+              <RelatedNotices category={notice.category} />
             </div>
           </div>
           <div className="col-xl-3 col-lg-4">

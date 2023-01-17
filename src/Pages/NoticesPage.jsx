@@ -2,29 +2,26 @@ import React, { Fragment } from "react";
 
 import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
 
-import BrandCarouselComponent from "../Components/GlobalComponents/BrandCarouselComponent";
-
-import EventArea from "../Layout/BlogPageLayout/EventArea";
+import EventArea from "../Layout/NoticesPageLayout/EventArea";
 
 const breadcrumbObj = {
-  title: "Blog Grid",
+  title: "Notices",
   subtitle: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore .`,
-  pageName: "Blog Grid",
+  pageName: "Notices",
   overlayClass: "breadcrumb-overly-3",
   breadcrumbImage: {
     backgroundImage: `url(./assets/img/bg/breadcrumb-bg-5.jpg)`,
   },
 };
 
-function BlogPage() {
+function NoticesPage() {
   return (
     <Fragment>
       <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
       <EventArea />
-      <BrandCarouselComponent />
     </Fragment>
   );
 }
 
-export default BlogPage;
+export default NoticesPage;
