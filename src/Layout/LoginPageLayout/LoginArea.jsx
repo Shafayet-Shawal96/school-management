@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { loginFn } from "../../Store/LoginSlice";
+import ReCAPTCHA from "react-google-recaptcha";
 
 function LoginArea() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const [captchaisValid, setCaptchaisValid] = useState(false);
 
   const handleLogin = (e) => {
     e.preventDefault();
-    dispatch(loginFn());
-    navigate("/");
+    if (captchaisValid) {
+      dispatch(loginFn());
+      navigate("/");
+      return;
+    }
+    alert("Try captcha again");
   };
+
+  function onChange(value) {
+    setCaptchaisValid(true);
+    // console.log("Captcha value:", value);
+  }
 
   return (
     <div className="login-register-area pt-130 pb-130">
@@ -45,6 +56,10 @@ function LoginArea() {
                             <label>Remember me</label>
                             <Link to="#">Forgot Password?</Link>
                           </div>
+                          <ReCAPTCHA
+                            sitekey="6LetUAYkAAAAAP8NGg6xnMR6Pn2YTz6fBm2IuDqF"
+                            onChange={onChange}
+                          />
                           <button
                             onClick={handleLogin}
                             className="default-btn"
