@@ -3,17 +3,18 @@ import { useSelector } from "react-redux";
 
 import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
 
-import EventArea from "../Layout/NoticesPageLayout/EventArea";
+import LoginArea from "../Layout/LoginPageLayout/LoginArea";
 
-function NoticesPage() {
+function LoginPage() {
   const UIObject = useSelector((state) => state.UISlice.UI);
-  const breadcrumbObj = UIObject[0].breadcrumbObj.NoticesPage;
+  const breadcrumbObj = UIObject[0].breadcrumbObj.LoginRegisterPage;
+
   return (
     <Fragment>
       <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
-      <EventArea />
+      <LoginArea />
     </Fragment>
   );
 }
 
-export default NoticesPage;
+export default LoginPage;

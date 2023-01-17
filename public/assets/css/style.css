@@ -7904,12 +7904,12 @@ textarea:focus {
   padding-bottom: 0px;
 }
 
-.slick-list .slick-track {
+/* .slick-list .slick-track {
   display: flex;
   gap: 5px;
   translatex: -2px;
   translate: -15px;
-}
+} */
 
 .blog-comment .blog-comment-btn a {
   font-size: 16px;

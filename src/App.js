@@ -9,16 +9,24 @@ import EventPage from "./Pages/EventPage";
 import IndexPage from "./Pages/IndexPage";
 import NoticeDetailsPage from "./Pages/NoticeDetailsPage";
 import CourseDetails from "./Pages/CourseDetailsPage";
-import LoginRegisterPage from "./Pages/LoginRegisterPage";
+import LoginPage from "./Pages/LoginPage";
+import { useDispatch } from "react-redux";
+import { setUIState } from "./Store/UISlice";
+import { useEffect } from "react";
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(setUIState());
+  }, [dispatch]);
+
   return (
     <div id="body">
       <HeaderLayout />
       <main>
         <Routes>
           <Route path="/" element={<IndexPage />} />
-          <Route path="/login-register" element={<LoginRegisterPage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/events" element={<EventPage />} exact />
           <Route path="/events/:eventId" element={<EventDetailsPage />} />

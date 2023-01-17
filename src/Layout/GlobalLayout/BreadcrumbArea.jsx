@@ -7,8 +7,8 @@ function BreadcrumbArea({ breadcrumbObj }) {
     <div className="breadcrumb-area">
       <div className={overlayClasses} style={breadcrumbObj.breadcrumbImage}>
         <div className="container">
-          <h2>{breadcrumbObj.title}</h2>
-          <p>{breadcrumbObj.subtitle}</p>
+          <h2>{breadcrumbObj.pageName}</h2>
+          <p>{breadcrumbObj.pageDetail}</p>
         </div>
       </div>
       <div className="breadcrumb-bottom">

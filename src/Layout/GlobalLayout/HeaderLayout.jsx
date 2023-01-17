@@ -20,6 +20,8 @@ function HeaderLayout() {
   const [sticky, setSticky] = useState(false);
   const [menu, setMenu] = useState(false);
   const mainHeader = useRef(null);
+  const UIObject = useSelector((state) => state.UISlice.UI);
+  const authorName = UIObject[0].authorDetails.name;
 
   const updateMenu = useCallback(() => {
     setMenu((prevmenu) => !prevmenu);
@@ -70,9 +72,9 @@ function HeaderLayout() {
                   <ul>
                     <li>
                       {isAuth ? (
-                        <Link to="/dashboard">Dashboard</Link>
+                        <Link to="#">{authorName}</Link>
                       ) : (
-                        <Link to="/login-register">Login</Link>
+                        <Link to="/login">Login</Link>
                       )}
                     </li>
                     {/* <li>

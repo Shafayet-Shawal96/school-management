@@ -1,0 +1,224 @@
+[
+  {
+    "state": "old",
+    "authorDetails": {
+      "id": 1,
+      "name": "Anonymous",
+      "image": "./assets/img/blog/author.jpg",
+      "info": "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt utlabordolore magna aliqua. Ut enim fugiat nulpariaatatnoproident, sunt in culpa qui officia deserunt m utperspiciatiund."
+    },
+    "notices": [
+      {
+        "id": 1,
+        "noticeImage": "./assets/img/blog/blog-15.jpg",
+        "bgImage": "./assets/img/blog/blog-details.jpg",
+        "publishDate": "June, 24th 2016",
+        "category": "Education",
+        "title": "Testing is a great thing.",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehendervoluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat cupidatat non proident, suculpa qui officia deserunt mollit anim id est laborumut perspiciatis unde omnis iste natus errovoluptatem magni dolores eos qui ratione voluptatem sequi nescNeque porro quisquam est, qui dolorem ipsum quia doloamet, consectetur, adipisci velit, sed quia non numquammodi tempora incidunt ut labore et dolore maliquam quaerat voluptatem."
+      },
+      {
+        "id": 2,
+        "noticeImage": "./assets/img/blog/blog-16.jpg",
+        "bgImage": "./assets/img/blog/blog-details.jpg",
+        "publishDate": "July, 24th 2017",
+        "category": "Alumini",
+        "title": "A variation of the ordinary.",
+        "text": "doloremque laudan tium, totam ersps uns iste natus labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehendervoluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat cupidatat non proident, suculpa qui officia deserunt mollit anim id est laborumut perspiciatis unde omnis iste natus errovoluptatem magni dolores eos qui ratione voluptatem sequi nescNeque porro quisquam est, qui dolorem ipsum quia doloamet, consectetur, adipisci velit, sed quia non numquammodi tempora incidunt ut labore et dolore maliquam quaerat voluptatem."
+      },
+      {
+        "id": 3,
+        "noticeImage": "./assets/img/blog/blog-14.jpg",
+        "bgImage": "./assets/img/blog/blog-details.jpg",
+        "publishDate": "Feb, 27th 2017",
+        "category": "Convocation",
+        "title": "In publishing and graphic.",
+        "text": "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehendervoluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat cupidatat non proident, suculpa qui officia deserunt mollit anim id est laborumut perspiciatis unde omnis iste natus errovoluptatem magni dolores eos qui ratione voluptatem sequi nescNeque porro quisquam est, qui dolorem ipsum quia doloamet, consectetur, adipisci velit, sed quia non numquammodi tempora incidunt ut labore et dolore maliquam quaerat voluptatem."
+      },
+      {
+        "id": 4,
+        "noticeImage": "./assets/img/blog/blog-15.jpg",
+        "bgImage": "./assets/img/blog/blog-details.jpg",
+        "publishDate": "Jan, 29th 2017",
+        "category": "BBA",
+        "title": "Learn English in ease.",
+        "text": " ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehendervoluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat cupidatat non proident, suculpa qui officia deserunt mollit anim id est laborumut perspiciatis unde omnis iste natus errovoluptatem magni dolores eos qui ratione voluptatem sequi nescNeque porro quisquam est, qui dolorem ipsum quia doloamet, consectetur, adipisci velit, sed quia non numquammodi tempora incidunt ut labore et dolore maliquam quaerat voluptatem."
+      },
+      {
+        "id": 5,
+        "noticeImage": "./assets/img/blog/blog-15.jpg",
+        "bgImage": "./assets/img/blog/blog-details.jpg",
+        "publishDate": "June, 24th 2016",
+        "category": "Education",
+        "title": "Testing is a great thing.",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehendervoluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat cupidatat non proident, suculpa qui officia deserunt mollit anim id est laborumut perspiciatis unde omnis iste natus errovoluptatem magni dolores eos qui ratione voluptatem sequi nescNeque porro quisquam est, qui dolorem ipsum quia doloamet, consectetur, adipisci velit, sed quia non numquammodi tempora incidunt ut labore et dolore maliquam quaerat voluptatem."
+      },
+      {
+        "id": 6,
+        "noticeImage": "./assets/img/blog/blog-16.jpg",
+        "bgImage": "./assets/img/blog/blog-details.jpg",
+        "publishDate": "July, 24th 2017",
+        "category": "Alumini",
+        "title": "A variation of the ordinary.",
+        "text": "doloremque laudan tium, totam ersps uns iste natus labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehendervoluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat cupidatat non proident, suculpa qui officia deserunt mollit anim id est laborumut perspiciatis unde omnis iste natus errovoluptatem magni dolores eos qui ratione voluptatem sequi nescNeque porro quisquam est, qui dolorem ipsum quia doloamet, consectetur, adipisci velit, sed quia non numquammodi tempora incidunt ut labore et dolore maliquam quaerat voluptatem."
+      },
+      {
+        "id": 7,
+        "noticeImage": "./assets/img/blog/blog-14.jpg",
+        "bgImage": "./assets/img/blog/blog-details.jpg",
+        "publishDate": "Feb, 27th 2017",
+        "category": "Convocation",
+        "title": "In publishing and graphic.",
+        "text": "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehendervoluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat cupidatat non proident, suculpa qui officia deserunt mollit anim id est laborumut perspiciatis unde omnis iste natus errovoluptatem magni dolores eos qui ratione voluptatem sequi nescNeque porro quisquam est, qui dolorem ipsum quia doloamet, consectetur, adipisci velit, sed quia non numquammodi tempora incidunt ut labore et dolore maliquam quaerat voluptatem."
+      },
+      {
+        "id": 8,
+        "noticeImage": "./assets/img/blog/blog-15.jpg",
+        "bgImage": "./assets/img/blog/blog-details.jpg",
+        "publishDate": "Jan, 29th 2017",
+        "category": "BBA",
+        "title": "Learn English in ease.",
+        "text": " ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehendervoluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat cupidatat non proident, suculpa qui officia deserunt mollit anim id est laborumut perspiciatis unde omnis iste natus errovoluptatem magni dolores eos qui ratione voluptatem sequi nescNeque porro quisquam est, qui dolorem ipsum quia doloamet, consectetur, adipisci velit, sed quia non numquammodi tempora incidunt ut labore et dolore maliquam quaerat voluptatem."
+      },
+      {
+        "id": 9,
+        "noticeImage": "./assets/img/blog/blog-15.jpg",
+        "bgImage": "./assets/img/blog/blog-details.jpg",
+        "publishDate": "June, 24th 2016",
+        "category": "Education",
+        "title": "Testing is a great thing.",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehendervoluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat cupidatat non proident, suculpa qui officia deserunt mollit anim id est laborumut perspiciatis unde omnis iste natus errovoluptatem magni dolores eos qui ratione voluptatem sequi nescNeque porro quisquam est, qui dolorem ipsum quia doloamet, consectetur, adipisci velit, sed quia non numquammodi tempora incidunt ut labore et dolore maliquam quaerat voluptatem."
+      }
+    ],
+    "allEvents": [
+      {
+        "id": 1,
+        "eventCardImage": "./assets/img/event/event-5.jpg",
+        "eventDetailsImage": "./assets/img/event/event-details.jpg",
+        "sliderImages": [
+          { "id": 1, "img": "./assets/img/event/event-gallery-1.jpg" },
+          { "id": 2, "img": "./assets/img/event/event-gallery-2.jpg" }
+        ],
+        "eventDate": { "day": "1st", "month": "Dec" },
+        "title": "Global Conference on Business.",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dorepre enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu antium dolorem laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem snesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+        "location": "Mascot Plaza, Uttara",
+        "time": "05:30 am"
+      },
+      {
+        "id": 2,
+        "eventCardImage": "./assets/img/event/event-6.jpg",
+        "eventDetailsImage": "./assets/img/event/event-details.jpg",
+        "sliderImages": [
+          { "id": 1, "img": "./assets/img/event/event-gallery-1.jpg" },
+          { "id": 2, "img": "./assets/img/event/event-gallery-2.jpg" }
+        ],
+        "eventDate": { "day": "2nd", "month": "Dec" },
+        "title": "Academic Conference Maui.",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dorepre enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu antium dolorem laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem snesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+        "location": "Shuvastu, Badda",
+        "time": "07:20 am"
+      },
+      {
+        "id": 3,
+        "eventCardImage": "./assets/img/event/event-7.jpg",
+        "eventDetailsImage": "./assets/img/event/event-details.jpg",
+        "sliderImages": [
+          { "id": 1, "img": "./assets/img/event/event-gallery-1.jpg" },
+          { "id": 2, "img": "./assets/img/event/event-gallery-2.jpg" }
+        ],
+        "eventDate": { "day": "3rd", "month": "Dec" },
+        "title": "Social Sciences & Education.",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dorepre enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu antium dolorem laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem snesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+        "location": "Banashree, Rampura",
+        "time": "10:18 am"
+      },
+      {
+        "id": 4,
+        "eventCardImage": "./assets/img/event/event-8.jpg",
+        "eventDetailsImage": "./assets/img/event/event-details.jpg",
+        "sliderImages": [
+          { "id": 1, "img": "./assets/img/event/event-gallery-1.jpg" },
+          { "id": 2, "img": "./assets/img/event/event-gallery-2.jpg" }
+        ],
+        "eventDate": { "day": "3rd", "month": "Dec" },
+        "title": "Aempor incididunt ut labore ejam.",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dorepre enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu antium dolorem laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem snesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+        "location": "New Market, Uttara",
+        "time": "09:15 am"
+      },
+      {
+        "id": 5,
+        "eventCardImage": "./assets/img/event/event-9.jpg",
+        "eventDetailsImage": "./assets/img/event/event-details.jpg",
+        "sliderImages": [
+          { "id": 1, "img": "./assets/img/event/event-gallery-1.jpg" },
+          { "id": 2, "img": "./assets/img/event/event-gallery-2.jpg" }
+        ],
+        "eventDate": { "day": "1st", "month": "Dec" },
+        "title": "Arts Humanities Social Sciences",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dorepre enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu antium dolorem laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem snesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+        "location": "Mascot Plaza, Uttara",
+        "time": "10:00 am"
+      },
+      {
+        "id": 6,
+        "eventCardImage": "./assets/img/event/event-5.jpg",
+        "eventDetailsImage": "./assets/img/event/event-details.jpg",
+        "sliderImages": [
+          { "id": 1, "img": "./assets/img/event/event-gallery-1.jpg" },
+          { "id": 2, "img": "./assets/img/event/event-gallery-2.jpg" }
+        ],
+        "eventDate": { "day": "1st", "month": "Dec" },
+        "title": "Global Conference on Business.",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dorepre enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu antium dolorem laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem snesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+        "location": "Mascot Plaza, Uttara",
+        "time": "05:30 am"
+      }
+    ],
+    "breadcrumbObj": {
+      "NoticeDetailsPage": {
+        "pageName": "Notice Details",
+        "pageDetail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .",
+        "overlayClass": "breadcrumb-overly-3",
+        "breadcrumbImage": {
+          "backgroundImage": "url(../assets/img/bg/breadcrumb-bg-5.jpg)"
+        }
+      },
+      "NoticesPage": {
+        "pageName": "Notices",
+        "pageDetail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .",
+        "overlayClass": "breadcrumb-overly-3",
+        "breadcrumbImage": {
+          "backgroundImage": "url(./assets/img/bg/breadcrumb-bg-5.jpg)"
+        }
+      },
+      "EventDetailsPage": {
+        "title": "Event Details",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .",
+        "pageName": "Event Details",
+        "overlayClass": "breadcrumb-overly-2",
+        "breadcrumbImage": {
+          "backgroundImage": "url(../assets/img/bg/breadcrumb-bg-2.jpg)"
+        }
+      },
+      "EventPage": {
+        "pageName": "Events",
+        "pageDetail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .",
+        "overlayClass": "breadcrumb-overly-3",
+        "breadcrumbImage": {
+          "backgroundImage": "url(./assets/img/bg/breadcrumb-bg-3.jpg)"
+        }
+      },
+      "LoginRegisterPage": {
+        "title": "Login/Register",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .",
+        "pageName": "login/Register",
+        "overlayClass": "breadcrumb-overly-4",
+        "breadcrumbImage": {
+          "backgroundImage": "url(./assets/img/bg/breadcrumb-bg-4.jpg)"
+        }
+      }
+    }
+  }
+]

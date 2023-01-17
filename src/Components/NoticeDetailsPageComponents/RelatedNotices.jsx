@@ -1,7 +1,7 @@
 import React from "react";
 import RelatedSliderComponent from "../RelatedSliderComponet/RelatedSliderComponent";
 
-function RelatedNotices({ category }) {
+function RelatedNotices() {
   return (
     <div className="related-course pt-70">
       <div className="related-title mb-45">
@@ -12,7 +12,7 @@ function RelatedNotices({ category }) {
           nisi ut aliquip.
         </p>
       </div>
-      <RelatedSliderComponent category={category} />
+      <RelatedSliderComponent />
     </div>
   );
 }
