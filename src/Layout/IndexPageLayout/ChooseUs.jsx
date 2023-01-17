@@ -10,7 +10,7 @@ function ChooseUs() {
               <div className="choose-img">
                 <img
                   className="animated"
-                  src="assets/img/icon-img/service-1.png"
+                  src="/assets/img/icon-img/service-1.png"
                   alt=""
                 />
               </div>
@@ -28,7 +28,7 @@ function ChooseUs() {
               <div className="choose-img">
                 <img
                   className="animated"
-                  src="assets/img/icon-img/service-2.png"
+                  src="/assets/img/icon-img/service-2.png"
                   alt=""
                 />
               </div>
@@ -46,7 +46,7 @@ function ChooseUs() {
               <div className="choose-img">
                 <img
                   className="animated"
-                  src="assets/img/icon-img/service-3.png"
+                  src="/assets/img/icon-img/service-3.png"
                   alt=""
                 />
               </div>
@@ -64,7 +64,7 @@ function ChooseUs() {
               <div className="choose-img">
                 <img
                   className="animated"
-                  src="assets/img/icon-img/service-4.png"
+                  src="/assets/img/icon-img/service-4.png"
                   alt=""
                 />
               </div>

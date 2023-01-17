@@ -176,6 +176,473 @@
         "time": "05:30 am"
       }
     ],
+    "courses": [
+      {
+        "id": 1,
+        "category": "Undergraduate",
+        "status": "Addmission Going On",
+        "cardImg": "/assets/img/course/course-1.jpg",
+        "detailsImg": "/assets/img/banner/course-details.jpg",
+        "name": "Apparel Manufacturing",
+        "info": "magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.",
+        "credits": 125,
+        "duration": "4yrs",
+        "extraImg": "/assets/img/banner/course-details-1.jpg",
+        "instructor": "Head Of The Department : Ara’af Imtiaz",
+        "para1": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "para2": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "overviewList": [
+          {
+            "id": 1,
+            "point": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet"
+          },
+          {
+            "id": 2,
+            "point": "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+          },
+          {
+            "id": 3,
+            "point": "adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua."
+          }
+        ],
+        "totalStudent": 50,
+        "totalSemester": 12
+      },
+      {
+        "id": 2,
+        "category": "Undergraduate",
+        "status": false,
+        "cardImg": "/assets/img/course/course-2.jpg",
+        "detailsImg": "/assets/img/banner/course-details.jpg",
+        "name": "Grphic Design & Multimedia",
+        "info": "magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.",
+        "credits": 125,
+        "duration": "4yrs",
+        "extraImg": "/assets/img/banner/course-details-1.jpg",
+        "instructor": "Head Of The Department : Ara’af Imtiaz",
+        "para1": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "para2": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "overviewList": [
+          {
+            "id": 1,
+            "point": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet"
+          },
+          {
+            "id": 2,
+            "point": "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+          },
+          {
+            "id": 3,
+            "point": "adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua."
+          }
+        ],
+        "totalStudent": 50,
+        "totalSemester": 12
+      },
+      {
+        "id": 3,
+        "category": "Undergraduate",
+        "status": false,
+        "cardImg": "/assets/img/course/course-3.jpg",
+        "detailsImg": "/assets/img/banner/course-details.jpg",
+        "name": "Computer Engineering",
+        "info": "magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.",
+        "credits": 125,
+        "duration": "4yrs",
+        "extraImg": "/assets/img/banner/course-details-1.jpg",
+        "instructor": "Head Of The Department : Ara’af Imtiaz",
+        "para1": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "para2": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "overviewList": [
+          {
+            "id": 1,
+            "point": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet"
+          },
+          {
+            "id": 2,
+            "point": "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+          },
+          {
+            "id": 3,
+            "point": "adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua."
+          }
+        ],
+        "totalStudent": 50,
+        "totalSemester": 12
+      },
+      {
+        "id": 4,
+        "category": "Undergraduate",
+        "status": "Post Graduation Course",
+        "cardImg": "/assets/img/course/course-4.jpg",
+        "detailsImg": "/assets/img/banner/course-details.jpg",
+        "name": "Fashion & Technology",
+        "info": "magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.",
+        "credits": 125,
+        "duration": "4yrs",
+        "extraImg": "/assets/img/banner/course-details-1.jpg",
+        "instructor": "Head Of The Department : Ara’af Imtiaz",
+        "para1": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "para2": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "overviewList": [
+          {
+            "id": 1,
+            "point": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet"
+          },
+          {
+            "id": 2,
+            "point": "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+          },
+          {
+            "id": 3,
+            "point": "adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua."
+          }
+        ],
+        "totalStudent": 50,
+        "totalSemester": 12
+      },
+      {
+        "id": 5,
+        "category": "Undergraduate",
+        "status": false,
+        "cardImg": "/assets/img/course/course-2.jpg",
+        "detailsImg": "/assets/img/banner/course-details.jpg",
+        "name": "Apparel Manufacturing",
+        "info": "magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.",
+        "credits": 125,
+        "duration": "4yrs",
+        "extraImg": "/assets/img/banner/course-details-1.jpg",
+        "instructor": "Head Of The Department : Ara’af Imtiaz",
+        "para1": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "para2": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "overviewList": [
+          {
+            "id": 1,
+            "point": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet"
+          },
+          {
+            "id": 2,
+            "point": "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+          },
+          {
+            "id": 3,
+            "point": "adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua."
+          }
+        ],
+        "totalStudent": 50,
+        "totalSemester": 12
+      },
+      {
+        "id": 6,
+        "category": "Graduate",
+        "status": "Addmission Going On",
+        "cardImg": "/assets/img/course/course-1.jpg",
+        "detailsImg": "/assets/img/banner/course-details.jpg",
+        "name": "Apparel Manufacturing",
+        "info": "magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.",
+        "credits": 125,
+        "duration": "4yrs",
+        "extraImg": "/assets/img/banner/course-details-1.jpg",
+        "instructor": "Head Of The Department : Ara’af Imtiaz",
+        "para1": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "para2": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "overviewList": [
+          {
+            "id": 1,
+            "point": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet"
+          },
+          {
+            "id": 2,
+            "point": "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+          },
+          {
+            "id": 3,
+            "point": "adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua."
+          }
+        ],
+        "totalStudent": 50,
+        "totalSemester": 12
+      },
+      {
+        "id": 7,
+        "category": "Graduate",
+        "status": false,
+        "cardImg": "/assets/img/course/course-2.jpg",
+        "detailsImg": "/assets/img/banner/course-details.jpg",
+        "name": "Grphic Design & Multimedia",
+        "info": "magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.",
+        "credits": 125,
+        "duration": "4yrs",
+        "extraImg": "/assets/img/banner/course-details-1.jpg",
+        "instructor": "Head Of The Department : Ara’af Imtiaz",
+        "para1": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "para2": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "overviewList": [
+          {
+            "id": 1,
+            "point": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet"
+          },
+          {
+            "id": 2,
+            "point": "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+          },
+          {
+            "id": 3,
+            "point": "adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua."
+          }
+        ],
+        "totalStudent": 50,
+        "totalSemester": 12
+      },
+      {
+        "id": 8,
+        "category": "Graduate",
+        "status": false,
+        "cardImg": "/assets/img/course/course-3.jpg",
+        "detailsImg": "/assets/img/banner/course-details.jpg",
+        "name": "Computer Engineering",
+        "info": "magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.",
+        "credits": 125,
+        "duration": "4yrs",
+        "extraImg": "/assets/img/banner/course-details-1.jpg",
+        "instructor": "Head Of The Department : Ara’af Imtiaz",
+        "para1": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "para2": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "overviewList": [
+          {
+            "id": 1,
+            "point": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet"
+          },
+          {
+            "id": 2,
+            "point": "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+          },
+          {
+            "id": 3,
+            "point": "adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua."
+          }
+        ],
+        "totalStudent": 50,
+        "totalSemester": 12
+      },
+      {
+        "id": 9,
+        "category": "Graduate",
+        "status": "Post Graduation Course",
+        "cardImg": "/assets/img/course/course-4.jpg",
+        "detailsImg": "/assets/img/banner/course-details.jpg",
+        "name": "Fashion & Technology",
+        "info": "magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.",
+        "credits": 125,
+        "duration": "4yrs",
+        "extraImg": "/assets/img/banner/course-details-1.jpg",
+        "instructor": "Head Of The Department : Ara’af Imtiaz",
+        "para1": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "para2": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "overviewList": [
+          {
+            "id": 1,
+            "point": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet"
+          },
+          {
+            "id": 2,
+            "point": "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+          },
+          {
+            "id": 3,
+            "point": "adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua."
+          }
+        ],
+        "totalStudent": 50,
+        "totalSemester": 12
+      },
+      {
+        "id": 10,
+        "category": "Graduate",
+        "status": false,
+        "cardImg": "/assets/img/course/course-2.jpg",
+        "detailsImg": "/assets/img/banner/course-details.jpg",
+        "name": "Apparel Manufacturing",
+        "info": "magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.",
+        "credits": 125,
+        "duration": "4yrs",
+        "extraImg": "/assets/img/banner/course-details-1.jpg",
+        "instructor": "Head Of The Department : Ara’af Imtiaz",
+        "para1": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "para2": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "overviewList": [
+          {
+            "id": 1,
+            "point": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet"
+          },
+          {
+            "id": 2,
+            "point": "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+          },
+          {
+            "id": 3,
+            "point": "adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua."
+          }
+        ],
+        "totalStudent": 50,
+        "totalSemester": 12
+      },
+      {
+        "id": 11,
+        "category": "Diploma",
+        "status": "Addmission Going On",
+        "cardImg": "/assets/img/course/course-1.jpg",
+        "detailsImg": "/assets/img/banner/course-details.jpg",
+        "name": "Apparel Manufacturing",
+        "info": "magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.",
+        "credits": 125,
+        "duration": "4yrs",
+        "extraImg": "/assets/img/banner/course-details-1.jpg",
+        "instructor": "Head Of The Department : Ara’af Imtiaz",
+        "para1": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "para2": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "overviewList": [
+          {
+            "id": 1,
+            "point": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet"
+          },
+          {
+            "id": 2,
+            "point": "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+          },
+          {
+            "id": 3,
+            "point": "adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua."
+          }
+        ],
+        "totalStudent": 50,
+        "totalSemester": 12
+      },
+      {
+        "id": 12,
+        "category": "Diploma",
+        "status": false,
+        "cardImg": "/assets/img/course/course-2.jpg",
+        "detailsImg": "/assets/img/banner/course-details.jpg",
+        "name": "Grphic Design & Multimedia",
+        "info": "magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.",
+        "credits": 125,
+        "duration": "4yrs",
+        "extraImg": "/assets/img/banner/course-details-1.jpg",
+        "instructor": "Head Of The Department : Ara’af Imtiaz",
+        "para1": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "para2": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "overviewList": [
+          {
+            "id": 1,
+            "point": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet"
+          },
+          {
+            "id": 2,
+            "point": "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+          },
+          {
+            "id": 3,
+            "point": "adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua."
+          }
+        ],
+        "totalStudent": 50,
+        "totalSemester": 12
+      },
+      {
+        "id": 13,
+        "category": "Diploma",
+        "status": false,
+        "cardImg": "/assets/img/course/course-3.jpg",
+        "detailsImg": "/assets/img/banner/course-details.jpg",
+        "name": "Computer Engineering",
+        "info": "magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.",
+        "credits": 125,
+        "duration": "4yrs",
+        "extraImg": "/assets/img/banner/course-details-1.jpg",
+        "instructor": "Head Of The Department : Ara’af Imtiaz",
+        "para1": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "para2": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "overviewList": [
+          {
+            "id": 1,
+            "point": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet"
+          },
+          {
+            "id": 2,
+            "point": "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+          },
+          {
+            "id": 3,
+            "point": "adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua."
+          }
+        ],
+        "totalStudent": 50,
+        "totalSemester": 12
+      },
+      {
+        "id": 14,
+        "category": "Diploma",
+        "status": "Post Graduation Course",
+        "cardImg": "/assets/img/course/course-4.jpg",
+        "detailsImg": "/assets/img/banner/course-details.jpg",
+        "name": "Fashion & Technology",
+        "info": "magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.",
+        "credits": 125,
+        "duration": "4yrs",
+        "extraImg": "/assets/img/banner/course-details-1.jpg",
+        "instructor": "Head Of The Department : Ara’af Imtiaz",
+        "para1": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "para2": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "overviewList": [
+          {
+            "id": 1,
+            "point": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet"
+          },
+          {
+            "id": 2,
+            "point": "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+          },
+          {
+            "id": 3,
+            "point": "adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua."
+          }
+        ],
+        "totalStudent": 50,
+        "totalSemester": 12
+      },
+      {
+        "id": 15,
+        "category": "Diploma",
+        "status": false,
+        "cardImg": "/assets/img/course/course-2.jpg",
+        "detailsImg": "/assets/img/banner/course-details.jpg",
+        "name": "Apparel Manufacturing",
+        "info": "magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.",
+        "credits": 125,
+        "duration": "4yrs",
+        "extraImg": "/assets/img/banner/course-details-1.jpg",
+        "instructor": "Head Of The Department : Ara’af Imtiaz",
+        "para1": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "para2": "magna aliqua. Ut enim ad minim veniam, nisi utaliquiptempor incid.Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi m aperiam, eaque ipsa quae abaspernatur aut odit autfugit, sed quia consequuntur magni dolores eos qui rationevoluptatem sequi nesciunt. Neque porro quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipiscivelit, sed quia non numquam eius modi tempora incidunt utlabore et dolore magnam aliquam quaerat voluptatem.",
+        "overviewList": [
+          {
+            "id": 1,
+            "point": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet"
+          },
+          {
+            "id": 2,
+            "point": "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+          },
+          {
+            "id": 3,
+            "point": "adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua."
+          }
+        ],
+        "totalStudent": 50,
+        "totalSemester": 12
+      }
+    ],
     "breadcrumbObj": {
       "NoticeDetailsPage": {
         "pageName": "Notice Details",
@@ -210,13 +677,37 @@
           "backgroundImage": "url(./assets/img/bg/breadcrumb-bg-3.jpg)"
         }
       },
-      "LoginRegisterPage": {
+      "LoginPage": {
         "title": "Login/Register",
         "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .",
         "pageName": "login/Register",
         "overlayClass": "breadcrumb-overly-4",
         "breadcrumbImage": {
           "backgroundImage": "url(./assets/img/bg/breadcrumb-bg-4.jpg)"
+        }
+      },
+      "ContactPage": {
+        "pageName": "Contact Us",
+        "pageDetail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .",
+        "overlayClass": "breadcrumb-overly-5",
+        "breadcrumbImage": {
+          "backgroundImage": "url(./assets/img/bg/breadcrumb-bg-6.jpg)"
+        }
+      },
+      "CoursesPage": {
+        "pageName": "Courses",
+        "pageDetail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .",
+        "overlayClass": "breadcrumb-overly-2",
+        "breadcrumbImage": {
+          "backgroundImage": "url(./assets/img/bg/breadcrumb-bg-2.jpg)"
+        }
+      },
+      "CourseDetailsPage": {
+        "pageName": "Course Details",
+        "pageDetail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .",
+        "overlayClass": "breadcrumb-overly-2",
+        "breadcrumbImage": {
+          "backgroundImage": "url(../assets/img/bg/breadcrumb-bg-2.jpg)"
         }
       }
     }

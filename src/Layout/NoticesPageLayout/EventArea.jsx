@@ -31,7 +31,7 @@ function EventArea() {
                   consequuntur magni dolors eos qui ratione voluptatem sad.
                 </p>
                 <Link to="#">
-                  <img src="assets/img/banner/banner-4.jpg" alt="" />
+                  <img src="/assets/img/banner/banner-4.jpg" alt="" />
                 </Link>
                 <div className="sidebar-social">
                   <ul>
@@ -66,7 +66,7 @@ function EventArea() {
                   <div className="single-recent-post">
                     <div className="recent-post-img">
                       <Link to="#">
-                        <img src="assets/img/blog/recent-post-1.jpg" alt="" />
+                        <img src="/assets/img/blog/recent-post-1.jpg" alt="" />
                       </Link>
                     </div>
                     <div className="recent-post-content">
@@ -80,7 +80,7 @@ function EventArea() {
                   <div className="single-recent-post">
                     <div className="recent-post-img">
                       <Link to="#">
-                        <img src="assets/img/blog/recent-post-2.jpg" alt="" />
+                        <img src="/assets/img/blog/recent-post-2.jpg" alt="" />
                       </Link>
                     </div>
                     <div className="recent-post-content">
@@ -135,7 +135,7 @@ function EventArea() {
                   <div className="sin-sidebar-recent-course">
                     <div className="sidebar-recent-course-img">
                       <Link to="#">
-                        <img src="assets/img/blog/recent-post-1.jpg" alt="" />
+                        <img src="/assets/img/blog/recent-post-1.jpg" alt="" />
                       </Link>
                     </div>
                     <div className="sidebar-recent-course-content">
@@ -152,7 +152,7 @@ function EventArea() {
                   <div className="sin-sidebar-recent-course">
                     <div className="sidebar-recent-course-img">
                       <Link to="#">
-                        <img src="assets/img/blog/recent-post-2.jpg" alt="" />
+                        <img src="/assets/img/blog/recent-post-2.jpg" alt="" />
                       </Link>
                     </div>
                     <div className="sidebar-recent-course-content">

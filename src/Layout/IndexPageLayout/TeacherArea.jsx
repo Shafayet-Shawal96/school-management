@@ -19,7 +19,7 @@ function TeacherArea() {
           <div className="custom-col-5">
             <div className="single-teacher mb-30">
               <div className="teacher-img">
-                <img src="assets/img/teacher/teacher-1.jpg" alt="" />
+                <img src="/assets/img/teacher/teacher-1.jpg" alt="" />
               </div>
               <div className="teacher-content-visible">
                 <h4>Robi Khan</h4>
@@ -61,7 +61,7 @@ function TeacherArea() {
           <div className="custom-col-5">
             <div className="single-teacher mb-30">
               <div className="teacher-img">
-                <img src="assets/img/teacher/teacher-2.jpg" alt="" />
+                <img src="/assets/img/teacher/teacher-2.jpg" alt="" />
               </div>
               <div className="teacher-content-visible">
                 <h4>Jui Khan</h4>
@@ -103,7 +103,7 @@ function TeacherArea() {
           <div className="custom-col-5">
             <div className="single-teacher mb-30">
               <div className="teacher-img">
-                <img src="assets/img/teacher/teacher-3.jpg" alt="" />
+                <img src="/assets/img/teacher/teacher-3.jpg" alt="" />
               </div>
               <div className="teacher-content-visible">
                 <h4>Fawd Khan</h4>
@@ -145,7 +145,7 @@ function TeacherArea() {
           <div className="custom-col-5">
             <div className="single-teacher mb-30">
               <div className="teacher-img">
-                <img src="assets/img/teacher/teacher-4.jpg" alt="" />
+                <img src="/assets/img/teacher/teacher-4.jpg" alt="" />
               </div>
               <div className="teacher-content-visible">
                 <h4>Fawd Khan</h4>
@@ -187,7 +187,7 @@ function TeacherArea() {
           <div className="custom-col-5">
             <div className="single-teacher mb-30">
               <div className="teacher-img">
-                <img src="assets/img/teacher/teacher-5.jpg" alt="" />
+                <img src="/assets/img/teacher/teacher-5.jpg" alt="" />
               </div>
               <div className="teacher-content-visible">
                 <h4>Jui Khan</h4>

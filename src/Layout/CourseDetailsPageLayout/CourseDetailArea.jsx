@@ -1,8 +1,22 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
+import { Link, useParams } from "react-router-dom";
 import RelatedCourse from "../../Components/CourseDetailsPageComponents/RelatedCourse";
 
 function CourseDetailArea() {
+  const [tab, setTab] = useState(1);
+  const params = useParams();
+  const UIObject = useSelector((state) => state.UISlice.UI);
+  const courses = UIObject[0].courses;
+  const course = courses.find(
+    (course) => course.id === Number(params.courseId)
+  );
+
+  const updateTab = (e) => {
+    e.preventDefault();
+    setTab(Number(e.target.id));
+  };
+
   return (
     <div className="course-details-area pt-130">
       <div className="container">
@@ -10,7 +24,7 @@ function CourseDetailArea() {
           <div className="col-xl-9 col-lg-8">
             <div className="course-left-wrap mr-40">
               <div className="apply-area">
-                <img src="assets/img/banner/course-details.jpg" alt="" />
+                <img src={course.detailsImg} alt="" />
                 <div className="course-apply-btn">
                   <Link to="#" className="default-btn">
                     APPLY NOW
@@ -19,328 +33,127 @@ function CourseDetailArea() {
               </div>
               <div className="course-tab-list nav pt-40 pb-25 mb-35">
                 <Link
-                  className="active"
-                  to="/course-details-1"
-                  data-bs-toggle="tab"
+                  onClick={updateTab}
+                  id={1}
+                  className={`${tab === 1 ? "active" : ""}`}
+                  to="#"
                 >
-                  <h4>Over View </h4>
+                  <h4 id={1}>Over View </h4>
                 </Link>
-                <Link to="/course-details-2" data-bs-toggle="tab">
-                  <h4>Instructor </h4>
+                <Link
+                  onClick={updateTab}
+                  id={2}
+                  className={`${tab === 2 ? "active" : ""}`}
+                  to="#"
+                >
+                  <h4 id={2}>Instructor </h4>
                 </Link>
-                <Link to="/course-details-3" data-bs-toggle="tab">
-                  <h4> Reviews </h4>
+                <Link
+                  onClick={updateTab}
+                  id={3}
+                  className={`${tab === 3 ? "active" : ""}`}
+                  to="#"
+                >
+                  <h4 id={3}> Reviews </h4>
                 </Link>
               </div>
               <div className="tab-content jump">
-                <div className="tab-pane active" id="course-details-1">
+                <div className={`tab-pane ${tab === 1 ? "active" : ""}`}>
                   <div className="over-view-content">
                     <h4>COURSE DETAILS</h4>
-                    <h5>Course Name : Grphic Design & Multimedia</h5>
-                    <p>
-                      magna aliqua. Ut enim ad minim veniam, nisi ut
-                      aliquiptempor incid.Lorem ipsum dolor sit amet,
-                      consectetur adipisicing elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Ut enim ad
-                      minim veniam, quis nostrud exercitation ullamco laboris
-                      nisi m aperiam, eaque ipsa quae abaspernatur aut odit aut
-                      fugit, sed quia consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                      dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                      velit, sed quia non numquam eius modi tempora incidunt ut
-                      labore et dolore magnam aliquam quaerat voluptatem.
-                    </p>
+                    <h5>Course Name : {course.name}</h5>
+                    <p>{course.para1}</p>
                     <div className="over-view-list">
-                      <div className="sin-over-view-list">
-                        <div className="course-list-icon">
-                          <i className="fa fa-check"></i> .
+                      {course.overviewList.map((item) => (
+                        <div className="sin-over-view-list" key={item.id}>
+                          <div className="course-list-icon">
+                            <i className="fa fa-check"></i> .
+                          </div>
+                          <div className="course-list-content">
+                            <p>{item.point}</p>
+                          </div>
                         </div>
-                        <div className="course-list-content">
-                          <p>
-                            Neque porro quisquam est, qui dolorem ipsum quia
-                            dolor sit amet,
-                          </p>
-                        </div>
-                      </div>
-                      <div className="sin-over-view-list">
-                        <div className="course-list-icon">
-                          <i className="fa fa-check"></i> .
-                        </div>
-                        <div className="course-list-content">
-                          <p>
-                            {" "}
-                            Neque porro quisquam est, qui dolorem ipsum quia
-                            dolor sit amet,
-                          </p>
-                        </div>
-                      </div>
-                      <div className="sin-over-view-list">
-                        <div className="course-list-icon">
-                          <i className="fa fa-check"></i> .
-                        </div>
-                        <div className="course-list-content">
-                          <p>
-                            Es eos qui ratione voluptatem sequi nesciunt. Neque
-                            porro quisquam est,{" "}
-                          </p>
-                        </div>
-                      </div>
+                      ))}
                     </div>
                     <div className="course-details-img">
-                      <img
-                        src="assets/img/banner/course-details-1.jpg"
-                        alt=""
-                      />
+                      <img src={course.extraImg} />
                     </div>
                     <div className="course-summary-wrap">
                       <div className="single-course-summary">
                         <h4>Total Students</h4>
                         <span>
-                          <i className="fa fa-user"></i> 50
+                          <i className="fa fa-user"></i> {course.totalStudent}
                         </span>
                       </div>
                       <div className="single-course-summary">
                         <h4>Course Duration</h4>
                         <span>
-                          <i className="fa fa-clock-o"></i> 4yrs
+                          <i className="fa fa-clock-o"></i> {course.duration}
                         </span>
                       </div>
                       <div className="single-course-summary">
                         <h4>Course Credits</h4>
                         <span>
-                          <i className="fa fa-diamond"></i> 125
+                          <i className="fa fa-diamond"></i> {course.credits}
                         </span>
                       </div>
                       <div className="single-course-summary">
                         <h4>Total Semester</h4>
                         <span>
-                          <i className="fa fa-book"></i> 12
+                          <i className="fa fa-book"></i> {course.totalSemester}
                         </span>
                       </div>
                     </div>
-                    <p>
-                      magna aliqua. Ut enim ad minim veniam, nisi ut
-                      aliquiptempor incid.Lorem ipsum dolor sit amet,
-                      consectetur adipisicing elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Ut enim ad
-                      minim veniam, quis nostrud exercitation ullamco laboris
-                      nisi m aperiam, eaque ipsa quae abaspernatur aut odit aut
-                      fugit, sed quia consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                      dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                      velit, sed quia non numquam eius modi tempora incidunt ut
-                      labore et dolore magnam aliquam quaerat voluptatem.
-                    </p>
+                    <p>{course.para2}</p>
                   </div>
                 </div>
-                <div className="tab-pane" id="course-details-2">
+                <div className={`tab-pane ${tab === 2 ? "active" : ""}`}>
                   <div className="over-view-content">
                     <h4>INSTRUCTOR</h4>
-                    <h5>Head Of The Department : Ara’af Imtiaz</h5>
-                    <p>
-                      magna aliqua. Ut enim ad minim veniam, nisi ut
-                      aliquiptempor incid.Lorem ipsum dolor sit amet,
-                      consectetur adipisicing elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Ut enim ad
-                      minim veniam, quis nostrud exercitation ullamco laboris
-                      nisi m aperiam, eaque ipsa quae abaspernatur aut odit aut
-                      fugit, sed quia consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                      dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                      velit, sed quia non numquam eius modi tempora incidunt ut
-                      labore et dolore magnam aliquam quaerat voluptatem.
-                    </p>
+                    <h5>{course.instructor}</h5>
+                    <p>{course.para1}</p>
                     <div className="over-view-list">
-                      <div className="sin-over-view-list">
-                        <div className="course-list-icon">
-                          <i className="fa fa-check"></i> .
+                      {course.overviewList.map((item) => (
+                        <div className="sin-over-view-list" key={item.id}>
+                          <div className="course-list-icon">
+                            <i className="fa fa-check"></i> .
+                          </div>
+                          <div className="course-list-content">
+                            <p>{item.point}</p>
+                          </div>
                         </div>
-                        <div className="course-list-content">
-                          <p>
-                            Neque porro quisquam est, qui dolorem ipsum quia
-                            dolor sit amet,
-                          </p>
-                        </div>
-                      </div>
-                      <div className="sin-over-view-list">
-                        <div className="course-list-icon">
-                          <i className="fa fa-check"></i> .
-                        </div>
-                        <div className="course-list-content">
-                          <p>
-                            {" "}
-                            Neque porro quisquam est, qui dolorem ipsum quia
-                            dolor sit amet,
-                          </p>
-                        </div>
-                      </div>
-                      <div className="sin-over-view-list">
-                        <div className="course-list-icon">
-                          <i className="fa fa-check"></i> .
-                        </div>
-                        <div className="course-list-content">
-                          <p>
-                            Es eos qui ratione voluptatem sequi nesciunt. Neque
-                            porro quisquam est,{" "}
-                          </p>
-                        </div>
-                      </div>
+                      ))}
                     </div>
                     <div className="course-details-img">
-                      <img
-                        src="assets/img/banner/course-details-1.jpg"
-                        alt=""
-                      />
+                      <img src={course.extraImg} />
                     </div>
                     <div className="course-summary-wrap">
                       <div className="single-course-summary">
                         <h4>Total Students</h4>
                         <span>
-                          <i className="fa fa-user"></i> 50
+                          <i className="fa fa-user"></i> {course.totalStudent}
                         </span>
                       </div>
                       <div className="single-course-summary">
                         <h4>Course Duration</h4>
                         <span>
-                          <i className="fa fa-clock-o"></i> 4yrs
+                          <i className="fa fa-clock-o"></i> {course.duration}
                         </span>
                       </div>
                       <div className="single-course-summary">
                         <h4>Course Credits</h4>
                         <span>
-                          <i className="fa fa-diamond"></i> 125
+                          <i className="fa fa-diamond"></i> {course.credits}
                         </span>
                       </div>
                       <div className="single-course-summary">
                         <h4>Total Semester</h4>
                         <span>
-                          <i className="fa fa-book"></i> 12
+                          <i className="fa fa-book"></i> {course.totalSemester}
                         </span>
                       </div>
                     </div>
-                    <p>
-                      magna aliqua. Ut enim ad minim veniam, nisi ut
-                      aliquiptempor incid.Lorem ipsum dolor sit amet,
-                      consectetur adipisicing elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Ut enim ad
-                      minim veniam, quis nostrud exercitation ullamco laboris
-                      nisi m aperiam, eaque ipsa quae abaspernatur aut odit aut
-                      fugit, sed quia consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                      dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                      velit, sed quia non numquam eius modi tempora incidunt ut
-                      labore et dolore magnam aliquam quaerat voluptatem.
-                    </p>
-                  </div>
-                </div>
-                <div className="tab-pane" id="course-details-3">
-                  <div className="review-wrapper">
-                    <div className="single-review">
-                      <div className="review-img">
-                        <img src="assets/img/blog/recent-post-1.jpg" alt="" />
-                      </div>
-                      <div className="review-content">
-                        <div className="review-top-wrap">
-                          <div className="review-left">
-                            <div className="review-name">
-                              <h4>White Lewis</h4>
-                            </div>
-                            <div className="review-rating">
-                              <i className="fa fa-star"></i>
-                              <i className="fa fa-star"></i>
-                              <i className="fa fa-star"></i>
-                              <i className="fa fa-star"></i>
-                              <i className="fa fa-star"></i>
-                            </div>
-                          </div>
-                          <div className="review-btn">
-                            <Link to="#">Reply</Link>
-                          </div>
-                        </div>
-                        <div className="review-bottom">
-                          <p>
-                            Vestibulum ante ipsum primis aucibus orci
-                            luctustrices posuere cubilia Curae Suspendisse
-                            viverra ed viverra. Mauris ullarper euismod
-                            vehicula. Phasellus quam nisi, congue id nulla nec,
-                            convallis conval lis leo. Maecenas bibendum bibendum
-                            larius.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="single-review child-review">
-                      <div className="review-img">
-                        <img src="assets/img/blog/recent-post-2.jpg" alt="" />
-                      </div>
-                      <div className="review-content">
-                        <div className="review-top-wrap">
-                          <div className="review-left">
-                            <div className="review-name">
-                              <h4>White Lewis</h4>
-                            </div>
-                            <div className="review-rating">
-                              <i className="fa fa-star"></i>
-                              <i className="fa fa-star"></i>
-                              <i className="fa fa-star"></i>
-                              <i className="fa fa-star"></i>
-                              <i className="fa fa-star"></i>
-                            </div>
-                          </div>
-                          <div className="review-btn">
-                            <Link to="#">Reply</Link>
-                          </div>
-                        </div>
-                        <div className="review-bottom">
-                          <p>
-                            Vestibulum ante ipsum primis aucibus orci
-                            luctustrices posuere cubilia Curae Suspendisse
-                            viverra ed viverra. Mauris ullarper euismod
-                            vehicula. Phasellus quam nisi, congue id nulla nec,
-                            convallis conval lis leo. Maecenas bibendum bibendum
-                            larius.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="ratting-form-wrapper">
-                    <h3>Add a Review</h3>
-                    <div className="ratting-form">
-                      <form>
-                        <div className="star-box">
-                          <span>Your rating:</span>
-                          <div className="ratting-star">
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star"></i>
-                          </div>
-                        </div>
-                        <div className="row">
-                          <div className="col-md-6">
-                            <div className="rating-form-style mb-20">
-                              <input placeholder="Name" type="text" />
-                            </div>
-                          </div>
-                          <div className="col-md-6">
-                            <div className="rating-form-style mb-20">
-                              <input placeholder="Email" type="email" />
-                            </div>
-                          </div>
-                          <div className="col-md-12">
-                            <div className="rating-form-style form-submit">
-                              <textarea
-                                name="Your Review"
-                                placeholder="Message"
-                              ></textarea>
-                              <input type="submit" value="Submit" />
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
+                    <p>{course.para2}</p>
                   </div>
                 </div>
               </div>
@@ -369,7 +182,7 @@ function CourseDetailArea() {
                   consequuntur magni dolors eos qui ratione voluptatem sad.
                 </p>
                 <Link to="#">
-                  <img src="assets/img/banner/banner-4.jpg" alt="" />
+                  <img src="/assets/img/banner/banner-4.jpg" alt="" />
                 </Link>
                 <div className="sidebar-social">
                   <ul>
@@ -404,7 +217,7 @@ function CourseDetailArea() {
                   <div className="single-recent-post">
                     <div className="recent-post-img">
                       <Link to="#">
-                        <img src="assets/img/blog/recent-post-1.jpg" alt="" />
+                        <img src="/assets/img/blog/recent-post-1.jpg" alt="" />
                       </Link>
                     </div>
                     <div className="recent-post-content">
@@ -418,7 +231,7 @@ function CourseDetailArea() {
                   <div className="single-recent-post">
                     <div className="recent-post-img">
                       <Link to="#">
-                        <img src="assets/img/blog/recent-post-2.jpg" alt="" />
+                        <img src="/assets/img/blog/recent-post-2.jpg" alt="" />
                       </Link>
                     </div>
                     <div className="recent-post-content">
@@ -473,7 +286,7 @@ function CourseDetailArea() {
                   <div className="sin-sidebar-recent-course">
                     <div className="sidebar-recent-course-img">
                       <Link to="#">
-                        <img src="assets/img/blog/recent-post-1.jpg" alt="" />
+                        <img src="/assets/img/blog/recent-post-1.jpg" alt="" />
                       </Link>
                     </div>
                     <div className="sidebar-recent-course-content">
@@ -490,7 +303,7 @@ function CourseDetailArea() {
                   <div className="sin-sidebar-recent-course">
                     <div className="sidebar-recent-course-img">
                       <Link to="#">
-                        <img src="assets/img/blog/recent-post-2.jpg" alt="" />
+                        <img src="/assets/img/blog/recent-post-2.jpg" alt="" />
                       </Link>
                     </div>
                     <div className="sidebar-recent-course-content">

@@ -4,7 +4,43 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import PrevArrowComponent from "../GlobalComponents/PrevArrowComponent";
 import NextArrowComponent from "../GlobalComponents/NextArrowComponent";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
+
+function SingleCourse({ course }) {
+  return (
+    <div className="single-course">
+      <div className="course-img">
+        <Link to={`/courses/${course.id}`}>
+          <img className="animated" src={course.cardImg} alt="" />
+        </Link>
+      </div>
+      <div className="course-content">
+        <h4>
+          <Link to={`/courses/${course.id}`}>{course.name}</Link>
+        </h4>
+        <p>{course.info}</p>
+      </div>
+      <div className="course-position-content">
+        <div className="credit-duration-wrap">
+          <div className="sin-credit-duration">
+            <i className="fa fa-diamond"></i>
+            <span>Credits : {course.credits}</span>
+          </div>
+          <div className="sin-credit-duration">
+            <i className="fa fa-clock-o"></i>
+            <span>Duration : {course.duration}</span>
+          </div>
+        </div>
+        <div className="course-btn">
+          <Link className="default-btn" to="/">
+            APPLY NOW
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function RelatedSliderComponent() {
   const settings = {
@@ -40,152 +76,23 @@ function RelatedSliderComponent() {
       },
     ],
   };
+  const params = useParams();
+  const UIObject = useSelector((state) => state.UISlice.UI);
+  const courses = UIObject[0].courses;
+  const course = courses.find(
+    (course) => course.id === Number(params.courseId)
+  );
+  const category = course.category;
+  const othercourses = courses.filter(
+    (singlecourse) =>
+      singlecourse.category === category && singlecourse.id !== course.id
+  );
+
   return (
     <Slider {...settings} className="related-slider-active">
-      <div className="single-course">
-        <div className="course-img">
-          <Link to="/">
-            <img
-              className="animated"
-              src="assets/img/course/related-course-1.jpg"
-              alt=""
-            />
-          </Link>
-        </div>
-        <div className="course-content">
-          <h4>
-            <Link to="/">Apparel Manufacturing</Link>
-          </h4>
-          <p>
-            magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.
-          </p>
-        </div>
-        <div className="course-position-content">
-          <div className="credit-duration-wrap">
-            <div className="sin-credit-duration">
-              <i className="fa fa-diamond"></i>
-              <span>Credits : 125</span>
-            </div>
-            <div className="sin-credit-duration">
-              <i className="fa fa-clock-o"></i>
-              <span>Duration : 4yrs</span>
-            </div>
-          </div>
-          <div className="course-btn">
-            <Link className="default-btn" to="/">
-              APPLY NOW
-            </Link>
-          </div>
-        </div>
-      </div>
-      <div className="single-course">
-        <div className="course-img">
-          <Link to="/">
-            <img
-              className="animated"
-              src="assets/img/course/related-course-2.jpg"
-              alt=""
-            />
-          </Link>
-        </div>
-        <div className="course-content">
-          <h4>
-            <Link to="/">Grphic Design & Multimedia</Link>
-          </h4>
-          <p>
-            magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.
-          </p>
-        </div>
-        <div className="course-position-content">
-          <div className="credit-duration-wrap">
-            <div className="sin-credit-duration">
-              <i className="fa fa-diamond"></i>
-              <span>Credits : 125</span>
-            </div>
-            <div className="sin-credit-duration">
-              <i className="fa fa-clock-o"></i>
-              <span>Duration : 4yrs</span>
-            </div>
-          </div>
-          <div className="course-btn">
-            <Link className="default-btn" to="/">
-              APPLY NOW
-            </Link>
-          </div>
-        </div>
-      </div>
-      <div className="single-course">
-        <div className="course-img">
-          <Link to="/">
-            <img
-              className="animated"
-              src="assets/img/course/related-course-3.jpg"
-              alt=""
-            />
-          </Link>
-        </div>
-        <div className="course-content">
-          <h4>
-            <Link to="/">Fashion & Technology</Link>
-          </h4>
-          <p>
-            magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.
-          </p>
-        </div>
-        <div className="course-position-content">
-          <div className="credit-duration-wrap">
-            <div className="sin-credit-duration">
-              <i className="fa fa-diamond"></i>
-              <span>Credits : 125</span>
-            </div>
-            <div className="sin-credit-duration">
-              <i className="fa fa-clock-o"></i>
-              <span>Duration : 4yrs</span>
-            </div>
-          </div>
-          <div className="course-btn">
-            <Link className="default-btn" to="/">
-              APPLY NOW
-            </Link>
-          </div>
-        </div>
-      </div>
-      <div className="single-course">
-        <div className="course-img">
-          <Link to="/">
-            <img
-              className="animated"
-              src="assets/img/course/related-course-2.jpg"
-              alt=""
-            />
-          </Link>
-        </div>
-        <div className="course-content">
-          <h4>
-            <Link to="/">Fashion & Technology</Link>
-          </h4>
-          <p>
-            magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.
-          </p>
-        </div>
-        <div className="course-position-content">
-          <div className="credit-duration-wrap">
-            <div className="sin-credit-duration">
-              <i className="fa fa-diamond"></i>
-              <span>Credits : 125</span>
-            </div>
-            <div className="sin-credit-duration">
-              <i className="fa fa-clock-o"></i>
-              <span>Duration : 4yrs</span>
-            </div>
-          </div>
-          <div className="course-btn">
-            <Link className="default-btn" to="/">
-              APPLY NOW
-            </Link>
-          </div>
-        </div>
-      </div>
+      {othercourses.map((course) => (
+        <SingleCourse key={course.id} course={course} />
+      ))}
     </Slider>
   );
 }

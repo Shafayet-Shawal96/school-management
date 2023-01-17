@@ -33,14 +33,14 @@ function AboutUs() {
           </div>
           <div className="col-lg-6 col-md-6">
             <div className="about-img default-overlay">
-              <img src="assets/img/banner/banner-1.jpg" alt="" />
+              <img src="/assets/img/banner/banner-1.jpg" alt="" />
               <Link
                 className="video-btn video-popup"
                 to="https://www.youtube.com/watch?v=sv5hK4crIRc"
               >
                 <img
                   className="animated"
-                  src="assets/img/icon-img/video.png"
+                  src="/assets/img/icon-img/video.png"
                   alt=""
                 />
               </Link>

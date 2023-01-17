@@ -19,7 +19,7 @@ function AchievemetArea() {
           <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
             <div className="single-count mb-30 count-one">
               <div className="count-img">
-                <img src="assets/img/icon-img/achieve-1.png" alt="" />
+                <img src="/assets/img/icon-img/achieve-1.png" alt="" />
               </div>
               <div className="count-content">
                 <h2 className="count">890</h2>
@@ -30,7 +30,7 @@ function AchievemetArea() {
           <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
             <div className="single-count mb-30 count-two">
               <div className="count-img">
-                <img src="assets/img/icon-img/achieve-2.png" alt="" />
+                <img src="/assets/img/icon-img/achieve-2.png" alt="" />
               </div>
               <div className="count-content">
                 <h2 className="count">670</h2>
@@ -41,7 +41,7 @@ function AchievemetArea() {
           <div className="col-xl-4 col-lg-3 col-md-6 col-sm-6">
             <div className="single-count mb-30 count-three">
               <div className="count-img">
-                <img src="assets/img/icon-img/achieve-3.png" alt="" />
+                <img src="/assets/img/icon-img/achieve-3.png" alt="" />
               </div>
               <div className="count-content">
                 <h2 className="count">160</h2>
@@ -52,7 +52,7 @@ function AchievemetArea() {
           <div className="col-xl-2 col-lg-3 col-md-6 col-sm-6">
             <div className="single-count mb-30 count-four">
               <div className="count-img">
-                <img src="assets/img/icon-img/achieve-4.png" alt="" />
+                <img src="/assets/img/icon-img/achieve-4.png" alt="" />
               </div>
               <div className="count-content">
                 <h2 className="count">200</h2>
@@ -63,7 +63,7 @@ function AchievemetArea() {
         </div>
         <TestimonialSliderComponent />
         <div className="testimonial-text-img">
-          <img alt="" src="assets/img/icon-img/testi-text.png" />
+          <img alt="" src="/assets/img/icon-img/testi-text.png" />
         </div>
       </div>
     </div>

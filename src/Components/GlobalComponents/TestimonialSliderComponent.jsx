@@ -74,7 +74,7 @@ function TestimonialSliderComponent() {
       >
         <div className="testi-content-wrap">
           <div className="testi-big-img">
-            <img alt="" src="assets/img/testimonial/testi-b1.jpg" />
+            <img alt="" src="/assets/img/testimonial/testi-b1.jpg" />
           </div>
           <div className="row g-0">
             <div className="ms-auto col-lg-6 col-md-6">
@@ -101,7 +101,7 @@ function TestimonialSliderComponent() {
                   <i className="fa fa-quote-right"></i>
                 </div>
                 <div className="testi-arrow">
-                  <img alt="" src="assets/img/icon-img/testi-icon.png" />
+                  <img alt="" src="/assets/img/icon-img/testi-icon.png" />
                 </div>
               </div>
             </div>
@@ -109,7 +109,7 @@ function TestimonialSliderComponent() {
         </div>
         <div className="testi-content-wrap">
           <div className="testi-big-img">
-            <img alt="" src="assets/img/testimonial/testi-b3.jpg" />
+            <img alt="" src="/assets/img/testimonial/testi-b3.jpg" />
           </div>
           <div className="row g-0">
             <div className="ms-auto col-lg-6 col-md-6">
@@ -135,7 +135,7 @@ function TestimonialSliderComponent() {
                   <i className="fa fa-quote-right"></i>
                 </div>
                 <div className="testi-arrow">
-                  <img alt="" src="assets/img/icon-img/testi-icon.png" />
+                  <img alt="" src="/assets/img/icon-img/testi-icon.png" />
                 </div>
               </div>
             </div>
@@ -143,7 +143,7 @@ function TestimonialSliderComponent() {
         </div>
         <div className="testi-content-wrap">
           <div className="testi-big-img">
-            <img alt="" src="assets/img/testimonial/testi-b2.jpg" />
+            <img alt="" src="/assets/img/testimonial/testi-b2.jpg" />
           </div>
           <div className="row g-0">
             <div className="ms-auto col-lg-6 col-md-6">
@@ -169,7 +169,7 @@ function TestimonialSliderComponent() {
                   <i className="fa fa-quote-right"></i>
                 </div>
                 <div className="testi-arrow">
-                  <img alt="" src="assets/img/icon-img/testi-icon.png" />
+                  <img alt="" src="/assets/img/icon-img/testi-icon.png" />
                 </div>
               </div>
             </div>
@@ -177,7 +177,7 @@ function TestimonialSliderComponent() {
         </div>
         <div className="testi-content-wrap">
           <div className="testi-big-img">
-            <img alt="" src="assets/img/testimonial/testi-b2.jpg" />
+            <img alt="" src="/assets/img/testimonial/testi-b2.jpg" />
           </div>
           <div className="row g-0">
             <div className="ms-auto col-lg-6 col-md-6">
@@ -204,7 +204,7 @@ function TestimonialSliderComponent() {
                   <i className="fa fa-quote-right"></i>
                 </div>
                 <div className="testi-arrow">
-                  <img alt="" src="assets/img/icon-img/testi-icon.png" />
+                  <img alt="" src="/assets/img/icon-img/testi-icon.png" />
                 </div>
               </div>
             </div>
@@ -218,16 +218,16 @@ function TestimonialSliderComponent() {
         ref={(slider2) => setNav2(slider2)}
       >
         <div className="sin-testi-image">
-          <img src="assets/img/testimonial/testi-s2.jpg" alt="" />
+          <img src="/assets/img/testimonial/testi-s2.jpg" alt="" />
         </div>
         <div className="sin-testi-image">
-          <img src="assets/img/testimonial/testi-s1.jpg" alt="" />
+          <img src="/assets/img/testimonial/testi-s1.jpg" alt="" />
         </div>
         <div className="sin-testi-image">
-          <img src="assets/img/testimonial/testi-s3.jpg" alt="" />
+          <img src="/assets/img/testimonial/testi-s3.jpg" alt="" />
         </div>
         <div className="sin-testi-image">
-          <img src="assets/img/testimonial/testi-s3.jpg" alt="" />
+          <img src="/assets/img/testimonial/testi-s3.jpg" alt="" />
         </div>
       </Slider>
     </div>

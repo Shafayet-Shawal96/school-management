@@ -7,7 +7,7 @@ import LoginArea from "../Layout/LoginPageLayout/LoginArea";
 
 function LoginPage() {
   const UIObject = useSelector((state) => state.UISlice.UI);
-  const breadcrumbObj = UIObject[0].breadcrumbObj.LoginRegisterPage;
+  const breadcrumbObj = UIObject[0].breadcrumbObj.LoginPage;
 
   return (
     <Fragment>

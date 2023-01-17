@@ -23,7 +23,7 @@ function RegisterArea() {
         <div className="register-wrap">
           <div id="register-3" className="mouse-bg">
             <div className="winter-banner">
-              <img src="assets/img/banner/regi-1.png" alt="" />
+              <img src="/assets/img/banner/regi-1.png" alt="" />
               <div className="winter-content">
                 <span>WINTER </span>
                 <h3>2019</h3>

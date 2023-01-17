@@ -39,37 +39,37 @@ function BrandCarouselComponent() {
         >
           <div className="single-brand-logo">
             <Link to="#">
-              <img src="assets/img/brand-logo/1.png" alt="" />
+              <img src="/assets/img/brand-logo/1.png" alt="" />
             </Link>
           </div>
           <div className="single-brand-logo">
             <Link to="#">
-              <img src="assets/img/brand-logo/2.png" alt="" />
+              <img src="/assets/img/brand-logo/2.png" alt="" />
             </Link>
           </div>
           <div className="single-brand-logo">
             <Link to="#">
-              <img src="assets/img/brand-logo/3.png" alt="" />
+              <img src="/assets/img/brand-logo/3.png" alt="" />
             </Link>
           </div>
           <div className="single-brand-logo">
             <Link to="#">
-              <img src="assets/img/brand-logo/4.png" alt="" />
+              <img src="/assets/img/brand-logo/4.png" alt="" />
             </Link>
           </div>
           <div className="single-brand-logo">
             <Link to="#">
-              <img src="assets/img/brand-logo/5.png" alt="" />
+              <img src="/assets/img/brand-logo/5.png" alt="" />
             </Link>
           </div>
           <div className="single-brand-logo">
             <Link to="#">
-              <img src="assets/img/brand-logo/6.png" alt="" />
+              <img src="/assets/img/brand-logo/6.png" alt="" />
             </Link>
           </div>
           <div className="single-brand-logo">
             <Link to="#">
-              <img src="assets/img/brand-logo/2.png" alt="" />
+              <img src="/assets/img/brand-logo/2.png" alt="" />
             </Link>
           </div>
         </OwlCarousel>

@@ -41,7 +41,7 @@ function CourseOwlSlider() {
           <Link to="course-details.html">
             <img
               className="animated"
-              src="assets/img/course/course-1.jpg"
+              src="/assets/img/course/course-1.jpg"
               alt=""
             />
           </Link>
@@ -78,7 +78,7 @@ function CourseOwlSlider() {
           <Link to="course-details.html">
             <img
               className="animated"
-              src="assets/img/course/course-2.jpg"
+              src="/assets/img/course/course-2.jpg"
               alt=""
             />
           </Link>
@@ -114,7 +114,7 @@ function CourseOwlSlider() {
           <Link to="course-details.html">
             <img
               className="animated"
-              src="assets/img/course/course-3.jpg"
+              src="/assets/img/course/course-3.jpg"
               alt=""
             />
           </Link>
@@ -150,7 +150,7 @@ function CourseOwlSlider() {
           <Link to="course-details.html">
             <img
               className="animated"
-              src="assets/img/course/course-4.jpg"
+              src="/assets/img/course/course-4.jpg"
               alt=""
             />
           </Link>
@@ -187,7 +187,7 @@ function CourseOwlSlider() {
           <Link to="course-details.html">
             <img
               className="animated"
-              src="assets/img/course/course-2.jpg"
+              src="/assets/img/course/course-2.jpg"
               alt=""
             />
           </Link>

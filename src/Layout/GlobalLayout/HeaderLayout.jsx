@@ -77,9 +77,6 @@ function HeaderLayout() {
                         <Link to="/login">Login</Link>
                       )}
                     </li>
-                    {/* <li>
-                      <Link to="/login-register">Register</Link>
-                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -99,7 +96,7 @@ function HeaderLayout() {
               <div className="col-lg-2 col-md-6 col-4">
                 <div className="logo">
                   <Link to="#">
-                    <img alt="" src="assets/img/logo/logo.png" />
+                    <img alt="" src="/assets/img/logo/logo.png" />
                   </Link>
                 </div>
               </div>
@@ -118,7 +115,7 @@ function HeaderLayout() {
                           <Link to="/events">event page</Link>
                         </li>
                         <li>
-                          <Link to="/course">PROGRAMMES</Link>
+                          <Link to="/courses">PROGRAMMES</Link>
                         </li>
 
                         <li>

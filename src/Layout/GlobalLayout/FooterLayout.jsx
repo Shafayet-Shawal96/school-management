@@ -104,22 +104,22 @@ function FooterLayout() {
                   <ul>
                     <li>
                       <Link to="#">
-                        <img src="assets/img/gallery/gallery-1.png" alt="" />
+                        <img src="/assets/img/gallery/gallery-1.png" alt="" />
                       </Link>
                     </li>
                     <li>
                       <Link to="#">
-                        <img src="assets/img/gallery/gallery-2.png" alt="" />
+                        <img src="/assets/img/gallery/gallery-2.png" alt="" />
                       </Link>
                     </li>
                     <li>
                       <Link to="#">
-                        <img src="assets/img/gallery/gallery-3.png" alt="" />
+                        <img src="/assets/img/gallery/gallery-3.png" alt="" />
                       </Link>
                     </li>
                     <li>
                       <Link to="#">
-                        <img src="assets/img/gallery/gallery-4.png" alt="" />
+                        <img src="/assets/img/gallery/gallery-4.png" alt="" />
                       </Link>
                     </li>
                   </ul>

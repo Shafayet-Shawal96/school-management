@@ -1,7 +1,16 @@
 import React, { Fragment } from "react";
+import { useSelector } from "react-redux";
 import CourseSlider from "../../Components/CoursePageComponents/CourseSlider";
 
 function AllCourseArea() {
+  const UIObject = useSelector((state) => state.UISlice.UI);
+  const courses = UIObject[0].courses;
+  const undergraduate = courses.filter(
+    (course) => course.category === "Undergraduate"
+  );
+  const graduate = courses.filter((course) => course.category === "Graduate");
+  const diploma = courses.filter((course) => course.category === "Diploma");
+
   return (
     <Fragment>
       <div className="course-area bg-img pt-130">
@@ -17,7 +26,7 @@ function AllCourseArea() {
               veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip{" "}
             </p>
           </div>
-          <CourseSlider />
+          <CourseSlider courses={undergraduate} />
         </div>
       </div>
       <div className="course-area bg-img">
@@ -33,7 +42,7 @@ function AllCourseArea() {
               veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip{" "}
             </p>
           </div>
-          <CourseSlider />
+          <CourseSlider courses={graduate} />
         </div>
       </div>
       <div className="course-area bg-img">
@@ -49,7 +58,7 @@ function AllCourseArea() {
               veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip{" "}
             </p>
           </div>
-          <CourseSlider />
+          <CourseSlider courses={diploma} />
         </div>
       </div>
     </Fragment>

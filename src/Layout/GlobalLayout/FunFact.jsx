@@ -25,7 +25,7 @@ function FunFact() {
           <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
             <div className="single-count mb-30 count-one count-white">
               <div className="count-img">
-                <img src="assets/img/icon-img/funfact-1.png" alt="" />
+                <img src="/assets/img/icon-img/funfact-1.png" alt="" />
               </div>
               <div className="count-content">
                 <h2 className="count">160</h2>
@@ -36,7 +36,7 @@ function FunFact() {
           <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
             <div className="single-count mb-30 count-two count-white">
               <div className="count-img">
-                <img src="assets/img/icon-img/funfact-2.png" alt="" />
+                <img src="/assets/img/icon-img/funfact-2.png" alt="" />
               </div>
               <div className="count-content">
                 <h2 className="count">200</h2>
@@ -47,7 +47,7 @@ function FunFact() {
           <div className="col-xl-4 col-lg-3 col-md-6 col-sm-6">
             <div className="single-count mb-30 count-three count-white">
               <div className="count-img">
-                <img src="assets/img/icon-img/funfact-1.png" alt="" />
+                <img src="/assets/img/icon-img/funfact-1.png" alt="" />
               </div>
               <div className="count-content">
                 <h2 className="count">160</h2>
@@ -58,7 +58,7 @@ function FunFact() {
           <div className="col-xl-2 col-lg-3 col-md-6 col-sm-6">
             <div className="single-count mb-30 count-four count-white">
               <div className="count-img">
-                <img src="assets/img/icon-img/funfact-2.png" alt="" />
+                <img src="/assets/img/icon-img/funfact-2.png" alt="" />
               </div>
               <div className="count-content">
                 <h2 className="count">200</h2>

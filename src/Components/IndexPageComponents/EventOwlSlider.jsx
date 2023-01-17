@@ -38,7 +38,7 @@ function EventOwlSlider() {
       <div className="single-event event-white-bg">
         <div className="event-img">
           <a href="event-details.html">
-            <img src="assets/img/event/event-1.jpg" alt="" />
+            <img src="/assets/img/event/event-1.jpg" alt="" />
           </a>
           <div className="event-date-wrap">
             <span className="event-date">1st</span>
@@ -68,7 +68,7 @@ function EventOwlSlider() {
       <div className="single-event event-white-bg">
         <div className="event-img">
           <a href="event-details.html">
-            <img src="assets/img/event/event-2.jpg" alt="" />
+            <img src="/assets/img/event/event-2.jpg" alt="" />
           </a>
           <div className="event-date-wrap">
             <span className="event-date">10th</span>
@@ -98,7 +98,7 @@ function EventOwlSlider() {
       <div className="single-event event-white-bg">
         <div className="event-img">
           <a href="event-details.html">
-            <img src="assets/img/event/event-3.jpg" alt="" />
+            <img src="/assets/img/event/event-3.jpg" alt="" />
           </a>
           <div className="event-date-wrap">
             <span className="event-date">1st</span>
@@ -128,7 +128,7 @@ function EventOwlSlider() {
       <div className="single-event event-white-bg">
         <div className="event-img">
           <a href="event-details.html">
-            <img src="assets/img/event/event-2.jpg" alt="" />
+            <img src="/assets/img/event/event-2.jpg" alt="" />
           </a>
           <div className="event-date-wrap">
             <span className="event-date">1st</span>

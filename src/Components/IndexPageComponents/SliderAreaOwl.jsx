@@ -63,7 +63,7 @@ function SingleSlider({ item }) {
         <div className="slider-single-img slider-animated-1">
           <img
             className="animated"
-            src="assets/img/slider/single-slide-1.png"
+            src="/assets/img/slider/single-slide-1.png"
             alt=""
           />
         </div>
@@ -99,86 +99,6 @@ function SliderAreaOwl() {
       {carouselContentObj.map((item) => (
         <SingleSlider key={item.id} item={item} />
       ))}
-      {/* <div
-        className="single-slider slider-height-1 bg-img"
-        style={slider1Image}
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-9 col-md-7 col-12 col-sm-12">
-              <div className="slider-content slider-animated-1 pt-230">
-                <h1 className="animated">MakeYour Own World</h1>
-                <p className="animated">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-                <div className="slider-btn">
-                  <Link
-                    className="animated default-btn btn-green-color"
-                    to="about-us.html"
-                  >
-                    ABOUT US
-                  </Link>
-                  <Link
-                    className="animated default-btn btn-white-color"
-                    to="contact.html"
-                  >
-                    CONTACT US
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="slider-single-img slider-animated-1">
-            <img
-              className="animated"
-              src="assets/img/slider/single-slide-1.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        className="single-slider slider-height-1 bg-img"
-        style={carouselContentObj.slider1BackgroundImage}
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-9 col-md-7 col-12 col-sm-12">
-              <div className="slider-content slider-animated-1 pt-230">
-                <h1 className="animated">MakeYour Own World</h1>
-                <p className="animated">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation{" "}
-                </p>
-                <div className="slider-btn">
-                  <Link
-                    className="animated default-btn btn-green-color"
-                    to="about-us.html"
-                  >
-                    ABOUT US
-                  </Link>
-                  <Link
-                    className="animated default-btn btn-white-color"
-                    to="contact.html"
-                  >
-                    CONTACT US
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="slider-single-img slider-animated-1">
-            <img
-              className="animated"
-              src="assets/img/slider/single-slide-1.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div> */}
     </OwlCarousel>
   );
 }

@@ -27,7 +27,7 @@ function NewsFeedArea() {
             <div className="single-blog mb-30">
               <div className="blog-img">
                 <Link to="blog-details.html">
-                  <img src="assets/img/blog/blog-1.jpg" alt="" />
+                  <img src="/assets/img/blog/blog-1.jpg" alt="" />
                 </Link>
               </div>
               <div className="blog-content-wrap">
@@ -66,7 +66,7 @@ function NewsFeedArea() {
             <div className="single-blog mb-30">
               <div className="blog-img">
                 <Link to="blog-details.html">
-                  <img src="assets/img/blog/blog-2.jpg" alt="" />
+                  <img src="/assets/img/blog/blog-2.jpg" alt="" />
                 </Link>
               </div>
               <div className="blog-content-wrap">
@@ -105,7 +105,7 @@ function NewsFeedArea() {
             <div className="single-blog mb-30">
               <div className="blog-img">
                 <Link to="blog-details.html">
-                  <img src="assets/img/blog/blog-3.jpg" alt="" />
+                  <img src="/assets/img/blog/blog-3.jpg" alt="" />
                 </Link>
               </div>
               <div className="blog-content-wrap">
@@ -144,7 +144,7 @@ function NewsFeedArea() {
             <div className="single-blog mb-30">
               <div className="blog-img">
                 <Link to="blog-details.html">
-                  <img src="assets/img/blog/blog-4.jpg" alt="" />
+                  <img src="/assets/img/blog/blog-4.jpg" alt="" />
                 </Link>
               </div>
               <div className="blog-content-wrap">
