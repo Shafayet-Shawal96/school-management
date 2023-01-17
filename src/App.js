@@ -1,7 +1,8 @@
 import { Route, Routes } from "react-router";
-import { useDispatch } from "react-redux";
-import { setUIState } from "./Store/UISlice";
+import { useDispatch, useSelector } from "react-redux";
+import { setUIState, updateUISate } from "./Store/UISlice";
 import { useEffect } from "react";
+
 import FooterLayout from "./Layout/GlobalLayout/FooterLayout";
 import HeaderLayout from "./Layout/GlobalLayout/HeaderLayout";
 import NoticesPage from "./Pages/NoticesPage";
@@ -16,8 +17,10 @@ import LoginPage from "./Pages/LoginPage";
 
 function App() {
   const dispatch = useDispatch();
+  const UI = useSelector((state) => state.UISlice.UI);
+  console.log(UI);
   useEffect(() => {
-    dispatch(setUIState());
+    dispatch(updateUISate());
   }, [dispatch]);
 
   return (
