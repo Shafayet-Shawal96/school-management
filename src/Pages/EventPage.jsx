@@ -4,6 +4,7 @@ import BreadcrumbArea from "../Layout/GlobalLayout/BreadcrumbArea";
 
 import EventArea from "../Layout/EventPageLayout/EventArea";
 import { useSelector } from "react-redux";
+import EventAreaStoreLess from "../Layout/EventPageLayout/EventAreaStoreLess";
 
 function EventPage() {
   const UIObject = useSelector((state) => state.UISlice.UI);
@@ -11,7 +12,8 @@ function EventPage() {
   return (
     <Fragment>
       <BreadcrumbArea breadcrumbObj={breadcrumbObj} />
-      <EventArea />
+      {/* <EventArea /> */}
+      <EventAreaStoreLess />
     </Fragment>
   );
 }

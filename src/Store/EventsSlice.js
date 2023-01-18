@@ -21,6 +21,8 @@ export const updateEventState = (pageNo) => {
         `https://education-hub-12ebb-default-rtdb.firebaseio.com/allEvents/0/allEvents-page-${pageNo}.json`
       );
 
+      console.log("Fetching pageNo", pageNo);
+
       if (!response.ok) {
         throw new Error("Receiving Events Data Failed");
       }

@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import cssClasses from "./SkeletonElements.module.css";
 
-function SkeletonElements() {
+const SkeletonElements = React.forwardRef((props, ref) => {
   return (
-    <div className="col-lg-4 col-md-6">
+    <div ref={ref} className="col-lg-4 col-md-6">
       <div className="single-event mb-55 event-gray-bg">
         <div className="event-img">
           <Link to="#">
@@ -44,6 +44,6 @@ function SkeletonElements() {
       </div>
     </div>
   );
-}
+});
 
 export default SkeletonElements;

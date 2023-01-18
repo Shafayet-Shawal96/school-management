@@ -1,27 +1,47 @@
-import React, { useEffect, useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect, useRef, useState } from "react";
 import SkeletonElements from "../../Components/Skeletons/SkeletonElements";
 import useIsVisible from "../../Hooks/useIsVisible";
-import { updateEventState } from "../../Store/EventsSlice";
 import EventCard from "./EventCard";
 
 let currentPage = 1;
 
-function EventArea() {
-  const dispatch = useDispatch();
+function EventAreaStoreLess() {
   const lastElementRef = useRef();
-  const allEvents = useSelector((state) => state.eventsSlice.allEvents);
+  const [allEvents, setAllEvents] = useState([]);
   const isVisible = useIsVisible(lastElementRef);
-  console.log("Event Area");
+  console.log(allEvents);
+
+  const updateEvents = async (pageNo) => {
+    const sendRequest = async () => {
+      const response = await fetch(
+        `https://education-hub-12ebb-default-rtdb.firebaseio.com/allEvents/0/allEvents-page-${pageNo}.json`
+      );
+
+      console.log("Fetching pageNo", pageNo);
+
+      if (!response.ok) {
+        throw new Error("Receiving Events Data Failed");
+      }
+
+      const allEventsData = await response.json();
+      setAllEvents((prevState) => [...prevState, ...allEventsData]);
+    };
+
+    try {
+      await sendRequest();
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   useEffect(() => {
     const timer = setTimeout(() => {
       if (isVisible) {
-        dispatch(updateEventState(currentPage++));
+        updateEvents(currentPage++);
       }
     }, 5000);
     return () => clearTimeout(timer);
-  }, [dispatch, isVisible]);
+  }, [isVisible]);
 
   return (
     <div className="event-area pt-130 pb-130">
@@ -41,4 +61,4 @@ function EventArea() {
   );
 }
 // We can use React.memo for better loading this component
-export default EventArea;
+export default EventAreaStoreLess;
