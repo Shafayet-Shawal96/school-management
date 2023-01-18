@@ -9,16 +9,16 @@ const EventsSlice = createSlice({
   initialState,
   reducers: {
     setAllEvents: (state, action) => {
-      state.allEvents = action.payload;
+      state.allEvents = [...state.allEvents, ...action.payload];
     },
   },
 });
 
-export const updateEventState = () => {
+export const updateEventState = (pageNo) => {
   return async (dispatch) => {
     const sendRequest = async () => {
       const response = await fetch(
-        "https://education-hub-12ebb-default-rtdb.firebaseio.com/0/allEvents.json"
+        `https://education-hub-12ebb-default-rtdb.firebaseio.com/allEvents/0/allEvents-page-${pageNo}.json`
       );
 
       if (!response.ok) {

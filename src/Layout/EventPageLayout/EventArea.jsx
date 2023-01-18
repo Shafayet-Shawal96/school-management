@@ -41,10 +41,9 @@ function EventCard({ singleEvent }) {
 function EventArea() {
   const dispatch = useDispatch();
   const allEvents = useSelector((state) => state.eventsSlice.allEvents);
-  console.log(allEvents);
   useEffect(() => {
     const timer = setTimeout(() => {
-      dispatch(updateEventState());
+      dispatch(updateEventState(1));
     }, 5000);
     return () => clearTimeout(timer);
   }, [dispatch]);
@@ -53,13 +52,11 @@ function EventArea() {
     <div className="event-area pt-130 pb-130">
       <div className="container">
         <div className="row">
-          {allEvents.length !== 0 ? (
-            allEvents.map((singleEvent) => (
-              <EventCard key={singleEvent.id} singleEvent={singleEvent} />
-            ))
-          ) : (
-            <SkeletonElements type="thumbnail" />
-          )}
+          {allEvents.length !== 0
+            ? allEvents.map((singleEvent) => (
+                <EventCard key={singleEvent.id} singleEvent={singleEvent} />
+              ))
+            : [1, 2, 3].map((id) => <SkeletonElements key={id} />)}
         </div>
       </div>
     </div>
