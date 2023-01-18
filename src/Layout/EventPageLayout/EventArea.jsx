@@ -1,6 +1,8 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import SkeletonElements from "../../Components/Skeletons/SkeletonElements";
+import { updateEventState } from "../../Store/EventsSlice";
 
 function EventCard({ singleEvent }) {
   return (
@@ -37,41 +39,31 @@ function EventCard({ singleEvent }) {
 }
 
 function EventArea() {
-  const UIObject = useSelector((state) => state.UISlice.UI);
-  const allEvents = UIObject[0].allEvents;
+  const dispatch = useDispatch();
+  const allEvents = useSelector((state) => state.eventsSlice.allEvents);
+  console.log(allEvents);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      dispatch(updateEventState());
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, [dispatch]);
+
   return (
     <div className="event-area pt-130 pb-130">
       <div className="container">
         <div className="row">
-          {allEvents.map((singleEvent) => (
-            <EventCard key={singleEvent.id} singleEvent={singleEvent} />
-          ))}
-        </div>
-        <div className="pro-pagination-style text-center mt-25">
-          <ul>
-            <li>
-              <Link className="prev" to="#">
-                <i className="fa fa-angle-double-left"></i>
-              </Link>
-            </li>
-            <li>
-              <Link className="active" to="#">
-                1
-              </Link>
-            </li>
-            <li>
-              <Link to="#">2</Link>
-            </li>
-            <li>
-              <Link className="next" to="#">
-                <i className="fa fa-angle-double-right"></i>
-              </Link>
-            </li>
-          </ul>
+          {allEvents.length !== 0 ? (
+            allEvents.map((singleEvent) => (
+              <EventCard key={singleEvent.id} singleEvent={singleEvent} />
+            ))
+          ) : (
+            <SkeletonElements type="thumbnail" />
+          )}
         </div>
       </div>
     </div>
   );
 }
-
+// We can use React.memo for better loading this component
 export default EventArea;

@@ -76,7 +76,7 @@ function CourseDetailArea() {
                       ))}
                     </div>
                     <div className="course-details-img">
-                      <img src={course.extraImg} />
+                      <img src={course.extraImg} alt="" />
                     </div>
                     <div className="course-summary-wrap">
                       <div className="single-course-summary">
@@ -125,7 +125,7 @@ function CourseDetailArea() {
                       ))}
                     </div>
                     <div className="course-details-img">
-                      <img src={course.extraImg} />
+                      <img src={course.extraImg} alt="" />
                     </div>
                     <div className="course-summary-wrap">
                       <div className="single-course-summary">
