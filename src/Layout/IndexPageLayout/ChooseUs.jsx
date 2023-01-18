@@ -1,5 +1,12 @@
 import React from "react";
 
+const chooseContentObj = {
+  headingText: "No Scholarship Facility",
+  paragraphText:
+    "magna aliqua. Ut enim ad minim veniam conse ctetur adipisicing elit, sed do exercitation.",
+  icon: "assets/img/icon-img/service-2.png",
+};
+
 function ChooseUs() {
   return (
     <div className="choose-us section-padding-1">
@@ -8,72 +15,44 @@ function ChooseUs() {
           <div className="col-lg-3 col-md-6">
             <div className="single-choose-us choose-bg-light-blue">
               <div className="choose-img">
-                <img
-                  className="animated"
-                  src="/assets/img/icon-img/service-1.png"
-                  alt=""
-                />
+                <img className="animated" src={chooseContentObj.icon} alt="" />
               </div>
               <div className="choose-content">
-                <h3>Scholarship Facility</h3>
-                <p>
-                  magna aliqua. Ut enim ad minim veniam conse ctetur adipisicing
-                  elit, sed do exercitation.{" "}
-                </p>
+                <h3>{chooseContentObj.headingText}</h3>
+                <p>{chooseContentObj.paragraphText}</p>
               </div>
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
             <div className="single-choose-us choose-bg-yellow">
               <div className="choose-img">
-                <img
-                  className="animated"
-                  src="/assets/img/icon-img/service-2.png"
-                  alt=""
-                />
+                <img className="animated" src={chooseContentObj.icon} alt="" />
               </div>
               <div className="choose-content">
-                <h3>Scholarship Facility</h3>
-                <p>
-                  magna aliqua. Ut enim ad minim veniam conse ctetur adipisicing
-                  elit, sed do exercitation.{" "}
-                </p>
+                <h3>{chooseContentObj.headingText}</h3>
+                <p>{chooseContentObj.paragraphText}</p>
               </div>
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
             <div className="single-choose-us choose-bg-blue">
               <div className="choose-img">
-                <img
-                  className="animated"
-                  src="/assets/img/icon-img/service-3.png"
-                  alt=""
-                />
+                <img className="animated" src={chooseContentObj.icon} alt="" />
               </div>
               <div className="choose-content">
-                <h3>Scholarship Facility</h3>
-                <p>
-                  magna aliqua. Ut enim ad minim veniam conse ctetur adipisicing
-                  elit, sed do exercitation.{" "}
-                </p>
+                <h3>{chooseContentObj.headingText}</h3>
+                <p>{chooseContentObj.paragraphText}</p>
               </div>
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
             <div className="single-choose-us choose-bg-green">
               <div className="choose-img">
-                <img
-                  className="animated"
-                  src="/assets/img/icon-img/service-4.png"
-                  alt=""
-                />
+                <img className="animated" src={chooseContentObj.icon} alt="" />
               </div>
               <div className="choose-content">
-                <h3>Scholarship Facility</h3>
-                <p>
-                  magna aliqua. Ut enim ad minim veniam conse ctetur adipisicing
-                  elit, sed do exercitation.{" "}
-                </p>
+                <h3>{chooseContentObj.headingText}</h3>
+                <p>{chooseContentObj.paragraphText}</p>
               </div>
             </div>
           </div>

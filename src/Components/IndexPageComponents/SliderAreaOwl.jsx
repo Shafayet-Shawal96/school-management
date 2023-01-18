@@ -7,42 +7,36 @@ import { Link } from "react-router-dom";
 const carouselContentObj = [
   {
     id: 1,
-    slider1BackgroundImage: {
-      backgroundImage: `url(./assets/img/slider/slider-1.jpg)`,
-    },
-    headerText: "dont MakeYour Own World",
-    paragrapgText:
-      " hello world kjhkjhdfkjhglkdjgl;kjdfl;kjfhjkfhgkjhdk;jghkdjfh",
-  },
-  {
-    id: 2,
-    slider2BackgroundImage: {
+    sliderBackgroundImage: {
       backgroundImage: `url(./assets/img/slider/slider-1.jpg)`,
     },
     headerText: "MakeYour Own World",
     paragrapgText:
-      " No hello world kjhkjhdfkjhglkdjgl;kjdfl;kjfhjkfhgkjhdk;jghkdjfh",
+      " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed   do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
+  },
+  {
+    id: 2,
+    sliderBackgroundImage: {
+      backgroundImage: `url(./assets/img/slider/slider-1.jpg)`,
+    },
+    headerText: "MakeYour Own World",
+    paragrapgText:
+      " Lorem ipsum dolor sit amet, consectetur adipisicing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
   },
 ];
 
 function SingleSlider({ item }) {
-  console.log("item is", item);
   return (
     <div
       className="single-slider slider-height-1 bg-img"
-      style={item.slider1BackgroundImage}
+      style={item.sliderBackgroundImage}
     >
-      {console.log("skjhkjhdfkj", item.slider1BackgroundImage)}
       <div className="container">
         <div className="row">
           <div className="col-lg-9 col-md-7 col-12 col-sm-12">
             <div className="slider-content slider-animated-1 pt-230">
-              <h1 className="animated">MakeYour Own World</h1>
-              <p className="animated">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation
-              </p>
+              <h1 className="animated">{item.headerText}</h1>
+              <p className="animated">{item.paragrapgText}</p>
               <div className="slider-btn">
                 <Link
                   className="animated default-btn btn-green-color"
