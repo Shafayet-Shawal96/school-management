@@ -1,6 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+const aboutUsContent = {
+  paragraphOneText:
+    "tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip",
+  paragraphTwoText:
+    "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven iam, quis nostrud exer citation ullamcolaboris nisi ut perspiciatis unde omnis iste natus error sit",
+  aboutImage: "assets/img/banner/banner-1.jpg",
+  aboutVideo: "assets/img/icon-img/video.png",
+};
+
 function AboutUs() {
   return (
     <div className="about-us pt-130 pb-130">
@@ -12,18 +21,9 @@ function AboutUs() {
                 <h2>
                   About <span>Us</span>
                 </h2>
-                <p>
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim veniam, quis nostrud exercitation ullamco laboris nisi
-                  ut aliquip{" "}
-                </p>
+                <p>{aboutUsContent.paragraphOneText}</p>
               </div>
-              <p>
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim ven iam, quis nostrud exer citation ullamco
-                laboris nisi ut perspiciatis unde omnis iste natus error sit
-                voluptate.
-              </p>
+              <p>{aboutUsContent.paragraphTwoText}</p>
               <div className="about-btn mt-45">
                 <Link className="default-btn" to="about-us.html">
                   ABOUT US
@@ -33,14 +33,14 @@ function AboutUs() {
           </div>
           <div className="col-lg-6 col-md-6">
             <div className="about-img default-overlay">
-              <img src="assets/img/banner/banner-1.jpg" alt="" />
+              <img src={aboutUsContent.aboutImage} alt="" />
               <Link
                 className="video-btn video-popup"
                 to="https://www.youtube.com/watch?v=sv5hK4crIRc"
               >
                 <img
                   className="animated"
-                  src="assets/img/icon-img/video.png"
+                  src={aboutUsContent.aboutVideo}
                   alt=""
                 />
               </Link>

@@ -4,6 +4,20 @@ import { Link } from "react-router-dom";
 const newsFeedAreaImage = {
   backgroundImage: `url(./assets/img/bg/bg-3.jpg)`,
 };
+const newsFeedContent = {
+  newsFeedAreaImage: {
+    backgroundImage: "url(./assets/img/bg/bg-3.jpg)",
+  },
+  heading: "Our Newsfeed",
+  paragraphText:
+    "tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+  newsCardImage: "assets/img/blog/blog-1.jpg",
+  cardHeading: "Testing is a great thing.",
+  cardParagraphText: "doloremque laudan tium, totam ersps uns iste natus",
+  cardText: "Adrin Azra",
+  cardNumber: "15",
+  cardDate: "Jun, 24th 2018",
+};
 
 function NewsFeedArea() {
   return (
@@ -13,21 +27,15 @@ function NewsFeedArea() {
     >
       <div className="container">
         <div className="section-title mb-75">
-          <h2>
-            Our <span>Newsfeed</span>
-          </h2>
-          <p>
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim{" "}
-            <br />
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip{" "}
-          </p>
+          <h2>{newsFeedContent.heading}</h2>
+          <p>{newsFeedContent.paragraphText}</p>
         </div>
         <div className="row">
           <div className="col-lg-3 col-md-6">
             <div className="single-blog mb-30">
               <div className="blog-img">
                 <Link to="blog-details.html">
-                  <img src="assets/img/blog/blog-1.jpg" alt="" />
+                  <img src={newsFeedContent.newsCardImage} alt="" />
                 </Link>
               </div>
               <div className="blog-content-wrap">
@@ -35,20 +43,22 @@ function NewsFeedArea() {
                 <div className="blog-content">
                   <h4>
                     <Link to="blog-details.html">
-                      Testing is a great thing.
+                      {newsFeedContent.cardHeading}
                     </Link>
                   </h4>
-                  <p>doloremque laudan tium, totam ersps uns iste natus</p>
+                  <p>{newsFeedContent.cardParagraphText}</p>
                   <div className="blog-meta">
                     <ul>
                       <li>
                         <Link to="#">
-                          <i className="fa fa-user"></i> Adrin Azra
+                          <i className="fa fa-user"></i>
+                          {newsFeedContent.cardText}
                         </Link>
                       </li>
                       <li>
                         <Link to="#">
-                          <i className="fa fa-comments-o"></i> 15
+                          <i className="fa fa-comments-o"></i>
+                          {newsFeedContent.cardNumber}
                         </Link>
                       </li>
                     </ul>
@@ -56,13 +66,140 @@ function NewsFeedArea() {
                 </div>
                 <div className="blog-date">
                   <Link to="#">
-                    <i className="fa fa-calendar-o"></i> Jun, 24th 2018
+                    <i className="fa fa-calendar-o"></i>{" "}
+                    {newsFeedContent.cardDate}
                   </Link>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
+            <div className="single-blog mb-30">
+              <div className="blog-img">
+                <Link to="blog-details.html">
+                  <img src={newsFeedContent.newsCardImage} alt="" />
+                </Link>
+              </div>
+              <div className="blog-content-wrap">
+                <span>Education</span>
+                <div className="blog-content">
+                  <h4>
+                    <Link to="blog-details.html">
+                      {newsFeedContent.cardHeading}
+                    </Link>
+                  </h4>
+                  <p>{newsFeedContent.cardParagraphText}</p>
+                  <div className="blog-meta">
+                    <ul>
+                      <li>
+                        <Link to="#">
+                          <i className="fa fa-user"></i>
+                          {newsFeedContent.cardText}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <i className="fa fa-comments-o"></i>
+                          {newsFeedContent.cardNumber}
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="blog-date">
+                  <Link to="#">
+                    <i className="fa fa-calendar-o"></i>{" "}
+                    {newsFeedContent.cardDate}
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6">
+            <div className="single-blog mb-30">
+              <div className="blog-img">
+                <Link to="blog-details.html">
+                  <img src={newsFeedContent.newsCardImage} alt="" />
+                </Link>
+              </div>
+              <div className="blog-content-wrap">
+                <span>Education</span>
+                <div className="blog-content">
+                  <h4>
+                    <Link to="blog-details.html">
+                      {newsFeedContent.cardHeading}
+                    </Link>
+                  </h4>
+                  <p>{newsFeedContent.cardParagraphText}</p>
+                  <div className="blog-meta">
+                    <ul>
+                      <li>
+                        <Link to="#">
+                          <i className="fa fa-user"></i>
+                          {newsFeedContent.cardText}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <i className="fa fa-comments-o"></i>
+                          {newsFeedContent.cardNumber}
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="blog-date">
+                  <Link to="#">
+                    <i className="fa fa-calendar-o"></i>{" "}
+                    {newsFeedContent.cardDate}
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6">
+            <div className="single-blog mb-30">
+              <div className="blog-img">
+                <Link to="blog-details.html">
+                  <img src={newsFeedContent.newsCardImage} alt="" />
+                </Link>
+              </div>
+              <div className="blog-content-wrap">
+                <span>Education</span>
+                <div className="blog-content">
+                  <h4>
+                    <Link to="blog-details.html">
+                      {newsFeedContent.cardHeading}
+                    </Link>
+                  </h4>
+                  <p>{newsFeedContent.cardParagraphText}</p>
+                  <div className="blog-meta">
+                    <ul>
+                      <li>
+                        <Link to="#">
+                          <i className="fa fa-user"></i>
+                          {newsFeedContent.cardText}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <i className="fa fa-comments-o"></i>
+                          {newsFeedContent.cardNumber}
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="blog-date">
+                  <Link to="#">
+                    <i className="fa fa-calendar-o"></i>{" "}
+                    {newsFeedContent.cardDate}
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <div className="col-lg-3 col-md-6">
             <div className="single-blog mb-30">
               <div className="blog-img">
                 <Link to="blog-details.html">
@@ -176,7 +313,7 @@ function NewsFeedArea() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
