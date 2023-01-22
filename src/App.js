@@ -30,11 +30,11 @@ function App() {
           <Route path="/" element={<IndexPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/events" element={<EventPage />} exact />
+          <Route path="/events" element={<EventPage />} />
           <Route path="/events/:eventId" element={<EventDetailsPage />} />
-          <Route path="/courses" element={<CoursesPage />} exact />
+          <Route path="/courses" element={<CoursesPage />} />
           <Route path="/courses/:courseId" element={<CourseDetails />} />
-          <Route path="/notices" element={<NoticesPage />} exact />
+          <Route path="/notices" element={<NoticesPage />} />
           <Route path="/notices/:noticeId" element={<NoticeDetailsPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

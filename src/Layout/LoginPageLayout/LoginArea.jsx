@@ -13,7 +13,7 @@ function LoginArea() {
     e.preventDefault();
     if (captchaisValid) {
       dispatch(loginFn());
-      navigate("/");
+      navigate("/", { replace: true });
       return;
     }
     alert("Try captcha again");

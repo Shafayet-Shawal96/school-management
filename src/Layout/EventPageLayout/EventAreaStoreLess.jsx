@@ -7,24 +7,23 @@ let currentPage = 1;
 
 function EventAreaStoreLess() {
   const lastElementRef = useRef();
-  const [allEvents, setAllEvents] = useState([]);
+  const [pages, setPages] = useState([]);
   const isVisible = useIsVisible(lastElementRef);
-  console.log(allEvents);
 
   const updateEvents = async (pageNo) => {
     const sendRequest = async () => {
       const response = await fetch(
-        `https://education-hub-12ebb-default-rtdb.firebaseio.com/allEvents/0/allEvents-page-${pageNo}.json`
+        `https://nodestaticserve.imdrashedul.repl.co/distribution/events/${pageNo}.json`
       );
 
-      console.log("Fetching pageNo", pageNo);
+      // console.log("Fetching pageNo", pageNo);
 
       if (!response.ok) {
         throw new Error("Receiving Events Data Failed");
       }
 
       const allEventsData = await response.json();
-      setAllEvents((prevState) => [...prevState, ...allEventsData]);
+      setPages((prevState) => [...prevState, allEventsData]);
     };
 
     try {
@@ -35,27 +34,27 @@ function EventAreaStoreLess() {
   };
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      if (isVisible) {
-        updateEvents(currentPage++);
-      }
-    }, 5000);
-    return () => clearTimeout(timer);
+    if (isVisible) {
+      updateEvents(currentPage++);
+    }
   }, [isVisible]);
 
   return (
     <div className="event-area pt-130 pb-130">
       <div className="container">
-        <div className="row">
-          {allEvents.length !== 0
-            ? allEvents.map((singleEvent) => {
-                return (
-                  <EventCard key={singleEvent.id} singleEvent={singleEvent} />
-                );
-              })
-            : ""}
-          {currentPage < 4 ? <SkeletonElements ref={lastElementRef} /> : ""}
-        </div>
+        {pages.map((allEvents, index) => (
+          <div className="row" key={index} id={index}>
+            {allEvents.length !== 0
+              ? allEvents.map((singleEvent) => {
+                  return (
+                    <EventCard key={singleEvent.id} singleEvent={singleEvent} />
+                  );
+                })
+              : ""}
+          </div>
+        ))}
+
+        {currentPage < 4 ? <SkeletonElements ref={lastElementRef} /> : ""}
       </div>
     </div>
   );
