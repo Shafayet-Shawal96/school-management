@@ -12,8 +12,6 @@ const checkUpdateEvents = async (pageNo) => {
       `https://nodestaticserve.imdrashedul.repl.co/distribution/events/update/${pageNo}.json`
     );
 
-    // console.log("Fetching pageNo", pageNo);
-
     if (!response.ok) {
       throw new Error("Receiving Events Data Failed");
     }
@@ -23,11 +21,34 @@ const checkUpdateEvents = async (pageNo) => {
   };
 
   try {
-    await sendRequest();
+    const newData = await sendRequest();
+    return newData;
   } catch (error) {
     console.log(error);
   }
+  return;
+};
 
+const getSingleEvent = async (id) => {
+  const sendRequest = async () => {
+    const response = await fetch(
+      `https://nodestaticserve.imdrashedul.repl.co/distribution/events/single/${id}.json`
+    );
+
+    if (!response.ok) {
+      throw new Error("Receiving Events Data Failed");
+    }
+
+    const singleEvent = await response.json();
+    return singleEvent;
+  };
+
+  try {
+    const newData = await sendRequest();
+    return newData;
+  } catch (error) {
+    console.log(error);
+  }
   return;
 };
 
@@ -64,12 +85,29 @@ function EventAreaObserver() {
     }
   }, [inView]);
 
-  const checkRowNum = (id) => {
+  const matchFn = (newData, id) => {
+    // console.log(newData, pages[id]);
+    newData.forEach(async (element, index) => {
+      if (element.updated !== pages[id][index].updated) {
+        const [singleEvent] = await getSingleEvent(index + 1);
+        let arr = [...pages[id]];
+        arr.splice(index, 1, singleEvent);
+        setPages((prevState) => {
+          let newpages = [...prevState];
+          newpages.splice(id, 1, arr);
+          return newpages;
+        });
+      }
+    });
+  };
+
+  const checkRowNum = async (id) => {
     if (rowNum[id] !== undefined) {
       const currentTime = new Date();
       if (currentTime.getTime() - rowNum[id].getTime() > 15000) {
-        const newData = checkUpdateEvents(id + 1);
+        const newData = await checkUpdateEvents(id + 1);
         if (newData) {
+          matchFn(newData, id);
         }
       }
       rowNum[id] = new Date();
