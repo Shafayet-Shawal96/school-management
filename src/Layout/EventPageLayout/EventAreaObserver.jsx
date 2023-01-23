@@ -117,7 +117,7 @@ function EventAreaObserver() {
   };
 
   return (
-    <div className="event-area pt-130 pb-130">
+    <div className="event-area pt-80 pb-130">
       <div className="container">
         {pages.map((allEvents, index) => (
           <InView

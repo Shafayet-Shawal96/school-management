@@ -56,11 +56,12 @@
   top: -21px;
   left: 0;
   right: 0;
-  background-color: transparent;
+  transition: background-color 0.5s linear 0.9s;
 }
 
 .flex_container_color {
   background-color: #ebebeb;
+  transition-delay: 0s;
 }
 
 .header_search {
@@ -81,7 +82,7 @@
 }
 
 .header_search input {
-  background-color: transparent;
+  background-color: #ebebeb;
 }
 
 .icon_button {
@@ -90,21 +91,24 @@
   width: 42px;
   height: 42px;
   border: none;
-  background-color: rgba(255, 255, 255, 0.3);
-  transition-property: width, height, margin-right;
+  background-color: transparent;
+  transition: background-color 0.3s, width, height, margin-right;
   transition-delay: 0.9s;
 }
 
 .icon_button_white {
   background-color: white;
+  transition: background-color 0s, width, height, margin-right;
+  transition-delay: 0s;
 }
 
-.icon_button:hover {
-  background-color: white;
+.icon_button_hover:hover {
+  color: white;
+  background-color: #00a651;
 }
 
-/* .header_full .icon_button {
+.header_full .icon_button {
   width: 38px;
   height: 38px;
   transition-delay: 0s;
-} */
+}

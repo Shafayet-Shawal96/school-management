@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
+import cssClasses from "../../Components/Skeletons/SkeletonElements.module.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const months = [
   "Jan",
@@ -80,13 +83,20 @@ const hour = [
 const minute = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09"];
 
 function EventCard({ singleEvent }) {
+  const imgRef = useRef();
   const time = new Date(singleEvent.time);
   return (
     <div className="col-lg-4 col-md-6">
       <div className="single-event mb-55 event-gray-bg">
         <div className="event-img">
           <Link to={`/events/${singleEvent.id}`}>
-            <img src={singleEvent.banner} alt="" />
+            <div className="image-preview">
+              <div
+                style={{
+                  backgroundImage: `url(${singleEvent.banner})`,
+                }}
+              />
+            </div>
           </Link>
           <div className="event-date-wrap">
             <span className="event-date">{day[time.getDate() - 1]}</span>

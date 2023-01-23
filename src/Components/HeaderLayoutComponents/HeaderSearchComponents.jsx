@@ -7,6 +7,7 @@ const headerSearchTwoClass = `${cssClass.header_search_close} ${cssClass.transit
 function HeaderSearchComponents() {
   const [clickAnimation, setClickAnimation] = useState(false);
   const [inputField, setInputField] = useState("");
+  const [hover, setHover] = useState(false);
 
   const inputOnChange = (e) => {
     setInputField(e.target.value);
@@ -14,6 +15,9 @@ function HeaderSearchComponents() {
 
   const addAnimation = (e) => {
     setClickAnimation(true);
+    setTimeout(() => {
+      setHover(true);
+    }, 2000);
   };
 
   useEffect(() => {
@@ -28,6 +32,7 @@ function HeaderSearchComponents() {
       if (!Object.values(searchElements).includes(e.target)) {
         setClickAnimation(false);
         setInputField("");
+        setHover(false);
       }
     };
 
@@ -60,7 +65,7 @@ function HeaderSearchComponents() {
         <button
           className={`${cssClass.icon_button} ${
             clickAnimation ? cssClass.icon_button_white : ""
-          }`}
+          } ${hover ? cssClass.icon_button_hover : ""}`}
         >
           <i className="fa fa-search"></i>
         </button>
